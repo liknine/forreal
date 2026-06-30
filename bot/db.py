@@ -1,5 +1,4 @@
 import json
-from contextlib import asynccontextmanager
 from typing import Any
 
 import aiosqlite
@@ -8,18 +7,13 @@ from config import config
 from utils import now_iso
 
 
-@asynccontextmanager
-async def get_db() -> aiosqlite.Connection:
-    db = await aiosqlite.connect(config.database_path)
-    db.row_factory = aiosqlite.Row
-    try:
-        yield db
-    finally:
-        await db.close()
+def get_db() -> aiosqlite.Connection:
+    return aiosqlite.connect(config.database_path)
 
 
 async def init_db() -> None:
     async with get_db() as db:
+        db.row_factory = aiosqlite.Row
         await db.execute(
             """
             CREATE TABLE IF NOT EXISTS orders (
@@ -63,6 +57,9 @@ async def init_db() -> None:
         await db.execute(
             "CREATE INDEX IF NOT EXISTS idx_orders_status ON orders(status)"
         )
+        await db.execute(
+            "CREATE INDEX IF NOT EXISTS idx_orders_client_order_id ON orders(telegram_id, client_order_id)"
+        )
         await db.commit()
 
 
@@ -75,6 +72,22 @@ async def next_order_number(db: aiosqlite.Connection) -> int:
 
 async def create_order(order: dict[str, Any]) -> dict[str, Any]:
     async with get_db() as db:
+        db.row_factory = aiosqlite.Row
+
+        client_order_id = order.get("clientOrderId")
+        telegram_id = order.get("telegramId")
+        if client_order_id and telegram_id:
+            async with db.execute(
+                "SELECT id FROM orders WHERE telegram_id = ? AND client_order_id = ?",
+                (telegram_id, client_order_id),
+            ) as cursor:
+                existing = await cursor.fetchone()
+            if existing:
+                existing_order = await get_order(existing["id"])
+                if existing_order:
+                    existing_order["_isDuplicate"] = True
+                return existing_order
+
         order_number = await next_order_number(db)
         created_at = now_iso()
         updated_at = created_at
@@ -131,6 +144,7 @@ async def create_order(order: dict[str, Any]) -> dict[str, Any]:
             )
 
         await db.commit()
+        order["_isDuplicate"] = False
         return order
 
 
@@ -156,6 +170,7 @@ async def row_to_order(row: aiosqlite.Row, items: list[dict[str, Any]]) -> dict[
 
 async def get_order(order_id: str) -> dict[str, Any] | None:
     async with get_db() as db:
+        db.row_factory = aiosqlite.Row
         async with db.execute("SELECT * FROM orders WHERE id = ?", (order_id,)) as cursor:
             order_row = await cursor.fetchone()
         if not order_row:
@@ -179,6 +194,7 @@ async def get_order(order_id: str) -> dict[str, Any] | None:
 
 async def get_orders_for_user(telegram_id: int) -> list[dict[str, Any]]:
     async with get_db() as db:
+        db.row_factory = aiosqlite.Row
         async with db.execute(
             "SELECT * FROM orders WHERE telegram_id = ? ORDER BY order_number DESC",
             (telegram_id,),
@@ -206,6 +222,7 @@ async def get_orders_for_user(telegram_id: int) -> list[dict[str, Any]]:
 
 async def get_recent_orders(limit: int = 20) -> list[dict[str, Any]]:
     async with get_db() as db:
+        db.row_factory = aiosqlite.Row
         async with db.execute(
             "SELECT * FROM orders ORDER BY order_number DESC LIMIT ?",
             (limit,),
@@ -234,6 +251,7 @@ async def get_recent_orders(limit: int = 20) -> list[dict[str, Any]]:
 async def update_order_status(order_id: str, status: str) -> dict[str, Any] | None:
     updated_at = now_iso()
     async with get_db() as db:
+        db.row_factory = aiosqlite.Row
         await db.execute(
             "UPDATE orders SET status = ?, updated_at = ? WHERE id = ?",
             (status, updated_at, order_id),
@@ -255,6 +273,7 @@ async def update_order_status(order_id: str, status: str) -> dict[str, Any] | No
 async def set_payment_proof(order_id: str, photo_id: str) -> dict[str, Any] | None:
     updated_at = now_iso()
     async with get_db() as db:
+        db.row_factory = aiosqlite.Row
         await db.execute(
             "UPDATE orders SET payment_proof_photo_id = ?, updated_at = ? WHERE id = ?",
             (photo_id, updated_at, order_id),

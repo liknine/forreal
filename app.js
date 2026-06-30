@@ -61,6 +61,8 @@ let transitionTimer = null;
 let products = {};
 const PRODUCTS_URL = './data/products.json';
 const ADMIN_USERNAME = 'woodyqqqq';
+const API_BASE = String(document.body?.dataset.apiBase || window.FORREAL_API_BASE || '').replace(/\/$/, '');
+const API_BASE_URL = document.body?.dataset.apiBase || '';
 
 const categoryLabels = {
   new: 'НОВЫЕ ПОСТУПЛЕНИЯ',
@@ -822,6 +824,179 @@ function getActiveDeliveryMethod() {
   return document.querySelector('.delivery-method.is-active')?.dataset.deliveryCard || 'pickup';
 }
 
+
+function getTelegramInitData() {
+  return window.Telegram?.WebApp?.initData || '';
+}
+
+function ensureCheckoutStatusElement() {
+  let node = document.querySelector('[data-checkout-status]');
+  if (node) return node;
+  const actions = document.querySelector('.checkout-actions');
+  if (!actions) return null;
+  node = document.createElement('p');
+  node.className = 'checkout-status';
+  node.dataset.checkoutStatus = 'true';
+  node.hidden = true;
+  actions.prepend(node);
+  return node;
+}
+
+function setCheckoutStatus(message = '', type = 'info') {
+  const node = ensureCheckoutStatusElement();
+  if (!node) return;
+  node.textContent = message;
+  node.dataset.statusType = type;
+  node.hidden = !message;
+  requestAnimationFrame(refreshActiveDeliveryFormHeight);
+}
+
+function getCheckoutInput(name) {
+  return document.querySelector(`[name="${name}"]`);
+}
+
+function getCheckoutValue(name) {
+  return String(getCheckoutInput(name)?.value || '').trim();
+}
+
+function setCheckoutLoading(isLoading) {
+  if (!checkoutSubmitButton) return;
+  checkoutSubmitButton.disabled = isLoading;
+  checkoutSubmitButton.setAttribute('aria-disabled', String(isLoading));
+  checkoutSubmitButton.textContent = isLoading ? 'ОФОРМЛЯЕМ...' : 'ОФОРМИТЬ ЗАКАЗ';
+}
+
+function collectDeliveryData(method) {
+  return {
+    fullName: getCheckoutValue(`${method}-name`),
+    phone: getCheckoutValue(`${method}-phone`),
+    city: getCheckoutValue(`${method}-city`),
+    address: getCheckoutValue(`${method}-address`),
+  };
+}
+
+function validateDeliveryData(data) {
+  return Boolean(data.fullName && data.phone && data.city && data.address);
+}
+
+function buildOrderPayload(method) {
+  return {
+    type: 'order',
+    clientOrderId: `forreal-${Date.now()}-${Math.random().toString(16).slice(2)}`,
+    items: cart
+      .filter(isCartItemAvailable)
+      .map((item) => ({
+        productId: item.productId,
+        size: item.size,
+        quantity: Number(item.quantity) || 1,
+      })),
+    deliveryMethod: method,
+    deliveryData: collectDeliveryData(method),
+    comment: getCheckoutValue('order-comment'),
+  };
+}
+
+function clearCartAfterOrder() {
+  cart = [];
+  saveCart();
+  renderCart();
+}
+
+async function postOrderToApi(payload) {
+  if (!API_BASE) throw new Error('API_NOT_CONFIGURED');
+  const initData = getTelegramInitData();
+  if (!initData) throw new Error('INIT_DATA_MISSING');
+
+  const response = await fetch(`${API_BASE}/api/orders`, {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+      'X-Telegram-Init-Data': initData,
+    },
+    body: JSON.stringify(payload),
+  });
+
+  let data = null;
+  try { data = await response.json(); } catch (error) { data = null; }
+
+  if (!response.ok) {
+    const detail = data?.detail || 'Не удалось оформить заказ';
+    throw new Error(Array.isArray(detail) ? detail.map((item) => item.msg).join(', ') : detail);
+  }
+
+  return data;
+}
+
+function sendOrderViaTelegram(payload) {
+  if (!window.Telegram?.WebApp?.sendData) return false;
+  window.Telegram.WebApp.sendData(JSON.stringify(payload));
+  return true;
+}
+
+function buildOrderCard(order) {
+  const statusMap = {
+    awaiting_payment: 'Ожидает оплаты',
+    paid: 'Оплачено',
+    in_delivery: 'В доставке',
+    awaiting_pickup: 'Ожидает получения',
+    closed: 'Закрыт',
+    canceled: 'Отменен',
+  };
+  const deliveryMap = { cdek: 'CDEK', yandex: 'Яндекс Доставка', pickup: 'Самовывоз' };
+  const items = Array.isArray(order.items) ? order.items : [];
+  const itemsText = items.map((item) => `${item.brand || ''} ${item.name || ''} / ${item.size || ''}`).filter(Boolean).join(' · ');
+  const date = order.createdAt ? new Date(order.createdAt).toLocaleDateString('ru-RU') : '';
+  const article = document.createElement('article');
+  article.className = 'profile-order-item';
+  article.innerHTML = `
+    <div class="profile-order-row">
+      <strong>#${order.orderNumber || '—'}</strong>
+      <span>${statusMap[order.status] || order.status || '—'}</span>
+    </div>
+    <p>${itemsText || 'Товары'}</p>
+    <div class="profile-order-meta">
+      <span>${formatRub(order.totalPrice || 0)}</span>
+      <span>${deliveryMap[order.deliveryMethod] || order.deliveryMethod || ''}</span>
+      <span>${date}</span>
+    </div>
+  `;
+  return article;
+}
+
+function renderOrdersList(orders = []) {
+  if (!ordersPanel) return;
+  ordersPanel.innerHTML = '';
+  if (!orders.length) {
+    const empty = document.createElement('div');
+    empty.className = 'profile-info-empty';
+    empty.textContent = 'ЗАКАЗОВ ПОКА НЕТ';
+    ordersPanel.append(empty);
+  } else {
+    orders.forEach((order) => ordersPanel.append(buildOrderCard(order)));
+  }
+  requestAnimationFrame(refreshOrdersPanelHeight);
+}
+
+async function loadMyOrders() {
+  if (!ordersPanel) return;
+  if (!API_BASE || !getTelegramInitData()) {
+    renderOrdersList([]);
+    return;
+  }
+  try {
+    const response = await fetch(`${API_BASE}/api/orders/my`, {
+      headers: { 'X-Telegram-Init-Data': getTelegramInitData() },
+      cache: 'no-store',
+    });
+    if (!response.ok) throw new Error('orders fetch failed');
+    const orders = await response.json();
+    renderOrdersList(Array.isArray(orders) ? orders : []);
+  } catch (error) {
+    console.warn('ForReal: orders not loaded', error);
+    renderOrdersList([]);
+  }
+}
+
 function buildPickupMessage() {
   const lines = ['Привет, хочу заказать:', ''];
   const validItems = cart.filter(isCartItemAvailable);
@@ -851,11 +1026,68 @@ function openAdminChat() {
   window.open(url, '_blank', 'noopener,noreferrer');
 }
 
-function submitCheckout() {
-  if (cart.length === 0 || cart.some((item) => !isCartItemAvailable(item))) return;
+async function submitCheckout() {
+  if (cart.length === 0) return;
+  if (cart.some((item) => !isCartItemAvailable(item))) {
+    setCheckoutStatus('В корзине есть товар, который уже не в наличии.', 'error');
+    return;
+  }
 
-  if (getActiveDeliveryMethod() === 'pickup') {
+  const method = getActiveDeliveryMethod();
+  if (method === 'pickup') {
     openAdminChat();
+    return;
+  }
+
+  const payload = buildOrderPayload(method);
+  if (!payload.items.length) {
+    setCheckoutStatus('Корзина пустая.', 'error');
+    return;
+  }
+  if (!validateDeliveryData(payload.deliveryData)) {
+    setCheckoutStatus('Заполните все данные доставки.', 'error');
+    return;
+  }
+
+  setCheckoutLoading(true);
+  setCheckoutStatus('', 'info');
+
+  try {
+    if (API_BASE) {
+      const order = await postOrderToApi(payload);
+      clearCartAfterOrder();
+      closeCheckout();
+      setActive('profile');
+      await loadMyOrders();
+      setCheckoutStatus('', 'info');
+      return order;
+    }
+
+    if (sendOrderViaTelegram(payload)) {
+      clearCartAfterOrder();
+      closeCheckout();
+      return null;
+    }
+
+    throw new Error('API_NOT_CONFIGURED');
+  } catch (error) {
+    console.error('ForReal order error', error);
+    const fallbackAllowed = !API_BASE && sendOrderViaTelegram(payload);
+    if (fallbackAllowed) {
+      clearCartAfterOrder();
+      closeCheckout();
+      return null;
+    }
+
+    const message = error.message === 'INIT_DATA_MISSING'
+      ? 'Откройте каталог через Telegram и попробуйте еще раз.'
+      : error.message === 'API_NOT_CONFIGURED'
+        ? 'API для заказов пока не настроен.'
+        : error.message || 'Не удалось оформить заказ.';
+    setCheckoutStatus(message, 'error');
+    return null;
+  } finally {
+    setCheckoutLoading(false);
   }
 }
 
@@ -1067,7 +1299,7 @@ deliveryButtons.forEach((button) => {
 });
 
 if (checkoutSubmitButton) {
-  checkoutSubmitButton.addEventListener('click', submitCheckout);
+  checkoutSubmitButton.addEventListener('click', () => { submitCheckout(); });
 }
 
 if (detailsToggle) {
@@ -1136,6 +1368,7 @@ async function initApp() {
   updateSizeSelector();
   setDeliveryMethod('pickup');
   setOrdersOpen(true);
+  await loadMyOrders();
   setDetailsOpen(false);
 }
 

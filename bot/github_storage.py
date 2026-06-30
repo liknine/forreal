@@ -69,7 +69,12 @@ async def decrease_stock(items: list[dict[str, Any]]) -> None:
         product["updatedAt"] = now_iso()
 
     await save_products(products)
-    await push_products_to_github("Update stock after payment")
+    try:
+        await push_products_to_github("Update stock after payment")
+    except Exception:
+        # Local stock was already saved. Do not raise here; order status must not get stuck
+        # and repeated status clicks must not double-decrease stock. Admin can run sync after fixing token.
+        pass
 
 
 async def add_or_update_product(product: dict[str, Any]) -> dict[str, Any]:
@@ -189,8 +194,6 @@ async def push_product_assets_to_github(product: dict[str, Any], message: str = 
     await ensure_products_file()
     async with httpx.AsyncClient(timeout=60) as client:
         for image_path in product.get("images") or []:
-            local_path = config.PROJECT_ROOT / image_path if hasattr(config, "PROJECT_ROOT") else None
-            # config has no PROJECT_ROOT field, so use images_dir and filename instead.
             filename = str(image_path).split("/")[-1]
             candidate = config.images_dir / filename
             if candidate.exists():

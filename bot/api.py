@@ -136,14 +136,15 @@ async def api_create_order(
         "totalPrice": total_price,
         "currency": "RUB",
         "deliveryMethod": payload.deliveryMethod,
-        "deliveryData": payload.deliveryData.model_dump(),
+        "deliveryData": payload.deliveryData.model_dump() if hasattr(payload.deliveryData, "model_dump") else payload.deliveryData.dict(),
         "comment": payload.comment,
         "status": "awaiting_payment",
         "paymentProofPhotoId": None,
     }
 
     created = await create_order(order)
-    await notify_order_created(created)
+    if not created.get("_isDuplicate"):
+        await notify_order_created(created)
     return created
 
 
@@ -208,7 +209,11 @@ async def api_admin_order_status(
     if not before:
         raise HTTPException(status_code=404, detail="Заказ не найден")
     if payload.status == "paid" and before["status"] != "paid":
-        await decrease_stock(before["items"])
+        try:
+            await decrease_stock(before["items"])
+        except Exception:
+            # Stock is saved locally before GitHub sync; do not block status update if remote sync fails.
+            pass
     order = await update_order_status(order_id, payload.status)
     if not order:
         raise HTTPException(status_code=404, detail="Заказ не найден")

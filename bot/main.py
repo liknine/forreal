@@ -1,4 +1,5 @@
 import asyncio
+import json
 from pathlib import Path
 
 from aiogram import Bot, Dispatcher, F
@@ -24,12 +25,15 @@ from github_storage import (
 from keyboards import (
     accept_photos_kb,
     admin_order_kb,
+    client_payment_kb,
     admin_panel_kb,
     main_menu_kb,
     product_categories_kb,
     product_manage_kb,
     products_list_kb,
 )
+from order_messages import build_admin_order_text, build_client_payment_text
+from order_service import OrderValidationError, create_order_from_payload
 from utils import (
     STATUS_LABELS,
     code,
@@ -83,6 +87,57 @@ async def cmd_start(message: Message) -> None:
     await message.answer(
         "Привет. Это каталог ForReal.",
         reply_markup=main_menu_kb(config.mini_app_url),
+    )
+
+
+
+
+@dp.message(F.web_app_data)
+async def handle_web_app_data(message: Message) -> None:
+    try:
+        payload = json.loads(message.web_app_data.data or "{}")
+    except json.JSONDecodeError:
+        await message.answer("Не удалось прочитать данные заказа. Попробуйте оформить заказ еще раз.")
+        return
+
+    if payload.get("type") != "order":
+        await message.answer("Получены неизвестные данные из Mini App.")
+        return
+
+    user = {
+        "id": message.from_user.id,
+        "username": message.from_user.username or "",
+        "first_name": message.from_user.first_name or "",
+    }
+
+    try:
+        order = await create_order_from_payload(payload, user)
+    except OrderValidationError as exc:
+        await message.answer(str(exc))
+        return
+    except Exception:
+        await message.answer("Не удалось создать заказ. Попробуйте еще раз или свяжитесь с админом.")
+        raise
+
+    if order.get("_isDuplicate"):
+        await message.answer(
+            "Этот заказ уже был создан. Повторно заявку админу не отправляю.\n\n"
+            + build_client_payment_text(order),
+            reply_markup=client_payment_kb(order["id"]),
+        )
+        return
+
+    admin_text = build_admin_order_text(order)
+    for admin_id in config.admin_ids:
+        await message.bot.send_message(
+            chat_id=admin_id,
+            text=admin_text,
+            reply_markup=admin_order_kb(order["id"]),
+        )
+
+    await message.answer(
+        build_client_payment_text(order),
+        reply_markup=client_payment_kb(order["id"]),
     )
 
 
@@ -405,10 +460,13 @@ async def receive_receipt_photo(message: Message, state: FSMContext) -> None:
         return
 
     photo_id = None
+    proof_kind = "photo"
     if message.photo:
         photo_id = message.photo[-1].file_id
+        proof_kind = "photo"
     elif message.document and message.document.mime_type and message.document.mime_type.startswith("image/"):
         photo_id = message.document.file_id
+        proof_kind = "document"
 
     if not photo_id:
         await message.answer("Нужно отправить именно фото перевода.")
@@ -428,12 +486,20 @@ async def receive_receipt_photo(message: Message, state: FSMContext) -> None:
     )
 
     for admin_id in config.admin_ids:
-        await message.bot.send_photo(
-            chat_id=admin_id,
-            photo=photo_id,
-            caption=caption,
-            reply_markup=admin_order_kb(order_id),
-        )
+        if proof_kind == "document":
+            await message.bot.send_document(
+                chat_id=admin_id,
+                document=photo_id,
+                caption=caption,
+                reply_markup=admin_order_kb(order_id),
+            )
+        else:
+            await message.bot.send_photo(
+                chat_id=admin_id,
+                photo=photo_id,
+                caption=caption,
+                reply_markup=admin_order_kb(order_id),
+            )
 
 
 @dp.message(ReceiptState.waiting_photo)
@@ -457,14 +523,21 @@ async def order_status_callback(callback: CallbackQuery) -> None:
         await callback.answer("Заказ не найден", show_alert=True)
         return
 
+    stock_warning = ""
     if new_status == "paid" and before["status"] != "paid":
-        await decrease_stock(before["items"])
+        try:
+            await decrease_stock(before["items"])
+        except Exception as exc:
+            stock_warning = (
+                "\n\n⚠️ Статус изменен, но синхронизация остатков с GitHub не прошла. "
+                f"Проверь GITHUB_TOKEN и нажми Синхронизировать GitHub. Ошибка: {escape_html(exc)}"
+            )
 
     order = await update_order_status(order_id, new_status)
     label = STATUS_LABELS.get(new_status, new_status)
 
     await callback.message.answer(
-        f"Статус заказа #{order['orderNumber']} изменен на {code(label)}."
+        f"Статус заказа #{order['orderNumber']} изменен на {code(label)}." + stock_warning
     )
 
     try:
