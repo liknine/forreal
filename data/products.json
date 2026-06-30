@@ -61,7 +61,7 @@
     ],
     "sizeStock": {
       "S": 0,
-      "M": 1
+      "M": 0
     },
     "details": "тестовый",
     "images": [
@@ -70,6 +70,6 @@
     "detailImage": "images/products/test-black-hoodie-aa037053-1.jpg",
     "isActive": true,
     "createdAt": "2026-06-30T17:29:51.029724+00:00",
-    "updatedAt": "2026-06-30T20:27:54.707011+00:00"
+    "updatedAt": "2026-06-30T20:46:03.469361+00:00"
   }
 ]
