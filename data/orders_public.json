@@ -1,5 +1,29 @@
 [
   {
+    "id": "6654f93b-cd9d-4176-b493-822ef7c63311",
+    "orderNumber": 1004,
+    "clientOrderId": "forreal-1782852344658-cf83a64ac8d1d8",
+    "telegramId": 1639462053,
+    "username": "liknine",
+    "items": [
+      {
+        "productId": "test-black-hoodie-aa037053",
+        "brand": "TEST",
+        "name": "BLACK HOODIE",
+        "size": "M",
+        "quantity": 1,
+        "price": 20500,
+        "image": "images/products/test-black-hoodie-aa037053-1.jpg"
+      }
+    ],
+    "totalPrice": 20500,
+    "currency": "RUB",
+    "deliveryMethod": "cdek",
+    "status": "awaiting_payment",
+    "createdAt": "2026-06-30T20:45:44.877303+00:00",
+    "updatedAt": "2026-06-30T20:45:44.877303+00:00"
+  },
+  {
     "id": "4110a22e-17a9-46d9-b1ef-01d1b30b39ce",
     "orderNumber": 1003,
     "clientOrderId": "forreal-1782851271276-16e6edd02d408",
