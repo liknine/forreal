@@ -94,6 +94,7 @@ async def cmd_start(message: Message) -> None:
 
 @dp.message(F.web_app_data)
 async def handle_web_app_data(message: Message) -> None:
+    print("WEB_APP_DATA RECEIVED", message.from_user.id, (message.web_app_data.data or "")[:300])
     try:
         payload = json.loads(message.web_app_data.data or "{}")
     except json.JSONDecodeError:
@@ -118,6 +119,8 @@ async def handle_web_app_data(message: Message) -> None:
     except Exception:
         await message.answer("Не удалось создать заказ. Попробуйте еще раз или свяжитесь с админом.")
         raise
+
+    print("ORDER CREATED", order.get("orderNumber"), "admins", list(config.admin_ids))
 
     if order.get("_isDuplicate"):
         await message.answer(
