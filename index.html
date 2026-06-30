@@ -1,0 +1,545 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>FOR REAL v46</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://api.fontshare.com/v2/css?f[]=satoshi@400,500,900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Onest:wght@400&family=Barlow+Condensed:wght@500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body data-admin-contact-url="https://t.me/forreal_admin">
+  <svg class="svg-sprite" aria-hidden="true" focusable="false">
+    <symbol id="icon-home" viewBox="0 0 24 24">
+      <path d="M4.8 11.1 12 4.7l7.2 6.4" />
+      <path d="M6.9 10.6v8.15h3.65v-5.1h2.9v5.1h3.65V10.6" />
+    </symbol>
+
+    <symbol id="icon-hanger" viewBox="0 0 24 24">
+      <path d="M12 8.15v-.9a2.05 2.05 0 0 1 4.05-.47" />
+      <path d="M12 8.15 5.15 12.95a1.02 1.02 0 0 0 .58 1.86h12.54a1.02 1.02 0 0 0 .58-1.86L12 8.15Z" />
+    </symbol>
+
+    <symbol id="icon-bag" viewBox="0 0 24 24">
+      <path d="M7.15 9.35h9.7l.7 10.05H6.45l.7-10.05Z" />
+      <path d="M9.55 9.35V7.55a2.45 2.45 0 0 1 4.9 0v1.8" />
+    </symbol>
+
+    <symbol id="icon-profile" viewBox="0 0 24 24">
+      <path d="M12 11.25a3.35 3.35 0 1 0 0-6.7 3.35 3.35 0 0 0 0 6.7Z" />
+      <path d="M5.65 19.25c.64-3.05 3.02-4.95 6.35-4.95s5.71 1.9 6.35 4.95" />
+    </symbol>
+
+    <symbol id="icon-menu" viewBox="0 0 24 24">
+      <path d="M5.3 7.35h13.4" />
+      <path d="M5.3 12h13.4" />
+      <path d="M5.3 16.65h13.4" />
+    </symbol>
+
+    <symbol id="icon-search" viewBox="0 0 24 24">
+      <circle cx="10.7" cy="10.7" r="5.9" />
+      <path d="m15.05 15.05 4.35 4.35" />
+    </symbol>
+
+    <symbol id="icon-filter" viewBox="0 0 24 24">
+      <path d="M4.8 7.1h7.1" />
+      <path d="M15.7 7.1h3.5" />
+      <circle cx="13.8" cy="7.1" r="1.9" />
+      <path d="M4.8 16.9h3.5" />
+      <path d="M12.1 16.9h7.1" />
+      <circle cx="10.2" cy="16.9" r="1.9" />
+    </symbol>
+
+    <symbol id="icon-chevron-down" viewBox="0 0 24 24">
+      <path d="m6.4 9.2 5.6 5.6 5.6-5.6" />
+    </symbol>
+
+    <symbol id="icon-info" viewBox="0 0 24 24">
+      <circle cx="12" cy="12" r="7.15" />
+      <path d="M12 10.55v5.15" />
+      <path d="M12 7.9h.01" />
+    </symbol>
+
+    <symbol id="icon-orders" viewBox="0 0 24 24">
+      <path d="M7.2 4.95h9.6v14.1H7.2V4.95Z" />
+      <path d="M9.55 8.35h4.9" />
+      <path d="M9.55 11.8h4.9" />
+      <path d="M9.55 15.25h3.05" />
+    </symbol>
+
+    <symbol id="icon-arrow-right-angled" viewBox="0 0 24 24">
+      <path d="M5.25 12h13.1" />
+      <path d="m13.45 6.85 5.15 5.15-5.15 5.15" />
+    </symbol>
+  </svg>
+
+  <main class="app-shell" aria-label="FOR REAL mini app">
+    <header class="topbar">
+      <button class="icon-btn" type="button" aria-label="Open menu" data-open-menu>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><use href="#icon-menu" /></svg>
+      </button>
+      <div class="brand brand-logo" aria-label="FOR REAL"><img src="./assets/forreal-logo-header.png" alt="FOR REAL" /></div>
+      <button class="icon-btn icon-btn--cart" type="button" aria-label="Cart" data-route="cart">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><use href="#icon-bag" /></svg>
+        <span class="cart-count-badge" data-cart-count hidden>0</span>
+      </button>
+    </header>
+
+    <div class="side-menu-overlay" data-side-menu-overlay aria-hidden="true">
+      <button class="side-menu-backdrop" type="button" data-close-menu aria-label="Закрыть меню"></button>
+      <aside class="side-menu-panel" role="dialog" aria-modal="true" aria-labelledby="side-menu-title">
+        <header class="side-menu-head">
+          <h2 id="side-menu-title">МЕНЮ</h2>
+          <button class="side-menu-close" type="button" data-close-menu aria-label="Закрыть меню">×</button>
+        </header>
+
+        <div class="side-menu-body">
+          <div class="side-menu-section">
+            <p class="side-menu-label">SHOP</p>
+
+            <button class="side-menu-link" type="button" data-route="catalog" data-close-menu>
+              <svg class="side-menu-icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#icon-hanger" /></svg>
+              <span>КАТАЛОГ</span>
+              <svg class="side-menu-arrow" viewBox="0 0 24 24" aria-hidden="true"><use href="#icon-arrow-right-angled" /></svg>
+            </button>
+
+            <button class="side-menu-link" type="button" data-side-category="new">
+              <svg class="side-menu-icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#icon-hanger" /></svg>
+              <span>НОВЫЕ ПОСТУПЛЕНИЯ</span>
+              <svg class="side-menu-arrow" viewBox="0 0 24 24" aria-hidden="true"><use href="#icon-arrow-right-angled" /></svg>
+            </button>
+
+            <button class="side-menu-link" type="button" data-menu-open-filters>
+              <svg class="side-menu-icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#icon-filter" /></svg>
+              <span>ФИЛЬТРЫ</span>
+              <svg class="side-menu-arrow" viewBox="0 0 24 24" aria-hidden="true"><use href="#icon-arrow-right-angled" /></svg>
+            </button>
+          </div>
+
+          <div class="side-menu-section">
+            <p class="side-menu-label">ACCOUNT</p>
+
+            <button class="side-menu-link" type="button" data-route="cart" data-close-menu>
+              <svg class="side-menu-icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#icon-bag" /></svg>
+              <span>КОРЗИНА</span>
+              <svg class="side-menu-arrow" viewBox="0 0 24 24" aria-hidden="true"><use href="#icon-arrow-right-angled" /></svg>
+            </button>
+
+            <button class="side-menu-link" type="button" data-route="profile" data-close-menu>
+              <svg class="side-menu-icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#icon-profile" /></svg>
+              <span>ПРОФИЛЬ</span>
+              <svg class="side-menu-arrow" viewBox="0 0 24 24" aria-hidden="true"><use href="#icon-arrow-right-angled" /></svg>
+            </button>
+          </div>
+
+          <div class="side-menu-section side-menu-section--support">
+            <p class="side-menu-label">SUPPORT</p>
+
+            <button class="side-menu-link" type="button" data-menu-admin-contact>
+              <svg class="side-menu-icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#icon-profile" /></svg>
+              <span>СВЯЗАТЬСЯ С АДМИНОМ</span>
+              <svg class="side-menu-arrow" viewBox="0 0 24 24" aria-hidden="true"><use href="#icon-arrow-right-angled" /></svg>
+            </button>
+          </div>
+        </div>
+      </aside>
+    </div>
+
+    <section class="screen-panel home-screen is-active" data-screen="home" aria-label="Home">
+      <nav class="category-row category-row--home" aria-label="Store categories">
+        <button class="is-active" type="button" data-category="new">НОВЫЕ ПОСТУПЛЕНИЯ</button>
+        <button type="button" data-category="tees">ФУТБОЛКИ</button>
+        <button type="button" data-category="hoodie">ХУДИ</button>
+        <button type="button" data-category="shoes">ОБУВЬ</button>
+        <button type="button" data-category="shorts">ШОРТЫ</button>
+      </nav>
+
+      <label class="search-row" aria-label="Search">
+        <svg class="search-icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#icon-search" /></svg>
+        <input class="search-input" type="search" placeholder="WHAT ARE YOU LOOKING FOR?" data-search-input data-search-scope="home" autocomplete="off" />
+      </label>
+
+      <section class="hero" aria-label="Fall 26 collection">
+        <img src="./assets/home-hero.png" alt="FOR REAL Fall 26 campaign" />
+      </section>
+
+      <section class="collection-block">
+        <p class="collection-title">FALL 26</p>
+        <p class="collection-subtitle">NEW COLLECTION</p>
+        <button class="catalog-cta" type="button" data-route="catalog">
+          <span>В КАТАЛОГ</span>
+          <svg class="catalog-cta-arrow" viewBox="0 0 24 24" aria-hidden="true"><use href="#icon-arrow-right-angled" /></svg>
+        </button>
+      </section>
+    </section>
+
+    <section class="screen-panel catalog-screen" data-screen="catalog" aria-label="Catalog">
+      <nav class="category-row category-row--catalog" aria-label="Catalog categories">
+        <button class="is-active" type="button" data-category="new">НОВЫЕ ПОСТУПЛЕНИЯ</button>
+        <button type="button" data-category="tees">ФУТБОЛКИ</button>
+        <button type="button" data-category="hoodie">ХУДИ</button>
+        <button type="button" data-category="shoes">ОБУВЬ</button>
+        <button type="button" data-category="shorts">ШОРТЫ</button>
+      </nav>
+
+      <label class="search-row" aria-label="Search catalog">
+        <svg class="search-icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#icon-search" /></svg>
+        <input class="search-input" type="search" placeholder="WHAT ARE YOU LOOKING FOR?" data-search-input data-search-scope="catalog" autocomplete="off" />
+      </label>
+
+      <section class="catalog-content" aria-label="Product catalog">
+        <button class="filter-button" type="button" aria-label="Open filters" data-open-filters>
+          <span>ФИЛЬТРЫ</span>
+          <svg class="filter-icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#icon-filter" /></svg>
+        </button>
+
+        <div class="product-grid" data-product-grid>
+          <article class="product-card" data-route="product" data-product-id="mihara" tabindex="0" role="button" aria-label="Open Mihara Yasuhiro Black Logo Tee">
+            <div class="product-image-wrap">
+              <img src="./assets/product-mihara-black-logo-tee.png" alt="Mihara Yasuhiro Black Logo Tee" />
+            </div>
+            <div class="product-info">
+              <p class="product-brand">MIHARA YASUHIRO</p>
+              <h2>BLACK LOGO TEE</h2>
+              <p class="product-price">12.500₽</p>
+            </div>
+          </article>
+
+          <article class="product-card" data-route="product" data-product-id="rhude" tabindex="0" role="button" aria-label="Open Rhude Black Washed Logo Tee">
+            <div class="product-image-wrap">
+              <img src="./assets/product-rhude-black-washed-logo-tee.png" alt="Rhude Black Washed Logo Tee" />
+            </div>
+            <div class="product-info">
+              <p class="product-brand">RHUDE</p>
+              <h2>BLACK WASHED LOGO TEE</h2>
+              <p class="product-price">10.500₽</p>
+            </div>
+          </article>
+        </div>
+
+        <section class="catalog-empty" data-catalog-empty hidden aria-live="polite">
+          <p>ТОВАРЫ НЕ НАЙДЕНЫ</p>
+          <button type="button" data-catalog-reset>СБРОСИТЬ ФИЛЬТРЫ</button>
+        </section>
+      </section>
+    </section>
+
+    <section class="screen-panel product-screen" data-screen="product" data-parent-tab="catalog" aria-label="Product details">
+      <section class="product-detail-image" aria-label="Mihara Yasuhiro Black Logo Tee image">
+        <img data-product-detail-image src="./assets/product-detail-mihara-black-logo-tee.png" alt="Mihara Yasuhiro Black Logo Tee" />
+      </section>
+
+      <section class="product-detail-content" aria-label="Product information">
+        <div class="product-detail-head">
+          <p class="detail-brand" data-product-detail-brand>MIHARA YASUHIRO</p>
+          <h1 data-product-detail-name>BLACK LOGO TEE</h1>
+          <p class="detail-price" data-product-detail-price>12.500₽</p>
+        </div>
+
+        <div class="size-grid" aria-label="Choose size">
+          <span class="size-selector" aria-hidden="true"></span>
+          <button type="button">S</button>
+          <button class="is-selected" type="button" aria-pressed="true">M</button>
+          <button type="button">L</button>
+          <button type="button">XL</button>
+        </div>
+
+        <button class="add-to-cart" type="button" data-add-to-cart>В КОРЗИНУ</button>
+
+        <button class="details-row" type="button" aria-expanded="false" data-details-toggle>
+          <span>ДЕТАЛИ</span>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><use href="#icon-chevron-down" /></svg>
+        </button>
+
+        <div class="product-details-panel" data-details-panel aria-hidden="true">
+          <div class="product-details-inner" data-product-details-list></div>
+        </div>
+      </section>
+    </section>
+
+    <section class="screen-panel cart-screen" data-screen="cart" aria-label="Cart totals">
+      <section class="cart-content" aria-label="Cart summary">
+        <h1 class="cart-title">ИТОГИ КОРЗИНЫ</h1>
+
+        <div class="cart-items" data-cart-items></div>
+
+        <p class="cart-empty" data-cart-empty>КОРЗИНА ПУСТА</p>
+
+        <section class="cart-total-block" aria-label="Cart final total">
+          <div class="cart-total-row">
+            <span>ИТОГ</span>
+            <strong data-cart-total>12.500₽</strong>
+          </div>
+        </section>
+
+        <button class="purchase-request" type="button" data-open-checkout>ОФОРМИТЬ ЗАКАЗ</button>
+
+        <button class="continue-shopping" type="button" data-route="catalog">
+          <span aria-hidden="true">‹</span>
+          <span>ВЕРНУТЬСЯ В КАТАЛОГ</span>
+        </button>
+      </section>
+    </section>
+
+    <section class="screen-panel profile-screen" data-screen="profile" aria-label="Profile">
+      <label class="search-row profile-search" aria-label="Search profile">
+        <svg class="search-icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#icon-search" /></svg>
+        <input class="search-input" type="search" placeholder="WHAT ARE YOU LOOKING FOR?" data-search-input data-search-scope="profile" autocomplete="off" />
+      </label>
+
+      <section class="profile-content" aria-label="Customer profile">
+        <div class="profile-hero">
+          <div class="profile-avatar" aria-hidden="true">
+            <span class="profile-avatar-head"></span>
+            <span class="profile-avatar-body"></span>
+          </div>
+          <p class="profile-username">@username</p>
+        </div>
+
+        <section class="profile-actions" aria-label="Profile actions">
+          <section class="profile-orders-card is-open" data-orders-card aria-label="My orders preview">
+            <button class="profile-action-card profile-action-card--orders" type="button" aria-label="Open orders" data-orders-toggle aria-expanded="true">
+              <svg class="profile-action-icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#icon-orders" /></svg>
+              <span>MY ORDERS</span>
+              <svg class="profile-arrow-icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#icon-arrow-right-angled" /></svg>
+            </button>
+
+            <div class="profile-orders-panel" data-orders-panel>
+              <article class="profile-order-preview" aria-label="Order FR98271">
+              <div class="profile-order-image">
+                <img src="./assets/product-mihara-black-logo-tee.png" alt="Mihara Yasuhiro Black Logo Tee" />
+              </div>
+              <div class="profile-order-info">
+                <p class="profile-order-number">ORDER #FR98271</p>
+                <p class="profile-order-brand">MIHARA YASUHIRO</p>
+                <p class="profile-order-name">BLACK LOGO TEE</p>
+                <p class="profile-order-size">SIZE M</p>
+              </div>
+              <div class="profile-order-side">
+                <p class="profile-order-price">12.500₽</p>
+                <p class="profile-order-status">• SHIPPED</p>
+              </div>
+              </article>
+            </div>
+          </section>
+
+          <button class="profile-action-card" type="button" data-route="cart" aria-label="Open cart">
+            <svg class="profile-action-icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#icon-bag" /></svg>
+            <span>CART</span>
+            <svg class="profile-arrow-icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#icon-arrow-right-angled" /></svg>
+          </button>
+
+          <section class="profile-info-card" data-info-card aria-label="Info section">
+            <button class="profile-action-card profile-action-card--info" type="button" aria-label="Open information" data-info-toggle aria-expanded="false">
+              <svg class="profile-action-icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#icon-info" /></svg>
+              <span>INFO</span>
+              <svg class="profile-arrow-icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#icon-arrow-right-angled" /></svg>
+            </button>
+
+            <div class="profile-info-panel" data-info-panel>
+              <div class="profile-info-empty">ИНФОРМАЦИЯ БУДЕТ ДОБАВЛЕНА</div>
+            </div>
+          </section>
+        </section>
+      </section>
+    </section>
+
+
+    <div class="filter-overlay" data-filter-overlay aria-hidden="true">
+      <button class="filter-backdrop" type="button" data-close-filters aria-label="Close filters"></button>
+      <section class="filter-sheet" role="dialog" aria-modal="true" aria-labelledby="filter-title">
+        <header class="filter-sheet-head">
+          <h2 id="filter-title">ФИЛЬТРЫ</h2>
+          <button class="filter-close" type="button" data-close-filters aria-label="Close filters">×</button>
+        </header>
+
+        <div class="filter-sheet-body">
+          <section class="filter-group" aria-label="Filter by category">
+            <p class="filter-group-title">CATEGORIES</p>
+            <div class="filter-options filter-options--wide">
+              <button class="filter-option is-active" type="button" data-filter-group="category" data-filter-value="all">ВСЕ КАТЕГОРИИ</button>
+              <button class="filter-option" type="button" data-filter-group="category" data-filter-value="new">НОВЫЕ ПОСТУПЛЕНИЯ</button>
+              <button class="filter-option" type="button" data-filter-group="category" data-filter-value="tees">ФУТБОЛКИ</button>
+              <button class="filter-option" type="button" data-filter-group="category" data-filter-value="hoodie">ХУДИ</button>
+              <button class="filter-option" type="button" data-filter-group="category" data-filter-value="zip">ЗИП-ХУДИ</button>
+              <button class="filter-option" type="button" data-filter-group="category" data-filter-value="shorts">ШОРТЫ</button>
+              <button class="filter-option" type="button" data-filter-group="category" data-filter-value="accessories">АКСЕССУАРЫ</button>
+              <button class="filter-option" type="button" data-filter-group="category" data-filter-value="shoes">ОБУВЬ</button>
+            </div>
+          </section>
+
+          <section class="filter-group" aria-label="Filter by size">
+            <p class="filter-group-title">SIZES</p>
+            <div class="filter-options filter-options--sizes">
+              <button class="filter-option" type="button" data-filter-group="size" data-filter-value="s">S</button>
+              <button class="filter-option" type="button" data-filter-group="size" data-filter-value="m">M</button>
+              <button class="filter-option" type="button" data-filter-group="size" data-filter-value="l">L</button>
+              <button class="filter-option" type="button" data-filter-group="size" data-filter-value="xl">XL</button>
+            </div>
+          </section>
+
+          <section class="filter-group" aria-label="Filter by brand">
+            <p class="filter-group-title">BRANDS</p>
+            <div class="filter-options filter-options--brands">
+              <button class="filter-option is-active" type="button" data-filter-group="brand" data-filter-value="all">ALL</button>
+              <button class="filter-option" type="button" data-filter-group="brand" data-filter-value="mihara">MIHARA YASUHIRO</button>
+              <button class="filter-option" type="button" data-filter-group="brand" data-filter-value="rhude">RHUDE</button>
+            </div>
+          </section>
+
+          <section class="filter-group" aria-label="Sort products">
+            <p class="filter-group-title">СОРТИРОВКА</p>
+            <div class="filter-options filter-options--sort">
+              <button class="filter-option is-active" type="button" data-filter-group="sort" data-filter-value="newest">ПО НОВИЗНЕ</button>
+              <button class="filter-option" type="button" data-filter-group="sort" data-filter-value="price-desc">ЦЕНА: ОТ БОЛЬШЕЙ</button>
+              <button class="filter-option" type="button" data-filter-group="sort" data-filter-value="price-asc">ЦЕНА: ОТ МЕНЬШЕЙ</button>
+            </div>
+          </section>
+        </div>
+
+        <footer class="filter-actions">
+          <button class="filter-apply" type="button" data-close-filters>ПРИМЕНИТЬ</button>
+          <button class="filter-reset" type="button" data-reset-filters>СБРОСИТЬ</button>
+        </footer>
+      </section>
+    </div>
+
+
+    <div class="checkout-overlay" data-checkout-overlay aria-hidden="true">
+      <button class="checkout-backdrop" type="button" data-close-checkout aria-label="Закрыть оформление заказа"></button>
+      <section class="checkout-sheet" role="dialog" aria-modal="true" aria-labelledby="checkout-title">
+        <header class="checkout-sheet-head">
+          <h2 id="checkout-title">ОФОРМЛЕНИЕ ЗАКАЗА</h2>
+          <button class="checkout-close" type="button" data-close-checkout aria-label="Закрыть оформление заказа">×</button>
+        </header>
+
+        <div class="checkout-sheet-body">
+          <section class="checkout-group" aria-label="Выбор способа доставки">
+            <p class="checkout-group-title">СПОСОБ ДОСТАВКИ</p>
+
+            <div class="delivery-methods">
+              <article class="delivery-method is-active" data-delivery-card="pickup">
+                <button class="delivery-method-head" type="button" data-delivery-method="pickup" aria-expanded="true">
+                  <span class="delivery-radio" aria-hidden="true"></span>
+                  <span class="delivery-name">САМОВЫВОЗ</span>
+                </button>
+
+                <div class="delivery-form" data-delivery-form="pickup">
+                  <div class="checkout-fields checkout-fields--notice">
+                    <div class="pickup-note" role="note">
+                      <p>Для самовывоза свяжитесь с админом.</p>
+                      <span>Нажмите «ОФОРМИТЬ ЗАКАЗ» — откроется чат с админом, чтобы согласовать время и место выдачи.</span>
+                    </div>
+                  </div>
+                </div>
+              </article>
+
+              <article class="delivery-method" data-delivery-card="cdek">
+                <button class="delivery-method-head" type="button" data-delivery-method="cdek" aria-expanded="false">
+                  <span class="delivery-radio" aria-hidden="true"></span>
+                  <span class="delivery-name">CDEK</span>
+                </button>
+
+                <div class="delivery-form" data-delivery-form="cdek">
+                  <div class="checkout-fields">
+                    <label class="checkout-field">
+                      <span>ФИО получателя</span>
+                      <input type="text" name="cdek-name" placeholder="Иванов Иван Иванович" autocomplete="name" />
+                    </label>
+
+                    <label class="checkout-field">
+                      <span>Номер телефона</span>
+                      <input type="tel" name="cdek-phone" placeholder="+7 999 000 00 00" autocomplete="tel" />
+                    </label>
+
+                    <label class="checkout-field">
+                      <span>Город</span>
+                      <input type="text" name="cdek-city" placeholder="Москва" autocomplete="address-level2" />
+                    </label>
+
+                    <label class="checkout-field">
+                      <span>ПВЗ СДЭК / полный адрес доставки</span>
+                      <input type="text" name="cdek-address" placeholder="Пункт выдачи или адрес" autocomplete="street-address" />
+                    </label>
+
+                  </div>
+                </div>
+              </article>
+
+              <article class="delivery-method" data-delivery-card="yandex">
+                <button class="delivery-method-head" type="button" data-delivery-method="yandex" aria-expanded="false">
+                  <span class="delivery-radio" aria-hidden="true"></span>
+                  <span class="delivery-name">ЯНДЕКС ДОСТАВКА</span>
+                </button>
+
+                <div class="delivery-form" data-delivery-form="yandex">
+                  <div class="checkout-fields">
+                    <label class="checkout-field">
+                      <span>ФИО получателя</span>
+                      <input type="text" name="yandex-name" placeholder="Иванов Иван Иванович" autocomplete="name" />
+                    </label>
+
+                    <label class="checkout-field">
+                      <span>Номер телефона</span>
+                      <input type="tel" name="yandex-phone" placeholder="+7 999 000 00 00" autocomplete="tel" />
+                    </label>
+
+                    <label class="checkout-field">
+                      <span>Город</span>
+                      <input type="text" name="yandex-city" placeholder="Москва" autocomplete="address-level2" />
+                    </label>
+
+                    <label class="checkout-field">
+                      <span>Адрес / ПВЗ / постамат Яндекс</span>
+                      <input type="text" name="yandex-address" placeholder="Пункт выдачи, постамат или адрес" autocomplete="street-address" />
+                    </label>
+
+                  </div>
+                </div>
+              </article>
+            </div>
+          </section>
+
+          <section class="checkout-comment" aria-label="Комментарий">
+            <label class="checkout-comment-field">
+              <span>КОММЕНТАРИЙ</span>
+              <textarea name="order-comment" placeholder="Напишите важные детали по заказу"></textarea>
+            </label>
+          </section>
+        </div>
+
+        <footer class="checkout-actions">
+          <button class="checkout-submit" type="button">ОФОРМИТЬ ЗАКАЗ</button>
+        </footer>
+      </section>
+    </div>
+    <nav class="bottom-nav" aria-label="Main navigation">
+      <span class="nav-indicator" aria-hidden="true"></span>
+
+      <button class="nav-item is-active" type="button" data-tab="home" aria-current="page">
+        <svg class="nav-icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#icon-home" /></svg>
+        <span>ГЛАВНАЯ</span>
+      </button>
+
+      <button class="nav-item" type="button" data-tab="catalog">
+        <svg class="nav-icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#icon-hanger" /></svg>
+        <span>КАТАЛОГ</span>
+      </button>
+
+      <button class="nav-item" type="button" data-tab="cart">
+        <svg class="nav-icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#icon-bag" /></svg>
+        <span>КОРЗИНА</span>
+      </button>
+
+      <button class="nav-item" type="button" data-tab="profile">
+        <svg class="nav-icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#icon-profile" /></svg>
+        <span>ПРОФИЛЬ</span>
+      </button>
+    </nav>
+  </main>
+
+  <script src="./app.js"></script>
+</body>
+</html>

@@ -1,0 +1,8 @@
+aiogram>=3,<4
+fastapi
+uvicorn
+aiosqlite
+python-dotenv
+httpx
+pydantic
+python-multipart
