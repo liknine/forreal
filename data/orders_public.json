@@ -1,0 +1,83 @@
+[
+  {
+    "id": "4110a22e-17a9-46d9-b1ef-01d1b30b39ce",
+    "orderNumber": 1003,
+    "clientOrderId": "forreal-1782851271276-16e6edd02d408",
+    "telegramId": 1639462053,
+    "username": "liknine",
+    "items": [
+      {
+        "productId": "test-black-hoodie-aa037053",
+        "brand": "TEST",
+        "name": "BLACK HOODIE",
+        "size": "S",
+        "quantity": 1,
+        "price": 20500,
+        "image": "images/products/test-black-hoodie-aa037053-1.jpg"
+      }
+    ],
+    "totalPrice": 20500,
+    "currency": "RUB",
+    "deliveryMethod": "cdek",
+    "status": "awaiting_payment",
+    "createdAt": "2026-06-30T20:27:51.413753+00:00",
+    "updatedAt": "2026-06-30T20:27:51.413753+00:00"
+  },
+  {
+    "id": "62c825be-5373-47c1-bd66-da9c196bc5b9",
+    "orderNumber": 1002,
+    "clientOrderId": "forreal-1782848859609-4ad8566b3f034",
+    "telegramId": 1639462053,
+    "username": "liknine",
+    "items": [
+      {
+        "productId": "balenciaga-political-logo-tee-5fb6ab73",
+        "brand": "BALENCIAGA",
+        "name": "POLITICAL LOGO TEE",
+        "size": "S",
+        "quantity": 1,
+        "price": 16500,
+        "image": "images/products/balenciaga-political-logo-tee-5fb6ab73-1.jpg"
+      }
+    ],
+    "totalPrice": 16500,
+    "currency": "RUB",
+    "deliveryMethod": "cdek",
+    "status": "paid",
+    "createdAt": "2026-06-30T19:47:39.779753+00:00",
+    "updatedAt": "2026-06-30T19:48:20.778579+00:00"
+  },
+  {
+    "id": "c845f98a-4491-4fd0-aa74-adc41adbc57d",
+    "orderNumber": 1001,
+    "clientOrderId": "forreal-1782848153119-5e57d02b2aa7d",
+    "telegramId": 1639462053,
+    "username": "liknine",
+    "items": [
+      {
+        "productId": "maison-margiela-evolution-3b058466",
+        "brand": "MAISON MARGIELA",
+        "name": "EVOLUTION",
+        "size": "43",
+        "quantity": 1,
+        "price": 25000,
+        "image": "images/products/maison-margiela-evolution-3b058466-1.jpg"
+      },
+      {
+        "productId": "test-black-hoodie-aa037053",
+        "brand": "TEST",
+        "name": "BLACK HOODIE",
+        "size": "S",
+        "quantity": 1,
+        "price": 20500,
+        "image": "images/products/test-black-hoodie-aa037053-1.jpg"
+      }
+    ],
+    "totalPrice": 45500,
+    "currency": "RUB",
+    "deliveryMethod": "cdek",
+    "status": "paid",
+    "createdAt": "2026-06-30T19:35:53.243202+00:00",
+    "updatedAt": "2026-06-30T19:39:26.570082+00:00"
+  }
+]
