@@ -4,12 +4,12 @@ const navItems = [...document.querySelectorAll('.nav-item')];
 const panels = [...document.querySelectorAll('.screen-panel')];
 const routeButtons = [...document.querySelectorAll('[data-route]')];
 const sizeGrid = document.querySelector('.size-grid');
-const sizeButtons = [...document.querySelectorAll('.size-grid button')];
+let sizeButtons = [...document.querySelectorAll('.size-grid button')];
 const openFiltersButton = document.querySelector('[data-open-filters]');
 const filterOverlay = document.querySelector('[data-filter-overlay]');
 const closeFiltersButtons = [...document.querySelectorAll('[data-close-filters]')];
 const resetFiltersButton = document.querySelector('[data-reset-filters]');
-const filterOptions = [...document.querySelectorAll('.filter-option')];
+let filterOptions = [...document.querySelectorAll('.filter-option')];
 const categoryButtons = [...document.querySelectorAll('.category-row button[data-category]')];
 const openCheckoutButton = document.querySelector('[data-open-checkout]');
 const checkoutOverlay = document.querySelector('[data-checkout-overlay]');
@@ -18,7 +18,7 @@ const deliveryButtons = [...document.querySelectorAll('[data-delivery-method]')]
 const deliveryCards = [...document.querySelectorAll('[data-delivery-card]')];
 const checkoutSubmitButton = document.querySelector('.checkout-submit');
 const adminContactUrl = document.body?.dataset.adminContactUrl || '';
-const productCards = [...document.querySelectorAll('[data-product-id]')];
+let productCards = [...document.querySelectorAll('[data-product-id]')];
 const addToCartButton = document.querySelector('[data-add-to-cart]');
 const productDetailImage = document.querySelector('[data-product-detail-image]');
 const productDetailBrand = document.querySelector('[data-product-detail-brand]');
@@ -58,42 +58,17 @@ let activeNavTab = document.querySelector('.nav-item.is-active')?.dataset.tab ||
 let isTransitioning = false;
 let transitionTimer = null;
 
-const products = {
-  mihara: {
-    id: 'mihara',
-    brand: 'MIHARA YASUHIRO',
-    name: 'BLACK LOGO TEE',
-    price: 12500,
-    priceLabel: '12.500₽',
-    image: './assets/product-mihara-black-logo-tee.png',
-    detailImage: './assets/product-detail-mihara-black-logo-tee.png',
-    defaultSize: 'M',
-    categories: ['new', 'tees'],
-    sizes: ['S', 'M', 'L', 'XL'],
-    brandFilter: 'mihara',
-    order: 2,
-  },
-  rhude: {
-    id: 'rhude',
-    brand: 'RHUDE',
-    name: 'BLACK WASHED LOGO TEE',
-    price: 10500,
-    priceLabel: '10.500₽',
-    image: './assets/product-rhude-black-washed-logo-tee.png',
-    detailImage: './assets/product-rhude-black-washed-logo-tee.png',
-    defaultSize: 'M',
-    categories: ['new', 'tees'],
-    sizes: ['M', 'L', 'XL'],
-    brandFilter: 'rhude',
-    order: 1,
-  },
-};
+let products = {};
+const PRODUCTS_URL = './data/products.json';
+const ADMIN_USERNAME = 'woodyqqqq';
 
 const categoryLabels = {
   new: 'НОВЫЕ ПОСТУПЛЕНИЯ',
   tees: 'ФУТБОЛКИ',
   hoodie: 'ХУДИ',
+  hoodies: 'ХУДИ',
   zip: 'ЗИП-ХУДИ',
+  zip_hoodies: 'ЗИП-ХУДИ',
   shorts: 'ШОРТЫ',
   accessories: 'АКСЕССУАРЫ',
   shoes: 'ОБУВЬ',
@@ -103,10 +78,10 @@ let isDetailsOpen = false;
 let isOrdersOpen = true;
 let isInfoOpen = false;
 
-let currentProductId = 'mihara';
-const selectedSizes = { mihara: 'M', rhude: 'M' };
-let cart = [];
-const productCardMap = new Map(productCards.map((card) => [card.dataset.productId, card]));
+let currentProductId = null;
+const selectedSizes = {};
+let cart = loadCart();
+let productCardMap = new Map();
 const filterState = { category: 'all', size: null, brand: 'all', sort: 'newest', query: '' };
 
 function getPanel(screen) {
@@ -171,6 +146,160 @@ function normalizeSearch(value) {
   return String(value || '').toLowerCase().replace(/ё/g, 'е').trim();
 }
 
+
+function loadCart() {
+  try {
+    const raw = window.localStorage?.getItem('forreal_cart_v1');
+    const parsed = raw ? JSON.parse(raw) : [];
+    return Array.isArray(parsed) ? parsed : [];
+  } catch (error) {
+    return [];
+  }
+}
+
+function saveCart() {
+  try {
+    window.localStorage?.setItem('forreal_cart_v1', JSON.stringify(cart));
+  } catch (error) {
+    // localStorage can be blocked in some Telegram contexts; cart still works in memory.
+  }
+}
+
+function normalizeCategory(value) {
+  const normalized = normalizeSearch(value).replace(/\s+/g, ' ');
+  const map = {
+    'футболки': 'tees',
+    'худи': 'hoodie',
+    'зип-худи': 'zip',
+    'зип худи': 'zip',
+    'шорты': 'shorts',
+    'аксессуары': 'accessories',
+    'обувь': 'shoes',
+    'tees': 'tees',
+    'tee': 'tees',
+    'hoodie': 'hoodie',
+    'hoodies': 'hoodie',
+    'zip': 'zip',
+    'zip_hoodies': 'zip',
+    'shorts': 'shorts',
+    'accessories': 'accessories',
+    'shoes': 'shoes',
+  };
+  return map[normalized] || value || 'catalog';
+}
+
+function resolveAssetUrl(path) {
+  const value = String(path || '').trim();
+  if (!value) return './assets/product-mihara-black-logo-tee.png';
+  if (/^(https?:|data:|blob:|\/\/)/i.test(value)) return value;
+  if (value.startsWith('./') || value.startsWith('../')) return value;
+  return `./${value.replace(/^\/+/, '')}`;
+}
+
+function normalizeProduct(raw, index = 0) {
+  if (!raw || typeof raw !== 'object') return null;
+  if (raw.isActive === false) return null;
+
+  const id = String(raw.id || `product-${index + 1}`).trim();
+  const brand = String(raw.brand || '').trim();
+  const name = String(raw.name || '').trim();
+  if (!id || !name) return null;
+
+  const imageList = Array.isArray(raw.images) ? raw.images.filter(Boolean) : [];
+  const primaryImage = raw.image || raw.detailImage || imageList[0] || '';
+  const detailImage = raw.detailImage || imageList[0] || raw.image || primaryImage;
+  const stock = raw.sizeStock && typeof raw.sizeStock === 'object' ? raw.sizeStock : {};
+  const sizes = Array.isArray(raw.sizes)
+    ? raw.sizes.map((size) => String(size).trim()).filter(Boolean)
+    : Object.keys(stock);
+  const categoryKey = normalizeCategory(raw.category);
+  const createdTime = Date.parse(raw.createdAt || '') || 0;
+
+  return {
+    id,
+    brand,
+    name,
+    price: Number(raw.price || 0),
+    priceLabel: formatRub(raw.price || 0),
+    image: resolveAssetUrl(primaryImage),
+    detailImage: resolveAssetUrl(detailImage || primaryImage),
+    images: imageList.map(resolveAssetUrl),
+    defaultSize: firstAvailableSize({ sizes, sizeStock: stock }) || sizes[0] || '',
+    categories: [categoryKey],
+    categoryKey,
+    sizes,
+    sizeStock: stock,
+    brandFilter: normalizeSearch(brand).replace(/[^a-zа-я0-9]+/gi, '-').replace(/^-+|-+$/g, '') || 'brand',
+    order: createdTime ? -createdTime : index,
+    createdAt: raw.createdAt || '',
+    createdTime,
+    details: raw.details || raw.description || '',
+    raw,
+  };
+}
+
+async function loadProducts() {
+  try {
+    const response = await fetch(`${PRODUCTS_URL}?v=${Date.now()}`, { cache: 'no-store' });
+    if (!response.ok) throw new Error(`products.json ${response.status}`);
+    const payload = await response.json();
+    const source = Array.isArray(payload) ? payload : Array.isArray(payload.products) ? payload.products : [];
+    const normalized = source.map(normalizeProduct).filter(Boolean);
+    products = Object.fromEntries(normalized.map((product) => [product.id, product]));
+  } catch (error) {
+    console.warn('ForReal: products.json not loaded', error);
+    products = {};
+  }
+
+  productCards = [];
+  productCardMap = new Map();
+  rebuildBrandFilters();
+  syncCartWithProducts();
+  ensureCurrentProduct();
+}
+
+function firstAvailableSize(product) {
+  if (!product) return '';
+  return (product.sizes || []).find((size) => Number(product.sizeStock?.[size] ?? 0) > 0) || '';
+}
+
+function isSizeAvailable(product, size) {
+  if (!product || !size) return false;
+  return Number(product.sizeStock?.[size] ?? 0) > 0;
+}
+
+function hasAnyStock(product) {
+  return Boolean(firstAvailableSize(product));
+}
+
+function getNewestProductIds(limit = 6) {
+  return Object.values(products)
+    .filter(hasAnyStock)
+    .sort((a, b) => (b.createdTime || 0) - (a.createdTime || 0))
+    .slice(0, limit)
+    .map((product) => product.id);
+}
+
+function rebuildBrandFilters() {
+  const container = document.querySelector('.filter-options--brands');
+  if (!container) return;
+  const brands = [...new Map(Object.values(products)
+    .filter((product) => product.brand)
+    .map((product) => [product.brandFilter, product.brand])).entries()]
+    .sort((a, b) => a[1].localeCompare(b[1]));
+
+  container.innerHTML = '<button class="filter-option" type="button" data-filter-group="brand" data-filter-value="all">ALL</button>' +
+    brands.map(([value, label]) => `<button class="filter-option" type="button" data-filter-group="brand" data-filter-value="${value}">${label}</button>`).join('');
+
+  filterOptions = [...document.querySelectorAll('.filter-option')];
+  bindFilterOptions();
+}
+
+function syncCartWithProducts() {
+  cart = cart.filter((item) => products[item.productId]);
+  saveCart();
+}
+
 function syncSearchInputs() {
   searchInputs.forEach((input) => {
     if (input.value !== filterState.query) input.value = filterState.query;
@@ -178,7 +307,7 @@ function syncSearchInputs() {
 }
 
 function getCurrentProduct() {
-  return products[currentProductId] || products.mihara;
+  return products[currentProductId] || Object.values(products)[0] || null;
 }
 
 function setSelectedSize(size) {
@@ -199,7 +328,7 @@ function syncSelectedSizeButtons(size) {
 }
 
 function getProductCategoryLabel(product) {
-  const category = product.categories.find((item) => item !== 'new');
+  const category = product?.categoryKey || product?.categories?.[0];
   return categoryLabels[category] || 'КАТАЛОГ';
 }
 
@@ -211,10 +340,16 @@ function refreshDetailsPanelHeight() {
 function renderProductDetails(product) {
   if (!productDetailsList || !product) return;
 
+  const stockText = (product.sizes || [])
+    .map((size) => `${size}: ${Number(product.sizeStock?.[size] ?? 0)}`)
+    .join(' / ');
+
   productDetailsList.innerHTML = `
     <p><span>БРЕНД</span><strong>${product.brand}</strong></p>
     <p><span>КАТЕГОРИЯ</span><strong>${getProductCategoryLabel(product)}</strong></p>
     <p><span>РАЗМЕРЫ</span><strong>${product.sizes.join(' / ')}</strong></p>
+    ${stockText ? `<p><span>ОСТАТОК</span><strong>${stockText}</strong></p>` : ''}
+    ${product.details ? `<p><span>ОПИСАНИЕ</span><strong>${product.details}</strong></p>` : ''}
   `;
 
   requestAnimationFrame(refreshDetailsPanelHeight);
@@ -239,12 +374,52 @@ function setDetailsOpen(open) {
   }
 }
 
+function renderSizeButtons(product) {
+  if (!sizeGrid) return;
+
+  const sizes = product?.sizes?.length ? product.sizes : [];
+  const selected = selectedSizes[product?.id] || firstAvailableSize(product) || sizes[0] || '';
+
+  sizeGrid.innerHTML = '<span class="size-selector" aria-hidden="true"></span>' + sizes.map((size) => {
+    const available = isSizeAvailable(product, size);
+    const isSelected = size === selected;
+    return `<button type="button" ${isSelected ? 'class="is-selected" aria-pressed="true"' : 'aria-pressed="false"'} ${available ? '' : 'disabled aria-disabled="true"'}>${size}</button>`;
+  }).join('');
+
+  sizeButtons = [...sizeGrid.querySelectorAll('button')];
+  bindSizeButtons();
+  requestAnimationFrame(() => updateSizeSelector(sizeGrid.querySelector('button.is-selected')));
+}
+
+function ensureCurrentProduct() {
+  if (currentProductId && products[currentProductId]) return;
+  currentProductId = Object.values(products)[0]?.id || null;
+}
+
 function setCurrentProduct(productId) {
-  const product = products[productId] || products.mihara;
+  const product = products[productId] || products[currentProductId] || Object.values(products)[0] || null;
+
+  if (!product) {
+    currentProductId = null;
+    if (productDetailBrand) productDetailBrand.textContent = '';
+    if (productDetailName) productDetailName.textContent = 'ТОВАРЫ НЕ ДОБАВЛЕНЫ';
+    if (productDetailPrice) productDetailPrice.textContent = '';
+    if (addToCartButton) {
+      addToCartButton.disabled = true;
+      addToCartButton.textContent = 'НЕТ В НАЛИЧИИ';
+    }
+    renderSizeButtons(null);
+    return;
+  }
+
   currentProductId = product.id;
+  const availableSize = firstAvailableSize(product);
+  if (!selectedSizes[product.id] || !isSizeAvailable(product, selectedSizes[product.id])) {
+    selectedSizes[product.id] = availableSize || product.sizes[0] || '';
+  }
 
   if (productDetailImage) {
-    productDetailImage.src = product.detailImage;
+    productDetailImage.src = product.detailImage || product.image;
     productDetailImage.alt = `${product.brand} ${product.name}`;
   }
 
@@ -252,8 +427,15 @@ function setCurrentProduct(productId) {
   if (productDetailName) productDetailName.textContent = product.name;
   if (productDetailPrice) productDetailPrice.textContent = product.priceLabel;
 
+  if (addToCartButton) {
+    const available = Boolean(availableSize);
+    addToCartButton.disabled = !available;
+    addToCartButton.setAttribute('aria-disabled', String(!available));
+    addToCartButton.textContent = available ? 'В КОРЗИНУ' : 'НЕТ В НАЛИЧИИ';
+  }
+
   renderProductDetails(product);
-  syncSelectedSizeButtons(selectedSizes[product.id] || product.defaultSize);
+  renderSizeButtons(product);
 }
 
 function updateCartCounter() {
@@ -265,26 +447,33 @@ function updateCartCounter() {
   cartCountBadge.setAttribute('aria-label', `${count} товаров в корзине`);
 }
 
+function isCartItemAvailable(item) {
+  const product = products[item.productId];
+  return Boolean(product && isSizeAvailable(product, item.size));
+}
+
 function renderCart() {
   if (!cartItemsRoot || !cartEmpty || !cartTotal) return;
 
   cartItemsRoot.innerHTML = '';
   const hasItems = cart.length > 0;
+  const hasUnavailable = cart.some((item) => !isCartItemAvailable(item));
   cartEmpty.hidden = hasItems;
 
   if (cartTotalBlock) cartTotalBlock.hidden = !hasItems;
   if (purchaseRequestButton) {
     purchaseRequestButton.hidden = !hasItems;
-    purchaseRequestButton.disabled = !hasItems;
-    purchaseRequestButton.setAttribute('aria-disabled', String(!hasItems));
+    purchaseRequestButton.disabled = !hasItems || hasUnavailable;
+    purchaseRequestButton.setAttribute('aria-disabled', String(!hasItems || hasUnavailable));
   }
 
   cart.forEach((item) => {
     const product = products[item.productId];
     if (!product) return;
 
+    const available = isSizeAvailable(product, item.size);
     const article = document.createElement('article');
-    article.className = 'cart-item';
+    article.className = `cart-item${available ? '' : ' is-unavailable'}`;
     article.setAttribute('aria-label', `${product.brand} ${product.name} в корзине`);
     article.innerHTML = `
       <div class="cart-item-top">
@@ -295,6 +484,7 @@ function renderCart() {
         <div class="cart-item-info">
           <p class="cart-item-brand">${product.brand}</p>
           <h2>${product.name}</h2>
+          ${available ? '' : '<p class="cart-unavailable-note">Товар уже не в наличии</p>'}
           <button class="cart-remove" type="button" data-remove-cart="${product.id}">УДАЛИТЬ</button>
         </div>
       </div>
@@ -308,20 +498,28 @@ function renderCart() {
     cartItemsRoot.append(article);
   });
 
-  const total = cart.reduce((sum, item) => sum + (products[item.productId]?.price || 0), 0);
+  const total = cart.reduce((sum, item) => {
+    if (!isCartItemAvailable(item)) return sum;
+    return sum + (products[item.productId]?.price || 0) * (Number(item.quantity) || 1);
+  }, 0);
   cartTotal.textContent = formatRub(total);
   updateCartCounter();
+  saveCart();
 }
 
 function addCurrentProductToCart() {
   const product = getCurrentProduct();
-  const size = selectedSizes[product.id] || product.defaultSize;
-  const existing = cart.find((item) => item.productId === product.id);
+  if (!product) return;
+
+  const size = selectedSizes[product.id] || firstAvailableSize(product);
+  if (!isSizeAvailable(product, size)) return;
+
+  const existing = cart.find((item) => item.productId === product.id && item.size === size);
 
   if (existing) {
-    existing.size = size;
+    existing.quantity = 1;
   } else {
-    cart.push({ productId: product.id, size });
+    cart.push({ productId: product.id, size, quantity: 1 });
   }
 
   renderCart();
@@ -454,17 +652,20 @@ function syncFilterOptions() {
 
 function getFilteredProductIds() {
   const query = normalizeSearch(filterState.query);
+  const newestIds = new Set(getNewestProductIds(6));
 
   let list = Object.values(products).filter((product) => {
-    const matchesCategory = filterState.category === 'all' || !filterState.category || product.categories.includes(filterState.category);
+    const matchesCategory = filterState.category === 'all' || !filterState.category
+      || (filterState.category === 'new' ? newestIds.has(product.id) : product.categories.includes(filterState.category));
     const matchesBrand = filterState.brand === 'all' || product.brandFilter === filterState.brand;
-    const matchesSize = !filterState.size || product.sizes.map((size) => size.toLowerCase()).includes(filterState.size);
+    const matchesSize = !filterState.size || isSizeAvailable(product, filterState.size.toUpperCase()) || product.sizes.map((size) => size.toLowerCase()).includes(filterState.size);
     const productSearchText = normalizeSearch([
       product.brand,
       product.name,
       product.priceLabel,
       getProductCategoryLabel(product),
       product.sizes.join(' '),
+      product.details,
     ].join(' '));
     const matchesSearch = !query || productSearchText.includes(query);
 
@@ -476,10 +677,31 @@ function getFilteredProductIds() {
   } else if (filterState.sort === 'price-asc') {
     list = [...list].sort((a, b) => a.price - b.price);
   } else {
-    list = [...list].sort((a, b) => a.order - b.order);
+    list = [...list].sort((a, b) => (b.createdTime || 0) - (a.createdTime || 0));
   }
 
   return list.map((product) => product.id);
+}
+
+function createProductCard(product) {
+  const article = document.createElement('article');
+  article.className = 'product-card';
+  article.dataset.route = 'product';
+  article.dataset.productId = product.id;
+  article.tabIndex = 0;
+  article.setAttribute('role', 'button');
+  article.setAttribute('aria-label', `Open ${product.brand} ${product.name}`);
+  article.innerHTML = `
+    <div class="product-image-wrap">
+      <img src="${product.image}" alt="${product.brand} ${product.name}" />
+    </div>
+    <div class="product-info">
+      <p class="product-brand">${product.brand}</p>
+      <h2>${product.name}</h2>
+      <p class="product-price">${product.priceLabel}</p>
+    </div>
+  `;
+  return article;
 }
 
 function renderCatalog() {
@@ -494,10 +716,13 @@ function renderCatalog() {
   if (catalogEmpty) catalogEmpty.hidden = hasProducts;
 
   const visibleCards = productIds
-    .map((productId) => productCardMap.get(productId))
-    .filter(Boolean);
+    .map((productId) => products[productId])
+    .filter(Boolean)
+    .map(createProductCard);
 
   productGrid.replaceChildren(...visibleCards);
+  productCards = [...productGrid.querySelectorAll('[data-product-id]')];
+  productCardMap = new Map(productCards.map((card) => [card.dataset.productId, card]));
 }
 
 function resetFilters() {
@@ -597,18 +822,38 @@ function getActiveDeliveryMethod() {
   return document.querySelector('.delivery-method.is-active')?.dataset.deliveryCard || 'pickup';
 }
 
+function buildPickupMessage() {
+  const lines = ['Привет, хочу заказать:', ''];
+  const validItems = cart.filter(isCartItemAvailable);
+  validItems.forEach((item, index) => {
+    const product = products[item.productId];
+    lines.push(`${index + 1}. ${product.brand} — ${product.name}`);
+    lines.push(`Размер: ${item.size}`);
+    lines.push(`Цена: ${product.priceLabel}`);
+    lines.push(`Фото: ${new URL((product.images?.[0] || product.image).replace(/^\.\//, ''), window.location.href).href}`);
+    lines.push('');
+  });
+  const total = validItems.reduce((sum, item) => sum + (products[item.productId]?.price || 0), 0);
+  lines.push(`Итого: ${formatRub(total)}`);
+  lines.push('Способ получения: Самовывоз');
+  return lines.join('\n');
+}
+
 function openAdminChat() {
-  if (!adminContactUrl) return;
+  const message = cart.length ? buildPickupMessage() : '';
+  const url = `https://t.me/${ADMIN_USERNAME}${message ? `?text=${encodeURIComponent(message)}` : ''}`;
 
   if (window.Telegram?.WebApp?.openTelegramLink) {
-    window.Telegram.WebApp.openTelegramLink(adminContactUrl);
+    window.Telegram.WebApp.openTelegramLink(url);
     return;
   }
 
-  window.open(adminContactUrl, '_blank', 'noopener,noreferrer');
+  window.open(url, '_blank', 'noopener,noreferrer');
 }
 
 function submitCheckout() {
+  if (cart.length === 0 || cart.some((item) => !isCartItemAvailable(item))) return;
+
   if (getActiveDeliveryMethod() === 'pickup') {
     openAdminChat();
   }
@@ -710,6 +955,25 @@ routeButtons.forEach((button) => {
   });
 });
 
+
+if (productGrid) {
+  productGrid.addEventListener('click', (event) => {
+    const card = event.target.closest('[data-product-id]');
+    if (!card) return;
+    setCurrentProduct(card.dataset.productId);
+    setActive('product');
+  });
+
+  productGrid.addEventListener('keydown', (event) => {
+    if (event.key !== 'Enter' && event.key !== ' ') return;
+    const card = event.target.closest('[data-product-id]');
+    if (!card) return;
+    event.preventDefault();
+    setCurrentProduct(card.dataset.productId);
+    setActive('product');
+  });
+}
+
 if (addToCartButton) {
   addToCartButton.addEventListener('click', addCurrentProductToCart);
 }
@@ -757,24 +1021,30 @@ closeFiltersButtons.forEach((button) => {
   button.addEventListener('click', closeFilters);
 });
 
-filterOptions.forEach((button) => {
-  button.addEventListener('click', () => {
-    const group = button.dataset.filterGroup;
-    const value = button.dataset.filterValue;
+function bindFilterOptions() {
+  filterOptions.forEach((button) => {
+    if (button.dataset.boundFilter === 'true') return;
+    button.dataset.boundFilter = 'true';
+    button.addEventListener('click', () => {
+      const group = button.dataset.filterGroup;
+      const value = button.dataset.filterValue;
 
-    if (group === 'size') {
-      filterState.size = filterState.size === value ? null : value;
-    } else if (group === 'category') {
-      filterState.category = value;
-    } else if (group === 'brand') {
-      filterState.brand = value;
-    } else if (group === 'sort') {
-      filterState.sort = value;
-    }
+      if (group === 'size') {
+        filterState.size = filterState.size === value ? null : value;
+      } else if (group === 'category') {
+        filterState.category = value;
+      } else if (group === 'brand') {
+        filterState.brand = value;
+      } else if (group === 'sort') {
+        filterState.sort = value;
+      }
 
-    renderCatalog();
+      renderCatalog();
+    });
   });
-});
+}
+
+bindFilterOptions();
 
 if (catalogResetButton) {
   catalogResetButton.addEventListener('click', resetFilters);
@@ -820,25 +1090,32 @@ window.addEventListener('keydown', (event) => {
   }
 });
 
-sizeButtons.forEach((button) => {
-  button.addEventListener('click', () => {
-    setSelectedSize(button.textContent.trim());
+function bindSizeButtons() {
+  sizeButtons.forEach((button) => {
+    if (button.dataset.boundSize === 'true') return;
+    button.dataset.boundSize = 'true';
+    button.addEventListener('click', () => {
+      if (button.disabled) return;
+      setSelectedSize(button.textContent.trim());
 
-    sizeButtons.forEach((item) => {
-      const isActive = item === button;
-      item.classList.toggle('is-selected', isActive);
-      item.toggleAttribute('aria-pressed', isActive);
-      item.classList.remove('is-tapping');
+      sizeButtons.forEach((item) => {
+        const isActive = item === button;
+        item.classList.toggle('is-selected', isActive);
+        item.toggleAttribute('aria-pressed', isActive);
+        item.classList.remove('is-tapping');
+      });
+
+      updateSizeSelector(button);
+
+      button.classList.add('is-tapping');
+      window.setTimeout(() => {
+        button.classList.remove('is-tapping');
+      }, 260);
     });
-
-    updateSizeSelector(button);
-
-    button.classList.add('is-tapping');
-    window.setTimeout(() => {
-      button.classList.remove('is-tapping');
-    }, 260);
   });
-});
+}
+
+bindSizeButtons();
 
 window.addEventListener('resize', () => {
   const active = document.querySelector('.nav-item.is-active');
@@ -849,7 +1126,8 @@ window.addEventListener('resize', () => {
   refreshOrdersPanelHeight();
 });
 
-window.addEventListener('load', () => {
+async function initApp() {
+  await loadProducts();
   const active = document.querySelector('.nav-item.is-active');
   if (active) moveIndicator(active);
   setCurrentProduct(currentProductId);
@@ -859,4 +1137,6 @@ window.addEventListener('load', () => {
   setDeliveryMethod('pickup');
   setOrdersOpen(true);
   setDetailsOpen(false);
-});
+}
+
+window.addEventListener('load', initApp);

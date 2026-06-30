@@ -2576,3 +2576,26 @@ button {
   .search-input { font-size: 10.7px; letter-spacing: .043em; }
   .product-details-inner strong { font-size: 11.4px; }
 }
+
+
+/* v51 real-data states */
+.size-grid button:disabled,
+.size-grid button[aria-disabled="true"] {
+  opacity: .28;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+.cart-item.is-unavailable {
+  opacity: .42;
+}
+
+.cart-unavailable-note {
+  margin: 6px 0 8px;
+  color: #8a8a8a;
+  font-family: var(--font-nav);
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: -.015em;
+  text-transform: uppercase;
+}
