@@ -933,6 +933,80 @@ function sendOrderViaTelegram(payload) {
   return true;
 }
 
+
+function loadLocalOrders() {
+  try {
+    const raw = window.localStorage?.getItem(LOCAL_ORDERS_STORAGE_KEY);
+    const parsed = raw ? JSON.parse(raw) : [];
+    return Array.isArray(parsed) ? parsed : [];
+  } catch (error) {
+    console.warn('ForReal: local orders not loaded', error);
+    return [];
+  }
+}
+
+function saveLocalOrders(orders) {
+  try {
+    window.localStorage?.setItem(LOCAL_ORDERS_STORAGE_KEY, JSON.stringify(orders));
+  } catch (error) {
+    console.warn('ForReal: local orders not saved', error);
+  }
+}
+
+function buildLocalOrderFromPayload(payload) {
+  const now = new Date().toISOString();
+  const items = cart
+    .filter(isCartItemAvailable)
+    .map((item) => {
+      const product = products[item.productId];
+      return {
+        productId: item.productId,
+        productSnapshot: product || {},
+        brand: product?.brand || '',
+        name: product?.name || '',
+        size: item.size,
+        quantity: Number(item.quantity) || 1,
+        price: Number(product?.price) || 0,
+      };
+    });
+
+  return {
+    id: payload.clientOrderId,
+    orderNumber: '—',
+    clientOrderId: payload.clientOrderId,
+    items,
+    totalPrice: items.reduce((sum, item) => sum + item.price * item.quantity, 0),
+    currency: 'RUB',
+    deliveryMethod: payload.deliveryMethod,
+    deliveryData: payload.deliveryData || {},
+    comment: payload.comment || '',
+    status: 'awaiting_payment',
+    createdAt: now,
+    updatedAt: now,
+    isLocal: true,
+  };
+}
+
+function saveLocalOrder(order) {
+  if (!order?.clientOrderId) return;
+  const orders = loadLocalOrders();
+  const withoutDuplicate = orders.filter((item) => item.clientOrderId !== order.clientOrderId);
+  withoutDuplicate.unshift(order);
+  saveLocalOrders(withoutDuplicate.slice(0, 50));
+}
+
+function mergeOrders(apiOrders = [], localOrders = []) {
+  const seen = new Set();
+  const result = [];
+  [...apiOrders, ...localOrders].forEach((order) => {
+    const key = order.clientOrderId || order.id || String(order.orderNumber || Math.random());
+    if (seen.has(key)) return;
+    seen.add(key);
+    result.push(order);
+  });
+  return result;
+}
+
 function buildOrderCard(order) {
   const statusMap = {
     awaiting_payment: 'Ожидает оплаты',
@@ -950,7 +1024,7 @@ function buildOrderCard(order) {
   article.className = 'profile-order-item';
   article.innerHTML = `
     <div class="profile-order-row">
-      <strong>#${order.orderNumber || '—'}</strong>
+      <strong>${order.orderNumber && order.orderNumber !== '—' ? `#${order.orderNumber}` : 'ЗАКАЗ'}</strong>
       <span>${statusMap[order.status] || order.status || '—'}</span>
     </div>
     <p>${itemsText || 'Товары'}</p>
@@ -979,10 +1053,13 @@ function renderOrdersList(orders = []) {
 
 async function loadMyOrders() {
   if (!ordersPanel) return;
+  const localOrders = loadLocalOrders();
+
   if (!API_BASE || !getTelegramInitData()) {
-    renderOrdersList([]);
+    renderOrdersList(localOrders);
     return;
   }
+
   try {
     const response = await fetch(`${API_BASE}/api/orders/my`, {
       headers: { 'X-Telegram-Init-Data': getTelegramInitData() },
@@ -990,10 +1067,10 @@ async function loadMyOrders() {
     });
     if (!response.ok) throw new Error('orders fetch failed');
     const orders = await response.json();
-    renderOrdersList(Array.isArray(orders) ? orders : []);
+    renderOrdersList(mergeOrders(Array.isArray(orders) ? orders : [], localOrders));
   } catch (error) {
     console.warn('ForReal: orders not loaded', error);
-    renderOrdersList([]);
+    renderOrdersList(localOrders);
   }
 }
 
@@ -1055,6 +1132,7 @@ async function submitCheckout() {
   try {
     if (API_BASE) {
       const order = await postOrderToApi(payload);
+      if (order) saveLocalOrder(order);
       clearCartAfterOrder();
       closeCheckout();
       setActive('profile');
@@ -1063,19 +1141,27 @@ async function submitCheckout() {
       return order;
     }
 
+    const localOrder = buildLocalOrderFromPayload(payload);
     if (sendOrderViaTelegram(payload)) {
+      saveLocalOrder(localOrder);
       clearCartAfterOrder();
       closeCheckout();
+      setActive('profile');
+      renderOrdersList(loadLocalOrders());
       return null;
     }
 
     throw new Error('API_NOT_CONFIGURED');
   } catch (error) {
     console.error('ForReal order error', error);
+    const fallbackOrder = buildLocalOrderFromPayload(payload);
     const fallbackAllowed = !API_BASE && sendOrderViaTelegram(payload);
     if (fallbackAllowed) {
+      saveLocalOrder(fallbackOrder);
       clearCartAfterOrder();
       closeCheckout();
+      setActive('profile');
+      renderOrdersList(loadLocalOrders());
       return null;
     }
 
