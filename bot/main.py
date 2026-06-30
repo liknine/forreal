@@ -19,7 +19,9 @@ from github_storage import (
     find_product,
     load_products,
     push_to_github,
+    push_public_orders_to_github,
     save_product_photos,
+    save_public_orders,
     toggle_product_active,
 )
 from keyboards import (
@@ -82,14 +84,24 @@ async def require_admin_callback(callback: CallbackQuery) -> bool:
     return True
 
 
+async def publish_public_orders(reason: str = "Update public orders") -> None:
+    """Write safe order list to data/orders_public.json and autopush it to GitHub if token is set."""
+    try:
+        orders = await get_recent_orders(limit=500)
+        await save_public_orders(orders)
+        await push_public_orders_to_github(reason)
+        print("PUBLIC ORDERS SYNCED", len(orders), reason)
+    except Exception as exc:
+        # Do not break customer/admin flow if GitHub sync fails.
+        print("PUBLIC ORDERS SYNC FAILED", repr(exc))
+
+
 @dp.message(CommandStart())
 async def cmd_start(message: Message) -> None:
     await message.answer(
-        "Привет. Это каталог ForReal.",
+        "Привет. Это каталог ForReal.\n\nОткрой каталог через кнопку снизу — так заказ корректно отправится в бота.",
         reply_markup=main_menu_kb(config.mini_app_url),
     )
-
-
 
 
 @dp.message(F.web_app_data)
@@ -123,12 +135,15 @@ async def handle_web_app_data(message: Message) -> None:
     print("ORDER CREATED", order.get("orderNumber"), "admins", list(config.admin_ids))
 
     if order.get("_isDuplicate"):
+        await publish_public_orders("Sync duplicate public order")
         await message.answer(
             "Этот заказ уже был создан. Повторно заявку админу не отправляю.\n\n"
             + build_client_payment_text(order),
             reply_markup=client_payment_kb(order["id"]),
         )
         return
+
+    await publish_public_orders("Add public order")
 
     admin_text = build_admin_order_text(order)
     for admin_id in config.admin_ids:
@@ -188,6 +203,7 @@ async def admin_callbacks(callback: CallbackQuery, state: FSMContext) -> None:
     elif action == "sync":
         try:
             await push_to_github()
+            await publish_public_orders("Manual sync public orders")
             await callback.message.answer("Синхронизация GitHub выполнена.")
         except Exception as exc:
             await callback.message.answer(f"Не удалось синхронизировать GitHub: {escape_html(exc)}")
@@ -537,6 +553,7 @@ async def order_status_callback(callback: CallbackQuery) -> None:
             )
 
     order = await update_order_status(order_id, new_status)
+    await publish_public_orders(f"Update order #{order['orderNumber']} status")
     label = STATUS_LABELS.get(new_status, new_status)
 
     await callback.message.answer(

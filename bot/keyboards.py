@@ -1,18 +1,18 @@
-from aiogram.types import InlineKeyboardButton, InlineKeyboardMarkup, WebAppInfo
+from aiogram.types import InlineKeyboardButton, InlineKeyboardMarkup, KeyboardButton, ReplyKeyboardMarkup, WebAppInfo
 
 from config import CATEGORIES
 
 
-def main_menu_kb(mini_app_url: str) -> InlineKeyboardMarkup:
-    return InlineKeyboardMarkup(
-        inline_keyboard=[
-            [
-                InlineKeyboardButton(
-                    text="Открыть каталог",
-                    web_app=WebAppInfo(url=mini_app_url),
-                )
-            ]
-        ]
+def main_menu_kb(mini_app_url: str) -> ReplyKeyboardMarkup:
+    # ВАЖНО: Telegram.WebApp.sendData корректно отправляет web_app_data в бота
+    # именно когда Mini App открыт через KeyboardButton(web_app), а не через inline-кнопку.
+    return ReplyKeyboardMarkup(
+        keyboard=[
+            [KeyboardButton(text="Открыть каталог", web_app=WebAppInfo(url=mini_app_url))]
+        ],
+        resize_keyboard=True,
+        is_persistent=True,
+        input_field_placeholder="Откройте каталог ForReal",
     )
 
 

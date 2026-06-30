@@ -224,7 +224,78 @@ async def push_all_local_files_to_github() -> None:
             config.products_path.read_bytes(),
             "Sync products.json",
         )
+        if config.orders_public_path.exists():
+            await put_github_file(
+                client,
+                config.github_orders_public_path,
+                config.orders_public_path.read_bytes(),
+                "Sync public orders",
+            )
 
 
 async def push_to_github() -> None:
     await push_all_local_files_to_github()
+
+
+def _public_order_item(item: dict[str, Any]) -> dict[str, Any]:
+    snapshot = item.get("productSnapshot") or {}
+    images = snapshot.get("images") or []
+    image = ""
+    if isinstance(images, list) and images:
+        image = str(images[0] or "")
+    if not image:
+        image = str(snapshot.get("detailImage") or "")
+    return {
+        "productId": item.get("productId"),
+        "brand": item.get("brand", ""),
+        "name": item.get("name", ""),
+        "size": item.get("size", ""),
+        "quantity": int(item.get("quantity") or 1),
+        "price": int(item.get("price") or 0),
+        "image": image,
+    }
+
+
+def public_order(order: dict[str, Any]) -> dict[str, Any]:
+    """Safe public order payload for GitHub Pages.
+
+    Do not include fullName, phone, city, address, comment, payment proof or raw snapshots.
+    """
+    return {
+        "id": order.get("id"),
+        "orderNumber": order.get("orderNumber"),
+        "clientOrderId": order.get("clientOrderId"),
+        "telegramId": int(order.get("telegramId") or 0),
+        "username": order.get("username") or "",
+        "items": [_public_order_item(item) for item in (order.get("items") or []) if isinstance(item, dict)],
+        "totalPrice": int(order.get("totalPrice") or 0),
+        "currency": order.get("currency") or "RUB",
+        "deliveryMethod": order.get("deliveryMethod") or "",
+        "status": order.get("status") or "awaiting_payment",
+        "createdAt": order.get("createdAt") or "",
+        "updatedAt": order.get("updatedAt") or order.get("createdAt") or "",
+    }
+
+
+async def save_public_orders(orders: list[dict[str, Any]]) -> None:
+    config.orders_public_path.parent.mkdir(parents=True, exist_ok=True)
+    safe_orders = [public_order(order) for order in orders if isinstance(order, dict)]
+    config.orders_public_path.write_text(
+        json.dumps(safe_orders, ensure_ascii=False, indent=2),
+        encoding="utf-8",
+    )
+
+
+async def push_public_orders_to_github(message: str = "Update public orders") -> None:
+    if not config.github_token:
+        return
+    if not config.orders_public_path.exists():
+        config.orders_public_path.parent.mkdir(parents=True, exist_ok=True)
+        config.orders_public_path.write_text("[]", encoding="utf-8")
+    async with httpx.AsyncClient(timeout=30) as client:
+        await put_github_file(
+            client,
+            config.github_orders_public_path,
+            config.orders_public_path.read_bytes(),
+            message,
+        )

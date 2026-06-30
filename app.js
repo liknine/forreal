@@ -63,6 +63,9 @@ const PRODUCTS_URL = './data/products.json';
 const ADMIN_USERNAME = 'woodyqqqq';
 const API_BASE = String(document.body?.dataset.apiBase || window.FORREAL_API_BASE || '').replace(/\/$/, '');
 const API_BASE_URL = document.body?.dataset.apiBase || '';
+const ORDERS_PUBLIC_URL = document.body?.dataset.ordersPublicUrl || './data/orders_public.json';
+const LOCAL_ORDERS_STORAGE_KEY = 'forreal_orders_v1';
+let localOrdersMemory = [];
 
 const categoryLabels = {
   new: 'НОВЫЕ ПОСТУПЛЕНИЯ',
@@ -829,6 +832,23 @@ function getTelegramInitData() {
   return window.Telegram?.WebApp?.initData || '';
 }
 
+function getCurrentTelegramId() {
+  const userId = window.Telegram?.WebApp?.initDataUnsafe?.user?.id;
+  if (userId) return Number(userId);
+
+  const initData = getTelegramInitData();
+  if (!initData) return null;
+  try {
+    const params = new URLSearchParams(initData);
+    const rawUser = params.get('user');
+    if (!rawUser) return null;
+    const user = JSON.parse(rawUser);
+    return user?.id ? Number(user.id) : null;
+  } catch (error) {
+    return null;
+  }
+}
+
 function ensureCheckoutStatusElement() {
   let node = document.querySelector('[data-checkout-status]');
   if (node) return node;
@@ -933,21 +953,22 @@ function sendOrderViaTelegram(payload) {
   return true;
 }
 
-
 function loadLocalOrders() {
   try {
     const raw = window.localStorage?.getItem(LOCAL_ORDERS_STORAGE_KEY);
-    const parsed = raw ? JSON.parse(raw) : [];
+    const parsed = raw ? JSON.parse(raw) : localOrdersMemory;
     return Array.isArray(parsed) ? parsed : [];
   } catch (error) {
     console.warn('ForReal: local orders not loaded', error);
-    return [];
+    return Array.isArray(localOrdersMemory) ? localOrdersMemory : [];
   }
 }
 
 function saveLocalOrders(orders) {
+  const safeOrders = Array.isArray(orders) ? orders : [];
+  localOrdersMemory = safeOrders;
   try {
-    window.localStorage?.setItem(LOCAL_ORDERS_STORAGE_KEY, JSON.stringify(orders));
+    window.localStorage?.setItem(LOCAL_ORDERS_STORAGE_KEY, JSON.stringify(safeOrders));
   } catch (error) {
     console.warn('ForReal: local orders not saved', error);
   }
@@ -959,20 +980,22 @@ function buildLocalOrderFromPayload(payload) {
     .filter(isCartItemAvailable)
     .map((item) => {
       const product = products[item.productId];
+      const quantity = Number(item.quantity) || 1;
+      const price = Number(product?.price) || 0;
       return {
         productId: item.productId,
-        productSnapshot: product || {},
+        productSnapshot: product?.raw || product || {},
         brand: product?.brand || '',
         name: product?.name || '',
         size: item.size,
-        quantity: Number(item.quantity) || 1,
-        price: Number(product?.price) || 0,
+        quantity,
+        price,
       };
     });
 
   return {
     id: payload.clientOrderId,
-    orderNumber: '—',
+    orderNumber: null,
     clientOrderId: payload.clientOrderId,
     items,
     totalPrice: items.reduce((sum, item) => sum + item.price * item.quantity, 0),
@@ -988,9 +1011,10 @@ function buildLocalOrderFromPayload(payload) {
 }
 
 function saveLocalOrder(order) {
-  if (!order?.clientOrderId) return;
+  if (!order?.clientOrderId && !order?.id) return;
+  const key = order.clientOrderId || order.id;
   const orders = loadLocalOrders();
-  const withoutDuplicate = orders.filter((item) => item.clientOrderId !== order.clientOrderId);
+  const withoutDuplicate = orders.filter((item) => (item.clientOrderId || item.id) !== key);
   withoutDuplicate.unshift(order);
   saveLocalOrders(withoutDuplicate.slice(0, 50));
 }
@@ -999,12 +1023,21 @@ function mergeOrders(apiOrders = [], localOrders = []) {
   const seen = new Set();
   const result = [];
   [...apiOrders, ...localOrders].forEach((order) => {
-    const key = order.clientOrderId || order.id || String(order.orderNumber || Math.random());
-    if (seen.has(key)) return;
+    const key = order?.clientOrderId || order?.id || String(order?.orderNumber || '');
+    if (!key || seen.has(key)) return;
     seen.add(key);
     result.push(order);
   });
   return result;
+}
+
+function escapeHtml(value) {
+  return String(value ?? '')
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;')
+    .replace(/'/g, '&#039;');
 }
 
 function buildOrderCard(order) {
@@ -1018,20 +1051,24 @@ function buildOrderCard(order) {
   };
   const deliveryMap = { cdek: 'CDEK', yandex: 'Яндекс Доставка', pickup: 'Самовывоз' };
   const items = Array.isArray(order.items) ? order.items : [];
-  const itemsText = items.map((item) => `${item.brand || ''} ${item.name || ''} / ${item.size || ''}`).filter(Boolean).join(' · ');
+  const itemsText = items
+    .map((item) => `${item.brand || ''} ${item.name || ''} / ${item.size || ''}`.trim())
+    .filter(Boolean)
+    .join(' · ');
   const date = order.createdAt ? new Date(order.createdAt).toLocaleDateString('ru-RU') : '';
+  const title = order.orderNumber ? `#${order.orderNumber}` : 'ЗАКАЗ';
   const article = document.createElement('article');
   article.className = 'profile-order-item';
   article.innerHTML = `
     <div class="profile-order-row">
-      <strong>${order.orderNumber && order.orderNumber !== '—' ? `#${order.orderNumber}` : 'ЗАКАЗ'}</strong>
-      <span>${statusMap[order.status] || order.status || '—'}</span>
+      <strong>${escapeHtml(title)}</strong>
+      <span>${escapeHtml(statusMap[order.status] || order.status || '—')}</span>
     </div>
-    <p>${itemsText || 'Товары'}</p>
+    <p>${escapeHtml(itemsText || 'Товары')}</p>
     <div class="profile-order-meta">
-      <span>${formatRub(order.totalPrice || 0)}</span>
-      <span>${deliveryMap[order.deliveryMethod] || order.deliveryMethod || ''}</span>
-      <span>${date}</span>
+      <span>${escapeHtml(formatRub(order.totalPrice || 0))}</span>
+      <span>${escapeHtml(deliveryMap[order.deliveryMethod] || order.deliveryMethod || '')}</span>
+      <span>${escapeHtml(date)}</span>
     </div>
   `;
   return article;
@@ -1051,9 +1088,33 @@ function renderOrdersList(orders = []) {
   requestAnimationFrame(refreshOrdersPanelHeight);
 }
 
+async function loadPublicOrders() {
+  const telegramId = getCurrentTelegramId();
+  if (!telegramId || !ORDERS_PUBLIC_URL) return [];
+
+  const separator = ORDERS_PUBLIC_URL.includes('?') ? '&' : '?';
+  const response = await fetch(`${ORDERS_PUBLIC_URL}${separator}v=${Date.now()}`, { cache: 'no-store' });
+  if (!response.ok) throw new Error('public orders fetch failed');
+
+  const orders = await response.json();
+  if (!Array.isArray(orders)) return [];
+
+  return orders.filter((order) => Number(order?.telegramId) === Number(telegramId));
+}
+
 async function loadMyOrders() {
   if (!ordersPanel) return;
   const localOrders = loadLocalOrders();
+
+  try {
+    const publicOrders = await loadPublicOrders();
+    if (publicOrders.length || !API_BASE) {
+      renderOrdersList(mergeOrders(publicOrders, localOrders));
+      return;
+    }
+  } catch (error) {
+    console.warn('ForReal: public orders not loaded', error);
+  }
 
   if (!API_BASE || !getTelegramInitData()) {
     renderOrdersList(localOrders);
@@ -1126,13 +1187,15 @@ async function submitCheckout() {
     return;
   }
 
+  const localOrder = buildLocalOrderFromPayload(payload);
+
   setCheckoutLoading(true);
   setCheckoutStatus('', 'info');
 
   try {
     if (API_BASE) {
       const order = await postOrderToApi(payload);
-      if (order) saveLocalOrder(order);
+      saveLocalOrder(order || localOrder);
       clearCartAfterOrder();
       closeCheckout();
       setActive('profile');
@@ -1141,27 +1204,27 @@ async function submitCheckout() {
       return order;
     }
 
-    const localOrder = buildLocalOrderFromPayload(payload);
     if (sendOrderViaTelegram(payload)) {
       saveLocalOrder(localOrder);
       clearCartAfterOrder();
       closeCheckout();
       setActive('profile');
       renderOrdersList(loadLocalOrders());
+      setCheckoutStatus('', 'info');
       return null;
     }
 
     throw new Error('API_NOT_CONFIGURED');
   } catch (error) {
     console.error('ForReal order error', error);
-    const fallbackOrder = buildLocalOrderFromPayload(payload);
     const fallbackAllowed = !API_BASE && sendOrderViaTelegram(payload);
     if (fallbackAllowed) {
-      saveLocalOrder(fallbackOrder);
+      saveLocalOrder(localOrder);
       clearCartAfterOrder();
       closeCheckout();
       setActive('profile');
       renderOrdersList(loadLocalOrders());
+      setCheckoutStatus('', 'info');
       return null;
     }
 
@@ -1222,7 +1285,12 @@ function setInfoOpen(open) {
 }
 
 navItems.forEach((item) => {
-  item.addEventListener('click', () => setActive(item.dataset.tab));
+  item.addEventListener('click', () => {
+    setActive(item.dataset.tab);
+    if (item.dataset.tab === 'profile') {
+      loadMyOrders();
+    }
+  });
 });
 
 if (openMenuButton) {
@@ -1260,6 +1328,7 @@ routeButtons.forEach((button) => {
   button.addEventListener('click', () => {
     if (button.dataset.productId) setCurrentProduct(button.dataset.productId);
     setActive(button.dataset.route);
+    if (button.dataset.route === 'profile') loadMyOrders();
     if (button.hasAttribute('data-close-menu')) closeSideMenu();
   });
 
