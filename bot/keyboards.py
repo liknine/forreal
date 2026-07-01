@@ -77,8 +77,9 @@ def product_edit_kb() -> InlineKeyboardMarkup:
         inline_keyboard=[
             [
                 InlineKeyboardButton(text="Цена", callback_data="product:edit_field:price"),
-                InlineKeyboardButton(text="Остатки", callback_data="product:edit_field:sizes"),
+                InlineKeyboardButton(text="Скидка", callback_data="product:edit_field:discount"),
             ],
+            [InlineKeyboardButton(text="Остатки", callback_data="product:edit_field:sizes")],
             [
                 InlineKeyboardButton(text="Бренд", callback_data="product:edit_field:brand"),
                 InlineKeyboardButton(text="Название", callback_data="product:edit_field:name"),

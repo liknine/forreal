@@ -20,6 +20,14 @@ def _as_int(value: Any, default: int = 0) -> int:
         return default
 
 
+
+def _effective_product_price(product: dict[str, Any]) -> int:
+    base_price = _as_int(product.get("price"), 0)
+    discount_price = _as_int(product.get("discountPrice"), 0)
+    if discount_price > 0 and base_price > 0 and discount_price < base_price:
+        return discount_price
+    return base_price
+
 async def create_order_from_payload(payload: dict[str, Any], user: dict[str, Any]) -> dict[str, Any]:
     items_in = payload.get("items") or []
     if not isinstance(items_in, list) or not items_in:
@@ -67,7 +75,7 @@ async def create_order_from_payload(payload: dict[str, Any], user: dict[str, Any
         if stock < quantity:
             raise OrderValidationError(f"Размер {size} уже не в наличии")
 
-        price = _as_int(product.get("price"), 0)
+        price = _effective_product_price(product)
         total_price += price * quantity
         order_items.append(
             {

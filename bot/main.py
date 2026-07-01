@@ -529,6 +529,7 @@ EDIT_FIELD_LABELS = {
     "brand": "бренд",
     "name": "название",
     "price": "цену",
+    "discount": "скидку",
     "sizes": "размеры/остатки",
     "details": "описание",
     "category": "категорию",
@@ -536,11 +537,13 @@ EDIT_FIELD_LABELS = {
 }
 
 
-async def apply_product_updates(product_id: str, updates: dict) -> dict | None:
+async def apply_product_updates(product_id: str, updates: dict, remove_keys: list[str] | None = None) -> dict | None:
     product = await find_product(product_id)
     if not product:
         return None
     updated = dict(product)
+    for key in remove_keys or []:
+        updated.pop(key, None)
     updated.update(updates)
     updated["id"] = product_id  # ID не меняем даже при смене бренда/названия.
     return await add_or_update_product(updated)
@@ -611,7 +614,7 @@ async def product_edit_field(callback: CallbackQuery, state: FSMContext) -> None
         await callback.answer()
         return
 
-    if field not in {"brand", "name", "price", "sizes", "details"}:
+    if field not in {"brand", "name", "price", "discount", "sizes", "details"}:
         await callback.answer("Неизвестное поле", show_alert=True)
         return
 
@@ -621,7 +624,8 @@ async def product_edit_field(callback: CallbackQuery, state: FSMContext) -> None
     prompts = {
         "brand": "Введи новый бренд товара. ID останется прежним.",
         "name": "Введи новое название товара. ID останется прежним.",
-        "price": "Введи новую цену числом. Например: 12500",
+        "price": "Введи новую обычную цену числом. Например: 12500",
+        "discount": "Введи новую цену со скидкой. Она должна быть меньше обычной цены.\n\nНапример: 9900\n\nЧтобы убрать скидку, отправь: -",
         "sizes": "Введи новые размеры и остатки.\n\nПример: S:2, M:3, L:1, XL:0",
         "details": "Введи новое описание товара. Напиши '-' если описание нужно очистить.",
     }
@@ -662,12 +666,19 @@ async def product_edit_value(message: Message, state: FSMContext) -> None:
     field = data.get("edit_field")
     text = (message.text or "").strip()
 
-    if not product_id or field not in {"brand", "name", "price", "sizes", "details"}:
+    if not product_id or field not in {"brand", "name", "price", "discount", "sizes", "details"}:
         await state.clear()
         await message.answer("Редактирование сброшено. Открой товар заново через /products.")
         return
 
+    current_product = await find_product(product_id)
+    if not current_product:
+        await state.clear()
+        await message.answer("Товар не найден. Открой список товаров заново через /products.")
+        return
+
     updates = {}
+    remove_keys: list[str] = []
     if field == "brand":
         if len(text) < 2:
             await message.answer("Бренд слишком короткий. Введи бренд еще раз.")
@@ -684,6 +695,25 @@ async def product_edit_value(message: Message, state: FSMContext) -> None:
             await message.answer("Не понял цену. Введи числом, например: 12500")
             return
         updates["price"] = price
+        old_discount = parse_price(str(current_product.get("discountPrice") or ""))
+        if old_discount and old_discount >= price:
+            remove_keys.append("discountPrice")
+    elif field == "discount":
+        if text in {"-", "—", "нет", "Нет", "НЕТ", "убрать", "Убрать"}:
+            remove_keys.append("discountPrice")
+        else:
+            discount_price = parse_price(text)
+            base_price = parse_price(str(current_product.get("price") or "")) or 0
+            if not discount_price or discount_price <= 0:
+                await message.answer("Не понял цену скидки. Введи числом, например: 9900, или '-' чтобы убрать скидку.")
+                return
+            if base_price <= 0 or discount_price >= base_price:
+                await message.answer(
+                    f"Цена со скидкой должна быть меньше обычной цены товара ({format_price(base_price)}).\n"
+                    "Введи цену со скидкой еще раз или '-' чтобы убрать скидку."
+                )
+                return
+            updates["discountPrice"] = discount_price
     elif field == "sizes":
         sizes, size_stock = parse_size_stock(text)
         if not sizes:
@@ -695,7 +725,7 @@ async def product_edit_value(message: Message, state: FSMContext) -> None:
         updates["details"] = "" if text in {"-", "—", "нет", "Нет", "НЕТ"} else text
 
     try:
-        product = await apply_product_updates(product_id, updates)
+        product = await apply_product_updates(product_id, updates, remove_keys=remove_keys)
     except Exception as exc:
         await message.answer(f"Не удалось обновить товар: {escape_html(exc)}")
         return
@@ -951,14 +981,22 @@ def build_product_text(product: dict) -> str:
     stock = product.get("sizeStock") or {}
     stock_line = ", ".join(f"{size}: {qty}" for size, qty in stock.items()) or "—"
     status = "Активен" if product.get("isActive", True) else "Скрыт"
+    if product.get("autoHiddenNoStock"):
+        status = "Скрыт — нет остатков"
     images = product.get("images") or []
+    base_price = parse_price(str(product.get("price") or "")) or 0
+    discount_price = parse_price(str(product.get("discountPrice") or "")) or 0
+    if discount_price and base_price and discount_price < base_price:
+        price_line = f"{format_price(discount_price)} / старая {format_price(base_price)}"
+    else:
+        price_line = format_price(base_price)
     return (
         f"{product_short_title(product)}\n\n"
         f"ID: {code(product.get('id'))}\n"
         f"Бренд: {code(product.get('brand'))}\n"
         f"Название: {code(product.get('name'))}\n"
         f"Категория: {code(product.get('category'))}\n"
-        f"Цена: {code(format_price(product.get('price', 0)))}\n"
+        f"Цена: {code(price_line)}\n"
         f"Остатки: {code(stock_line)}\n"
         f"Фото: {code(len(images))} шт.\n"
         f"Статус: {code(status)}"

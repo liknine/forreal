@@ -15,6 +15,53 @@ def relative_image_path(filename: str) -> str:
     return f"{config.github_images_dir.strip('/')}/{filename}".replace("\\", "/")
 
 
+
+def _to_int(value: Any, default: int = 0) -> int:
+    try:
+        return int(value)
+    except (TypeError, ValueError):
+        return default
+
+
+def product_has_stock(product: dict[str, Any]) -> bool:
+    size_stock = product.get("sizeStock") or {}
+    if not isinstance(size_stock, dict):
+        return False
+    sizes = product.get("sizes") or list(size_stock.keys())
+    for size in sizes:
+        if _to_int(size_stock.get(str(size).upper(), size_stock.get(size)), 0) > 0:
+            return True
+    return False
+
+
+def normalize_product_state(product: dict[str, Any]) -> dict[str, Any]:
+    """Keep product visibility/discount safe before saving products.json.
+
+    - Invalid discounts are removed.
+    - Products with zero stock are hidden from the public catalog, not physically deleted.
+    - If a product was hidden automatically because of zero stock and admin adds stock back,
+      it becomes visible again. Manual hidden products stay hidden.
+    """
+    price = _to_int(product.get("price"), 0)
+    discount_price = _to_int(product.get("discountPrice"), 0)
+
+    if price <= 0 or discount_price <= 0 or discount_price >= price:
+        product.pop("discountPrice", None)
+    else:
+        product["discountPrice"] = discount_price
+
+    has_stock = product_has_stock(product)
+    if not has_stock:
+        product["isActive"] = False
+        product["autoHiddenNoStock"] = True
+        product.setdefault("soldOutAt", now_iso())
+    elif product.get("autoHiddenNoStock"):
+        product["isActive"] = True
+        product["autoHiddenNoStock"] = False
+        product.pop("soldOutAt", None)
+
+    return product
+
 async def ensure_products_file() -> None:
     config.products_path.parent.mkdir(parents=True, exist_ok=True)
     if not config.products_path.exists():
@@ -68,6 +115,7 @@ async def decrease_stock(items: list[dict[str, Any]]) -> None:
         current = int(size_stock.get(size, 0) or 0)
         size_stock[size] = max(0, current - quantity)
         product["updatedAt"] = now_iso()
+        normalize_product_state(product)
 
     await save_products(products)
     try:
@@ -79,6 +127,7 @@ async def decrease_stock(items: list[dict[str, Any]]) -> None:
 
 
 async def add_or_update_product(product: dict[str, Any]) -> dict[str, Any]:
+    product = normalize_product_state(dict(product))
     products = await load_products()
     found = False
     for index, existing in enumerate(products):
@@ -102,7 +151,15 @@ async def toggle_product_active(product_id: str, is_active: bool) -> dict[str, A
     result = None
     for product in products:
         if product.get("id") == product_id:
-            product["isActive"] = is_active
+            if is_active and not product_has_stock(product):
+                product["isActive"] = False
+                product["autoHiddenNoStock"] = True
+                product.setdefault("soldOutAt", now_iso())
+            else:
+                product["isActive"] = is_active
+                if is_active:
+                    product["autoHiddenNoStock"] = False
+                    product.pop("soldOutAt", None)
             product["updatedAt"] = now_iso()
             result = product
             break

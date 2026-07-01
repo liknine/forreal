@@ -2734,3 +2734,55 @@ button {
     padding-bottom: 22px;
   }
 }
+
+/* v69 discounts and sold-out catalog guard */
+.product-price,
+.detail-price,
+.cart-price {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  flex-wrap: wrap;
+}
+
+.price-current {
+  color: var(--text);
+  font-weight: inherit;
+  white-space: nowrap;
+}
+
+.price-old {
+  position: relative;
+  display: inline-block;
+  color: var(--muted);
+  font-weight: 300;
+  white-space: nowrap;
+}
+
+.price-old::after {
+  content: "";
+  position: absolute;
+  left: -2px;
+  right: -2px;
+  top: 50%;
+  height: 1.5px;
+  background: #d81919;
+  transform: translateY(-50%);
+  border-radius: 999px;
+}
+
+.product-price .price-old {
+  font-size: .9em;
+}
+
+.detail-price.has-discount {
+  gap: 10px;
+}
+
+.cart-price {
+  justify-content: flex-end;
+}
+
+.cart-price .price-old {
+  font-size: .9em;
+}

@@ -223,13 +223,24 @@ function normalizeProduct(raw, index = 0) {
     : Object.keys(stock);
   const categoryKey = normalizeCategory(raw.category);
   const createdTime = Date.parse(raw.createdAt || '') || 0;
+  const hasStock = sizes.some((size) => Number(stock?.[size] ?? 0) > 0);
+  if (!hasStock) return null;
+
+  const originalPrice = Number(raw.price || 0);
+  const rawDiscountPrice = Number(raw.discountPrice || raw.salePrice || 0);
+  const hasDiscount = rawDiscountPrice > 0 && originalPrice > 0 && rawDiscountPrice < originalPrice;
+  const effectivePrice = hasDiscount ? rawDiscountPrice : originalPrice;
 
   return {
     id,
     brand,
     name,
-    price: Number(raw.price || 0),
-    priceLabel: formatRub(raw.price || 0),
+    price: effectivePrice,
+    originalPrice,
+    discountPrice: hasDiscount ? rawDiscountPrice : null,
+    hasDiscount,
+    priceLabel: formatRub(effectivePrice),
+    oldPriceLabel: hasDiscount ? formatRub(originalPrice) : '',
     image: resolveAssetUrl(primaryImage),
     detailImage: resolveAssetUrl(detailImage || primaryImage),
     images: imageList.map(resolveAssetUrl),
@@ -245,6 +256,19 @@ function normalizeProduct(raw, index = 0) {
     details: raw.details || raw.description || '',
     raw,
   };
+}
+
+function renderProductPrice(product) {
+  if (!product) return '';
+  const current = product.priceLabel || formatRub(product.price || 0);
+  if (product.hasDiscount && product.oldPriceLabel) {
+    return `<span class="price-current">${current}</span><span class="price-old">${product.oldPriceLabel}</span>`;
+  }
+  return `<span class="price-current">${current}</span>`;
+}
+
+function getProductPriceText(product) {
+  return product?.priceLabel || formatRub(product?.price || 0);
 }
 
 async function loadProducts() {
@@ -434,7 +458,10 @@ function setCurrentProduct(productId) {
 
   if (productDetailBrand) productDetailBrand.textContent = product.brand;
   if (productDetailName) productDetailName.textContent = product.name;
-  if (productDetailPrice) productDetailPrice.textContent = product.priceLabel;
+  if (productDetailPrice) {
+    productDetailPrice.innerHTML = renderProductPrice(product);
+    productDetailPrice.classList.toggle('has-discount', Boolean(product.hasDiscount));
+  }
 
   if (addToCartButton) {
     const available = Boolean(availableSize);
@@ -500,7 +527,7 @@ function renderCart() {
 
       <div class="cart-item-bottom">
         <span>SIZE ${item.size}</span>
-        <strong>${product.priceLabel}</strong>
+        <strong class="cart-price">${renderProductPrice(product)}</strong>
       </div>
     `;
 
@@ -673,6 +700,7 @@ function getFilteredProductIds() {
       product.brand,
       product.name,
       product.priceLabel,
+      product.oldPriceLabel,
       getProductCategoryLabel(product),
       product.sizes.join(' '),
       product.details,
@@ -708,7 +736,7 @@ function createProductCard(product) {
     <div class="product-info">
       <p class="product-brand">${product.brand}</p>
       <h2>${product.name}</h2>
-      <p class="product-price">${product.priceLabel}</p>
+      <p class="product-price">${renderProductPrice(product)}</p>
     </div>
   `;
   return article;
@@ -1432,7 +1460,7 @@ function buildPickupMessage() {
     const product = products[item.productId];
     lines.push(`${index + 1}. ${product.brand} — ${product.name}`);
     lines.push(`Размер: ${item.size}`);
-    lines.push(`Цена: ${product.priceLabel}`);
+    lines.push(`Цена: ${getProductPriceText(product)}`);
     lines.push(`Фото: ${new URL((product.images?.[0] || product.image).replace(/^\.\//, ''), window.location.href).href}`);
     lines.push('');
   });

@@ -183,4 +183,9 @@ def product_short_title(product: dict) -> str:
     name = product.get("name") or ""
     size_count = len(product.get("sizes") or [])
     active = "активен" if product.get("isActive", True) else "скрыт"
-    return f"{brand} — {name}\n{format_price(product.get('price', 0))} · {product.get('category', '')} · {size_count} разм. · {active}"
+    if product.get("autoHiddenNoStock"):
+        active = "нет остатков"
+    base_price = parse_price(str(product.get("price") or "")) or 0
+    discount_price = parse_price(str(product.get("discountPrice") or "")) or 0
+    price_text = format_price(discount_price) if discount_price and discount_price < base_price else format_price(base_price)
+    return f"{brand} — {name}\n{price_text} · {product.get('category', '')} · {size_count} разм. · {active}"
