@@ -51,7 +51,7 @@
   {
     "id": "test-black-hoodie-aa037053",
     "brand": "TEST",
-    "name": "BLACK HOODIE",
+    "name": "FAN HOODIE",
     "price": 77000,
     "currency": "RUB",
     "category": "ХУДИ",
@@ -70,7 +70,7 @@
     "detailImage": "images/products/test-black-hoodie-aa037053-0bfa0296-1.jpg",
     "isActive": true,
     "createdAt": "2026-06-30T17:29:51.029724+00:00",
-    "updatedAt": "2026-07-01T18:16:42.169302+00:00"
+    "updatedAt": "2026-07-01T18:17:04.111070+00:00"
   },
   {
     "id": "bottega-veneta-vert-bag-70a6a8e0",
