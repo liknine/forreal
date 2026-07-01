@@ -64,9 +64,48 @@ def product_manage_kb(product: dict) -> InlineKeyboardMarkup:
     visibility_action = "hide" if is_active else "show"
     return InlineKeyboardMarkup(
         inline_keyboard=[
+            [InlineKeyboardButton(text="Редактировать", callback_data=f"product:edit:{product_id}")],
             [InlineKeyboardButton(text=visibility_text, callback_data=f"product:{visibility_action}:{product_id}")],
             [InlineKeyboardButton(text="Удалить", callback_data=f"product:delete:{product_id}")],
             [InlineKeyboardButton(text="К товарам", callback_data="admin:products")],
+        ]
+    )
+
+
+def product_edit_kb() -> InlineKeyboardMarkup:
+    return InlineKeyboardMarkup(
+        inline_keyboard=[
+            [
+                InlineKeyboardButton(text="Цена", callback_data="product:edit_field:price"),
+                InlineKeyboardButton(text="Остатки", callback_data="product:edit_field:sizes"),
+            ],
+            [
+                InlineKeyboardButton(text="Бренд", callback_data="product:edit_field:brand"),
+                InlineKeyboardButton(text="Название", callback_data="product:edit_field:name"),
+            ],
+            [
+                InlineKeyboardButton(text="Категория", callback_data="product:edit_field:category"),
+                InlineKeyboardButton(text="Описание", callback_data="product:edit_field:details"),
+            ],
+            [InlineKeyboardButton(text="Фото", callback_data="product:edit_field:photos")],
+            [InlineKeyboardButton(text="Отмена", callback_data="product:edit_cancel")],
+        ]
+    )
+
+
+def product_edit_categories_kb() -> InlineKeyboardMarkup:
+    rows = []
+    for category in CATEGORIES:
+        rows.append([InlineKeyboardButton(text=category.label, callback_data=f"product:edit_cat:{category.key}")])
+    rows.append([InlineKeyboardButton(text="Отмена", callback_data="product:edit_cancel")])
+    return InlineKeyboardMarkup(inline_keyboard=rows)
+
+
+def product_edit_photos_kb() -> InlineKeyboardMarkup:
+    return InlineKeyboardMarkup(
+        inline_keyboard=[
+            [InlineKeyboardButton(text="✅ Заменить фото", callback_data="product:edit_photos_finish")],
+            [InlineKeyboardButton(text="Отмена", callback_data="product:edit_cancel")],
         ]
     )
 

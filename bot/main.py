@@ -1,10 +1,12 @@
 import asyncio
 import json
 from pathlib import Path
+from uuid import uuid4
 
 from aiogram import Bot, Dispatcher, F
 from aiogram.client.default import DefaultBotProperties
 from aiogram.enums import ParseMode
+from aiogram.exceptions import TelegramBadRequest, TelegramForbiddenError
 from aiogram.filters import Command, CommandStart
 from aiogram.fsm.context import FSMContext
 from aiogram.fsm.state import State, StatesGroup
@@ -31,6 +33,9 @@ from keyboards import (
     admin_panel_kb,
     main_menu_kb,
     product_categories_kb,
+    product_edit_categories_kb,
+    product_edit_kb,
+    product_edit_photos_kb,
     product_manage_kb,
     products_list_kb,
 )
@@ -63,11 +68,62 @@ class AddProductState(StatesGroup):
     photos = State()
 
 
+class EditProductState(StatesGroup):
+    value = State()
+    photos = State()
+
+
 dp = Dispatcher()
 
 
 def is_admin(user_id: int) -> bool:
     return user_id in config.admin_ids
+
+
+async def safe_send_admin_message(bot: Bot, admin_id: int, **kwargs) -> bool:
+    try:
+        await bot.send_message(chat_id=admin_id, **kwargs)
+        return True
+    except (TelegramBadRequest, TelegramForbiddenError) as exc:
+        print(f"ADMIN MESSAGE SKIPPED {admin_id}: {exc}")
+        return False
+    except Exception as exc:
+        print(f"ADMIN MESSAGE FAILED {admin_id}: {exc}")
+        return False
+
+
+async def safe_send_admin_photo(bot: Bot, admin_id: int, photo_id: str, caption: str, reply_markup) -> bool:
+    try:
+        await bot.send_photo(
+            chat_id=admin_id,
+            photo=photo_id,
+            caption=caption,
+            reply_markup=reply_markup,
+        )
+        return True
+    except (TelegramBadRequest, TelegramForbiddenError) as exc:
+        print(f"ADMIN PHOTO SKIPPED {admin_id}: {exc}")
+        return False
+    except Exception as exc:
+        print(f"ADMIN PHOTO FAILED {admin_id}: {exc}")
+        return False
+
+
+async def safe_send_admin_document(bot: Bot, admin_id: int, document_id: str, caption: str, reply_markup) -> bool:
+    try:
+        await bot.send_document(
+            chat_id=admin_id,
+            document=document_id,
+            caption=caption,
+            reply_markup=reply_markup,
+        )
+        return True
+    except (TelegramBadRequest, TelegramForbiddenError) as exc:
+        print(f"ADMIN DOCUMENT SKIPPED {admin_id}: {exc}")
+        return False
+    except Exception as exc:
+        print(f"ADMIN DOCUMENT FAILED {admin_id}: {exc}")
+        return False
 
 
 async def require_admin_message(message: Message) -> bool:
@@ -146,12 +202,18 @@ async def handle_web_app_data(message: Message) -> None:
     await publish_public_orders("Add public order")
 
     admin_text = build_admin_order_text(order)
+    delivered_admins = 0
     for admin_id in config.admin_ids:
-        await message.bot.send_message(
-            chat_id=admin_id,
+        if await safe_send_admin_message(
+            message.bot,
+            admin_id,
             text=admin_text,
             reply_markup=admin_order_kb(order["id"]),
-        )
+        ):
+            delivered_admins += 1
+
+    if delivered_admins == 0:
+        print("WARNING: ORDER WAS NOT DELIVERED TO ANY ADMIN", order.get("orderNumber"), list(config.admin_ids))
 
     await message.answer(
         build_client_payment_text(order),
@@ -420,6 +482,271 @@ async def product_view(callback: CallbackQuery) -> None:
     await callback.answer()
 
 
+
+
+EDIT_FIELD_LABELS = {
+    "brand": "бренд",
+    "name": "название",
+    "price": "цену",
+    "sizes": "размеры/остатки",
+    "details": "описание",
+    "category": "категорию",
+    "photos": "фото",
+}
+
+
+async def apply_product_updates(product_id: str, updates: dict) -> dict | None:
+    product = await find_product(product_id)
+    if not product:
+        return None
+    updated = dict(product)
+    updated.update(updates)
+    updated["id"] = product_id  # ID не меняем даже при смене бренда/названия.
+    return await add_or_update_product(updated)
+
+
+@dp.callback_query(F.data.startswith("product:edit:"))
+async def product_edit_start(callback: CallbackQuery, state: FSMContext) -> None:
+    if not await require_admin_callback(callback):
+        return
+    product_id = callback.data.split(":", 2)[2]
+    product = await find_product(product_id)
+    if not product:
+        await callback.answer("Товар не найден", show_alert=True)
+        return
+    await state.clear()
+    await state.update_data(edit_product_id=product_id)
+    await callback.message.answer(
+        "Что редактируем?\n\n"
+        "ID товара не будет меняться, даже если изменить бренд или название.\n\n"
+        + build_product_text(product),
+        reply_markup=product_edit_kb(),
+    )
+    await callback.answer()
+
+
+@dp.callback_query(F.data == "product:edit_cancel")
+async def product_edit_cancel(callback: CallbackQuery, state: FSMContext) -> None:
+    if not await require_admin_callback(callback):
+        return
+    data = await state.get_data()
+    product_id = data.get("edit_product_id")
+    await state.clear()
+    product = await find_product(product_id) if product_id else None
+    if product:
+        await callback.message.answer("Редактирование отменено.\n\n" + build_product_text(product), reply_markup=product_manage_kb(product))
+    else:
+        await callback.message.answer("Редактирование отменено.", reply_markup=admin_panel_kb())
+    await callback.answer("Отменено")
+
+
+@dp.callback_query(F.data.startswith("product:edit_field:"))
+async def product_edit_field(callback: CallbackQuery, state: FSMContext) -> None:
+    if not await require_admin_callback(callback):
+        return
+    field = callback.data.split(":", 2)[2]
+    data = await state.get_data()
+    product_id = data.get("edit_product_id")
+    product = await find_product(product_id) if product_id else None
+    if not product:
+        await state.clear()
+        await callback.answer("Сначала открой товар заново", show_alert=True)
+        return
+
+    if field == "category":
+        await callback.message.answer("Выбери новую категорию:", reply_markup=product_edit_categories_kb())
+        await callback.answer()
+        return
+
+    if field == "photos":
+        await state.set_state(EditProductState.photos)
+        await state.update_data(edit_field="photos", edit_photos=[])
+        await callback.message.answer(
+            "Отправь новые фото товара. Можно несколькими сообщениями.\n\n"
+            "Старые файлы не удаляются, чтобы не ломать старые заказы. "
+            "После загрузки нажми ✅ Заменить фото.",
+            reply_markup=product_edit_photos_kb(),
+        )
+        await callback.answer()
+        return
+
+    if field not in {"brand", "name", "price", "sizes", "details"}:
+        await callback.answer("Неизвестное поле", show_alert=True)
+        return
+
+    await state.set_state(EditProductState.value)
+    await state.update_data(edit_field=field)
+
+    prompts = {
+        "brand": "Введи новый бренд товара. ID останется прежним.",
+        "name": "Введи новое название товара. ID останется прежним.",
+        "price": "Введи новую цену числом. Например: 12500",
+        "sizes": "Введи новые размеры и остатки.\n\nПример: S:2, M:3, L:1, XL:0",
+        "details": "Введи новое описание товара. Напиши '-' если описание нужно очистить.",
+    }
+    await callback.message.answer(prompts[field])
+    await callback.answer()
+
+
+@dp.callback_query(F.data.startswith("product:edit_cat:"))
+async def product_edit_category(callback: CallbackQuery, state: FSMContext) -> None:
+    if not await require_admin_callback(callback):
+        return
+    category_key = callback.data.split(":", 2)[2]
+    category_label = CATEGORY_LABELS.get(category_key)
+    if not category_label:
+        await callback.answer("Неизвестная категория", show_alert=True)
+        return
+
+    data = await state.get_data()
+    product_id = data.get("edit_product_id")
+    product = await apply_product_updates(product_id, {"category": category_label}) if product_id else None
+    if not product:
+        await state.clear()
+        await callback.answer("Товар не найден", show_alert=True)
+        return
+
+    await state.clear()
+    await callback.message.answer("Категория обновлена.\n\n" + build_product_text(product), reply_markup=product_manage_kb(product))
+    await callback.answer("Готово")
+
+
+@dp.message(EditProductState.value)
+async def product_edit_value(message: Message, state: FSMContext) -> None:
+    if not await require_admin_message(message):
+        return
+
+    data = await state.get_data()
+    product_id = data.get("edit_product_id")
+    field = data.get("edit_field")
+    text = (message.text or "").strip()
+
+    if not product_id or field not in {"brand", "name", "price", "sizes", "details"}:
+        await state.clear()
+        await message.answer("Редактирование сброшено. Открой товар заново через /products.")
+        return
+
+    updates = {}
+    if field == "brand":
+        if len(text) < 2:
+            await message.answer("Бренд слишком короткий. Введи бренд еще раз.")
+            return
+        updates["brand"] = text
+    elif field == "name":
+        if len(text) < 2:
+            await message.answer("Название слишком короткое. Введи название еще раз.")
+            return
+        updates["name"] = text
+    elif field == "price":
+        price = parse_price(text)
+        if not price or price <= 0:
+            await message.answer("Не понял цену. Введи числом, например: 12500")
+            return
+        updates["price"] = price
+    elif field == "sizes":
+        sizes, size_stock = parse_size_stock(text)
+        if not sizes:
+            await message.answer("Не понял размеры. Напиши по примеру: S:2, M:3, L:1")
+            return
+        updates["sizes"] = sizes
+        updates["sizeStock"] = size_stock
+    elif field == "details":
+        updates["details"] = "" if text in {"-", "—", "нет", "Нет", "НЕТ"} else text
+
+    try:
+        product = await apply_product_updates(product_id, updates)
+    except Exception as exc:
+        await message.answer(f"Не удалось обновить товар: {escape_html(exc)}")
+        return
+
+    if not product:
+        await state.clear()
+        await message.answer("Товар не найден. Открой список товаров заново через /products.")
+        return
+
+    await state.clear()
+    await message.answer(
+        f"Обновлено: {EDIT_FIELD_LABELS.get(field, field)}.\n\n" + build_product_text(product),
+        reply_markup=product_manage_kb(product),
+    )
+
+
+@dp.message(EditProductState.photos, F.photo | F.document)
+async def product_edit_photo(message: Message, state: FSMContext) -> None:
+    if not await require_admin_message(message):
+        return
+
+    photo_data = None
+    if message.photo:
+        photo_data = {"file_id": message.photo[-1].file_id, "ext": ".jpg"}
+    elif message.document and message.document.mime_type and message.document.mime_type.startswith("image/"):
+        filename = message.document.file_name or "image.jpg"
+        ext = Path(filename).suffix or ".jpg"
+        photo_data = {"file_id": message.document.file_id, "ext": ext}
+
+    if not photo_data:
+        await message.answer("Нужно отправить фото или image-документ.", reply_markup=product_edit_photos_kb())
+        return
+
+    data = await state.get_data()
+    photos = data.get("edit_photos") or []
+    photos.append(photo_data)
+    await state.update_data(edit_photos=photos)
+    await message.answer(f"Новое фото добавлено: {len(photos)} шт.", reply_markup=product_edit_photos_kb())
+
+
+@dp.message(EditProductState.photos)
+async def product_edit_photo_wrong(message: Message) -> None:
+    await message.answer("Отправь новое фото товара или нажми ✅ Заменить фото.", reply_markup=product_edit_photos_kb())
+
+
+@dp.callback_query(F.data == "product:edit_photos_finish")
+async def product_edit_photos_finish(callback: CallbackQuery, state: FSMContext) -> None:
+    if not await require_admin_callback(callback):
+        return
+
+    data = await state.get_data()
+    product_id = data.get("edit_product_id")
+    photos = data.get("edit_photos") or []
+    if not product_id:
+        await state.clear()
+        await callback.answer("Открой товар заново", show_alert=True)
+        return
+    if not photos:
+        await callback.answer("Добавь хотя бы одно фото", show_alert=True)
+        return
+
+    current_product = await find_product(product_id)
+    if not current_product:
+        await state.clear()
+        await callback.answer("Товар не найден", show_alert=True)
+        return
+
+    await callback.message.answer("Сохраняю новые фото...")
+    try:
+        photo_key = f"{product_id}-{uuid4().hex[:8]}"
+        image_paths = await save_product_photos(callback.bot, photo_key, photos)
+        product = await apply_product_updates(
+            product_id,
+            {
+                "images": image_paths,
+                "detailImage": image_paths[0] if image_paths else "",
+            },
+        )
+    except Exception as exc:
+        await callback.message.answer(f"Не удалось заменить фото: {escape_html(exc)}")
+        return
+
+    if not product:
+        await state.clear()
+        await callback.answer("Товар не найден", show_alert=True)
+        return
+
+    await state.clear()
+    await callback.message.answer("Фото товара заменены.\n\n" + build_product_text(product), reply_markup=product_manage_kb(product))
+    await callback.answer("Готово")
+
+
 @dp.callback_query(F.data.startswith("product:hide:") | F.data.startswith("product:show:"))
 async def product_toggle(callback: CallbackQuery) -> None:
     if not await require_admin_callback(callback):
@@ -504,21 +831,29 @@ async def receive_receipt_photo(message: Message, state: FSMContext) -> None:
         f"Статус: {code(STATUS_LABELS.get(order['status'], order['status']))}"
     )
 
+    delivered_admins = 0
     for admin_id in config.admin_ids:
         if proof_kind == "document":
-            await message.bot.send_document(
-                chat_id=admin_id,
-                document=photo_id,
-                caption=caption,
-                reply_markup=admin_order_kb(order_id),
+            ok = await safe_send_admin_document(
+                message.bot,
+                admin_id,
+                photo_id,
+                caption,
+                admin_order_kb(order_id),
             )
         else:
-            await message.bot.send_photo(
-                chat_id=admin_id,
-                photo=photo_id,
-                caption=caption,
-                reply_markup=admin_order_kb(order_id),
+            ok = await safe_send_admin_photo(
+                message.bot,
+                admin_id,
+                photo_id,
+                caption,
+                admin_order_kb(order_id),
             )
+        if ok:
+            delivered_admins += 1
+
+    if delivered_admins == 0:
+        print("WARNING: PAYMENT PROOF WAS NOT DELIVERED TO ANY ADMIN", order.get("orderNumber"), list(config.admin_ids))
 
 
 @dp.message(ReceiptState.waiting_photo)

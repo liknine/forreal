@@ -16,6 +16,10 @@
   --header-height: 78px;
   --nav-height: 68px;
   --nav-radius: 999px;
+  --safe-bottom: env(safe-area-inset-bottom, 0px);
+  --nav-bottom-gap: 14px;
+  --nav-clearance: 28px;
+  --nav-reserved-space: calc(var(--nav-height) + var(--nav-bottom-gap) + var(--safe-bottom) + var(--nav-clearance));
 
   --nav-shadow: 0 18px 32px rgba(0, 0, 0, .16), 0 6px 14px rgba(0, 0, 0, .08), inset 0 0 0 1px rgba(255, 255, 255, .92);
   --font-brand: "Satoshi", "Helvetica Now Display", "Helvetica Neue", Arial, sans-serif;
@@ -385,7 +389,7 @@ button {
 .catalog-content {
   flex: 1 1 auto;
   min-height: 0;
-  padding: 14px 18px calc(122px + env(safe-area-inset-bottom));
+  padding: 14px 18px max(122px, var(--nav-reserved-space));
   overflow: visible;
   background: var(--surface);
 }
@@ -514,7 +518,7 @@ button {
   background: var(--surface);
   scrollbar-width: none;
   -webkit-overflow-scrolling: touch;
-  scroll-padding-bottom: calc(132px + env(safe-area-inset-bottom));
+  scroll-padding-bottom: max(132px, var(--nav-reserved-space));
 }
 
 .product-screen::-webkit-scrollbar {
@@ -766,7 +770,7 @@ button {
   background: var(--surface);
   scrollbar-width: none;
   -webkit-overflow-scrolling: touch;
-  scroll-padding-bottom: calc(132px + env(safe-area-inset-bottom));
+  scroll-padding-bottom: max(132px, var(--nav-reserved-space));
 }
 
 .cart-screen::-webkit-scrollbar { display: none; }
@@ -1023,7 +1027,7 @@ button {
   background: var(--surface);
   scrollbar-width: none;
   -webkit-overflow-scrolling: touch;
-  scroll-padding-bottom: calc(132px + env(safe-area-inset-bottom));
+  scroll-padding-bottom: max(132px, var(--nav-reserved-space));
 }
 
 .profile-screen::-webkit-scrollbar { display: none; }
@@ -1759,7 +1763,7 @@ button {
 .bottom-nav {
   position: fixed;
   left: 50%;
-  bottom: calc(14px + env(safe-area-inset-bottom));
+  bottom: calc(var(--nav-bottom-gap) + var(--safe-bottom));
   z-index: 50;
   width: min(calc(100vw - 48px), 358px);
   height: var(--nav-height);
@@ -1873,7 +1877,7 @@ button {
   .collection-title { font-size: clamp(28px, 7.8vw, 36px); margin-bottom: 6px; }
   .collection-subtitle { font-size: clamp(9.8px, 2.5vw, 11.4px); margin-bottom: 18px; }
   .catalog-cta { height: 44px; font-size: 15.8px; }
-  .catalog-content { padding-top: 12px; padding-bottom: calc(86px + env(safe-area-inset-bottom)); }
+  .catalog-content { padding-top: 12px; padding-bottom: max(112px, var(--nav-reserved-space)); }
   .filter-button { height: 40px; font-size: 14.8px; }
   .product-grid { margin-top: 15px; }
   .product-card { height: clamp(286px, calc(100dvh - 383px), 362px); }

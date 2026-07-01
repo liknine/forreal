@@ -68,7 +68,9 @@ def slugify(value: str, max_len: int = 42) -> str:
 
 
 def make_product_id(brand: str, name: str) -> str:
-    base = slugify(f"{brand}-{name}")
+    # Держим ID достаточно коротким, чтобы callback_data Telegram
+    # не превышал лимит даже у кнопок удаления/редактирования.
+    base = slugify(f"{brand}-{name}", max_len=36)
     return f"{base}-{uuid.uuid4().hex[:8]}"
 
 
