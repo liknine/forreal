@@ -57,11 +57,13 @@
     "category": "ХУДИ",
     "sizes": [
       "S",
-      "M"
+      "M",
+      "L"
     ],
     "sizeStock": {
-      "S": 0,
-      "M": 0
+      "S": 2,
+      "M": 3,
+      "L": 1
     },
     "details": "тестовый",
     "images": [
@@ -70,7 +72,7 @@
     "detailImage": "images/products/test-black-hoodie-aa037053-0bfa0296-1.jpg",
     "isActive": true,
     "createdAt": "2026-06-30T17:29:51.029724+00:00",
-    "updatedAt": "2026-07-01T18:17:14.354209+00:00"
+    "updatedAt": "2026-07-01T19:03:51.774354+00:00"
   },
   {
     "id": "bottega-veneta-vert-bag-70a6a8e0",
