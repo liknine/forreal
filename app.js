@@ -884,21 +884,12 @@ function syncTelegramViewportVars(tg) {
   }
 
   document.documentElement.classList.toggle('tg-expanded', Boolean(tg.isExpanded));
-  document.documentElement.classList.toggle('tg-fullscreen', Boolean(tg.isFullscreen));
 }
 
-function requestTelegramFullHeight(tg) {
+function requestTelegramExpandedHeight(tg) {
   if (!tg) return;
   try { tg.ready(); } catch (error) {}
   try { tg.expand(); } catch (error) {}
-
-  // Newer Telegram clients support true fullscreen. Older clients will just ignore this.
-  try {
-    if (typeof tg.requestFullscreen === 'function' && !tg.isFullscreen) {
-      tg.requestFullscreen();
-    }
-  } catch (error) {}
-
   syncTelegramViewportVars(tg);
 }
 
@@ -906,24 +897,18 @@ function setupTelegramWebApp() {
   const tg = getTelegramWebApp();
   if (!tg) return;
 
-  requestTelegramFullHeight(tg);
+  requestTelegramExpandedHeight(tg);
 
   try {
     tg.onEvent?.('viewportChanged', () => {
-      requestTelegramFullHeight(tg);
+      requestTelegramExpandedHeight(tg);
     });
   } catch (error) {}
 
   try {
-    tg.onEvent?.('fullscreenChanged', () => {
-      syncTelegramViewportVars(tg);
-    });
-  } catch (error) {}
-
-  try {
-    window.setTimeout(() => requestTelegramFullHeight(tg), 120);
-    window.setTimeout(() => requestTelegramFullHeight(tg), 450);
-    window.setTimeout(() => requestTelegramFullHeight(tg), 1000);
+    window.setTimeout(() => requestTelegramExpandedHeight(tg), 120);
+    window.setTimeout(() => requestTelegramExpandedHeight(tg), 450);
+    window.setTimeout(() => requestTelegramExpandedHeight(tg), 1000);
   } catch (error) {}
 }
 
