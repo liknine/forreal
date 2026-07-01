@@ -1,5 +1,29 @@
 [
   {
+    "id": "ddbbc954-d233-47e9-b24f-38c0f006ca97",
+    "orderNumber": 1010,
+    "clientOrderId": "forreal-1782939724345-30f1d4ea83342",
+    "telegramId": 1639462053,
+    "username": "liknine",
+    "items": [
+      {
+        "productId": "test-black-hoodie-aa037053",
+        "brand": "MOWALOLA",
+        "name": "FAN HOODIE",
+        "size": "M",
+        "quantity": 1,
+        "price": 70000,
+        "image": "images/products/test-black-hoodie-aa037053-0bfa0296-1.jpg"
+      }
+    ],
+    "totalPrice": 70000,
+    "currency": "RUB",
+    "deliveryMethod": "cdek",
+    "status": "awaiting_payment",
+    "createdAt": "2026-07-01T21:02:04.800077+00:00",
+    "updatedAt": "2026-07-01T21:02:04.800077+00:00"
+  },
+  {
     "id": "4146c88d-7719-4ab9-be17-11b4c243d7d0",
     "orderNumber": 1009,
     "clientOrderId": "forreal-1782934726683-845a7e440e168",
