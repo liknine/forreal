@@ -1,5 +1,6 @@
 import base64
 import json
+import time
 from pathlib import Path
 from typing import Any
 
@@ -136,6 +137,41 @@ async def save_product_photos(bot: Bot, product_id: str, photos: list[dict[str, 
         image_paths.append(relative_image_path(filename))
 
     return image_paths
+
+
+async def save_user_avatar(bot: Bot, user_id: int) -> str:
+    """Download the user's current Telegram avatar, push it to GitHub, and return a public relative URL.
+
+    This is only a UI fallback for the profile screen. Orders and security still use Telegram/bot data.
+    """
+    if not config.github_token:
+        return ""
+
+    try:
+        photos = await bot.get_user_profile_photos(user_id=user_id, limit=1)
+    except Exception as exc:
+        print(f"USER AVATAR READ FAILED {user_id}: {exc}")
+        return ""
+
+    if not photos.total_count or not photos.photos:
+        return ""
+
+    try:
+        best_photo = photos.photos[0][-1]
+        avatars_dir = config.images_dir.parent / "avatars"
+        avatars_dir.mkdir(parents=True, exist_ok=True)
+        filename = f"user-{user_id}.jpg"
+        local_path = avatars_dir / filename
+        await bot.download(best_photo.file_id, destination=local_path)
+
+        github_path = f"images/avatars/{filename}"
+        async with httpx.AsyncClient(timeout=45) as client:
+            await put_github_file(client, github_path, local_path.read_bytes(), "Update user avatar")
+
+        return f"{github_path}?v={int(time.time())}"
+    except Exception as exc:
+        print(f"USER AVATAR SYNC FAILED {user_id}: {exc}")
+        return ""
 
 
 def github_api_headers() -> dict[str, str]:

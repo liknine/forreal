@@ -833,7 +833,7 @@ function getActiveDeliveryMethod() {
 }
 
 
-const TELEGRAM_PROFILE_CACHE_KEY = 'forreal_telegram_profile_v1';
+const TELEGRAM_PROFILE_CACHE_KEY = 'forreal_telegram_profile_v2';
 let telegramProfileRetryTimer = null;
 let telegramProfileLastPhotoUrl = '';
 
@@ -849,7 +849,61 @@ function setupTelegramWebApp() {
 }
 
 function getTelegramInitData() {
-  return getTelegramWebApp()?.initData || '';
+  const tgInitData = getTelegramWebApp()?.initData || '';
+  if (tgInitData) return tgInitData;
+
+  const sources = [window.location.search, window.location.hash.replace(/^#/, '')];
+  for (const source of sources) {
+    if (!source) continue;
+    try {
+      const params = new URLSearchParams(source);
+      const tgData = params.get('tgWebAppData') || params.get('tg_web_app_data') || '';
+      if (tgData) return tgData;
+    } catch (error) {}
+  }
+
+  return '';
+}
+
+function getUrlParamValue(key) {
+  const sources = [window.location.search, window.location.hash.replace(/^#/, '')];
+  for (const source of sources) {
+    if (!source) continue;
+    try {
+      const params = new URLSearchParams(source);
+      const value = params.get(key);
+      if (value) return value;
+    } catch (error) {}
+  }
+  return '';
+}
+
+function getUrlTelegramUserCandidate() {
+  const uid = getUrlParamValue('fr_uid');
+  const firstName = getUrlParamValue('fr_first');
+  const lastName = getUrlParamValue('fr_last');
+  const username = getUrlParamValue('fr_username');
+  const photoUrl = getUrlParamValue('fr_photo');
+
+  if (!uid && !firstName && !lastName && !username && !photoUrl) return null;
+
+  return {
+    id: uid,
+    first_name: firstName,
+    last_name: lastName,
+    username,
+    photo_url: photoUrl,
+  };
+}
+
+function resolveProfilePhotoUrl(photoUrl) {
+  const value = String(photoUrl || '').trim();
+  if (!value) return '';
+  try {
+    return new URL(value, window.location.href).href;
+  } catch (error) {
+    return value;
+  }
 }
 
 function parseTelegramUserCandidate(candidate) {
@@ -883,7 +937,7 @@ function normalizeTelegramUser(user) {
     first_name: String(user.first_name || '').trim(),
     last_name: String(user.last_name || '').trim(),
     username: String(user.username || '').replace(/^@+/, '').trim(),
-    photo_url: String(user.photo_url || '').trim(),
+    photo_url: resolveProfilePhotoUrl(user.photo_url || ''),
   };
 
   if (!normalized.id && !normalized.first_name && !normalized.last_name && !normalized.username && !normalized.photo_url) {
@@ -914,6 +968,7 @@ function getTelegramUser(options = {}) {
   const tg = getTelegramWebApp();
   const candidates = [];
 
+  candidates.push(getUrlTelegramUserCandidate());
   candidates.push(tg?.initDataUnsafe?.user);
 
   const initData = getTelegramInitData();
@@ -1037,9 +1092,9 @@ function startTelegramProfileSync() {
 
   const tick = () => {
     const freshUser = renderTelegramProfile({ allowStored: false });
-    const hasRealProfile = Boolean(freshUser?.id || freshUser?.username || freshUser?.first_name || freshUser?.photo_url);
-    if (hasRealProfile || attempt >= maxAttempts) {
-      if (!hasRealProfile) renderTelegramProfile({ allowStored: true });
+    const hasDisplayProfile = Boolean(freshUser?.username || freshUser?.first_name || freshUser?.last_name || freshUser?.photo_url);
+    if (hasDisplayProfile || attempt >= maxAttempts) {
+      if (!hasDisplayProfile) renderTelegramProfile({ allowStored: true });
       return;
     }
 

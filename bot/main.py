@@ -1,6 +1,7 @@
 import asyncio
 import json
 from pathlib import Path
+from urllib.parse import parse_qsl, urlencode, urlsplit, urlunsplit
 from uuid import uuid4
 
 from aiogram import Bot, Dispatcher, F
@@ -24,6 +25,7 @@ from github_storage import (
     push_public_orders_to_github,
     save_product_photos,
     save_public_orders,
+    save_user_avatar,
     toggle_product_active,
 )
 from keyboards import (
@@ -140,6 +142,38 @@ async def require_admin_callback(callback: CallbackQuery) -> bool:
     return True
 
 
+def append_url_params(url: str, params: dict[str, str]) -> str:
+    clean_params = {key: value for key, value in params.items() if value not in (None, "")}
+    if not clean_params:
+        return url
+
+    parts = urlsplit(url)
+    query = dict(parse_qsl(parts.query, keep_blank_values=True))
+    query.update(clean_params)
+    return urlunsplit((parts.scheme, parts.netloc, parts.path, urlencode(query), parts.fragment))
+
+
+async def build_personal_mini_app_url(message: Message) -> str:
+    """Add reliable Telegram user data to the WebApp URL.
+
+    Telegram WebApp initData can be missing on some cached/old buttons. These params are not used for
+    order security; they are only a profile UI fallback.
+    """
+    user = message.from_user
+    params = {
+        "fr_uid": str(user.id),
+        "fr_first": user.first_name or "",
+        "fr_last": user.last_name or "",
+        "fr_username": user.username or "",
+    }
+
+    avatar_url = await save_user_avatar(message.bot, user.id)
+    if avatar_url:
+        params["fr_photo"] = avatar_url
+
+    return append_url_params(config.mini_app_url, params)
+
+
 async def publish_public_orders(reason: str = "Update public orders") -> None:
     """Write safe order list to data/orders_public.json and autopush it to GitHub if token is set."""
     try:
@@ -154,9 +188,10 @@ async def publish_public_orders(reason: str = "Update public orders") -> None:
 
 @dp.message(CommandStart())
 async def cmd_start(message: Message) -> None:
+    mini_app_url = await build_personal_mini_app_url(message)
     await message.answer(
         "Привет. Это каталог ForReal.\n\nОткрой каталог через кнопку снизу — так заказ корректно отправится в бота.",
-        reply_markup=main_menu_kb(config.mini_app_url),
+        reply_markup=main_menu_kb(mini_app_url),
     )
 
 
