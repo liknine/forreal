@@ -171,6 +171,12 @@ async def build_personal_mini_app_url(message: Message) -> str:
     if avatar_url:
         params["fr_photo"] = avatar_url
 
+    print(
+        "PROFILE BUTTON DATA",
+        f"user_id={user.id}",
+        f"username={user.username or '-'}",
+        f"avatar={'ok' if avatar_url else 'missing'}",
+    )
     return append_url_params(config.mini_app_url, params)
 
 

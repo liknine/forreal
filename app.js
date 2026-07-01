@@ -963,12 +963,44 @@ function storeTelegramUser(user) {
   } catch (error) {}
 }
 
+function mergeTelegramUserCandidates(candidates) {
+  const normalizedCandidates = candidates
+    .map((candidate) => normalizeTelegramUser(parseTelegramUserCandidate(candidate)))
+    .filter(Boolean);
+
+  if (!normalizedCandidates.length) return null;
+
+  const merged = {
+    id: null,
+    first_name: '',
+    last_name: '',
+    username: '',
+    photo_url: '',
+  };
+
+  normalizedCandidates.forEach((user) => {
+    // Берем данные не из первого попавшегося источника, а склеиваем их.
+    // Частый кейс: URL от бота дает username, а Telegram WebApp/initData дает photo_url.
+    if (!merged.id && user.id) merged.id = user.id;
+    if (!merged.first_name && user.first_name) merged.first_name = user.first_name;
+    if (!merged.last_name && user.last_name) merged.last_name = user.last_name;
+    if (!merged.username && user.username) merged.username = user.username;
+    if (!merged.photo_url && user.photo_url) merged.photo_url = user.photo_url;
+  });
+
+  return normalizeTelegramUser(merged);
+}
+
 function getTelegramUser(options = {}) {
   const allowStored = options.allowStored !== false;
   const tg = getTelegramWebApp();
   const candidates = [];
 
+  // Сначала URL-параметры от персональной кнопки бота.
   candidates.push(getUrlTelegramUserCandidate());
+
+  // Потом реальные Telegram WebApp данные. Они могут содержать photo_url,
+  // даже если URL уже дал username. Поэтому нельзя останавливаться на первом кандидате.
   candidates.push(tg?.initDataUnsafe?.user);
 
   const initData = getTelegramInitData();
@@ -979,15 +1011,17 @@ function getTelegramUser(options = {}) {
     } catch (error) {}
   }
 
-  for (const candidate of candidates) {
-    const normalized = normalizeTelegramUser(parseTelegramUserCandidate(candidate));
-    if (normalized) {
-      storeTelegramUser(normalized);
-      return normalized;
-    }
+  if (allowStored) {
+    candidates.push(getStoredTelegramUser());
   }
 
-  return allowStored ? getStoredTelegramUser() : null;
+  const merged = mergeTelegramUserCandidates(candidates);
+  if (merged) {
+    storeTelegramUser(merged);
+    return merged;
+  }
+
+  return null;
 }
 
 function getCurrentTelegramId() {

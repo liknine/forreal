@@ -145,6 +145,7 @@ async def save_user_avatar(bot: Bot, user_id: int) -> str:
     This is only a UI fallback for the profile screen. Orders and security still use Telegram/bot data.
     """
     if not config.github_token:
+        print(f"USER AVATAR SKIPPED {user_id}: GITHUB_TOKEN is empty")
         return ""
 
     try:
@@ -154,6 +155,7 @@ async def save_user_avatar(bot: Bot, user_id: int) -> str:
         return ""
 
     if not photos.total_count or not photos.photos:
+        print(f"USER AVATAR MISSING {user_id}: Telegram returned no profile photos. Check avatar privacy settings.")
         return ""
 
     try:
@@ -168,7 +170,9 @@ async def save_user_avatar(bot: Bot, user_id: int) -> str:
         async with httpx.AsyncClient(timeout=45) as client:
             await put_github_file(client, github_path, local_path.read_bytes(), "Update user avatar")
 
-        return f"{github_path}?v={int(time.time())}"
+        avatar_url = f"{github_path}?v={int(time.time())}"
+        print(f"USER AVATAR SYNCED {user_id}: {avatar_url}")
+        return avatar_url
     except Exception as exc:
         print(f"USER AVATAR SYNC FAILED {user_id}: {exc}")
         return ""
