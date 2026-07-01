@@ -40,6 +40,10 @@ const productDetailsList = document.querySelector('[data-product-details-list]')
 const ordersCard = document.querySelector('[data-orders-card]');
 const ordersToggle = document.querySelector('[data-orders-toggle]');
 const ordersPanel = document.querySelector('[data-orders-panel]');
+const profileAvatarWrap = document.querySelector('[data-profile-avatar-wrap]');
+const profileAvatarImage = document.querySelector('[data-profile-avatar]');
+const profileAvatarPlaceholder = document.querySelector('[data-profile-avatar-placeholder]');
+const profileUsername = document.querySelector('[data-profile-username]');
 const infoCard = document.querySelector('[data-info-card]');
 const infoToggle = document.querySelector('[data-info-toggle]');
 const infoPanel = document.querySelector('[data-info-panel]');
@@ -832,21 +836,92 @@ function getTelegramInitData() {
   return window.Telegram?.WebApp?.initData || '';
 }
 
-function getCurrentTelegramId() {
-  const userId = window.Telegram?.WebApp?.initDataUnsafe?.user?.id;
-  if (userId) return Number(userId);
+function getTelegramUser() {
+  const unsafeUser = window.Telegram?.WebApp?.initDataUnsafe?.user;
+  if (unsafeUser && typeof unsafeUser === 'object') return unsafeUser;
 
   const initData = getTelegramInitData();
   if (!initData) return null;
+
   try {
     const params = new URLSearchParams(initData);
     const rawUser = params.get('user');
     if (!rawUser) return null;
-    const user = JSON.parse(rawUser);
-    return user?.id ? Number(user.id) : null;
+    const parsedUser = JSON.parse(rawUser);
+    return parsedUser && typeof parsedUser === 'object' ? parsedUser : null;
   } catch (error) {
     return null;
   }
+}
+
+function getCurrentTelegramId() {
+  const userId = getTelegramUser()?.id;
+  return userId ? Number(userId) : null;
+}
+
+function getCleanTelegramUsername(user) {
+  return String(user?.username || '').replace(/^@+/, '').trim();
+}
+
+function getTelegramDisplayName(user) {
+  const username = getCleanTelegramUsername(user);
+  if (username) return `@${username}`;
+
+  const firstName = String(user?.first_name || '').trim();
+  const lastName = String(user?.last_name || '').trim();
+  const fullName = [firstName, lastName].filter(Boolean).join(' ').trim();
+  return fullName || 'Пользователь';
+}
+
+function getProfileInitials(user) {
+  const firstName = String(user?.first_name || '').trim();
+  const lastName = String(user?.last_name || '').trim();
+  const username = getCleanTelegramUsername(user);
+
+  const fromName = [firstName, lastName]
+    .filter(Boolean)
+    .map((part) => Array.from(part)[0])
+    .join('');
+
+  const fallback = fromName || Array.from(username).slice(0, 2).join('') || 'FR';
+  return fallback.toUpperCase();
+}
+
+function resetProfileAvatar(user = null) {
+  if (profileAvatarImage) {
+    profileAvatarImage.onload = null;
+    profileAvatarImage.onerror = null;
+    profileAvatarImage.removeAttribute('src');
+  }
+
+  if (profileAvatarPlaceholder) {
+    profileAvatarPlaceholder.textContent = getProfileInitials(user);
+  }
+
+  profileAvatarWrap?.classList.remove('has-photo');
+}
+
+function renderTelegramProfile() {
+  const user = getTelegramUser();
+
+  if (profileUsername) {
+    profileUsername.textContent = getTelegramDisplayName(user);
+  }
+
+  resetProfileAvatar(user);
+
+  const photoUrl = String(user?.photo_url || '').trim();
+  if (!photoUrl || !profileAvatarImage || !profileAvatarWrap) return;
+
+  profileAvatarImage.onload = () => {
+    profileAvatarWrap.classList.add('has-photo');
+  };
+
+  profileAvatarImage.onerror = () => {
+    resetProfileAvatar(user);
+  };
+
+  profileAvatarImage.src = photoUrl;
 }
 
 function ensureCheckoutStatusElement() {
@@ -1514,6 +1589,7 @@ window.addEventListener('resize', () => {
 });
 
 async function initApp() {
+  renderTelegramProfile();
   await loadProducts();
   const active = document.querySelector('.nav-item.is-active');
   if (active) moveIndicator(active);

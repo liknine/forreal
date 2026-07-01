@@ -1063,28 +1063,44 @@ button {
   border-radius: 50%;
   background: #ececec;
   overflow: hidden;
+  isolation: isolate;
 }
 
-.profile-avatar-head {
+.profile-avatar-image,
+.profile-avatar-placeholder {
   position: absolute;
-  left: 50%;
-  top: 26%;
-  width: 37%;
-  height: 37%;
-  border-radius: 50%;
-  background: #d6d6d6;
-  transform: translateX(-50%);
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
 }
 
-.profile-avatar-body {
-  position: absolute;
-  left: 50%;
-  bottom: -8%;
-  width: 72%;
-  height: 48%;
-  border-radius: 50% 50% 0 0;
-  background: #d6d6d6;
-  transform: translateX(-50%);
+.profile-avatar-image {
+  display: none;
+  object-fit: cover;
+  object-position: center;
+  background: #ececec;
+}
+
+.profile-avatar.has-photo .profile-avatar-image {
+  display: block;
+}
+
+.profile-avatar-placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-ui);
+  font-size: clamp(32px, 8vw, 42px);
+  font-weight: 500;
+  line-height: 1;
+  letter-spacing: -.04em;
+  color: rgba(0, 0, 0, .52);
+  background: linear-gradient(145deg, #f1f1f1, #d9d9d9);
+}
+
+.profile-avatar.has-photo .profile-avatar-placeholder {
+  display: none;
 }
 
 .profile-username {

@@ -8,7 +8,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://api.fontshare.com/v2/css?f[]=satoshi@400,500,900&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Onest:wght@400&family=Barlow+Condensed:wght@500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./style.css?v=62" />
+  <link rel="stylesheet" href="./style.css?v=65" />
   <script src="https://telegram.org/js/telegram-web-app.js"></script>
 </head>
 <body data-admin-contact-url="https://t.me/woodyqqqq" data-api-base="" data-orders-public-url="./data/orders_public.json">
@@ -270,11 +270,11 @@
 
       <section class="profile-content" aria-label="Customer profile">
         <div class="profile-hero">
-          <div class="profile-avatar" aria-hidden="true">
-            <span class="profile-avatar-head"></span>
-            <span class="profile-avatar-body"></span>
+          <div class="profile-avatar" data-profile-avatar-wrap aria-hidden="true">
+            <img class="profile-avatar-image" data-profile-avatar alt="" loading="eager" decoding="async" />
+            <span class="profile-avatar-placeholder" data-profile-avatar-placeholder aria-hidden="true">FR</span>
           </div>
-          <p class="profile-username">@username</p>
+          <p class="profile-username" data-profile-username>@username</p>
         </div>
 
         <section class="profile-actions" aria-label="Profile actions">
@@ -505,6 +505,6 @@
     </nav>
   </main>
 
-  <script src="./app.js?v=62"></script>
+  <script src="./app.js?v=65"></script>
 </body>
 </html>
