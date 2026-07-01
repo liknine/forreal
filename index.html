@@ -46,7 +46,7 @@
       } catch (error) {}
     })();
   </script>
-  <link rel="stylesheet" href="./style.css?v=73" />
+  <link rel="stylesheet" href="./style.css?v=74" />
 </head>
 <body data-admin-contact-url="https://t.me/woodyqqqq" data-api-base="" data-orders-public-url="./data/orders_public.json" data-settings-url="./data/settings.json">
   <svg class="svg-sprite" aria-hidden="true" focusable="false">
@@ -333,18 +333,45 @@
             <svg class="profile-arrow-icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#icon-arrow-right-angled" /></svg>
           </button>
 
-          <section class="profile-info-card" data-info-card aria-label="Info section">
-            <button class="profile-action-card profile-action-card--info" type="button" aria-label="Open information" data-info-toggle aria-expanded="false">
-              <svg class="profile-action-icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#icon-info" /></svg>
-              <span>INFO</span>
-              <svg class="profile-arrow-icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#icon-arrow-right-angled" /></svg>
-            </button>
-
-            <div class="profile-info-panel" data-info-panel>
-              <div class="profile-info-empty">ИНФОРМАЦИЯ БУДЕТ ДОБАВЛЕНА</div>
-            </div>
-          </section>
+          <button class="profile-action-card" type="button" data-route="info" aria-label="Open information">
+            <svg class="profile-action-icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#icon-info" /></svg>
+            <span>INFO</span>
+            <svg class="profile-arrow-icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#icon-arrow-right-angled" /></svg>
+          </button>
         </section>
+      </section>
+    </section>
+
+    <section class="screen-panel profile-info-screen" data-screen="info" data-parent-tab="profile" aria-label="Info">
+      <section class="profile-info-page" aria-label="ForReal information">
+        <button class="profile-info-back" type="button" data-route="profile" aria-label="Back to profile">
+          <svg class="profile-info-back-icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#icon-arrow-right-angled" /></svg>
+          <span>ПРОФИЛЬ</span>
+        </button>
+
+        <header class="profile-info-head">
+          <p>FORREAL INFO</p>
+          <h2>УСЛОВИЯ И ДОСТАВКА</h2>
+        </header>
+
+        <div class="profile-info-list">
+          <article class="profile-info-item">
+            <span class="profile-info-number">01</span>
+            <p>В канале вещи как новые, так и в отличном/идеальном состоянии.</p>
+          </article>
+          <article class="profile-info-item">
+            <span class="profile-info-number">02</span>
+            <p>Личная встреча в Москве, доступна примерка.</p>
+          </article>
+          <article class="profile-info-item">
+            <span class="profile-info-number">03</span>
+            <p>Доставка осуществляется ТК СДЭК / ЯНДЕКС.</p>
+          </article>
+          <article class="profile-info-item">
+            <span class="profile-info-number">04</span>
+            <p>Возврат предусмотрен только, если что-то произошло по нашей вине.</p>
+          </article>
+        </div>
       </section>
     </section>
 
@@ -542,6 +569,6 @@
     </nav>
   </main>
 
-  <script src="./app.js?v=73"></script>
+  <script src="./app.js?v=74"></script>
 </body>
 </html>
