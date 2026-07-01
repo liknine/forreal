@@ -83,7 +83,7 @@
       "OS"
     ],
     "sizeStock": {
-      "OS": 2
+      "OS": 1
     },
     "details": "new bag\n\nTSUM COLLECTION",
     "images": [
@@ -91,6 +91,7 @@
     ],
     "detailImage": "images/products/bottega-veneta-vert-bag-70a6a8e0-1.jpg",
     "isActive": true,
-    "createdAt": "2026-07-01T18:06:37.316001+00:00"
+    "createdAt": "2026-07-01T18:06:37.316001+00:00",
+    "updatedAt": "2026-07-01T18:11:16.265205+00:00"
   }
 ]
