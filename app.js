@@ -574,6 +574,7 @@ function finishTransition(fromPanel, toPanel, screen, navTab) {
   transitionTimer = null;
 
   if (screen === 'profile') {
+    startTelegramProfileSync();
     requestAnimationFrame(refreshOrdersPanelHeight);
     requestAnimationFrame(refreshInfoPanelHeight);
   }
@@ -832,26 +833,106 @@ function getActiveDeliveryMethod() {
 }
 
 
-function getTelegramInitData() {
-  return window.Telegram?.WebApp?.initData || '';
+const TELEGRAM_PROFILE_CACHE_KEY = 'forreal_telegram_profile_v1';
+let telegramProfileRetryTimer = null;
+let telegramProfileLastPhotoUrl = '';
+
+function getTelegramWebApp() {
+  return window.Telegram?.WebApp || null;
 }
 
-function getTelegramUser() {
-  const unsafeUser = window.Telegram?.WebApp?.initDataUnsafe?.user;
-  if (unsafeUser && typeof unsafeUser === 'object') return unsafeUser;
+function setupTelegramWebApp() {
+  const tg = getTelegramWebApp();
+  if (!tg) return;
+  try { tg.ready(); } catch (error) {}
+  try { tg.expand(); } catch (error) {}
+}
 
-  const initData = getTelegramInitData();
-  if (!initData) return null;
+function getTelegramInitData() {
+  return getTelegramWebApp()?.initData || '';
+}
+
+function parseTelegramUserCandidate(candidate) {
+  if (!candidate) return null;
+
+  if (typeof candidate === 'object') {
+    return candidate;
+  }
+
+  if (typeof candidate !== 'string') return null;
+
+  const value = candidate.trim();
+  if (!value) return null;
 
   try {
-    const params = new URLSearchParams(initData);
-    const rawUser = params.get('user');
-    if (!rawUser) return null;
-    const parsedUser = JSON.parse(rawUser);
-    return parsedUser && typeof parsedUser === 'object' ? parsedUser : null;
+    return JSON.parse(value);
+  } catch (error) {
+    try {
+      return JSON.parse(decodeURIComponent(value));
+    } catch (decodeError) {
+      return null;
+    }
+  }
+}
+
+function normalizeTelegramUser(user) {
+  if (!user || typeof user !== 'object') return null;
+
+  const normalized = {
+    id: user.id ? Number(user.id) : null,
+    first_name: String(user.first_name || '').trim(),
+    last_name: String(user.last_name || '').trim(),
+    username: String(user.username || '').replace(/^@+/, '').trim(),
+    photo_url: String(user.photo_url || '').trim(),
+  };
+
+  if (!normalized.id && !normalized.first_name && !normalized.last_name && !normalized.username && !normalized.photo_url) {
+    return null;
+  }
+
+  return normalized;
+}
+
+function getStoredTelegramUser() {
+  try {
+    return normalizeTelegramUser(JSON.parse(window.localStorage?.getItem(TELEGRAM_PROFILE_CACHE_KEY) || 'null'));
   } catch (error) {
     return null;
   }
+}
+
+function storeTelegramUser(user) {
+  const normalized = normalizeTelegramUser(user);
+  if (!normalized) return;
+  try {
+    window.localStorage?.setItem(TELEGRAM_PROFILE_CACHE_KEY, JSON.stringify(normalized));
+  } catch (error) {}
+}
+
+function getTelegramUser(options = {}) {
+  const allowStored = options.allowStored !== false;
+  const tg = getTelegramWebApp();
+  const candidates = [];
+
+  candidates.push(tg?.initDataUnsafe?.user);
+
+  const initData = getTelegramInitData();
+  if (initData) {
+    try {
+      const params = new URLSearchParams(initData);
+      candidates.push(params.get('user'));
+    } catch (error) {}
+  }
+
+  for (const candidate of candidates) {
+    const normalized = normalizeTelegramUser(parseTelegramUserCandidate(candidate));
+    if (normalized) {
+      storeTelegramUser(normalized);
+      return normalized;
+    }
+  }
+
+  return allowStored ? getStoredTelegramUser() : null;
 }
 
 function getCurrentTelegramId() {
@@ -865,7 +946,7 @@ function getCleanTelegramUsername(user) {
 
 function getTelegramDisplayName(user) {
   const username = getCleanTelegramUsername(user);
-  if (username) return `@${username}`;
+  if (username) return username;
 
   const firstName = String(user?.first_name || '').trim();
   const lastName = String(user?.last_name || '').trim();
@@ -898,22 +979,24 @@ function resetProfileAvatar(user = null) {
     profileAvatarPlaceholder.textContent = getProfileInitials(user);
   }
 
-  profileAvatarWrap?.classList.remove('has-photo');
-}
-
-function renderTelegramProfile() {
-  const user = getTelegramUser();
-
-  if (profileUsername) {
-    profileUsername.textContent = getTelegramDisplayName(user);
+  if (profileAvatarWrap) {
+    profileAvatarWrap.classList.remove('has-photo', 'is-loading-photo');
   }
 
-  resetProfileAvatar(user);
+  telegramProfileLastPhotoUrl = '';
+}
 
-  const photoUrl = String(user?.photo_url || '').trim();
-  if (!photoUrl || !profileAvatarImage || !profileAvatarWrap) return;
+function setProfileAvatar(photoUrl, user) {
+  if (!profileAvatarImage || !profileAvatarWrap) return;
+  if (!photoUrl) return;
+  if (telegramProfileLastPhotoUrl === photoUrl && profileAvatarWrap.classList.contains('has-photo')) return;
+
+  telegramProfileLastPhotoUrl = photoUrl;
+  profileAvatarWrap.classList.add('is-loading-photo');
+  profileAvatarWrap.classList.remove('has-photo');
 
   profileAvatarImage.onload = () => {
+    profileAvatarWrap.classList.remove('is-loading-photo');
     profileAvatarWrap.classList.add('has-photo');
   };
 
@@ -922,6 +1005,49 @@ function renderTelegramProfile() {
   };
 
   profileAvatarImage.src = photoUrl;
+}
+
+function renderTelegramProfile(options = {}) {
+  const user = getTelegramUser(options);
+
+  if (profileUsername) {
+    profileUsername.textContent = getTelegramDisplayName(user);
+  }
+
+  if (profileAvatarPlaceholder) {
+    profileAvatarPlaceholder.textContent = getProfileInitials(user);
+  }
+
+  const photoUrl = String(user?.photo_url || '').trim();
+  if (photoUrl) {
+    setProfileAvatar(photoUrl, user);
+  } else if (!profileAvatarWrap?.classList.contains('has-photo')) {
+    resetProfileAvatar(user);
+  }
+
+  return user;
+}
+
+function startTelegramProfileSync() {
+  setupTelegramWebApp();
+  window.clearTimeout(telegramProfileRetryTimer);
+
+  let attempt = 0;
+  const maxAttempts = 30;
+
+  const tick = () => {
+    const freshUser = renderTelegramProfile({ allowStored: false });
+    const hasRealProfile = Boolean(freshUser?.id || freshUser?.username || freshUser?.first_name || freshUser?.photo_url);
+    if (hasRealProfile || attempt >= maxAttempts) {
+      if (!hasRealProfile) renderTelegramProfile({ allowStored: true });
+      return;
+    }
+
+    attempt += 1;
+    telegramProfileRetryTimer = window.setTimeout(tick, 150);
+  };
+
+  tick();
 }
 
 function ensureCheckoutStatusElement() {
@@ -1589,7 +1715,7 @@ window.addEventListener('resize', () => {
 });
 
 async function initApp() {
-  renderTelegramProfile();
+  startTelegramProfileSync();
   await loadProducts();
   const active = document.querySelector('.nav-item.is-active');
   if (active) moveIndicator(active);
