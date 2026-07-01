@@ -1,5 +1,29 @@
 [
   {
+    "id": "2f80f7a7-3ae0-4c76-8c0d-df5fbab67b79",
+    "orderNumber": 1008,
+    "clientOrderId": "forreal-1782932601288-2cb188b2555b08",
+    "telegramId": 1639462053,
+    "username": "liknine",
+    "items": [
+      {
+        "productId": "bottega-veneta-vert-bag-70a6a8e0",
+        "brand": "BOTTEGA VENETA",
+        "name": "VERT BAG",
+        "size": "OS",
+        "quantity": 1,
+        "price": 45000,
+        "image": "images/products/bottega-veneta-vert-bag-70a6a8e0-1.jpg"
+      }
+    ],
+    "totalPrice": 45000,
+    "currency": "RUB",
+    "deliveryMethod": "yandex",
+    "status": "awaiting_payment",
+    "createdAt": "2026-07-01T19:03:21.516634+00:00",
+    "updatedAt": "2026-07-01T19:03:21.516634+00:00"
+  },
+  {
     "id": "a41b9351-ff17-4894-aa9c-10e91a548382",
     "orderNumber": 1007,
     "clientOrderId": "forreal-1782930789733-450c37362293d",
