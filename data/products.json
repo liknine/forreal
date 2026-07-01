@@ -65,12 +65,12 @@
     },
     "details": "тестовый",
     "images": [
-      "images/products/test-black-hoodie-aa037053-1.jpg"
+      "images/products/test-black-hoodie-aa037053-0bfa0296-1.jpg"
     ],
-    "detailImage": "images/products/test-black-hoodie-aa037053-1.jpg",
+    "detailImage": "images/products/test-black-hoodie-aa037053-0bfa0296-1.jpg",
     "isActive": true,
     "createdAt": "2026-06-30T17:29:51.029724+00:00",
-    "updatedAt": "2026-07-01T18:15:23.905501+00:00"
+    "updatedAt": "2026-07-01T18:16:42.169302+00:00"
   },
   {
     "id": "bottega-veneta-vert-bag-70a6a8e0",
