@@ -2691,3 +2691,30 @@ button {
 .profile-order-meta {
   color: var(--muted);
 }
+
+/* v64: keep catalog content above the floating Telegram Mini App bottom nav */
+:root {
+  --screen-bottom-reserved: calc(var(--nav-height) + var(--nav-bottom-gap) + var(--safe-bottom) + 10px);
+}
+
+.catalog-screen {
+  height: calc(100dvh - var(--header-height) - var(--screen-bottom-reserved));
+  max-height: calc(100dvh - var(--header-height) - var(--screen-bottom-reserved));
+  scroll-padding-bottom: 24px;
+}
+
+.catalog-content {
+  padding-bottom: 24px;
+}
+
+@media (max-height: 740px) {
+  .catalog-screen {
+    height: calc(100dvh - var(--header-height) - var(--screen-bottom-reserved));
+    max-height: calc(100dvh - var(--header-height) - var(--screen-bottom-reserved));
+    scroll-padding-bottom: 22px;
+  }
+
+  .catalog-content {
+    padding-bottom: 22px;
+  }
+}
