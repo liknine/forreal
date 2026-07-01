@@ -897,18 +897,21 @@ function setupTelegramWebApp() {
   const tg = getTelegramWebApp();
   if (!tg) return;
 
-  requestTelegramExpandedHeight(tg);
+  const expand = () => {
+    try { window.__forRealExpandTelegramMiniApp?.(); } catch (error) {}
+    requestTelegramExpandedHeight(tg);
+  };
+
+  expand();
 
   try {
-    tg.onEvent?.('viewportChanged', () => {
-      requestTelegramExpandedHeight(tg);
-    });
+    tg.onEvent?.('viewportChanged', expand);
   } catch (error) {}
 
   try {
-    window.setTimeout(() => requestTelegramExpandedHeight(tg), 120);
-    window.setTimeout(() => requestTelegramExpandedHeight(tg), 450);
-    window.setTimeout(() => requestTelegramExpandedHeight(tg), 1000);
+    [40, 120, 260, 520, 900, 1400, 2200, 3200].forEach((delay) => {
+      window.setTimeout(expand, delay);
+    });
   } catch (error) {}
 }
 
