@@ -72,7 +72,8 @@
     "detailImage": "images/products/test-black-hoodie-aa037053-0bfa0296-1.jpg",
     "isActive": true,
     "createdAt": "2026-06-30T17:29:51.029724+00:00",
-    "updatedAt": "2026-07-01T19:03:51.774354+00:00"
+    "updatedAt": "2026-07-01T19:04:09.289092+00:00",
+    "discountPrice": 70000
   },
   {
     "id": "bottega-veneta-vert-bag-70a6a8e0",
