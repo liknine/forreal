@@ -127,11 +127,16 @@ button {
 .brand-logo {
   width: clamp(104px, 29vw, 122px);
   height: 61px;
+  border: 0;
+  background: transparent;
+  padding: 0;
   display: flex;
   align-items: center;
   justify-content: center;
   transform: none;
   transform-origin: center;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .brand-logo img {
@@ -204,10 +209,14 @@ button {
 }
 
 .category-row {
+  width: 100%;
+  max-width: 100%;
+  flex: 0 0 50px;
   height: 50px;
   align-items: center;
   border-bottom: var(--hairline) solid var(--line);
   background: var(--surface);
+  box-sizing: border-box;
 }
 
 .category-row--home {
@@ -218,6 +227,7 @@ button {
 .category-row--catalog {
   display: grid;
   grid-template-columns: 1.58fr .88fr .66fr .72fr .72fr;
+  align-self: stretch;
   gap: 0;
   padding: 0;
   overflow: hidden;
@@ -320,6 +330,11 @@ button {
   padding: 31px 20px calc(96px + env(safe-area-inset-bottom));
   text-align: center;
   background: var(--surface);
+}
+
+.collection-block--minimal {
+  min-height: 116px;
+  padding-top: 26px;
 }
 
 .collection-title {
@@ -1890,11 +1905,12 @@ button {
   :root { --header-height: 72px; }
   .brand { font-size: clamp(29px, 7.7vw, 35px); }
   .brand-logo { height: 56px; width: clamp(98px, 27vw, 112px); }
-  .category-row { height: 44px; }
+  .category-row { flex-basis: 44px; height: 44px; }
   .category-row--catalog { gap: 0; padding: 0; }
   .search-row { height: 48px; }
   .hero { height: clamp(200px, calc(100dvh - 438px), 292px); }
   .collection-block { min-height: 166px; padding-top: 22px; padding-bottom: calc(86px + env(safe-area-inset-bottom)); }
+  .collection-block--minimal { min-height: 104px; padding-top: 22px; }
   .collection-title { font-size: clamp(28px, 7.8vw, 36px); margin-bottom: 6px; }
   .collection-subtitle { font-size: clamp(9.8px, 2.5vw, 11.4px); margin-bottom: 18px; }
   .catalog-cta { height: 44px; font-size: 15.8px; }
