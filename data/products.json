@@ -37,7 +37,7 @@
     ],
     "sizeStock": {
       "43": 0,
-      "44": 2
+      "44": 1
     },
     "details": "NEW EVOLUTION",
     "images": [
@@ -46,7 +46,7 @@
     "detailImage": "images/products/maison-margiela-evolution-3b058466-1.jpg",
     "isActive": true,
     "createdAt": "2026-06-30T16:51:09.506423+00:00",
-    "updatedAt": "2026-06-30T19:39:26.568961+00:00"
+    "updatedAt": "2026-07-01T18:33:55.093053+00:00"
   },
   {
     "id": "test-black-hoodie-aa037053",
