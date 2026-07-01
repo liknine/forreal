@@ -20,6 +20,8 @@
   --nav-bottom-gap: 14px;
   --nav-clearance: 28px;
   --nav-reserved-space: calc(var(--nav-height) + var(--nav-bottom-gap) + var(--safe-bottom) + var(--nav-clearance));
+  --tg-viewport-height: 100dvh;
+  --tg-stable-viewport-height: 100dvh;
 
   --nav-shadow: 0 18px 32px rgba(0, 0, 0, .16), 0 6px 14px rgba(0, 0, 0, .08), inset 0 0 0 1px rgba(255, 255, 255, .92);
   --font-brand: "Satoshi", "Helvetica Now Display", "Helvetica Neue", Arial, sans-serif;
@@ -44,6 +46,7 @@ body {
 
 body {
   min-height: 100dvh;
+  min-height: var(--tg-viewport-height);
   display: flex;
   justify-content: center;
   overflow-x: hidden;
@@ -88,10 +91,12 @@ button {
   min-width: min(100vw, var(--app-min-width));
   max-width: var(--app-max-width);
   min-height: 100dvh;
+  min-height: var(--tg-viewport-height);
   background: var(--bg);
   border-left: var(--hairline) solid var(--line);
   border-right: var(--hairline) solid var(--line);
   height: 100dvh;
+  height: var(--tg-viewport-height);
   padding-bottom: 0;
   overflow: hidden;
 }
@@ -159,7 +164,7 @@ button {
   top: var(--header-height);
   left: 0;
   width: 100%;
-  height: calc(100dvh - var(--header-height));
+  height: calc(var(--tg-viewport-height) - var(--header-height));
   display: block;
   background: var(--surface);
   opacity: 0;
@@ -366,7 +371,7 @@ button {
 
 .catalog-screen {
   flex-direction: column;
-  height: calc(100dvh - var(--header-height));
+  height: calc(var(--tg-viewport-height) - var(--header-height));
   min-height: 0;
   overflow-x: hidden;
   overflow-y: auto;
@@ -511,7 +516,7 @@ button {
 
 .product-screen {
   flex-direction: column;
-  height: calc(100dvh - var(--header-height));
+  height: calc(var(--tg-viewport-height) - var(--header-height));
   min-height: 0;
   overflow-x: hidden;
   overflow-y: auto;
@@ -763,7 +768,7 @@ button {
 
 .cart-screen {
   flex-direction: column;
-  height: calc(100dvh - var(--header-height));
+  height: calc(var(--tg-viewport-height) - var(--header-height));
   min-height: 0;
   overflow-x: hidden;
   overflow-y: auto;
@@ -1020,7 +1025,7 @@ button {
 
 .profile-screen {
   flex-direction: column;
-  height: calc(100dvh - var(--header-height));
+  height: calc(var(--tg-viewport-height) - var(--header-height));
   min-height: 0;
   overflow-x: hidden;
   overflow-y: auto;

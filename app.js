@@ -869,11 +869,62 @@ function getTelegramWebApp() {
   return window.Telegram?.WebApp || null;
 }
 
-function setupTelegramWebApp() {
-  const tg = getTelegramWebApp();
+function syncTelegramViewportVars(tg) {
+  if (!tg || !document?.documentElement) return;
+
+  const viewportHeight = Number(tg.viewportHeight || 0);
+  const stableViewportHeight = Number(tg.viewportStableHeight || 0);
+
+  if (viewportHeight > 0) {
+    document.documentElement.style.setProperty('--tg-viewport-height', `${viewportHeight}px`);
+  }
+
+  if (stableViewportHeight > 0) {
+    document.documentElement.style.setProperty('--tg-stable-viewport-height', `${stableViewportHeight}px`);
+  }
+
+  document.documentElement.classList.toggle('tg-expanded', Boolean(tg.isExpanded));
+  document.documentElement.classList.toggle('tg-fullscreen', Boolean(tg.isFullscreen));
+}
+
+function requestTelegramFullHeight(tg) {
   if (!tg) return;
   try { tg.ready(); } catch (error) {}
   try { tg.expand(); } catch (error) {}
+
+  // Newer Telegram clients support true fullscreen. Older clients will just ignore this.
+  try {
+    if (typeof tg.requestFullscreen === 'function' && !tg.isFullscreen) {
+      tg.requestFullscreen();
+    }
+  } catch (error) {}
+
+  syncTelegramViewportVars(tg);
+}
+
+function setupTelegramWebApp() {
+  const tg = getTelegramWebApp();
+  if (!tg) return;
+
+  requestTelegramFullHeight(tg);
+
+  try {
+    tg.onEvent?.('viewportChanged', () => {
+      requestTelegramFullHeight(tg);
+    });
+  } catch (error) {}
+
+  try {
+    tg.onEvent?.('fullscreenChanged', () => {
+      syncTelegramViewportVars(tg);
+    });
+  } catch (error) {}
+
+  try {
+    window.setTimeout(() => requestTelegramFullHeight(tg), 120);
+    window.setTimeout(() => requestTelegramFullHeight(tg), 450);
+    window.setTimeout(() => requestTelegramFullHeight(tg), 1000);
+  } catch (error) {}
 }
 
 function getTelegramInitData() {
