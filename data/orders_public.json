@@ -1,5 +1,29 @@
 [
   {
+    "id": "296b988b-cf2d-436b-a4ea-50069598fe89",
+    "orderNumber": 1005,
+    "clientOrderId": "forreal-1782907402781-045ce05bdeaa5",
+    "telegramId": 1639462053,
+    "username": "liknine",
+    "items": [
+      {
+        "productId": "maison-margiela-evolution-3b058466",
+        "brand": "MAISON MARGIELA",
+        "name": "EVOLUTION",
+        "size": "44",
+        "quantity": 1,
+        "price": 25000,
+        "image": "images/products/maison-margiela-evolution-3b058466-1.jpg"
+      }
+    ],
+    "totalPrice": 25000,
+    "currency": "RUB",
+    "deliveryMethod": "cdek",
+    "status": "awaiting_payment",
+    "createdAt": "2026-07-01T12:03:23.042702+00:00",
+    "updatedAt": "2026-07-01T12:03:23.042702+00:00"
+  },
+  {
     "id": "6654f93b-cd9d-4176-b493-822ef7c63311",
     "orderNumber": 1004,
     "clientOrderId": "forreal-1782852344658-cf83a64ac8d1d8",
