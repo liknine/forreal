@@ -2941,3 +2941,16 @@ button {
     padding-bottom: 21px;
   }
 }
+
+/* v76: keep "В КАТАЛОГ" button in its original lower hero position after removing captions */
+.collection-block--minimal {
+  min-height: 190px;
+  padding-top: 104px;
+}
+
+@media (max-height: 740px) {
+  .collection-block--minimal {
+    min-height: 166px;
+    padding-top: 86px;
+  }
+}
