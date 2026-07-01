@@ -71,5 +71,26 @@
     "isActive": true,
     "createdAt": "2026-06-30T17:29:51.029724+00:00",
     "updatedAt": "2026-06-30T20:46:03.469361+00:00"
+  },
+  {
+    "id": "bottega-veneta-vert-bag-70a6a8e0",
+    "brand": "BOTTEGA VENETA",
+    "name": "VERT BAG",
+    "price": 45000,
+    "currency": "RUB",
+    "category": "АКСЕССУАРЫ",
+    "sizes": [
+      "OS"
+    ],
+    "sizeStock": {
+      "OS": 2
+    },
+    "details": "new bag\n\nTSUM COLLECTION",
+    "images": [
+      "images/products/bottega-veneta-vert-bag-70a6a8e0-1.jpg"
+    ],
+    "detailImage": "images/products/bottega-veneta-vert-bag-70a6a8e0-1.jpg",
+    "isActive": true,
+    "createdAt": "2026-07-01T18:06:37.316001+00:00"
   }
 ]
