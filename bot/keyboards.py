@@ -24,6 +24,10 @@ def admin_panel_kb() -> InlineKeyboardMarkup:
                 InlineKeyboardButton(text="Товары", callback_data="admin:products"),
             ],
             [InlineKeyboardButton(text="Добавить товар", callback_data="admin:add_product")],
+            [
+                InlineKeyboardButton(text="Реквизиты", callback_data="admin:payment"),
+                InlineKeyboardButton(text="Фото главной", callback_data="admin:hero"),
+            ],
             [InlineKeyboardButton(text="Синхронизировать GitHub", callback_data="admin:sync")],
         ]
     )
@@ -131,5 +135,22 @@ def admin_order_kb(order_id: str) -> InlineKeyboardMarkup:
                 InlineKeyboardButton(text="🏁 Закрыть", callback_data=f"order:closed:{order_id}"),
                 InlineKeyboardButton(text="✖️ Отменить", callback_data=f"order:canceled:{order_id}"),
             ],
+        ]
+    )
+
+
+
+def admin_cancel_kb() -> InlineKeyboardMarkup:
+    return InlineKeyboardMarkup(
+        inline_keyboard=[[InlineKeyboardButton(text="Отмена", callback_data="admin:back")]]
+    )
+
+
+def home_hero_kb() -> InlineKeyboardMarkup:
+    return InlineKeyboardMarkup(
+        inline_keyboard=[
+            [InlineKeyboardButton(text="Заменить фото", callback_data="admin:hero_replace")],
+            [InlineKeyboardButton(text="Удалить фото", callback_data="admin:hero_delete")],
+            [InlineKeyboardButton(text="Назад", callback_data="admin:back")],
         ]
     )

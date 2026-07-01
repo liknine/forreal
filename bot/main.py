@@ -20,19 +20,26 @@ from github_storage import (
     decrease_stock,
     delete_product,
     find_product,
+    get_payment_text_sync,
     load_products,
+    load_settings,
     push_to_github,
     push_public_orders_to_github,
+    save_home_hero_image,
+    save_payment_text,
     save_product_photos,
     save_public_orders,
     save_user_avatar,
+    remove_home_hero_image,
     toggle_product_active,
 )
 from keyboards import (
     accept_photos_kb,
+    admin_cancel_kb,
     admin_order_kb,
     client_payment_kb,
     admin_panel_kb,
+    home_hero_kb,
     main_menu_kb,
     product_categories_kb,
     product_edit_categories_kb,
@@ -73,6 +80,11 @@ class AddProductState(StatesGroup):
 class EditProductState(StatesGroup):
     value = State()
     photos = State()
+
+
+class AdminSettingsState(StatesGroup):
+    payment_text = State()
+    hero_photo = State()
 
 
 dp = Dispatcher()
@@ -303,6 +315,47 @@ async def admin_callbacks(callback: CallbackQuery, state: FSMContext) -> None:
         await state.clear()
         await state.set_state(AddProductState.category)
         await callback.message.answer("Выбери категорию товара:", reply_markup=product_categories_kb())
+    elif action == "payment":
+        await state.clear()
+        await state.set_state(AdminSettingsState.payment_text)
+        current = get_payment_text_sync()
+        await callback.message.answer(
+            "Отправь новый текст реквизитов одним сообщением. Клиентам будет приходить ровно этот текст.\n\n"
+            "Пример:\n"
+            "Оплата на карту 0000 0000 0000 0000\n"
+            "Получатель: Иван И.\n\n"
+            f"Сейчас указано:\n{code(current)}",
+            reply_markup=admin_cancel_kb(),
+        )
+    elif action == "hero":
+        await state.clear()
+        settings = await load_settings()
+        current = settings.get("homeHeroImage") or "стандартная assets/home-hero.png"
+        await callback.message.answer(
+            "Фото главной страницы.\n\n"
+            f"Сейчас: {code(current)}\n\n"
+            "Для замены нажми кнопку и отправь фото. Для удаления — вернем стандартную фотку.",
+            reply_markup=home_hero_kb(),
+        )
+    elif action == "hero_replace":
+        await state.clear()
+        await state.set_state(AdminSettingsState.hero_photo)
+        await callback.message.answer(
+            "Отправь новую фотку для главной страницы.\n\n"
+            "Размер: 1200×900 px или 1600×1200 px.\n"
+            "Формат: JPG или PNG.",
+            reply_markup=admin_cancel_kb(),
+        )
+    elif action == "hero_delete":
+        await state.clear()
+        try:
+            await remove_home_hero_image()
+            await callback.message.answer(
+                "Кастомная фотка главной удалена из настроек. Теперь будет стандартная assets/home-hero.png.",
+                reply_markup=admin_panel_kb(),
+            )
+        except Exception as exc:
+            await callback.message.answer(f"Не удалось удалить фото главной: {escape_html(exc)}")
     elif action == "sync":
         try:
             await push_to_github()
@@ -311,9 +364,76 @@ async def admin_callbacks(callback: CallbackQuery, state: FSMContext) -> None:
         except Exception as exc:
             await callback.message.answer(f"Не удалось синхронизировать GitHub: {escape_html(exc)}")
     elif action == "back":
+        await state.clear()
         await callback.message.answer("Админ-панель ForReal", reply_markup=admin_panel_kb())
 
     await callback.answer()
+
+
+@dp.message(AdminSettingsState.payment_text)
+async def admin_set_payment_text(message: Message, state: FSMContext) -> None:
+    if not await require_admin_message(message):
+        return
+    text = (message.text or "").strip()
+    if len(text) < 5:
+        await message.answer("Текст реквизитов слишком короткий. Отправь реквизиты одним сообщением.")
+        return
+    try:
+        await save_payment_text(text)
+    except Exception as exc:
+        await message.answer(f"Не удалось сохранить реквизиты: {escape_html(exc)}")
+        return
+    await state.clear()
+    await message.answer("Реквизиты обновлены. Теперь клиентам будет приходить новый текст оплаты.", reply_markup=admin_panel_kb())
+
+
+@dp.message(AdminSettingsState.hero_photo, F.photo | F.document)
+async def admin_set_home_hero_photo(message: Message, state: FSMContext) -> None:
+    if not await require_admin_message(message):
+        return
+
+    file_id = ""
+    ext = ".jpg"
+    if message.photo:
+        file_id = message.photo[-1].file_id
+        ext = ".jpg"
+    elif message.document and message.document.mime_type and message.document.mime_type.startswith("image/"):
+        file_id = message.document.file_id
+        filename = message.document.file_name or "home-hero.jpg"
+        ext = Path(filename).suffix or ".jpg"
+
+    if not file_id:
+        await message.answer(
+            "Нужно отправить фото или image-файл.\n\n"
+            "Размер: 1200×900 px или 1600×1200 px.\n"
+            "Формат: JPG или PNG.",
+            reply_markup=admin_cancel_kb(),
+        )
+        return
+
+    await message.answer("Сохраняю фото главной и синхронизирую GitHub...")
+    try:
+        settings = await save_home_hero_image(message.bot, file_id, ext)
+    except Exception as exc:
+        await message.answer(f"Не удалось сохранить фото главной: {escape_html(exc)}")
+        return
+
+    await state.clear()
+    await message.answer(
+        "Фото главной обновлено.\n\n"
+        f"Файл: {code(settings.get('homeHeroImage') or 'стандартная фотка')}",
+        reply_markup=admin_panel_kb(),
+    )
+
+
+@dp.message(AdminSettingsState.hero_photo)
+async def admin_set_home_hero_photo_wrong(message: Message) -> None:
+    await message.answer(
+        "Отправь фото или image-файл.\n\n"
+        "Размер: 1200×900 px или 1600×1200 px.\n"
+        "Формат: JPG или PNG.",
+        reply_markup=admin_cancel_kb(),
+    )
 
 
 async def send_recent_orders(message: Message) -> None:
@@ -1005,12 +1125,39 @@ def build_product_text(product: dict) -> str:
 
 def build_order_short_text(order: dict) -> str:
     label = STATUS_LABELS.get(order.get("status"), order.get("status"))
-    return (
-        f"Заказ #{order['orderNumber']}\n"
-        f"Клиент: @{escape_html(order.get('username') or 'без username')}\n"
-        f"Сумма: {code(format_price(order['totalPrice']))}\n"
-        f"Статус: {code(label)}"
+    lines = [
+        f"Заказ #{order['orderNumber']}",
+        f"Клиент: @{escape_html(order.get('username') or 'без username')}",
+        "",
+        "Товары:",
+    ]
+
+    items = order.get("items") or []
+    if items:
+        for index, item in enumerate(items, start=1):
+            snapshot = item.get("productSnapshot") or {}
+            brand = item.get("brand") or snapshot.get("brand") or "—"
+            name = item.get("name") or snapshot.get("name") or "—"
+            size = item.get("size") or "—"
+            quantity = int(item.get("quantity") or 1)
+            price = int(item.get("price") or 0)
+            lines.extend(
+                [
+                    f"{index}. {code(brand)} — {code(name)}",
+                    f"   Размер: {code(size)} · Кол-во: {code(quantity)} · Цена: {code(format_price(price))}",
+                ]
+            )
+    else:
+        lines.append("—")
+
+    lines.extend(
+        [
+            "",
+            f"Сумма: {code(format_price(order['totalPrice']))}",
+            f"Статус: {code(label)}",
+        ]
     )
+    return "\n".join(lines)
 
 
 async def main() -> None:

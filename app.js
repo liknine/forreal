@@ -24,6 +24,7 @@ const productDetailImage = document.querySelector('[data-product-detail-image]')
 const productDetailBrand = document.querySelector('[data-product-detail-brand]');
 const productDetailName = document.querySelector('[data-product-detail-name]');
 const productDetailPrice = document.querySelector('[data-product-detail-price]');
+const homeHeroImage = document.querySelector('[data-home-hero-image]');
 const cartItemsRoot = document.querySelector('[data-cart-items]');
 const cartEmpty = document.querySelector('[data-cart-empty]');
 const cartTotal = document.querySelector('[data-cart-total]');
@@ -68,6 +69,7 @@ const ADMIN_USERNAME = 'woodyqqqq';
 const API_BASE = String(document.body?.dataset.apiBase || window.FORREAL_API_BASE || '').replace(/\/$/, '');
 const API_BASE_URL = document.body?.dataset.apiBase || '';
 const ORDERS_PUBLIC_URL = document.body?.dataset.ordersPublicUrl || './data/orders_public.json';
+const SETTINGS_URL = document.body?.dataset.settingsUrl || './data/settings.json';
 const LOCAL_ORDERS_STORAGE_KEY = 'forreal_orders_v1';
 let localOrdersMemory = [];
 
@@ -269,6 +271,31 @@ function renderProductPrice(product) {
 
 function getProductPriceText(product) {
   return product?.priceLabel || formatRub(product?.price || 0);
+}
+
+
+function resolveAssetUrl(path, version = '') {
+  if (!path) return '';
+  const url = new URL(String(path).replace(/^\.\//, ''), window.location.href);
+  if (version) url.searchParams.set('v', version);
+  return url.href;
+}
+
+async function loadShopSettings() {
+  if (!homeHeroImage) return;
+  try {
+    const response = await fetch(`${SETTINGS_URL}?v=${Date.now()}`, { cache: 'no-store' });
+    if (!response.ok) throw new Error(`settings.json ${response.status}`);
+    const settings = await response.json();
+    const heroPath = settings?.homeHeroImage;
+    if (heroPath) {
+      homeHeroImage.src = resolveAssetUrl(heroPath, settings.homeHeroVersion || Date.now());
+      return;
+    }
+  } catch (error) {
+    console.warn('ForReal: settings.json not loaded', error);
+  }
+  homeHeroImage.src = './assets/home-hero.png';
 }
 
 async function loadProducts() {
@@ -813,6 +840,19 @@ function closeSideMenu() {
   if (!sideMenuOverlay) return;
   sideMenuOverlay.classList.remove('is-open');
   sideMenuOverlay.setAttribute('aria-hidden', 'true');
+}
+
+
+function openCatalogWithCategory(category = 'new') {
+  closeSideMenu();
+  filterState.category = category || 'new';
+  filterState.query = '';
+  filterState.brand = 'all';
+  filterState.size = null;
+  filterState.sort = 'newest';
+  renderCatalog();
+  setActive('catalog');
+  window.setTimeout(() => renderCatalog(), transitionDuration + 70);
 }
 
 function openFiltersFromSideMenu() {
@@ -1664,13 +1704,7 @@ if (sideMenuFilterButton) {
 
 sideMenuCategoryButtons.forEach((button) => {
   button.addEventListener('click', () => {
-    filterState.category = button.dataset.sideCategory || 'new';
-    filterState.query = '';
-    syncFilters();
-    syncSearchInputs();
-    renderCatalog();
-    closeSideMenu();
-    setActive('catalog');
+    openCatalogWithCategory(button.dataset.sideCategory || 'new');
   });
 });
 
@@ -1872,6 +1906,7 @@ window.addEventListener('resize', () => {
 
 async function initApp() {
   startTelegramProfileSync();
+  await loadShopSettings();
   await loadProducts();
   const active = document.querySelector('.nav-item.is-active');
   if (active) moveIndicator(active);

@@ -235,6 +235,99 @@ async def save_user_avatar(bot: Bot, user_id: int) -> str:
         return ""
 
 
+
+async def load_settings() -> dict[str, Any]:
+    """Load editable shop settings stored in data/settings.json."""
+    path = config.settings_path
+    if not path.exists():
+        return {}
+    try:
+        data = json.loads(path.read_text(encoding="utf-8"))
+    except json.JSONDecodeError:
+        return {}
+    return data if isinstance(data, dict) else {}
+
+
+async def save_settings(settings: dict[str, Any]) -> dict[str, Any]:
+    config.settings_path.parent.mkdir(parents=True, exist_ok=True)
+    clean = dict(settings or {})
+    clean["updatedAt"] = now_iso()
+    config.settings_path.write_text(
+        json.dumps(clean, ensure_ascii=False, indent=2),
+        encoding="utf-8",
+    )
+    return clean
+
+
+def get_payment_text_sync() -> str:
+    """Sync helper for message builders: custom admin text or .env fallback."""
+    try:
+        if config.settings_path.exists():
+            data = json.loads(config.settings_path.read_text(encoding="utf-8"))
+            value = str((data or {}).get("paymentText") or "").strip()
+            if value:
+                return value
+    except Exception:
+        pass
+    return config.payment_card
+
+
+async def save_payment_text(text: str) -> dict[str, Any]:
+    settings = await load_settings()
+    settings["paymentText"] = str(text or "").strip()
+    settings = await save_settings(settings)
+    await push_settings_to_github("Update payment details")
+    return settings
+
+
+async def save_home_hero_image(bot: Bot, file_id: str, ext: str = ".jpg") -> dict[str, Any]:
+    """Save custom home hero image and publish settings + image to GitHub."""
+    if not ext.startswith("."):
+        ext = f".{ext}"
+    ext = ext.lower()
+    if ext not in {".jpg", ".jpeg", ".png", ".webp"}:
+        ext = ".jpg"
+
+    config.assets_dir.mkdir(parents=True, exist_ok=True)
+    filename = f"home-hero-custom{ext}"
+    local_path = config.assets_dir / filename
+    await bot.download(file_id, destination=local_path)
+
+    settings = await load_settings()
+    settings["homeHeroImage"] = f"assets/{filename}"
+    settings["homeHeroVersion"] = int(time.time())
+    settings = await save_settings(settings)
+
+    if config.github_token:
+        async with httpx.AsyncClient(timeout=60) as client:
+            await put_github_file(client, f"assets/{filename}", local_path.read_bytes(), "Update home hero image")
+            await put_github_file(client, config.github_settings_path, config.settings_path.read_bytes(), "Update shop settings")
+    return settings
+
+
+async def remove_home_hero_image() -> dict[str, Any]:
+    """Disable custom home hero image. The physical file stays on GitHub for safety/cache stability."""
+    settings = await load_settings()
+    settings.pop("homeHeroImage", None)
+    settings["homeHeroVersion"] = int(time.time())
+    settings = await save_settings(settings)
+    await push_settings_to_github("Reset home hero image")
+    return settings
+
+
+async def push_settings_to_github(message: str = "Update shop settings") -> None:
+    if not config.github_token:
+        return
+    if not config.settings_path.exists():
+        await save_settings(await load_settings())
+    async with httpx.AsyncClient(timeout=30) as client:
+        await put_github_file(
+            client,
+            config.github_settings_path,
+            config.settings_path.read_bytes(),
+            message,
+        )
+
 def github_api_headers() -> dict[str, str]:
     return {
         "Accept": "application/vnd.github+json",
@@ -328,6 +421,16 @@ async def push_all_local_files_to_github() -> None:
                 config.orders_public_path.read_bytes(),
                 "Sync public orders",
             )
+        if config.settings_path.exists():
+            await put_github_file(
+                client,
+                config.github_settings_path,
+                config.settings_path.read_bytes(),
+                "Sync shop settings",
+            )
+        for hero_path in config.assets_dir.glob("home-hero-custom.*"):
+            if hero_path.is_file():
+                await put_github_file(client, f"assets/{hero_path.name}", hero_path.read_bytes(), "Sync home hero image")
 
 
 async def push_to_github() -> None:

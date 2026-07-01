@@ -1,4 +1,4 @@
-from config import config
+from github_storage import get_payment_text_sync
 from utils import DELIVERY_LABELS, STATUS_LABELS, code, escape_html, format_price
 
 
@@ -6,7 +6,7 @@ def build_client_payment_text(order: dict) -> str:
     return (
         f"Заказ #{order['orderNumber']} создан.\n\n"
         f"Сумма к оплате: {code(format_price(order['totalPrice']))}\n\n"
-        f"Реквизиты:\n{code(config.payment_card)}\n\n"
+        f"Реквизиты:\n{code(get_payment_text_sync())}\n\n"
         "После оплаты нажмите кнопку ОТПРАВИТЬ ЧЕК и отправьте фото перевода."
     )
 

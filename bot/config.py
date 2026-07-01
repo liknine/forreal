@@ -55,10 +55,13 @@ class Config:
     github_products_path: str
     github_images_dir: str
     github_orders_public_path: str
+    github_settings_path: str
     database_path: Path
     products_path: Path
     images_dir: Path
     orders_public_path: Path
+    settings_path: Path
+    assets_dir: Path
     payment_card: str
     pickup_admin_username: str
 
@@ -77,10 +80,13 @@ config = Config(
     github_products_path=os.getenv("GITHUB_PRODUCTS_PATH", "data/products.json"),
     github_images_dir=os.getenv("GITHUB_IMAGES_DIR", "images/products"),
     github_orders_public_path=os.getenv("GITHUB_ORDERS_PUBLIC_PATH", "data/orders_public.json"),
+    github_settings_path=os.getenv("GITHUB_SETTINGS_PATH", "data/settings.json"),
     database_path=PROJECT_ROOT / os.getenv("DATABASE_PATH", "forreal.sqlite3"),
     products_path=PROJECT_ROOT / os.getenv("GITHUB_PRODUCTS_PATH", "data/products.json"),
     images_dir=PROJECT_ROOT / os.getenv("GITHUB_IMAGES_DIR", "images/products"),
     orders_public_path=PROJECT_ROOT / os.getenv("GITHUB_ORDERS_PUBLIC_PATH", "data/orders_public.json"),
+    settings_path=PROJECT_ROOT / os.getenv("GITHUB_SETTINGS_PATH", "data/settings.json"),
+    assets_dir=PROJECT_ROOT / "assets",
     payment_card=os.getenv("PAYMENT_CARD", "XXXX-XXXX-XXXX-XXXX"),
     pickup_admin_username=os.getenv("PICKUP_ADMIN_USERNAME", "woodyqqqq").lstrip("@"),
 )
