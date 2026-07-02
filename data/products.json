@@ -1,30 +1,5 @@
 [
   {
-    "id": "balenciaga-political-logo-tee-5fb6ab73",
-    "brand": "BALENCIAGA",
-    "name": "POLITICAL LOGO TEE",
-    "price": 16500,
-    "currency": "RUB",
-    "category": "ФУТБОЛКИ",
-    "sizes": [
-      "S",
-      "M"
-    ],
-    "sizeStock": {
-      "S": 0,
-      "M": 1
-    },
-    "details": "НОВАЯ\n\nFACT XL",
-    "images": [
-      "images/products/balenciaga-political-logo-tee-5fb6ab73-1.jpg",
-      "images/products/balenciaga-political-logo-tee-5fb6ab73-2.jpg"
-    ],
-    "detailImage": "images/products/balenciaga-political-logo-tee-5fb6ab73-1.jpg",
-    "isActive": true,
-    "createdAt": "2026-06-30T15:48:59.024804+00:00",
-    "updatedAt": "2026-06-30T19:48:20.777571+00:00"
-  },
-  {
     "id": "maison-margiela-evolution-3b058466",
     "brand": "MAISON MARGIELA",
     "name": "EVOLUTION",
