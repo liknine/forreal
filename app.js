@@ -281,21 +281,66 @@ function resolveAssetUrl(path, version = '') {
   return url.href;
 }
 
+function preloadImage(src) {
+  return new Promise((resolve, reject) => {
+    if (!src) {
+      reject(new Error('empty image src'));
+      return;
+    }
+    const img = new Image();
+    img.onload = () => resolve(src);
+    img.onerror = () => reject(new Error(`image failed: ${src}`));
+    img.src = src;
+  });
+}
+
+async function applyHomeHeroImage(src, fallbackSrc = '') {
+  if (!homeHeroImage) return;
+  const hero = document.querySelector('[data-home-hero]');
+  hero?.classList.add('is-loading');
+  hero?.classList.remove('is-loaded');
+
+  try {
+    const loadedSrc = await preloadImage(src);
+    homeHeroImage.src = loadedSrc;
+    hero?.classList.remove('is-loading');
+    hero?.classList.add('is-loaded');
+  } catch (error) {
+    if (fallbackSrc && fallbackSrc !== src) {
+      try {
+        const loadedFallback = await preloadImage(fallbackSrc);
+        homeHeroImage.src = loadedFallback;
+        hero?.classList.remove('is-loading');
+        hero?.classList.add('is-loaded');
+        return;
+      } catch (fallbackError) {
+        console.warn('ForReal: home hero fallback failed', fallbackError);
+      }
+    }
+    console.warn('ForReal: home hero image not loaded', error);
+    hero?.classList.add('is-loading');
+    hero?.classList.remove('is-loaded');
+  }
+}
+
 async function loadShopSettings() {
   if (!homeHeroImage) return;
+  const defaultHeroSrc = homeHeroImage.dataset.defaultSrc || './assets/home-hero.png';
+  let targetHeroSrc = defaultHeroSrc;
+
   try {
     const response = await fetch(`${SETTINGS_URL}?v=${Date.now()}`, { cache: 'no-store' });
     if (!response.ok) throw new Error(`settings.json ${response.status}`);
     const settings = await response.json();
     const heroPath = settings?.homeHeroImage;
     if (heroPath) {
-      homeHeroImage.src = resolveAssetUrl(heroPath, settings.homeHeroVersion || Date.now());
-      return;
+      targetHeroSrc = resolveAssetUrl(heroPath, settings.homeHeroVersion || Date.now());
     }
   } catch (error) {
     console.warn('ForReal: settings.json not loaded', error);
   }
-  homeHeroImage.src = './assets/home-hero.png';
+
+  await applyHomeHeroImage(targetHeroSrc, defaultHeroSrc);
 }
 
 async function loadProducts() {

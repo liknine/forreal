@@ -313,7 +313,7 @@ button {
   flex: 0 0 auto;
   height: clamp(245px, calc(100dvh - 488px), 342px);
   overflow: hidden;
-  background: var(--surface-soft);
+  background: #fff;
 }
 
 .hero img {
@@ -322,6 +322,16 @@ button {
   display: block;
   object-fit: cover;
   object-position: 42% center;
+  opacity: 0;
+  transition: opacity .16s ease;
+}
+
+.hero.is-loaded img {
+  opacity: 1;
+}
+
+.hero.is-loading img {
+  opacity: 0;
 }
 
 .collection-block {
@@ -2954,3 +2964,5 @@ button {
     padding-top: 86px;
   }
 }
+
+/* v77: keep hero area white until admin-selected home photo is loaded, preventing default image flash */
