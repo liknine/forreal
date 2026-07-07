@@ -43,5 +43,28 @@
     "detailImage": "images/products/golden-goose-black-logo-sneakers-b7f2aeee-1.jpg",
     "isActive": true,
     "createdAt": "2026-07-02T08:31:33.309680+00:00"
+  },
+  {
+    "id": "cav-empt-black-logo-tee-0aaf7f86",
+    "brand": "CAV EMPT",
+    "name": "BLACK LOGO TEE",
+    "price": 10000,
+    "currency": "RUB",
+    "category": "ФУТБОЛКИ",
+    "sizes": [
+      "L"
+    ],
+    "sizeStock": {
+      "L": 1
+    },
+    "details": "В отличном состоянии",
+    "images": [
+      "images/products/cav-empt-black-logo-tee-0aaf7f86-1.jpg",
+      "images/products/cav-empt-black-logo-tee-0aaf7f86-2.jpg",
+      "images/products/cav-empt-black-logo-tee-0aaf7f86-3.jpg"
+    ],
+    "detailImage": "images/products/cav-empt-black-logo-tee-0aaf7f86-1.jpg",
+    "isActive": true,
+    "createdAt": "2026-07-07T06:17:32.669288+00:00"
   }
 ]
