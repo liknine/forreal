@@ -69,54 +69,26 @@
     "createdAt": "2026-07-07T06:21:30.357929+00:00"
   },
   {
-    "id": "test-black-hoodie-aa037053",
-    "brand": "MOWALOLA",
-    "name": "FAN HOODIE",
-    "price": 77000,
+    "id": "test-test-2a75701c",
+    "brand": "TEST",
+    "name": "тест",
+    "price": 55,
     "currency": "RUB",
-    "category": "ХУДИ",
+    "category": "ОБУВЬ",
     "sizes": [
-      "S",
-      "M",
-      "L"
+      "40"
     ],
     "sizeStock": {
-      "S": 2,
-      "M": 3,
-      "L": 1
+      "40": 1
     },
-    "details": "тестовый",
+    "details": "gggg",
     "images": [
-      "images/products/test-black-hoodie-aa037053-0bfa0296-1.jpg"
+      "images/products/test-test-2a75701c-1.jpg",
+      "images/products/test-test-2a75701c-2.jpg",
+      "images/products/test-test-2a75701c-3.jpg"
     ],
-    "detailImage": "images/products/test-black-hoodie-aa037053-0bfa0296-1.jpg",
+    "detailImage": "images/products/test-test-2a75701c-1.jpg",
     "isActive": true,
-    "createdAt": "2026-06-30T17:29:51.029724+00:00",
-    "updatedAt": "2026-07-01T19:04:09.289092+00:00",
-    "discountPrice": 70000
-  },
-  {
-    "id": "bottega-veneta-vert-bag-70a6a8e0",
-    "brand": "BOTTEGA VENETA",
-    "name": "VERT BAG",
-    "price": 45000,
-    "currency": "RUB",
-    "category": "АКСЕССУАРЫ",
-    "sizes": [
-      "OS"
-    ],
-    "sizeStock": {
-      "OS": 0
-    },
-    "details": "new bag\n\nTSUM COLLECTION",
-    "images": [
-      "images/products/bottega-veneta-vert-bag-70a6a8e0-1.jpg"
-    ],
-    "detailImage": "images/products/bottega-veneta-vert-bag-70a6a8e0-1.jpg",
-    "isActive": false,
-    "createdAt": "2026-07-01T18:06:37.316001+00:00",
-    "updatedAt": "2026-07-01T19:03:26.336738+00:00",
-    "autoHiddenNoStock": true,
-    "soldOutAt": "2026-07-01T19:03:26.336805+00:00"
+    "createdAt": "2026-07-07T07:59:15.321166+00:00"
   }
 ]
