@@ -1,29 +1,5 @@
 [
   {
-    "id": "bottega-veneta-vert-bag-70a6a8e0",
-    "brand": "BOTTEGA VENETA",
-    "name": "VERT BAG",
-    "price": 45000,
-    "currency": "RUB",
-    "category": "АКСЕССУАРЫ",
-    "sizes": [
-      "OS"
-    ],
-    "sizeStock": {
-      "OS": 0
-    },
-    "details": "new bag\n\nTSUM COLLECTION",
-    "images": [
-      "images/products/bottega-veneta-vert-bag-70a6a8e0-1.jpg"
-    ],
-    "detailImage": "images/products/bottega-veneta-vert-bag-70a6a8e0-1.jpg",
-    "isActive": false,
-    "createdAt": "2026-07-01T18:06:37.316001+00:00",
-    "updatedAt": "2026-07-01T19:03:26.336738+00:00",
-    "autoHiddenNoStock": true,
-    "soldOutAt": "2026-07-01T19:03:26.336805+00:00"
-  },
-  {
     "id": "golden-goose-black-logo-sneakers-b7f2aeee",
     "brand": "GOLDEN GOOSE",
     "name": "BLACK LOGO SNEAKERS",
