@@ -161,5 +161,28 @@
     "detailImage": "images/products/rhude-black-washed-logo-tee-6bd351f9-1.jpg",
     "isActive": true,
     "createdAt": "2026-07-07T08:38:09.950939+00:00"
+  },
+  {
+    "id": "rhude-blue-washed-logo-tee-847b2daa",
+    "brand": "RHUDE",
+    "name": "BLUE WASHED LOGO TEE",
+    "price": 10500,
+    "currency": "RUB",
+    "category": "ФУТБОЛКИ",
+    "sizes": [
+      "L"
+    ],
+    "sizeStock": {
+      "L": 1
+    },
+    "details": "В отличном состоянии \n\nS ( фактически L )",
+    "images": [
+      "images/products/rhude-blue-washed-logo-tee-847b2daa-1.jpg",
+      "images/products/rhude-blue-washed-logo-tee-847b2daa-2.jpg",
+      "images/products/rhude-blue-washed-logo-tee-847b2daa-3.jpg"
+    ],
+    "detailImage": "images/products/rhude-blue-washed-logo-tee-847b2daa-1.jpg",
+    "isActive": true,
+    "createdAt": "2026-07-07T08:57:25.040215+00:00"
   }
 ]
