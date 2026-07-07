@@ -46,7 +46,7 @@
       } catch (error) {}
     })();
   </script>
-  <link rel="stylesheet" href="./style.css?v=77" />
+  <link rel="stylesheet" href="./style.css?v=79" />
 </head>
 <body data-admin-contact-url="https://t.me/woodyqqqq" data-api-base="" data-orders-public-url="./data/orders_public.json" data-settings-url="./data/settings.json">
   <svg class="svg-sprite" aria-hidden="true" focusable="false">
@@ -241,8 +241,15 @@
     </section>
 
     <section class="screen-panel product-screen" data-screen="product" data-parent-tab="catalog" aria-label="Product details">
-      <section class="product-detail-image" aria-label="Mihara Yasuhiro Black Logo Tee image">
-        <img data-product-detail-image src="./assets/product-detail-mihara-black-logo-tee.png" alt="Mihara Yasuhiro Black Logo Tee" />
+      <section class="product-detail-image" data-product-detail-gallery aria-label="Product image gallery">
+        <div class="product-gallery-viewport" data-product-gallery-viewport>
+          <div class="product-gallery-track" data-product-gallery-track>
+            <div class="product-gallery-slide">
+              <img data-product-detail-image src="./assets/product-detail-mihara-black-logo-tee.png" alt="Mihara Yasuhiro Black Logo Tee" />
+            </div>
+          </div>
+        </div>
+        <div class="product-gallery-dots" data-product-gallery-dots aria-label="Product photo selector"></div>
       </section>
 
       <section class="product-detail-content" aria-label="Product information">
@@ -567,6 +574,6 @@
     </nav>
   </main>
 
-  <script src="./app.js?v=77"></script>
+  <script src="./app.js?v=79"></script>
 </body>
 </html>
