@@ -67,28 +67,5 @@
     "detailImage": "images/products/amiri-black-logo-tee-94121e34-1.jpg",
     "isActive": true,
     "createdAt": "2026-07-07T06:21:30.357929+00:00"
-  },
-  {
-    "id": "test-test-2a75701c",
-    "brand": "TEST",
-    "name": "тест",
-    "price": 55,
-    "currency": "RUB",
-    "category": "ОБУВЬ",
-    "sizes": [
-      "40"
-    ],
-    "sizeStock": {
-      "40": 1
-    },
-    "details": "gggg",
-    "images": [
-      "images/products/test-test-2a75701c-1.jpg",
-      "images/products/test-test-2a75701c-2.jpg",
-      "images/products/test-test-2a75701c-3.jpg"
-    ],
-    "detailImage": "images/products/test-test-2a75701c-1.jpg",
-    "isActive": true,
-    "createdAt": "2026-07-07T07:59:15.321166+00:00"
   }
 ]
