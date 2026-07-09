@@ -1,5 +1,6 @@
 {
   "paymentText": "Карта: 9999-4444-5555-1433",
-  "updatedAt": "2026-07-09T21:19:29.278660+00:00",
-  "homeHeroVersion": 1783631969
+  "updatedAt": "2026-07-09T21:19:39.679814+00:00",
+  "homeHeroVersion": 1783631979,
+  "homeHeroImage": "assets/home-hero-custom.jpg"
 }
