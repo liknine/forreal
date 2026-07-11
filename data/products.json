@@ -1044,5 +1044,27 @@
     "detailImage": "images/products/mihara-yasuhiro-black-logo-sweatshir-3a89f3bb-1.jpg",
     "isActive": true,
     "createdAt": "2026-07-11T19:46:11.054587+00:00"
+  },
+  {
+    "id": "valentino-undercover-ufo-blue-sweats-e4043f75",
+    "brand": "VALENTINO",
+    "name": "UNDERCOVER UFO BLUE SWEATSHIRT",
+    "price": 14000,
+    "currency": "RUB",
+    "category": "ХУДИ",
+    "sizes": [
+      "L"
+    ],
+    "sizeStock": {
+      "L": 1
+    },
+    "details": "В отличном состоянии \n\nM ( фактически L )",
+    "images": [
+      "images/products/valentino-undercover-ufo-blue-sweats-e4043f75-1.jpg",
+      "images/products/valentino-undercover-ufo-blue-sweats-e4043f75-2.jpg"
+    ],
+    "detailImage": "images/products/valentino-undercover-ufo-blue-sweats-e4043f75-1.jpg",
+    "isActive": true,
+    "createdAt": "2026-07-11T19:48:11.441592+00:00"
   }
 ]
