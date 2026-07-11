@@ -161,5 +161,29 @@
     "detailImage": "images/products/rhude-black-washed-logo-tee-6bd351f9-1.jpg",
     "isActive": true,
     "createdAt": "2026-07-07T08:38:09.950939+00:00"
+  },
+  {
+    "id": "converse-isabel-marant-black-logo-4551f82a",
+    "brand": "CONVERSE",
+    "name": "ISABEL MARANT BLACK LOGO",
+    "price": 14000,
+    "currency": "RUB",
+    "category": "ОБУВЬ",
+    "sizes": [
+      "42.5"
+    ],
+    "sizeStock": {
+      "42.5": 1
+    },
+    "details": "В отличном состоянии \n\n42.5 / 27.2 см",
+    "images": [
+      "images/products/converse-isabel-marant-black-logo-4551f82a-1.jpg",
+      "images/products/converse-isabel-marant-black-logo-4551f82a-2.jpg",
+      "images/products/converse-isabel-marant-black-logo-4551f82a-3.jpg",
+      "images/products/converse-isabel-marant-black-logo-4551f82a-4.jpg"
+    ],
+    "detailImage": "images/products/converse-isabel-marant-black-logo-4551f82a-1.jpg",
+    "isActive": true,
+    "createdAt": "2026-07-11T11:18:10.519812+00:00"
   }
 ]
