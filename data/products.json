@@ -884,5 +884,28 @@
     "detailImage": "images/products/givenchy-black-skull-logo-polo-89960c9e-1.jpg",
     "isActive": true,
     "createdAt": "2026-07-11T18:51:17.672400+00:00"
+  },
+  {
+    "id": "saint-laurent-blue-logo-sweatshirt-78549f29",
+    "brand": "SAINT LAURENT",
+    "name": "BLUE LOGO SWEATSHIRT",
+    "price": 14000,
+    "currency": "RUB",
+    "category": "ХУДИ",
+    "sizes": [
+      "M"
+    ],
+    "sizeStock": {
+      "M": 1
+    },
+    "details": "В отличном состоянии \n\nS ( фактически M )",
+    "images": [
+      "images/products/saint-laurent-blue-logo-sweatshirt-78549f29-1.jpg",
+      "images/products/saint-laurent-blue-logo-sweatshirt-78549f29-2.jpg",
+      "images/products/saint-laurent-blue-logo-sweatshirt-78549f29-3.jpg"
+    ],
+    "detailImage": "images/products/saint-laurent-blue-logo-sweatshirt-78549f29-1.jpg",
+    "isActive": true,
+    "createdAt": "2026-07-11T18:53:32.098921+00:00"
   }
 ]
