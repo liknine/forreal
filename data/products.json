@@ -1,26 +1,5 @@
 [
   {
-    "id": "golden-goose-black-logo-sneakers-b7f2aeee",
-    "brand": "GOLDEN GOOSE",
-    "name": "BLACK LOGO SNEAKERS",
-    "price": 22500,
-    "currency": "RUB",
-    "category": "ОБУВЬ",
-    "sizes": [
-      "41"
-    ],
-    "sizeStock": {
-      "41": 1
-    },
-    "details": "Golden Goose V-STAR Black Logo Sneakers \n\nSize: 41 / 27 см",
-    "images": [
-      "images/products/golden-goose-black-logo-sneakers-b7f2aeee-1.jpg"
-    ],
-    "detailImage": "images/products/golden-goose-black-logo-sneakers-b7f2aeee-1.jpg",
-    "isActive": true,
-    "createdAt": "2026-07-02T08:31:33.309680+00:00"
-  },
-  {
     "id": "cav-empt-black-logo-tee-0aaf7f86",
     "brand": "CAV EMPT",
     "name": "BLACK LOGO TEE",
