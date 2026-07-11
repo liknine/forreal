@@ -232,5 +232,28 @@
     "detailImage": "images/products/off-white-white-purple-logo-sneakers-5f3958c6-1.jpg",
     "isActive": true,
     "createdAt": "2026-07-11T14:12:26.053959+00:00"
+  },
+  {
+    "id": "off-white-white-orange-logo-sneakers-2bbf91b2",
+    "brand": "OFF WHITE",
+    "name": "WHITE ORANGE LOGO SNEAKERS",
+    "price": 28000,
+    "currency": "RUB",
+    "category": "ОБУВЬ",
+    "sizes": [
+      "41"
+    ],
+    "sizeStock": {
+      "41": 1
+    },
+    "details": "Полностью новые \n\n41 / 27 см",
+    "images": [
+      "images/products/off-white-white-orange-logo-sneakers-2bbf91b2-1.jpg",
+      "images/products/off-white-white-orange-logo-sneakers-2bbf91b2-2.jpg",
+      "images/products/off-white-white-orange-logo-sneakers-2bbf91b2-3.jpg"
+    ],
+    "detailImage": "images/products/off-white-white-orange-logo-sneakers-2bbf91b2-1.jpg",
+    "isActive": true,
+    "createdAt": "2026-07-11T14:14:07.703813+00:00"
   }
 ]
