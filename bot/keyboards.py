@@ -50,12 +50,28 @@ def accept_photos_kb() -> InlineKeyboardMarkup:
     )
 
 
-def products_list_kb(products: list[dict]) -> InlineKeyboardMarkup:
+def products_list_kb(products: list[dict], page: int = 0, page_size: int = 12) -> InlineKeyboardMarkup:
+    total = len(products)
+    pages = max(1, (total + page_size - 1) // page_size)
+    page = max(0, min(page, pages - 1))
+    start = page * page_size
+    end = start + page_size
+
     rows = []
-    for product in products[:15]:
+    for product in products[start:end]:
         active = "🟢" if product.get("isActive", True) else "⚫️"
         text = f"{active} {product.get('brand', '')} — {product.get('name', '')}"[:55]
         rows.append([InlineKeyboardButton(text=text, callback_data=f"product:view:{product.get('id')}")])
+
+    if pages > 1:
+        nav = []
+        if page > 0:
+            nav.append(InlineKeyboardButton(text="‹", callback_data=f"product:list:{page - 1}"))
+        nav.append(InlineKeyboardButton(text=f"{page + 1}/{pages}", callback_data=f"product:list:{page}"))
+        if page < pages - 1:
+            nav.append(InlineKeyboardButton(text="›", callback_data=f"product:list:{page + 1}"))
+        rows.append(nav)
+
     rows.append([InlineKeyboardButton(text="Добавить товар", callback_data="admin:add_product")])
     rows.append([InlineKeyboardButton(text="Назад", callback_data="admin:back")])
     return InlineKeyboardMarkup(inline_keyboard=rows)

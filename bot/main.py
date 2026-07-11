@@ -445,13 +445,43 @@ async def send_recent_orders(message: Message) -> None:
         await message.answer(build_order_short_text(order), reply_markup=admin_order_kb(order["id"]))
 
 
-async def send_products_list(message: Message) -> None:
+async def send_products_list(message: Message, page: int = 0) -> None:
     products = await load_products()
     products = sorted(products, key=lambda item: item.get("createdAt", ""), reverse=True)
     if not products:
         await message.answer("Товаров пока нет.", reply_markup=admin_panel_kb())
         return
-    await message.answer("Товары ForReal:", reply_markup=products_list_kb(products))
+    await message.answer(
+        f"Товары ForReal: {len(products)}",
+        reply_markup=products_list_kb(products, page=page),
+    )
+
+
+@dp.callback_query(F.data.startswith("product:list:"))
+async def products_list_page_callback(callback: CallbackQuery) -> None:
+    if not await require_admin_callback(callback):
+        return
+
+    try:
+        page = int(callback.data.rsplit(":", 1)[1])
+    except (TypeError, ValueError):
+        page = 0
+
+    products = await load_products()
+    products = sorted(products, key=lambda item: item.get("createdAt", ""), reverse=True)
+    if not products:
+        await callback.message.edit_text("Товаров пока нет.", reply_markup=admin_panel_kb())
+        await callback.answer()
+        return
+
+    page_size = 12
+    pages = max(1, (len(products) + page_size - 1) // page_size)
+    page = max(0, min(page, pages - 1))
+    await callback.message.edit_text(
+        f"Товары ForReal: {len(products)}",
+        reply_markup=products_list_kb(products, page=page, page_size=page_size),
+    )
+    await callback.answer()
 
 
 @dp.callback_query(F.data.startswith("product:add:"))
