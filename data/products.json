@@ -324,5 +324,28 @@
     "detailImage": "images/products/vans-gallery-dept-black-red-sneakers-d4dcad2d-1.jpg",
     "isActive": true,
     "createdAt": "2026-07-11T14:22:49.759303+00:00"
+  },
+  {
+    "id": "balenciaga-black-green-runner-sneake-956b7e4d",
+    "brand": "BALENCIAGA",
+    "name": "BLACK GREEN RUNNER SNEAKERS",
+    "price": 40000,
+    "currency": "RUB",
+    "category": "ОБУВЬ",
+    "sizes": [
+      "42"
+    ],
+    "sizeStock": {
+      "42": 1
+    },
+    "details": "В отличном состоянии \n\n42 / 27.5 см",
+    "images": [
+      "images/products/balenciaga-black-green-runner-sneake-956b7e4d-1.jpg",
+      "images/products/balenciaga-black-green-runner-sneake-956b7e4d-2.jpg",
+      "images/products/balenciaga-black-green-runner-sneake-956b7e4d-3.jpg"
+    ],
+    "detailImage": "images/products/balenciaga-black-green-runner-sneake-956b7e4d-1.jpg",
+    "isActive": true,
+    "createdAt": "2026-07-11T14:25:26.649044+00:00"
   }
 ]
