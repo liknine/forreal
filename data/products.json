@@ -837,5 +837,29 @@
     "detailImage": "images/products/valentino-black-logo-tee-4e26d3cb-1.jpg",
     "isActive": true,
     "createdAt": "2026-07-11T18:45:03.094059+00:00"
+  },
+  {
+    "id": "undercover-black-logo-tee-70296ae7",
+    "brand": "UNDERCOVER",
+    "name": "BLACK LOGO TEE",
+    "price": 9000,
+    "currency": "RUB",
+    "category": "ФУТБОЛКИ",
+    "sizes": [
+      "L"
+    ],
+    "sizeStock": {
+      "L": 1
+    },
+    "details": "",
+    "images": [
+      "images/products/undercover-black-logo-tee-70296ae7-1.jpg",
+      "images/products/undercover-black-logo-tee-70296ae7-2.jpg",
+      "images/products/undercover-black-logo-tee-70296ae7-3.jpg",
+      "images/products/undercover-black-logo-tee-70296ae7-4.jpg"
+    ],
+    "detailImage": "images/products/undercover-black-logo-tee-70296ae7-1.jpg",
+    "isActive": true,
+    "createdAt": "2026-07-11T18:49:09.399684+00:00"
   }
 ]
