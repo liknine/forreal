@@ -556,5 +556,28 @@
     "detailImage": "images/products/giuseppe-zanotti-fangs-black-logo-sn-9d3032e6-1.jpg",
     "isActive": true,
     "createdAt": "2026-07-11T15:03:30.136850+00:00"
+  },
+  {
+    "id": "dior-b23-black-logo-sneakers-5ce8adcc",
+    "brand": "DIOR",
+    "name": "B23 BLACK LOGO SNEAKERS",
+    "price": 25000,
+    "currency": "RUB",
+    "category": "ОБУВЬ",
+    "sizes": [
+      "43"
+    ],
+    "sizeStock": {
+      "43": 1
+    },
+    "details": "В отличном состоянии \n\n43 / 28 см",
+    "images": [
+      "images/products/dior-b23-black-logo-sneakers-5ce8adcc-1.jpg",
+      "images/products/dior-b23-black-logo-sneakers-5ce8adcc-2.jpg",
+      "images/products/dior-b23-black-logo-sneakers-5ce8adcc-3.jpg"
+    ],
+    "detailImage": "images/products/dior-b23-black-logo-sneakers-5ce8adcc-1.jpg",
+    "isActive": true,
+    "createdAt": "2026-07-11T15:07:29.945875+00:00"
   }
 ]
