@@ -208,5 +208,29 @@
     "detailImage": "images/products/giuseppe-zanotti-black-logo-sneakers-4d465a3b-1.jpg",
     "isActive": true,
     "createdAt": "2026-07-11T11:20:20.250212+00:00"
+  },
+  {
+    "id": "off-white-white-purple-logo-sneakers-5f3958c6",
+    "brand": "OFF WHITE",
+    "name": "WHITE PURPLE LOGO SNEAKERS",
+    "price": 28500,
+    "currency": "RUB",
+    "category": "ОБУВЬ",
+    "sizes": [
+      "45"
+    ],
+    "sizeStock": {
+      "45": 1
+    },
+    "details": "Полностью новые \n\n45 / 29.5 см",
+    "images": [
+      "images/products/off-white-white-purple-logo-sneakers-5f3958c6-1.jpg",
+      "images/products/off-white-white-purple-logo-sneakers-5f3958c6-2.jpg",
+      "images/products/off-white-white-purple-logo-sneakers-5f3958c6-3.jpg",
+      "images/products/off-white-white-purple-logo-sneakers-5f3958c6-4.jpg"
+    ],
+    "detailImage": "images/products/off-white-white-purple-logo-sneakers-5f3958c6-1.jpg",
+    "isActive": true,
+    "createdAt": "2026-07-11T14:12:26.053959+00:00"
   }
 ]
