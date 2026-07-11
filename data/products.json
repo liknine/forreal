@@ -463,5 +463,28 @@
     "detailImage": "images/products/maison-margiela-future-blue-faded-lo-12dd23cb-1.jpg",
     "isActive": true,
     "createdAt": "2026-07-11T14:37:21.841635+00:00"
+  },
+  {
+    "id": "valentino-ms-2960-black-logo-sneaker-f8b5a415",
+    "brand": "VALENTINO",
+    "name": "MS-2960 BLACK LOGO SNEAKERS",
+    "price": 20000,
+    "currency": "RUB",
+    "category": "ОБУВЬ",
+    "sizes": [
+      "42"
+    ],
+    "sizeStock": {
+      "42": 1
+    },
+    "details": "В очень хорошем состоянии \n\n42 / 27.5 см",
+    "images": [
+      "images/products/valentino-ms-2960-black-logo-sneaker-f8b5a415-1.jpg",
+      "images/products/valentino-ms-2960-black-logo-sneaker-f8b5a415-2.jpg",
+      "images/products/valentino-ms-2960-black-logo-sneaker-f8b5a415-3.jpg"
+    ],
+    "detailImage": "images/products/valentino-ms-2960-black-logo-sneaker-f8b5a415-1.jpg",
+    "isActive": true,
+    "createdAt": "2026-07-11T14:40:07.852131+00:00"
   }
 ]
