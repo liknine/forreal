@@ -1021,5 +1021,28 @@
     "detailImage": "images/products/1017-alyx-9sm-black-white-logo-longs-ddedbce8-1.jpg",
     "isActive": true,
     "createdAt": "2026-07-11T19:42:53.763923+00:00"
+  },
+  {
+    "id": "mihara-yasuhiro-black-logo-sweatshir-3a89f3bb",
+    "brand": "MIHARA YASUHIRO",
+    "name": "BLACK LOGO SWEATSHIRT",
+    "price": 14000,
+    "currency": "RUB",
+    "category": "ХУДИ",
+    "sizes": [
+      "M"
+    ],
+    "sizeStock": {
+      "M": 1
+    },
+    "details": "В отличном состоянии \n\n46 ( фактически M-L )",
+    "images": [
+      "images/products/mihara-yasuhiro-black-logo-sweatshir-3a89f3bb-1.jpg",
+      "images/products/mihara-yasuhiro-black-logo-sweatshir-3a89f3bb-2.jpg",
+      "images/products/mihara-yasuhiro-black-logo-sweatshir-3a89f3bb-3.jpg"
+    ],
+    "detailImage": "images/products/mihara-yasuhiro-black-logo-sweatshir-3a89f3bb-1.jpg",
+    "isActive": true,
+    "createdAt": "2026-07-11T19:46:11.054587+00:00"
   }
 ]
