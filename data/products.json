@@ -347,5 +347,28 @@
     "detailImage": "images/products/balenciaga-black-green-runner-sneake-956b7e4d-1.jpg",
     "isActive": true,
     "createdAt": "2026-07-11T14:25:26.649044+00:00"
+  },
+  {
+    "id": "mastermind-black-logo-sneakers-9d65237f",
+    "brand": "MASTERMIND",
+    "name": "BLACK LOGO SNEAKERS",
+    "price": 16000,
+    "currency": "RUB",
+    "category": "ОБУВЬ",
+    "sizes": [
+      "42"
+    ],
+    "sizeStock": {
+      "42": 1
+    },
+    "details": "В отличном состоянии \n\n42 / 27.5 см",
+    "images": [
+      "images/products/mastermind-black-logo-sneakers-9d65237f-1.jpg",
+      "images/products/mastermind-black-logo-sneakers-9d65237f-2.jpg",
+      "images/products/mastermind-black-logo-sneakers-9d65237f-3.jpg"
+    ],
+    "detailImage": "images/products/mastermind-black-logo-sneakers-9d65237f-1.jpg",
+    "isActive": true,
+    "createdAt": "2026-07-11T14:29:16.396522+00:00"
   }
 ]
