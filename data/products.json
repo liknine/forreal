@@ -954,5 +954,27 @@
     "detailImage": "images/products/1017-alyx-9sm-beige-logo-tee-b1c24908-1.jpg",
     "isActive": true,
     "createdAt": "2026-07-11T19:21:35.454979+00:00"
+  },
+  {
+    "id": "1017-alyx-9sm-black-paint-logo-tee-f4fa9fbe",
+    "brand": "1017 ALYX 9SM",
+    "name": "BLACK PAINT LOGO TEE",
+    "price": 8000,
+    "currency": "RUB",
+    "category": "ФУТБОЛКИ",
+    "sizes": [
+      "L"
+    ],
+    "sizeStock": {
+      "L": 1
+    },
+    "details": "Полностью новая \n\nS ( фактически M )",
+    "images": [
+      "images/products/1017-alyx-9sm-black-paint-logo-tee-f4fa9fbe-1.jpg",
+      "images/products/1017-alyx-9sm-black-paint-logo-tee-f4fa9fbe-2.jpg"
+    ],
+    "detailImage": "images/products/1017-alyx-9sm-black-paint-logo-tee-f4fa9fbe-1.jpg",
+    "isActive": true,
+    "createdAt": "2026-07-11T19:26:15.543791+00:00"
   }
 ]
