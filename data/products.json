@@ -742,5 +742,28 @@
     "detailImage": "images/products/balencaiga-track-1-faded-sneakers-dda56df0-1.jpg",
     "isActive": true,
     "createdAt": "2026-07-11T18:25:23.321633+00:00"
+  },
+  {
+    "id": "golden-goose-v-star-black-logo-sneak-bea21b10",
+    "brand": "GOLDEN GOOSE",
+    "name": "V-STAR BLACK LOGO SNEAKERS",
+    "price": 22500,
+    "currency": "RUB",
+    "category": "ОБУВЬ",
+    "sizes": [
+      "41"
+    ],
+    "sizeStock": {
+      "41": 1
+    },
+    "details": "В отличном состоянии \n\n41 / 27 см",
+    "images": [
+      "images/products/golden-goose-v-star-black-logo-sneak-bea21b10-1.jpg",
+      "images/products/golden-goose-v-star-black-logo-sneak-bea21b10-2.jpg",
+      "images/products/golden-goose-v-star-black-logo-sneak-bea21b10-3.jpg"
+    ],
+    "detailImage": "images/products/golden-goose-v-star-black-logo-sneak-bea21b10-1.jpg",
+    "isActive": true,
+    "createdAt": "2026-07-11T18:32:43.361369+00:00"
   }
 ]
