@@ -1088,5 +1088,28 @@
     "detailImage": "images/products/vivienne-westwood-grey-logo-sweatshi-a14efe87-1.jpg",
     "isActive": true,
     "createdAt": "2026-07-11T19:51:08.315661+00:00"
+  },
+  {
+    "id": "hysteric-glamour-black-logo-longslee-c9693606",
+    "brand": "HYSTERIC GLAMOUR",
+    "name": "BLACK LOGO LONGSLEEVE",
+    "price": 10500,
+    "currency": "RUB",
+    "category": "ФУТБОЛКИ",
+    "sizes": [
+      "L"
+    ],
+    "sizeStock": {
+      "L": 1
+    },
+    "details": "В отличном состоянии",
+    "images": [
+      "images/products/hysteric-glamour-black-logo-longslee-c9693606-1.jpg",
+      "images/products/hysteric-glamour-black-logo-longslee-c9693606-2.jpg",
+      "images/products/hysteric-glamour-black-logo-longslee-c9693606-3.jpg"
+    ],
+    "detailImage": "images/products/hysteric-glamour-black-logo-longslee-c9693606-1.jpg",
+    "isActive": true,
+    "createdAt": "2026-07-11T19:54:24.068922+00:00"
   }
 ]
