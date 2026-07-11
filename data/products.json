@@ -861,5 +861,28 @@
     "detailImage": "images/products/undercover-black-logo-tee-70296ae7-1.jpg",
     "isActive": true,
     "createdAt": "2026-07-11T18:49:09.399684+00:00"
+  },
+  {
+    "id": "givenchy-black-skull-logo-polo-89960c9e",
+    "brand": "GIVENCHY",
+    "name": "BLACK SKULL LOGO POLO",
+    "price": 12500,
+    "currency": "RUB",
+    "category": "ФУТБОЛКИ",
+    "sizes": [
+      "M"
+    ],
+    "sizeStock": {
+      "M": 1
+    },
+    "details": "Полностью новое\n\nXS ( фактически M-L )",
+    "images": [
+      "images/products/givenchy-black-skull-logo-polo-89960c9e-1.jpg",
+      "images/products/givenchy-black-skull-logo-polo-89960c9e-2.jpg",
+      "images/products/givenchy-black-skull-logo-polo-89960c9e-3.jpg"
+    ],
+    "detailImage": "images/products/givenchy-black-skull-logo-polo-89960c9e-1.jpg",
+    "isActive": true,
+    "createdAt": "2026-07-11T18:51:17.672400+00:00"
   }
 ]
