@@ -931,5 +931,28 @@
     "detailImage": "images/products/givenchy-chito-black-washed-logo-tee-abbdcdff-1.jpg",
     "isActive": true,
     "createdAt": "2026-07-11T19:18:49.470934+00:00"
+  },
+  {
+    "id": "1017-alyx-9sm-beige-logo-tee-b1c24908",
+    "brand": "1017 ALYX 9SM",
+    "name": "BEIGE LOGO TEE",
+    "price": 7000,
+    "currency": "RUB",
+    "category": "ФУТБОЛКИ",
+    "sizes": [
+      "M"
+    ],
+    "sizeStock": {
+      "M": 1
+    },
+    "details": "В очень хорошем  состоянии \n\nS ( фактически M )",
+    "images": [
+      "images/products/1017-alyx-9sm-beige-logo-tee-b1c24908-1.jpg",
+      "images/products/1017-alyx-9sm-beige-logo-tee-b1c24908-2.jpg",
+      "images/products/1017-alyx-9sm-beige-logo-tee-b1c24908-3.jpg"
+    ],
+    "detailImage": "images/products/1017-alyx-9sm-beige-logo-tee-b1c24908-1.jpg",
+    "isActive": true,
+    "createdAt": "2026-07-11T19:21:35.454979+00:00"
   }
 ]
