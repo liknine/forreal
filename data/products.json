@@ -814,5 +814,28 @@
     "detailImage": "images/products/alexander-mcqueen-black-knight-logo-5cd841be-1.jpg",
     "isActive": true,
     "createdAt": "2026-07-11T18:41:32.650133+00:00"
+  },
+  {
+    "id": "valentino-black-logo-tee-4e26d3cb",
+    "brand": "VALENTINO",
+    "name": "BLACK LOGO TEE",
+    "price": 9000,
+    "currency": "RUB",
+    "category": "ФУТБОЛКИ",
+    "sizes": [
+      "M"
+    ],
+    "sizeStock": {
+      "M": 1
+    },
+    "details": "В очень хорошем  состоянии \n\nS ( фактически M )",
+    "images": [
+      "images/products/valentino-black-logo-tee-4e26d3cb-1.jpg",
+      "images/products/valentino-black-logo-tee-4e26d3cb-2.jpg",
+      "images/products/valentino-black-logo-tee-4e26d3cb-3.jpg"
+    ],
+    "detailImage": "images/products/valentino-black-logo-tee-4e26d3cb-1.jpg",
+    "isActive": true,
+    "createdAt": "2026-07-11T18:45:03.094059+00:00"
   }
 ]
