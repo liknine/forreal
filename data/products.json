@@ -907,5 +907,28 @@
     "detailImage": "images/products/saint-laurent-blue-logo-sweatshirt-78549f29-1.jpg",
     "isActive": true,
     "createdAt": "2026-07-11T18:53:32.098921+00:00"
+  },
+  {
+    "id": "rhude-black-washed-snake-logo-56d415e6",
+    "brand": "RHUDE",
+    "name": "BLACK WASHED SNAKE LOGO",
+    "price": 9000,
+    "currency": "RUB",
+    "category": "ФУТБОЛКИ",
+    "sizes": [
+      "M"
+    ],
+    "sizeStock": {
+      "M": 1
+    },
+    "details": "В отличном состоянии \n\nS ( фактически M-L )",
+    "images": [
+      "images/products/rhude-black-washed-snake-logo-56d415e6-1.jpg",
+      "images/products/rhude-black-washed-snake-logo-56d415e6-2.jpg",
+      "images/products/rhude-black-washed-snake-logo-56d415e6-3.jpg"
+    ],
+    "detailImage": "images/products/rhude-black-washed-snake-logo-56d415e6-1.jpg",
+    "isActive": true,
+    "createdAt": "2026-07-11T19:10:19.293391+00:00"
   }
 ]
