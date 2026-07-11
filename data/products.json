@@ -255,5 +255,28 @@
     "detailImage": "images/products/off-white-white-orange-logo-sneakers-2bbf91b2-1.jpg",
     "isActive": true,
     "createdAt": "2026-07-11T14:14:07.703813+00:00"
+  },
+  {
+    "id": "vans-neighborhood-beige-logo-sneaker-7ac134f9",
+    "brand": "VANS",
+    "name": "NEIGHBORHOOD BEIGE LOGO SNEAKERS",
+    "price": 10000,
+    "currency": "RUB",
+    "category": "ОБУВЬ",
+    "sizes": [
+      "45"
+    ],
+    "sizeStock": {
+      "45": 1
+    },
+    "details": "В отличном состоянии \n\n44.5 / 29.5 см",
+    "images": [
+      "images/products/vans-neighborhood-beige-logo-sneaker-7ac134f9-1.jpg",
+      "images/products/vans-neighborhood-beige-logo-sneaker-7ac134f9-2.jpg",
+      "images/products/vans-neighborhood-beige-logo-sneaker-7ac134f9-3.jpg"
+    ],
+    "detailImage": "images/products/vans-neighborhood-beige-logo-sneaker-7ac134f9-1.jpg",
+    "isActive": true,
+    "createdAt": "2026-07-11T14:16:21.516963+00:00"
   }
 ]
