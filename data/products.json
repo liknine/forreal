@@ -394,5 +394,28 @@
     "detailImage": "images/products/converse-andy-warhol-black-logo-snea-29fd9f6b-1.jpg",
     "isActive": true,
     "createdAt": "2026-07-11T14:31:16.700288+00:00"
+  },
+  {
+    "id": "lanvin-beige-logo-sneakers-a5253e34",
+    "brand": "LANVIN",
+    "name": "BEIGE LOGO SNEAKERS",
+    "price": 28500,
+    "currency": "RUB",
+    "category": "ОБУВЬ",
+    "sizes": [
+      "41"
+    ],
+    "sizeStock": {
+      "41": 1
+    },
+    "details": "Полностью новые\n\n41 / 27 см",
+    "images": [
+      "images/products/lanvin-beige-logo-sneakers-a5253e34-1.jpg",
+      "images/products/lanvin-beige-logo-sneakers-a5253e34-2.jpg",
+      "images/products/lanvin-beige-logo-sneakers-a5253e34-3.jpg"
+    ],
+    "detailImage": "images/products/lanvin-beige-logo-sneakers-a5253e34-1.jpg",
+    "isActive": true,
+    "createdAt": "2026-07-11T14:33:20.923380+00:00"
   }
 ]
