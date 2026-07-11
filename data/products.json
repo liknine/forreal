@@ -909,5 +909,27 @@
     "detailImage": "images/products/rhude-black-washed-snake-logo-56d415e6-1.jpg",
     "isActive": true,
     "createdAt": "2026-07-11T19:10:19.293391+00:00"
+  },
+  {
+    "id": "givenchy-chito-black-washed-logo-tee-abbdcdff",
+    "brand": "GIVENCHY",
+    "name": "CHITO BLACK WASHED LOGO TEE",
+    "price": 15500,
+    "currency": "RUB",
+    "category": "ФУТБОЛКИ",
+    "sizes": [
+      "XL"
+    ],
+    "sizeStock": {
+      "XL": 1
+    },
+    "details": "В отличном состоянии \n\nM ( фактически L-XL )",
+    "images": [
+      "images/products/givenchy-chito-black-washed-logo-tee-abbdcdff-1.jpg",
+      "images/products/givenchy-chito-black-washed-logo-tee-abbdcdff-2.jpg"
+    ],
+    "detailImage": "images/products/givenchy-chito-black-washed-logo-tee-abbdcdff-1.jpg",
+    "isActive": true,
+    "createdAt": "2026-07-11T19:18:49.470934+00:00"
   }
 ]
