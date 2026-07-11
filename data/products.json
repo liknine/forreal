@@ -301,5 +301,28 @@
     "detailImage": "images/products/adidas-neigborhood-green-logo-sneake-cb00dc62-1.jpg",
     "isActive": true,
     "createdAt": "2026-07-11T14:21:10.707678+00:00"
+  },
+  {
+    "id": "vans-gallery-dept-black-red-sneakers-d4dcad2d",
+    "brand": "VANS",
+    "name": "GALLERY DEPT BLACK RED SNEAKERS",
+    "price": 18000,
+    "currency": "RUB",
+    "category": "ОБУВЬ",
+    "sizes": [
+      "42"
+    ],
+    "sizeStock": {
+      "42": 1
+    },
+    "details": "В отличном состоянии \n\n42 / 27.2 см",
+    "images": [
+      "images/products/vans-gallery-dept-black-red-sneakers-d4dcad2d-1.jpg",
+      "images/products/vans-gallery-dept-black-red-sneakers-d4dcad2d-2.jpg",
+      "images/products/vans-gallery-dept-black-red-sneakers-d4dcad2d-3.jpg"
+    ],
+    "detailImage": "images/products/vans-gallery-dept-black-red-sneakers-d4dcad2d-1.jpg",
+    "isActive": true,
+    "createdAt": "2026-07-11T14:22:49.759303+00:00"
   }
 ]
