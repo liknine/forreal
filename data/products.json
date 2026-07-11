@@ -719,5 +719,28 @@
     "detailImage": "images/products/balenciaga-track-1-brown-logo-sneake-67dee7e0-1.jpg",
     "isActive": true,
     "createdAt": "2026-07-11T18:22:58.980903+00:00"
+  },
+  {
+    "id": "balencaiga-track-1-faded-sneakers-dda56df0",
+    "brand": "BALENCAIGA",
+    "name": "TRACK 1 FADED SNEAKERS",
+    "price": 38000,
+    "currency": "RUB",
+    "category": "ОБУВЬ",
+    "sizes": [
+      "42"
+    ],
+    "sizeStock": {
+      "42": 1
+    },
+    "details": "В отличном состоянии \n\n42 / 27.5 см",
+    "images": [
+      "images/products/balencaiga-track-1-faded-sneakers-dda56df0-1.jpg",
+      "images/products/balencaiga-track-1-faded-sneakers-dda56df0-2.jpg",
+      "images/products/balencaiga-track-1-faded-sneakers-dda56df0-3.jpg"
+    ],
+    "detailImage": "images/products/balencaiga-track-1-faded-sneakers-dda56df0-1.jpg",
+    "isActive": true,
+    "createdAt": "2026-07-11T18:25:23.321633+00:00"
   }
 ]
