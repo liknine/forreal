@@ -185,5 +185,28 @@
     "detailImage": "images/products/converse-isabel-marant-black-logo-4551f82a-1.jpg",
     "isActive": true,
     "createdAt": "2026-07-11T11:18:10.519812+00:00"
+  },
+  {
+    "id": "giuseppe-zanotti-black-logo-sneakers-4d465a3b",
+    "brand": "GIUSEPPE ZANOTTI",
+    "name": "BLACK LOGO SNEAKERS",
+    "price": 15500,
+    "currency": "RUB",
+    "category": "ОБУВЬ",
+    "sizes": [
+      "43"
+    ],
+    "sizeStock": {
+      "43": 1
+    },
+    "details": "В отличном состоянии \n\n43 / 28 см",
+    "images": [
+      "images/products/giuseppe-zanotti-black-logo-sneakers-4d465a3b-1.jpg",
+      "images/products/giuseppe-zanotti-black-logo-sneakers-4d465a3b-2.jpg",
+      "images/products/giuseppe-zanotti-black-logo-sneakers-4d465a3b-3.jpg"
+    ],
+    "detailImage": "images/products/giuseppe-zanotti-black-logo-sneakers-4d465a3b-1.jpg",
+    "isActive": true,
+    "createdAt": "2026-07-11T11:20:20.250212+00:00"
   }
 ]
