@@ -278,5 +278,28 @@
     "detailImage": "images/products/vans-neighborhood-beige-logo-sneaker-7ac134f9-1.jpg",
     "isActive": true,
     "createdAt": "2026-07-11T14:16:21.516963+00:00"
+  },
+  {
+    "id": "adidas-neigborhood-green-logo-sneake-cb00dc62",
+    "brand": "ADIDAS",
+    "name": "NEIGBORHOOD GREEN LOGO SNEAKERS",
+    "price": 14500,
+    "currency": "RUB",
+    "category": "ОБУВЬ",
+    "sizes": [
+      "43.5"
+    ],
+    "sizeStock": {
+      "43.5": 1
+    },
+    "details": "Полностью новые \n\n43.5 / 27.5 см",
+    "images": [
+      "images/products/adidas-neigborhood-green-logo-sneake-cb00dc62-1.jpg",
+      "images/products/adidas-neigborhood-green-logo-sneake-cb00dc62-2.jpg",
+      "images/products/adidas-neigborhood-green-logo-sneake-cb00dc62-3.jpg"
+    ],
+    "detailImage": "images/products/adidas-neigborhood-green-logo-sneake-cb00dc62-1.jpg",
+    "isActive": true,
+    "createdAt": "2026-07-11T14:21:10.707678+00:00"
   }
 ]
