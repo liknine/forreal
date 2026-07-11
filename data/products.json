@@ -370,5 +370,29 @@
     "detailImage": "images/products/mastermind-black-logo-sneakers-9d65237f-1.jpg",
     "isActive": true,
     "createdAt": "2026-07-11T14:29:16.396522+00:00"
+  },
+  {
+    "id": "converse-andy-warhol-black-logo-snea-29fd9f6b",
+    "brand": "CONVERSE",
+    "name": "ANDY WARHOL BLACK LOGO SNEAKERS",
+    "price": 11000,
+    "currency": "RUB",
+    "category": "ОБУВЬ",
+    "sizes": [
+      "44.5"
+    ],
+    "sizeStock": {
+      "44.5": 1
+    },
+    "details": "Полностью новые\n\n44.5 / 28.5 см",
+    "images": [
+      "images/products/converse-andy-warhol-black-logo-snea-29fd9f6b-1.jpg",
+      "images/products/converse-andy-warhol-black-logo-snea-29fd9f6b-2.jpg",
+      "images/products/converse-andy-warhol-black-logo-snea-29fd9f6b-3.jpg",
+      "images/products/converse-andy-warhol-black-logo-snea-29fd9f6b-4.jpg"
+    ],
+    "detailImage": "images/products/converse-andy-warhol-black-logo-snea-29fd9f6b-1.jpg",
+    "isActive": true,
+    "createdAt": "2026-07-11T14:31:16.700288+00:00"
   }
 ]
