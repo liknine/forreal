@@ -1174,5 +1174,29 @@
     "detailImage": "images/products/undercover-blue-logo-sweatshirt-19bd4da5-1.jpg",
     "isActive": true,
     "createdAt": "2026-07-12T12:00:27.335961+00:00"
+  },
+  {
+    "id": "maison-margiela-black-paper-logo-swe-9b2ee8b0",
+    "brand": "MAISON MARGIELA",
+    "name": "BLACK PAPER LOGO SWEATSHIRT",
+    "price": 19000,
+    "currency": "RUB",
+    "category": "ХУДИ",
+    "sizes": [
+      "В ОТЛИЧНОМ СОСТОЯНИИ",
+      "XS ( ФАКТИЧЕСКИ M"
+    ],
+    "sizeStock": {
+      "В ОТЛИЧНОМ СОСТОЯНИИ": 1,
+      "XS ( ФАКТИЧЕСКИ M": 0
+    },
+    "details": "В отличном состоянии\n\nXS ( фактически M-L )",
+    "images": [
+      "images/products/maison-margiela-black-paper-logo-swe-9b2ee8b0-1.jpg",
+      "images/products/maison-margiela-black-paper-logo-swe-9b2ee8b0-2.jpg"
+    ],
+    "detailImage": "images/products/maison-margiela-black-paper-logo-swe-9b2ee8b0-1.jpg",
+    "isActive": true,
+    "createdAt": "2026-07-12T12:03:31.122631+00:00"
   }
 ]
