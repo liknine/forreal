@@ -1242,5 +1242,27 @@
     "detailImage": "images/products/yohji-yamamoto-black-logo-hoodie-6e1cfcbe-1.jpg",
     "isActive": true,
     "createdAt": "2026-07-12T12:09:54.967833+00:00"
+  },
+  {
+    "id": "yohji-yamamoto-black-logo-hoodie-49549f4d",
+    "brand": "YOHJI YAMAMOTO",
+    "name": "BLACK LOGO HOODIE",
+    "price": 15500,
+    "currency": "RUB",
+    "category": "ХУДИ",
+    "sizes": [
+      "L"
+    ],
+    "sizeStock": {
+      "L": 1
+    },
+    "details": "Полностью новый\n\n3 ( фактически L )",
+    "images": [
+      "images/products/yohji-yamamoto-black-logo-hoodie-49549f4d-1.jpg",
+      "images/products/yohji-yamamoto-black-logo-hoodie-49549f4d-2.jpg"
+    ],
+    "detailImage": "images/products/yohji-yamamoto-black-logo-hoodie-49549f4d-1.jpg",
+    "isActive": true,
+    "createdAt": "2026-07-12T12:11:46.894447+00:00"
   }
 ]
