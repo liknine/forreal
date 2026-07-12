@@ -1183,12 +1183,10 @@
     "currency": "RUB",
     "category": "ХУДИ",
     "sizes": [
-      "В ОТЛИЧНОМ СОСТОЯНИИ",
-      "XS ( ФАКТИЧЕСКИ M"
+      "M"
     ],
     "sizeStock": {
-      "В ОТЛИЧНОМ СОСТОЯНИИ": 1,
-      "XS ( ФАКТИЧЕСКИ M": 0
+      "M": 1
     },
     "details": "В отличном состоянии\n\nXS ( фактически M-L )",
     "images": [
@@ -1197,6 +1195,7 @@
     ],
     "detailImage": "images/products/maison-margiela-black-paper-logo-swe-9b2ee8b0-1.jpg",
     "isActive": true,
-    "createdAt": "2026-07-12T12:03:31.122631+00:00"
+    "createdAt": "2026-07-12T12:03:31.122631+00:00",
+    "updatedAt": "2026-07-12T12:04:01.524667+00:00"
   }
 ]
