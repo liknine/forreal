@@ -1152,5 +1152,27 @@
     "detailImage": "images/products/c2h4-white-grey-logo-sweatshirt-ba22944f-1.jpg",
     "isActive": true,
     "createdAt": "2026-07-12T11:58:02.177151+00:00"
+  },
+  {
+    "id": "undercover-blue-logo-sweatshirt-19bd4da5",
+    "brand": "UNDERCOVER",
+    "name": "BLUE LOGO SWEATSHIRT",
+    "price": 12000,
+    "currency": "RUB",
+    "category": "ХУДИ",
+    "sizes": [
+      "S"
+    ],
+    "sizeStock": {
+      "S": 1
+    },
+    "details": "В очень хорошем состоянии\n\n1 ( фактически S-M )",
+    "images": [
+      "images/products/undercover-blue-logo-sweatshirt-19bd4da5-1.jpg",
+      "images/products/undercover-blue-logo-sweatshirt-19bd4da5-2.jpg"
+    ],
+    "detailImage": "images/products/undercover-blue-logo-sweatshirt-19bd4da5-1.jpg",
+    "isActive": true,
+    "createdAt": "2026-07-12T12:00:27.335961+00:00"
   }
 ]
