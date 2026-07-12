@@ -1197,5 +1197,28 @@
     "isActive": true,
     "createdAt": "2026-07-12T12:03:31.122631+00:00",
     "updatedAt": "2026-07-12T12:04:01.524667+00:00"
+  },
+  {
+    "id": "project-g-r-black-muscle-head-logo-t-7b33c4a2",
+    "brand": "PROJECT G/R",
+    "name": "BLACK MUSCLE HEAD LOGO TEE",
+    "price": 15500,
+    "currency": "RUB",
+    "category": "ФУТБОЛКИ",
+    "sizes": [
+      "XL"
+    ],
+    "sizeStock": {
+      "XL": 1
+    },
+    "details": "Полностью новая\n\n2 ( фактически XL )",
+    "images": [
+      "images/products/project-g-r-black-muscle-head-logo-t-7b33c4a2-1.jpg",
+      "images/products/project-g-r-black-muscle-head-logo-t-7b33c4a2-2.jpg",
+      "images/products/project-g-r-black-muscle-head-logo-t-7b33c4a2-3.jpg"
+    ],
+    "detailImage": "images/products/project-g-r-black-muscle-head-logo-t-7b33c4a2-1.jpg",
+    "isActive": true,
+    "createdAt": "2026-07-12T12:07:53.022804+00:00"
   }
 ]
