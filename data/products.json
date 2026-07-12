@@ -746,31 +746,6 @@
     "createdAt": "2026-07-11T18:32:43.361369+00:00"
   },
   {
-    "id": "mastermind-vanson-skeleton-black-log-8298226d",
-    "brand": "MASTERMIND",
-    "name": "VANSON SKELETON BLACK LOGO ZIP HOODIE",
-    "price": 25500,
-    "currency": "RUB",
-    "category": "ЗИП-ХУДИ",
-    "sizes": [
-      "L"
-    ],
-    "sizeStock": {
-      "L": 1
-    },
-    "details": "В отличном состоянии",
-    "images": [
-      "images/products/mastermind-vanson-skeleton-black-log-8298226d-1.jpg",
-      "images/products/mastermind-vanson-skeleton-black-log-8298226d-2.jpg",
-      "images/products/mastermind-vanson-skeleton-black-log-8298226d-3.jpg",
-      "images/products/mastermind-vanson-skeleton-black-log-8298226d-4.jpg",
-      "images/products/mastermind-vanson-skeleton-black-log-8298226d-5.jpg"
-    ],
-    "detailImage": "images/products/mastermind-vanson-skeleton-black-log-8298226d-1.jpg",
-    "isActive": true,
-    "createdAt": "2026-07-11T18:38:52.333984+00:00"
-  },
-  {
     "id": "alexander-mcqueen-black-knight-logo-5cd841be",
     "brand": "ALEXANDER MCQUEEN",
     "name": "BLACK KNIGHT LOGO HOODIE",
