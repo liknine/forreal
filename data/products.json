@@ -1308,5 +1308,28 @@
     "detailImage": "images/products/yohji-yamamoto-black-logo-hoodie-2e274fce-1.jpg",
     "isActive": true,
     "createdAt": "2026-07-12T12:14:27.579120+00:00"
+  },
+  {
+    "id": "maison-margiela-black-patch-logo-tee-4116e519",
+    "brand": "MAISON MARGIELA",
+    "name": "BLACK PATCH LOGO TEE",
+    "price": 12000,
+    "currency": "RUB",
+    "category": "ФУТБОЛКИ",
+    "sizes": [
+      "M"
+    ],
+    "sizeStock": {
+      "M": 1
+    },
+    "details": "В отличном состоянии\n\n48 ( фактически M-L )",
+    "images": [
+      "images/products/maison-margiela-black-patch-logo-tee-4116e519-1.jpg",
+      "images/products/maison-margiela-black-patch-logo-tee-4116e519-2.jpg",
+      "images/products/maison-margiela-black-patch-logo-tee-4116e519-3.jpg"
+    ],
+    "detailImage": "images/products/maison-margiela-black-patch-logo-tee-4116e519-1.jpg",
+    "isActive": true,
+    "createdAt": "2026-07-12T12:16:37.529646+00:00"
   }
 ]
