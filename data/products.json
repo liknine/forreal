@@ -1576,7 +1576,7 @@
     "sizeStock": {
       "L": 1
     },
-    "details": "В отличном состоянии\n\nM ( фактически L )",
+    "details": "Полностью новый\n\nM ( фактически L )",
     "images": [
       "images/products/supreme-black-logo-hoodie-2cab14c9-1.jpg",
       "images/products/supreme-black-logo-hoodie-2cab14c9-2.jpg",
@@ -1584,6 +1584,7 @@
     ],
     "detailImage": "images/products/supreme-black-logo-hoodie-2cab14c9-1.jpg",
     "isActive": true,
-    "createdAt": "2026-07-13T13:23:12.442270+00:00"
+    "createdAt": "2026-07-13T13:23:12.442270+00:00",
+    "updatedAt": "2026-07-13T13:23:55.698544+00:00"
   }
 ]
