@@ -1562,5 +1562,28 @@
     "detailImage": "images/products/project-g-r-grey-logo-hoodie-fa773806-1.jpg",
     "isActive": true,
     "createdAt": "2026-07-13T13:19:54.756677+00:00"
+  },
+  {
+    "id": "supreme-black-logo-hoodie-2cab14c9",
+    "brand": "SUPREME",
+    "name": "BLACK LOGO HOODIE",
+    "price": 10500,
+    "currency": "RUB",
+    "category": "ХУДИ",
+    "sizes": [
+      "L"
+    ],
+    "sizeStock": {
+      "L": 1
+    },
+    "details": "В отличном состоянии\n\nM ( фактически L )",
+    "images": [
+      "images/products/supreme-black-logo-hoodie-2cab14c9-1.jpg",
+      "images/products/supreme-black-logo-hoodie-2cab14c9-2.jpg",
+      "images/products/supreme-black-logo-hoodie-2cab14c9-3.jpg"
+    ],
+    "detailImage": "images/products/supreme-black-logo-hoodie-2cab14c9-1.jpg",
+    "isActive": true,
+    "createdAt": "2026-07-13T13:23:12.442270+00:00"
   }
 ]
