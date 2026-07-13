@@ -1539,5 +1539,28 @@
     "detailImage": "images/products/project-g-r-gap-blue-logo-hoodie-615e59b8-1.jpg",
     "isActive": true,
     "createdAt": "2026-07-13T13:16:56.419300+00:00"
+  },
+  {
+    "id": "project-g-r-grey-logo-hoodie-fa773806",
+    "brand": "PROJECT G/R",
+    "name": "GREY LOGO HOODIE",
+    "price": 18500,
+    "currency": "RUB",
+    "category": "ХУДИ",
+    "sizes": [
+      "L"
+    ],
+    "sizeStock": {
+      "L": 1
+    },
+    "details": "В отличном состоянии\n\n2 ( фактически L )",
+    "images": [
+      "images/products/project-g-r-grey-logo-hoodie-fa773806-1.jpg",
+      "images/products/project-g-r-grey-logo-hoodie-fa773806-2.jpg",
+      "images/products/project-g-r-grey-logo-hoodie-fa773806-3.jpg"
+    ],
+    "detailImage": "images/products/project-g-r-grey-logo-hoodie-fa773806-1.jpg",
+    "isActive": true,
+    "createdAt": "2026-07-13T13:19:54.756677+00:00"
   }
 ]
