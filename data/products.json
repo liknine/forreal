@@ -1788,5 +1788,28 @@
     "detailImage": "images/products/cav-empt-black-logo-hoodie-cee0d516-1.jpg",
     "isActive": true,
     "createdAt": "2026-07-13T14:10:52.633728+00:00"
+  },
+  {
+    "id": "project-g-r-brown-logo-hoodie-5eaf0175",
+    "brand": "PROJECT G/R",
+    "name": "BROWN LOGO HOODIE",
+    "price": 18500,
+    "currency": "RUB",
+    "category": "ХУДИ",
+    "sizes": [
+      "XL"
+    ],
+    "sizeStock": {
+      "XL": 1
+    },
+    "details": "В отличном состоянии \n\n1 ( фактически XL )",
+    "images": [
+      "images/products/project-g-r-brown-logo-hoodie-5eaf0175-1.jpg",
+      "images/products/project-g-r-brown-logo-hoodie-5eaf0175-2.jpg",
+      "images/products/project-g-r-brown-logo-hoodie-5eaf0175-3.jpg"
+    ],
+    "detailImage": "images/products/project-g-r-brown-logo-hoodie-5eaf0175-1.jpg",
+    "isActive": true,
+    "createdAt": "2026-07-13T15:35:23.938616+00:00"
   }
 ]
