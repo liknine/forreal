@@ -1766,5 +1766,27 @@
     "detailImage": "images/products/c2h4-grey-distressed-logo-hoodie-13ecafdc-1.jpg",
     "isActive": true,
     "createdAt": "2026-07-13T14:05:59.970863+00:00"
+  },
+  {
+    "id": "cav-empt-black-logo-hoodie-cee0d516",
+    "brand": "CAV EMPT",
+    "name": "BLACK LOGO HOODIE",
+    "price": 18500,
+    "currency": "RUB",
+    "category": "ХУДИ",
+    "sizes": [
+      "XL"
+    ],
+    "sizeStock": {
+      "XL": 1
+    },
+    "details": "В отличном состоянии",
+    "images": [
+      "images/products/cav-empt-black-logo-hoodie-cee0d516-1.jpg",
+      "images/products/cav-empt-black-logo-hoodie-cee0d516-2.jpg"
+    ],
+    "detailImage": "images/products/cav-empt-black-logo-hoodie-cee0d516-1.jpg",
+    "isActive": true,
+    "createdAt": "2026-07-13T14:10:52.633728+00:00"
   }
 ]
