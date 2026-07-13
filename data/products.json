@@ -1900,5 +1900,27 @@
     "detailImage": "images/products/1017-alyx-9sm-black-logo-hoodie-94766c22-1.jpg",
     "isActive": true,
     "createdAt": "2026-07-13T15:47:11.516531+00:00"
+  },
+  {
+    "id": "yohji-yamamoto-new-era-black-logo-ho-530ba659",
+    "brand": "YOHJI YAMAMOTO",
+    "name": "NEW ERA BLACK LOGO HOODIE",
+    "price": 14000,
+    "currency": "RUB",
+    "category": "ХУДИ",
+    "sizes": [
+      "L"
+    ],
+    "sizeStock": {
+      "L": 1
+    },
+    "details": "В отличном состоянии \n\n4 ( фактически L-XL )",
+    "images": [
+      "images/products/yohji-yamamoto-new-era-black-logo-ho-530ba659-1.jpg",
+      "images/products/yohji-yamamoto-new-era-black-logo-ho-530ba659-2.jpg"
+    ],
+    "detailImage": "images/products/yohji-yamamoto-new-era-black-logo-ho-530ba659-1.jpg",
+    "isActive": true,
+    "createdAt": "2026-07-13T15:50:05.000965+00:00"
   }
 ]
