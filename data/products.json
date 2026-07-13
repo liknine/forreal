@@ -1990,5 +1990,27 @@
     "detailImage": "images/products/c2h4-black-logo-zip-hoodie-437ffebc-1.jpg",
     "isActive": true,
     "createdAt": "2026-07-13T16:09:01.585384+00:00"
+  },
+  {
+    "id": "c2h4-green-logo-zip-hoodie-9a4a3d4e",
+    "brand": "C2H4",
+    "name": "GREEN LOGO ZIP HOODIE",
+    "price": 14000,
+    "currency": "RUB",
+    "category": "ЗИП-ХУДИ",
+    "sizes": [
+      "M"
+    ],
+    "sizeStock": {
+      "M": 1
+    },
+    "details": "В отличном состоянии \n\nM ( ближе к L )",
+    "images": [
+      "images/products/c2h4-green-logo-zip-hoodie-9a4a3d4e-1.jpg",
+      "images/products/c2h4-green-logo-zip-hoodie-9a4a3d4e-2.jpg"
+    ],
+    "detailImage": "images/products/c2h4-green-logo-zip-hoodie-9a4a3d4e-1.jpg",
+    "isActive": true,
+    "createdAt": "2026-07-13T18:01:05.392153+00:00"
   }
 ]
