@@ -1447,5 +1447,28 @@
     "isActive": true,
     "createdAt": "2026-07-13T13:06:31.993435+00:00",
     "updatedAt": "2026-07-13T13:07:00.889349+00:00"
+  },
+  {
+    "id": "mastermind-betty-boop-black-logo-zip-09a98319",
+    "brand": "MASTERMIND",
+    "name": "BETTY BOOP BLACK LOGO ZIP HOODIE",
+    "price": 30000,
+    "currency": "RUB",
+    "category": "ЗИП-ХУДИ",
+    "sizes": [
+      "L"
+    ],
+    "sizeStock": {
+      "L": 1
+    },
+    "details": "В отличном состоянии\n\nM ( фактически L )",
+    "images": [
+      "images/products/mastermind-betty-boop-black-logo-zip-09a98319-1.jpg",
+      "images/products/mastermind-betty-boop-black-logo-zip-09a98319-2.jpg",
+      "images/products/mastermind-betty-boop-black-logo-zip-09a98319-3.jpg"
+    ],
+    "detailImage": "images/products/mastermind-betty-boop-black-logo-zip-09a98319-1.jpg",
+    "isActive": true,
+    "createdAt": "2026-07-13T13:10:00.344457+00:00"
   }
 ]
