@@ -1654,5 +1654,28 @@
     "detailImage": "images/products/c2h4-grey-logo-hoodie-0d1e4992-1.jpg",
     "isActive": true,
     "createdAt": "2026-07-13T13:35:53.643996+00:00"
+  },
+  {
+    "id": "supreme-undercover-multicolor-hoodie-91e3c601",
+    "brand": "SUPREME",
+    "name": "UNDERCOVER MULTICOLOR HOODIE",
+    "price": 10000,
+    "currency": "RUB",
+    "category": "ХУДИ",
+    "sizes": [
+      "L"
+    ],
+    "sizeStock": {
+      "L": 1
+    },
+    "details": "В отличном состоянии\n\nM ( фактически L )",
+    "images": [
+      "images/products/supreme-undercover-multicolor-hoodie-91e3c601-1.jpg",
+      "images/products/supreme-undercover-multicolor-hoodie-91e3c601-2.jpg",
+      "images/products/supreme-undercover-multicolor-hoodie-91e3c601-3.jpg"
+    ],
+    "detailImage": "images/products/supreme-undercover-multicolor-hoodie-91e3c601-1.jpg",
+    "isActive": true,
+    "createdAt": "2026-07-13T13:39:13.795006+00:00"
   }
 ]
