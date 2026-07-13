@@ -1422,5 +1422,29 @@
     "isActive": true,
     "createdAt": "2026-07-13T13:04:24.063107+00:00",
     "updatedAt": "2026-07-13T13:04:59.013386+00:00"
+  },
+  {
+    "id": "c2h4-grey-washed-logo-zip-hoodie-0b17a1db",
+    "brand": "C2H4",
+    "name": "GREY WASHED LOGO ZIP HOODIE",
+    "price": 15500,
+    "currency": "RUB",
+    "category": "ЗИП-ХУДИ",
+    "sizes": [
+      "XL"
+    ],
+    "sizeStock": {
+      "XL": 1
+    },
+    "details": "В отличном состоянии",
+    "images": [
+      "images/products/c2h4-grey-washed-logo-zip-hoodie-0b17a1db-1.jpg",
+      "images/products/c2h4-grey-washed-logo-zip-hoodie-0b17a1db-2.jpg",
+      "images/products/c2h4-grey-washed-logo-zip-hoodie-0b17a1db-3.jpg",
+      "images/products/c2h4-grey-washed-logo-zip-hoodie-0b17a1db-4.jpg"
+    ],
+    "detailImage": "images/products/c2h4-grey-washed-logo-zip-hoodie-0b17a1db-1.jpg",
+    "isActive": true,
+    "createdAt": "2026-07-13T13:06:31.993435+00:00"
   }
 ]
