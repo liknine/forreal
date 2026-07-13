@@ -1493,5 +1493,28 @@
     "detailImage": "images/products/project-g-r-10-corso-como-zip-hoodie-5ad9191b-1.jpg",
     "isActive": true,
     "createdAt": "2026-07-13T13:11:44.149123+00:00"
+  },
+  {
+    "id": "ambush-black-logo-dreads-zip-hoodie-8025e26c",
+    "brand": "AMBUSH",
+    "name": "BLACK LOGO DREADS ZIP HOODIE",
+    "price": 13000,
+    "currency": "RUB",
+    "category": "ЗИП-ХУДИ",
+    "sizes": [
+      "XL"
+    ],
+    "sizeStock": {
+      "XL": 1
+    },
+    "details": "В отличном состоянии",
+    "images": [
+      "images/products/ambush-black-logo-dreads-zip-hoodie-8025e26c-1.jpg",
+      "images/products/ambush-black-logo-dreads-zip-hoodie-8025e26c-2.jpg",
+      "images/products/ambush-black-logo-dreads-zip-hoodie-8025e26c-3.jpg"
+    ],
+    "detailImage": "images/products/ambush-black-logo-dreads-zip-hoodie-8025e26c-1.jpg",
+    "isActive": true,
+    "createdAt": "2026-07-13T13:13:35.300372+00:00"
   }
 ]
