@@ -1721,5 +1721,27 @@
     "detailImage": "images/products/424-black-logo-hoodie-31d7bd9a-1.jpg",
     "isActive": true,
     "createdAt": "2026-07-13T13:44:56.857206+00:00"
+  },
+  {
+    "id": "1017-alyx-9sm-black-logo-hoodie-42a25e39",
+    "brand": "1017 ALYX 9SM",
+    "name": "BLACK LOGO HOODIE",
+    "price": 12000,
+    "currency": "RUB",
+    "category": "ХУДИ",
+    "sizes": [
+      "XL"
+    ],
+    "sizeStock": {
+      "XL": 1
+    },
+    "details": "В отличном состоянии",
+    "images": [
+      "images/products/1017-alyx-9sm-black-logo-hoodie-42a25e39-1.jpg",
+      "images/products/1017-alyx-9sm-black-logo-hoodie-42a25e39-2.jpg"
+    ],
+    "detailImage": "images/products/1017-alyx-9sm-black-logo-hoodie-42a25e39-1.jpg",
+    "isActive": true,
+    "createdAt": "2026-07-13T14:02:45.381980+00:00"
   }
 ]
