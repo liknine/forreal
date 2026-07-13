@@ -85,6 +85,7 @@ const categoryLabels = {
   zip: 'ЗИП-ХУДИ',
   zip_hoodies: 'ЗИП-ХУДИ',
   shorts: 'ШОРТЫ',
+  pants: 'ШТАНЫ',
   accessories: 'АКСЕССУАРЫ',
   shoes: 'ОБУВЬ',
 };
@@ -192,6 +193,8 @@ function normalizeCategory(value) {
     'зип-худи': 'zip',
     'зип худи': 'zip',
     'шорты': 'shorts',
+    'штаны': 'pants',
+    'брюки': 'pants',
     'аксессуары': 'accessories',
     'обувь': 'shoes',
     'tees': 'tees',
@@ -201,6 +204,8 @@ function normalizeCategory(value) {
     'zip': 'zip',
     'zip_hoodies': 'zip',
     'shorts': 'shorts',
+    'pants': 'pants',
+    'trousers': 'pants',
     'accessories': 'accessories',
     'shoes': 'shoes',
   };

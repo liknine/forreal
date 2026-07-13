@@ -32,6 +32,7 @@ CATEGORIES: tuple[Category, ...] = (
     Category("hoodies", "ХУДИ"),
     Category("zip_hoodies", "ЗИП-ХУДИ"),
     Category("shorts", "ШОРТЫ"),
+    Category("pants", "ШТАНЫ"),
     Category("accessories", "АКСЕССУАРЫ"),
     Category("shoes", "ОБУВЬ"),
 )
