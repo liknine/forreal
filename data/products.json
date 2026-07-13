@@ -1856,5 +1856,27 @@
     "detailImage": "images/products/a-cold-wall-brown-yellow-logo-hoodie-71b4389b-1.jpg",
     "isActive": true,
     "createdAt": "2026-07-13T15:40:40.782565+00:00"
+  },
+  {
+    "id": "a-cold-wall-black-logo-hoodie-c1e12264",
+    "brand": "A COLD WALL",
+    "name": "BLACK LOGO HOODIE",
+    "price": 11500,
+    "currency": "RUB",
+    "category": "ХУДИ",
+    "sizes": [
+      "L"
+    ],
+    "sizeStock": {
+      "L": 1
+    },
+    "details": "Полностью новый \n\nS ( фактически M-L )",
+    "images": [
+      "images/products/a-cold-wall-black-logo-hoodie-c1e12264-1.jpg",
+      "images/products/a-cold-wall-black-logo-hoodie-c1e12264-2.jpg"
+    ],
+    "detailImage": "images/products/a-cold-wall-black-logo-hoodie-c1e12264-1.jpg",
+    "isActive": true,
+    "createdAt": "2026-07-13T15:44:17.890204+00:00"
   }
 ]
