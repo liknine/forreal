@@ -1945,5 +1945,28 @@
     "detailImage": "images/products/supreme-black-police-logo-hoodie-8007f0d6-1.jpg",
     "isActive": true,
     "createdAt": "2026-07-13T15:53:09.503740+00:00"
+  },
+  {
+    "id": "raf-simons-fred-perry-black-patch-lo-a2f62ee4",
+    "brand": "RAF SIMONS",
+    "name": "FRED PERRY BLACK PATCH LOGO",
+    "price": 20000,
+    "currency": "RUB",
+    "category": "ХУДИ",
+    "sizes": [
+      "L"
+    ],
+    "sizeStock": {
+      "L": 1
+    },
+    "details": "В отличном состоянии \n\nL ( фактически XL )",
+    "images": [
+      "images/products/raf-simons-fred-perry-black-patch-lo-a2f62ee4-1.jpg",
+      "images/products/raf-simons-fred-perry-black-patch-lo-a2f62ee4-2.jpg",
+      "images/products/raf-simons-fred-perry-black-patch-lo-a2f62ee4-3.jpg"
+    ],
+    "detailImage": "images/products/raf-simons-fred-perry-black-patch-lo-a2f62ee4-1.jpg",
+    "isActive": true,
+    "createdAt": "2026-07-13T15:59:07.036445+00:00"
   }
 ]
