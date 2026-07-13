@@ -1331,5 +1331,27 @@
     "detailImage": "images/products/maison-margiela-black-patch-logo-tee-4116e519-1.jpg",
     "isActive": true,
     "createdAt": "2026-07-12T12:16:37.529646+00:00"
+  },
+  {
+    "id": "yohji-yamamoto-ground-y-black-logo-h-47aa45a7",
+    "brand": "YOHJI YAMAMOTO",
+    "name": "GROUND Y BLACK LOGO HOODIE",
+    "price": 15500,
+    "currency": "RUB",
+    "category": "ХУДИ",
+    "sizes": [
+      "L"
+    ],
+    "sizeStock": {
+      "L": 1
+    },
+    "details": "В отличном состоянии\n\n3 ( фактически L-XL )",
+    "images": [
+      "images/products/yohji-yamamoto-ground-y-black-logo-h-47aa45a7-1.jpg",
+      "images/products/yohji-yamamoto-ground-y-black-logo-h-47aa45a7-2.jpg"
+    ],
+    "detailImage": "images/products/yohji-yamamoto-ground-y-black-logo-h-47aa45a7-1.jpg",
+    "isActive": true,
+    "createdAt": "2026-07-13T12:57:35.653295+00:00"
   }
 ]
