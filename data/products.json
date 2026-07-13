@@ -1811,5 +1811,27 @@
     "detailImage": "images/products/project-g-r-brown-logo-hoodie-5eaf0175-1.jpg",
     "isActive": true,
     "createdAt": "2026-07-13T15:35:23.938616+00:00"
+  },
+  {
+    "id": "a-cold-wall-black-logo-hoodie-a30c4210",
+    "brand": "A COLD WALL",
+    "name": "BLACK LOGO HOODIE",
+    "price": 12000,
+    "currency": "RUB",
+    "category": "ХУДИ",
+    "sizes": [
+      "L"
+    ],
+    "sizeStock": {
+      "L": 1
+    },
+    "details": "Полностью новый",
+    "images": [
+      "images/products/a-cold-wall-black-logo-hoodie-a30c4210-1.jpg",
+      "images/products/a-cold-wall-black-logo-hoodie-a30c4210-2.jpg"
+    ],
+    "detailImage": "images/products/a-cold-wall-black-logo-hoodie-a30c4210-1.jpg",
+    "isActive": true,
+    "createdAt": "2026-07-13T15:38:41.313736+00:00"
   }
 ]
