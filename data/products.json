@@ -2098,5 +2098,26 @@
     "detailImage": "images/products/doublet-black-distress-logo-tee-27882744-1.jpg",
     "isActive": true,
     "createdAt": "2026-07-14T09:01:14.340829+00:00"
+  },
+  {
+    "id": "doublet-ai-brown-logo-tee-8357cc82",
+    "brand": "DOUBLET",
+    "name": "AI BROWN LOGO TEE",
+    "price": 12000,
+    "currency": "RUB",
+    "category": "ФУТБОЛКИ",
+    "sizes": [
+      "L"
+    ],
+    "sizeStock": {
+      "L": 1
+    },
+    "details": "12000",
+    "images": [
+      "images/products/doublet-ai-brown-logo-tee-8357cc82-1.jpg"
+    ],
+    "detailImage": "images/products/doublet-ai-brown-logo-tee-8357cc82-1.jpg",
+    "isActive": true,
+    "createdAt": "2026-07-14T09:05:37.058852+00:00"
   }
 ]
