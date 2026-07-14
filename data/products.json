@@ -2077,5 +2077,26 @@
     "detailImage": "images/products/mastermind-sex-pistols-black-pink-lo-aec4215b-1.jpg",
     "isActive": true,
     "createdAt": "2026-07-14T08:57:54.842428+00:00"
+  },
+  {
+    "id": "doublet-black-distress-logo-tee-27882744",
+    "brand": "DOUBLET",
+    "name": "BLACK DISTRESS LOGO TEE",
+    "price": 12000,
+    "currency": "RUB",
+    "category": "ФУТБОЛКИ",
+    "sizes": [
+      "L"
+    ],
+    "sizeStock": {
+      "L": 1
+    },
+    "details": "Полностью новая",
+    "images": [
+      "images/products/doublet-black-distress-logo-tee-27882744-1.jpg"
+    ],
+    "detailImage": "images/products/doublet-black-distress-logo-tee-27882744-1.jpg",
+    "isActive": true,
+    "createdAt": "2026-07-14T09:01:14.340829+00:00"
   }
 ]
