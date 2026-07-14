@@ -2664,5 +2664,26 @@
     "isActive": true,
     "createdAt": "2026-07-14T11:43:18.687702+00:00",
     "updatedAt": "2026-07-14T11:43:32.157614+00:00"
+  },
+  {
+    "id": "project-g-r-multicolor-logo-hoodie-4e257d0d",
+    "brand": "PROJECT G/R",
+    "name": "MULTICOLOR LOGO HOODIE",
+    "price": 25000,
+    "currency": "RUB",
+    "category": "ХУДИ",
+    "sizes": [
+      "XL"
+    ],
+    "sizeStock": {
+      "XL": 1
+    },
+    "details": "Полностью новый \n\n2 ( фактически XL )",
+    "images": [
+      "images/products/project-g-r-multicolor-logo-hoodie-4e257d0d-1.jpg"
+    ],
+    "detailImage": "images/products/project-g-r-multicolor-logo-hoodie-4e257d0d-1.jpg",
+    "isActive": true,
+    "createdAt": "2026-07-14T11:47:33.401634+00:00"
   }
 ]
