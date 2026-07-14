@@ -2182,5 +2182,27 @@
     "detailImage": "images/products/raf-simons-ptach-black-logo-hoodie-5c2c7b9d-1.jpg",
     "isActive": true,
     "createdAt": "2026-07-14T09:55:58.647908+00:00"
+  },
+  {
+    "id": "heliot-emil-black-carabiner-logo-hoo-9f5845b9",
+    "brand": "HELIOT EMIL",
+    "name": "BLACK CARABINER LOGO HOODIE",
+    "price": 15000,
+    "currency": "RUB",
+    "category": "ХУДИ",
+    "sizes": [
+      "L"
+    ],
+    "sizeStock": {
+      "L": 1
+    },
+    "details": "В отличном состоянии \n\nM ( фактически L )",
+    "images": [
+      "images/products/heliot-emil-black-carabiner-logo-hoo-9f5845b9-1.jpg",
+      "images/products/heliot-emil-black-carabiner-logo-hoo-9f5845b9-2.jpg"
+    ],
+    "detailImage": "images/products/heliot-emil-black-carabiner-logo-hoo-9f5845b9-1.jpg",
+    "isActive": true,
+    "createdAt": "2026-07-14T09:57:37.701996+00:00"
   }
 ]
