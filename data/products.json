@@ -2248,5 +2248,26 @@
     "detailImage": "images/products/424-doublet-black-logo-hoodie-0dcd4eb8-1.jpg",
     "isActive": true,
     "createdAt": "2026-07-14T10:03:50.658075+00:00"
+  },
+  {
+    "id": "valentino-undercover-rose-logo-hoodi-21718e9d",
+    "brand": "VALENTINO",
+    "name": "UNDERCOVER ROSE LOGO HOODIE",
+    "price": 22000,
+    "currency": "RUB",
+    "category": "ХУДИ",
+    "sizes": [
+      "L"
+    ],
+    "sizeStock": {
+      "L": 1
+    },
+    "details": "В отличном состоянии \n\nXS ( фактически M-L )",
+    "images": [
+      "images/products/valentino-undercover-rose-logo-hoodi-21718e9d-1.jpg"
+    ],
+    "detailImage": "images/products/valentino-undercover-rose-logo-hoodi-21718e9d-1.jpg",
+    "isActive": true,
+    "createdAt": "2026-07-14T10:07:35.983181+00:00"
   }
 ]
