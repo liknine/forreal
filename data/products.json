@@ -2055,5 +2055,27 @@
     "detailImage": "images/products/burberry-black-logo-hoodie-d6be2784-1.jpg",
     "isActive": true,
     "createdAt": "2026-07-14T08:56:37.167008+00:00"
+  },
+  {
+    "id": "mastermind-sex-pistols-black-pink-lo-aec4215b",
+    "brand": "MASTERMIND",
+    "name": "SEX PISTOLS BLACK PINK LOGO",
+    "price": 12000,
+    "currency": "RUB",
+    "category": "ФУТБОЛКИ",
+    "sizes": [
+      "L"
+    ],
+    "sizeStock": {
+      "L": 1
+    },
+    "details": "В отличном состоянии \n\nM ( ближе к L )",
+    "images": [
+      "images/products/mastermind-sex-pistols-black-pink-lo-aec4215b-1.jpg",
+      "images/products/mastermind-sex-pistols-black-pink-lo-aec4215b-2.jpg"
+    ],
+    "detailImage": "images/products/mastermind-sex-pistols-black-pink-lo-aec4215b-1.jpg",
+    "isActive": true,
+    "createdAt": "2026-07-14T08:57:54.842428+00:00"
   }
 ]
