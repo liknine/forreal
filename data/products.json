@@ -2729,5 +2729,49 @@
     "detailImage": "images/products/cav-empt-black-logo-sweatshirt-2406aa86-1.jpg",
     "isActive": true,
     "createdAt": "2026-07-14T12:14:26.306378+00:00"
+  },
+  {
+    "id": "hysteric-glamour-white-graffiti-logo-a5d60a74",
+    "brand": "HYSTERIC GLAMOUR",
+    "name": "WHITE GRAFFITI LOGO HOODIE",
+    "price": 12500,
+    "currency": "RUB",
+    "category": "ХУДИ",
+    "sizes": [
+      "L"
+    ],
+    "sizeStock": {
+      "L": 1
+    },
+    "details": "В очень хорошем состоянии \n\nM ( ближе к L )",
+    "images": [
+      "images/products/hysteric-glamour-white-graffiti-logo-a5d60a74-1.jpg",
+      "images/products/hysteric-glamour-white-graffiti-logo-a5d60a74-2.jpg"
+    ],
+    "detailImage": "images/products/hysteric-glamour-white-graffiti-logo-a5d60a74-1.jpg",
+    "isActive": true,
+    "createdAt": "2026-07-14T14:54:53.511808+00:00"
+  },
+  {
+    "id": "hysteric-glamour-white-graffiti-logo-a37ea7a0",
+    "brand": "HYSTERIC GLAMOUR",
+    "name": "WHITE GRAFFITI LOGO HOODIE",
+    "price": 12500,
+    "currency": "RUB",
+    "category": "ХУДИ",
+    "sizes": [
+      "L"
+    ],
+    "sizeStock": {
+      "L": 1
+    },
+    "details": "В очень хорошем состоянии \n\nM ( ближе к L )",
+    "images": [
+      "images/products/hysteric-glamour-white-graffiti-logo-a37ea7a0-1.jpg",
+      "images/products/hysteric-glamour-white-graffiti-logo-a37ea7a0-2.jpg"
+    ],
+    "detailImage": "images/products/hysteric-glamour-white-graffiti-logo-a37ea7a0-1.jpg",
+    "isActive": true,
+    "createdAt": "2026-07-14T14:54:55.887833+00:00"
   }
 ]
