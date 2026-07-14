@@ -2646,7 +2646,7 @@
   {
     "id": "cav-empt-black-logo-hoodie-4054ed17",
     "brand": "CAV EMPT",
-    "name": "BLACK LOGO HOODIE",
+    "name": "BLUE LOGO HOODIE",
     "price": 18500,
     "currency": "RUB",
     "category": "ХУДИ",
@@ -2662,6 +2662,7 @@
     ],
     "detailImage": "images/products/cav-empt-black-logo-hoodie-4054ed17-1.jpg",
     "isActive": true,
-    "createdAt": "2026-07-14T11:43:18.687702+00:00"
+    "createdAt": "2026-07-14T11:43:18.687702+00:00",
+    "updatedAt": "2026-07-14T11:43:32.157614+00:00"
   }
 ]
