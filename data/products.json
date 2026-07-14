@@ -2421,5 +2421,26 @@
     "detailImage": "images/products/mm6-black-snake-logo-hoodie-c4aacace-1.jpg",
     "isActive": true,
     "createdAt": "2026-07-14T10:58:53.476619+00:00"
+  },
+  {
+    "id": "vivienne-westwood-white-logo-hoodie-ffc21c9e",
+    "brand": "VIVIENNE WESTWOOD",
+    "name": "WHITE LOGO HOODIE",
+    "price": 16000,
+    "currency": "RUB",
+    "category": "ХУДИ",
+    "sizes": [
+      "XL"
+    ],
+    "sizeStock": {
+      "XL": 1
+    },
+    "details": "В очень хорошем состоянии",
+    "images": [
+      "images/products/vivienne-westwood-white-logo-hoodie-ffc21c9e-1.jpg"
+    ],
+    "detailImage": "images/products/vivienne-westwood-white-logo-hoodie-ffc21c9e-1.jpg",
+    "isActive": true,
+    "createdAt": "2026-07-14T11:00:01.678481+00:00"
   }
 ]
