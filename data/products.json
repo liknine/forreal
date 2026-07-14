@@ -2334,5 +2334,27 @@
     "detailImage": "images/products/helmut-lang-black-logo-hoodie-52f7e0ac-1.jpg",
     "isActive": true,
     "createdAt": "2026-07-14T10:46:45.387312+00:00"
+  },
+  {
+    "id": "gucci-tiger-black-logo-hoodie-1c08e4a0",
+    "brand": "GUCCI",
+    "name": "TIGER BLACK LOGO HOODIE",
+    "price": 30500,
+    "currency": "RUB",
+    "category": "ХУДИ",
+    "sizes": [
+      "L"
+    ],
+    "sizeStock": {
+      "L": 1
+    },
+    "details": "В очень хорошем состоянии",
+    "images": [
+      "images/products/gucci-tiger-black-logo-hoodie-1c08e4a0-1.jpg",
+      "images/products/gucci-tiger-black-logo-hoodie-1c08e4a0-2.jpg"
+    ],
+    "detailImage": "images/products/gucci-tiger-black-logo-hoodie-1c08e4a0-1.jpg",
+    "isActive": true,
+    "createdAt": "2026-07-14T10:51:01.641351+00:00"
   }
 ]
