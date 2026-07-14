@@ -2205,5 +2205,27 @@
     "isActive": true,
     "createdAt": "2026-07-14T09:57:37.701996+00:00",
     "updatedAt": "2026-07-14T09:58:35.748195+00:00"
+  },
+  {
+    "id": "heliot-emil-1-4-zip-black-logo-hoodi-dbd7d21d",
+    "brand": "HELIOT EMIL",
+    "name": "1/4 ZIP BLACK LOGO HOODIE",
+    "price": 15000,
+    "currency": "RUB",
+    "category": "ХУДИ",
+    "sizes": [
+      "XL"
+    ],
+    "sizeStock": {
+      "XL": 1
+    },
+    "details": "Полностью новый",
+    "images": [
+      "images/products/heliot-emil-1-4-zip-black-logo-hoodi-dbd7d21d-1.jpg",
+      "images/products/heliot-emil-1-4-zip-black-logo-hoodi-dbd7d21d-2.jpg"
+    ],
+    "detailImage": "images/products/heliot-emil-1-4-zip-black-logo-hoodi-dbd7d21d-1.jpg",
+    "isActive": true,
+    "createdAt": "2026-07-14T10:01:17.562490+00:00"
   }
 ]
