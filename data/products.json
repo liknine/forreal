@@ -2708,5 +2708,27 @@
     "detailImage": "images/products/cav-empt-black-logo-sweatshirt-33fb4dd7-1.jpg",
     "isActive": true,
     "createdAt": "2026-07-14T12:13:04.198244+00:00"
+  },
+  {
+    "id": "cav-empt-black-logo-sweatshirt-ab8ae407",
+    "brand": "CAV EMPT",
+    "name": "BLACK LOGO SWEATSHIRT",
+    "price": 14000,
+    "currency": "RUB",
+    "category": "ХУДИ",
+    "sizes": [
+      "XL"
+    ],
+    "sizeStock": {
+      "XL": 1
+    },
+    "details": "В отличном состоянии",
+    "images": [
+      "images/products/cav-empt-black-logo-sweatshirt-ab8ae407-1.jpg",
+      "images/products/cav-empt-black-logo-sweatshirt-ab8ae407-2.jpg"
+    ],
+    "detailImage": "images/products/cav-empt-black-logo-sweatshirt-ab8ae407-1.jpg",
+    "isActive": true,
+    "createdAt": "2026-07-14T12:14:23.243816+00:00"
   }
 ]
