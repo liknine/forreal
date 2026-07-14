@@ -2773,5 +2773,27 @@
     "detailImage": "images/products/yohji-yamamoto-black-logo-hoodie-83a562a4-1.jpg",
     "isActive": true,
     "createdAt": "2026-07-14T18:23:14.772068+00:00"
+  },
+  {
+    "id": "saint-michael-grey-vintage-logo-hood-f02f5146",
+    "brand": "SAINT MICHAEL",
+    "name": "GREY VINTAGE LOGO HOODIE",
+    "price": 25000,
+    "currency": "RUB",
+    "category": "ХУДИ",
+    "sizes": [
+      "L"
+    ],
+    "sizeStock": {
+      "L": 1
+    },
+    "details": "В отличном состоянии",
+    "images": [
+      "images/products/saint-michael-grey-vintage-logo-hood-f02f5146-1.jpg",
+      "images/products/saint-michael-grey-vintage-logo-hood-f02f5146-2.jpg"
+    ],
+    "detailImage": "images/products/saint-michael-grey-vintage-logo-hood-f02f5146-1.jpg",
+    "isActive": true,
+    "createdAt": "2026-07-14T18:26:51.790754+00:00"
   }
 ]
