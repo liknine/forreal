@@ -2119,5 +2119,26 @@
     "detailImage": "images/products/doublet-ai-brown-logo-tee-8357cc82-1.jpg",
     "isActive": true,
     "createdAt": "2026-07-14T09:05:37.058852+00:00"
+  },
+  {
+    "id": "saint-laurent-black-logo-hoodie-f0829e88",
+    "brand": "SAINT LAURENT",
+    "name": "BLACK LOGO HOODIE",
+    "price": 20000,
+    "currency": "RUB",
+    "category": "ХУДИ",
+    "sizes": [
+      "XL"
+    ],
+    "sizeStock": {
+      "XL": 1
+    },
+    "details": "В отличном состоянии",
+    "images": [
+      "images/products/saint-laurent-black-logo-hoodie-f0829e88-1.jpg"
+    ],
+    "detailImage": "images/products/saint-laurent-black-logo-hoodie-f0829e88-1.jpg",
+    "isActive": true,
+    "createdAt": "2026-07-14T09:07:19.852291+00:00"
   }
 ]
