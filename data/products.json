@@ -2399,5 +2399,27 @@
     "detailImage": "images/products/undercover-black-skeleton-logo-hoodi-febebf88-1.jpg",
     "isActive": true,
     "createdAt": "2026-07-14T10:54:46.358075+00:00"
+  },
+  {
+    "id": "mm6-black-snake-logo-hoodie-c4aacace",
+    "brand": "MM6",
+    "name": "BLACK SNAKE LOGO HOODIE",
+    "price": 16000,
+    "currency": "RUB",
+    "category": "ХУДИ",
+    "sizes": [
+      "L"
+    ],
+    "sizeStock": {
+      "L": 1
+    },
+    "details": "В отличном состоянии \n\nM ( ближе к L )",
+    "images": [
+      "images/products/mm6-black-snake-logo-hoodie-c4aacace-1.jpg",
+      "images/products/mm6-black-snake-logo-hoodie-c4aacace-2.jpg"
+    ],
+    "detailImage": "images/products/mm6-black-snake-logo-hoodie-c4aacace-1.jpg",
+    "isActive": true,
+    "createdAt": "2026-07-14T10:58:53.476619+00:00"
   }
 ]
