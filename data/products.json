@@ -2140,5 +2140,26 @@
     "detailImage": "images/products/saint-laurent-black-logo-hoodie-f0829e88-1.jpg",
     "isActive": true,
     "createdAt": "2026-07-14T09:07:19.852291+00:00"
+  },
+  {
+    "id": "032c-black-logo-hoodie-6857b2c6",
+    "brand": "032C",
+    "name": "BLACK LOGO HOODIE",
+    "price": 12500,
+    "currency": "RUB",
+    "category": "ХУДИ",
+    "sizes": [
+      "L"
+    ],
+    "sizeStock": {
+      "L": 1
+    },
+    "details": "В отличном состоянии",
+    "images": [
+      "images/products/032c-black-logo-hoodie-6857b2c6-1.jpg"
+    ],
+    "detailImage": "images/products/032c-black-logo-hoodie-6857b2c6-1.jpg",
+    "isActive": true,
+    "createdAt": "2026-07-14T09:24:16.296009+00:00"
   }
 ]
