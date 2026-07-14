@@ -2599,5 +2599,26 @@
     "detailImage": "images/products/c2h4-black-logo-hoodie-0412b209-1.jpg",
     "isActive": true,
     "createdAt": "2026-07-14T11:35:36.141283+00:00"
+  },
+  {
+    "id": "424-black-logo-hoodie-cb0f4fc8",
+    "brand": "424",
+    "name": "BLACK LOGO HOODIE",
+    "price": 12000,
+    "currency": "RUB",
+    "category": "ХУДИ",
+    "sizes": [
+      "L"
+    ],
+    "sizeStock": {
+      "L": 1
+    },
+    "details": "Полностью новый",
+    "images": [
+      "images/products/424-black-logo-hoodie-cb0f4fc8-1.jpg"
+    ],
+    "detailImage": "images/products/424-black-logo-hoodie-cb0f4fc8-1.jpg",
+    "isActive": true,
+    "createdAt": "2026-07-14T11:37:16.640040+00:00"
   }
 ]
