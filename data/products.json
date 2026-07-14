@@ -2034,5 +2034,26 @@
     "detailImage": "images/products/424-black-logo-stars-hoodie-ca34a083-1.jpg",
     "isActive": true,
     "createdAt": "2026-07-14T08:54:32.302702+00:00"
+  },
+  {
+    "id": "burberry-black-logo-hoodie-d6be2784",
+    "brand": "BURBERRY",
+    "name": "BLACK LOGO HOODIE",
+    "price": 17000,
+    "currency": "RUB",
+    "category": "ХУДИ",
+    "sizes": [
+      "L"
+    ],
+    "sizeStock": {
+      "L": 1
+    },
+    "details": "В отличном состоянии\n\nM ( фактически L )",
+    "images": [
+      "images/products/burberry-black-logo-hoodie-d6be2784-1.jpg"
+    ],
+    "detailImage": "images/products/burberry-black-logo-hoodie-d6be2784-1.jpg",
+    "isActive": true,
+    "createdAt": "2026-07-14T08:56:37.167008+00:00"
   }
 ]
