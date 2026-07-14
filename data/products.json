@@ -2751,5 +2751,27 @@
     "detailImage": "images/products/hysteric-glamour-white-graffiti-logo-a37ea7a0-1.jpg",
     "isActive": true,
     "createdAt": "2026-07-14T14:54:55.887833+00:00"
+  },
+  {
+    "id": "yohji-yamamoto-black-logo-hoodie-83a562a4",
+    "brand": "YOHJI YAMAMOTO",
+    "name": "BLACK LOGO HOODIE",
+    "price": 12000,
+    "currency": "RUB",
+    "category": "ХУДИ",
+    "sizes": [
+      "L"
+    ],
+    "sizeStock": {
+      "L": 1
+    },
+    "details": "В хорошем состоянии \n\n3 ( фактически L )",
+    "images": [
+      "images/products/yohji-yamamoto-black-logo-hoodie-83a562a4-1.jpg",
+      "images/products/yohji-yamamoto-black-logo-hoodie-83a562a4-2.jpg"
+    ],
+    "detailImage": "images/products/yohji-yamamoto-black-logo-hoodie-83a562a4-1.jpg",
+    "isActive": true,
+    "createdAt": "2026-07-14T18:23:14.772068+00:00"
   }
 ]
