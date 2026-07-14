@@ -636,11 +636,9 @@
     "currency": "RUB",
     "category": "ОБУВЬ",
     "sizes": [
-      "42",
       "43"
     ],
     "sizeStock": {
-      "42": 1,
       "43": 1
     },
     "details": "В отличном состоянии \n\n43 / 27.7 см\n\n42 / 27.2 см",
@@ -651,7 +649,8 @@
     ],
     "detailImage": "images/products/erl-vamp-black-logo-sneakers-b6de9d61-1.jpg",
     "isActive": true,
-    "createdAt": "2026-07-11T15:18:54.989949+00:00"
+    "createdAt": "2026-07-11T15:18:54.989949+00:00",
+    "updatedAt": "2026-07-14T00:12:23.111502+00:00"
   },
   {
     "id": "balenciaga-track-1-white-beige-logo-f0d330d5",
