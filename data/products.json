@@ -2465,28 +2465,6 @@
     "createdAt": "2026-07-14T11:00:03.689389+00:00"
   },
   {
-    "id": "julius-black-logo-hoodie-99fea28a",
-    "brand": "JULIUS",
-    "name": "BLACK LOGO HOODIE",
-    "price": 15500,
-    "currency": "RUB",
-    "category": "ХУДИ",
-    "sizes": [
-      "L"
-    ],
-    "sizeStock": {
-      "L": 1
-    },
-    "details": "В отличном состоянии \n\n3 ( фактически L )",
-    "images": [
-      "images/products/julius-black-logo-hoodie-99fea28a-1.jpg",
-      "images/products/julius-black-logo-hoodie-99fea28a-2.jpg"
-    ],
-    "detailImage": "images/products/julius-black-logo-hoodie-99fea28a-1.jpg",
-    "isActive": true,
-    "createdAt": "2026-07-14T11:02:12.268372+00:00"
-  },
-  {
     "id": "julius-black-logo-hoodie-a9dfb0f3",
     "brand": "JULIUS",
     "name": "BLACK LOGO HOODIE",
