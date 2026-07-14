@@ -2551,5 +2551,28 @@
     "detailImage": "images/products/maison-margiela-black-logo-hoodie-8ea73f2e-1.jpg",
     "isActive": true,
     "createdAt": "2026-07-14T11:04:25.186773+00:00"
+  },
+  {
+    "id": "raf-simons-fred-perry-black-logo-hoo-1460099b",
+    "brand": "RAF SIMONS",
+    "name": "FRED PERRY BLACK LOGO HOODIE",
+    "price": 20000,
+    "currency": "RUB",
+    "category": "ХУДИ",
+    "sizes": [
+      "L"
+    ],
+    "sizeStock": {
+      "L": 1
+    },
+    "details": "В отличном состоянии",
+    "images": [
+      "images/products/raf-simons-fred-perry-black-logo-hoo-1460099b-1.jpg",
+      "images/products/raf-simons-fred-perry-black-logo-hoo-1460099b-2.jpg",
+      "images/products/raf-simons-fred-perry-black-logo-hoo-1460099b-3.jpg"
+    ],
+    "detailImage": "images/products/raf-simons-fred-perry-black-logo-hoo-1460099b-1.jpg",
+    "isActive": true,
+    "createdAt": "2026-07-14T11:25:04.153109+00:00"
   }
 ]
