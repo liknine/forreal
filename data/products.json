@@ -2531,5 +2531,27 @@
     "detailImage": "images/products/givenchy-black-logo-hoodie-685cb778-1.jpg",
     "isActive": true,
     "createdAt": "2026-07-14T11:28:44.582765+00:00"
+  },
+  {
+    "id": "burberry-black-logo-hoodie-09f214da",
+    "brand": "BURBERRY",
+    "name": "BLACK LOGO HOODIE",
+    "price": 14000,
+    "currency": "RUB",
+    "category": "ХУДИ",
+    "sizes": [
+      "L"
+    ],
+    "sizeStock": {
+      "L": 1
+    },
+    "details": "M ( ближе к L )",
+    "images": [
+      "images/products/burberry-black-logo-hoodie-09f214da-1.jpg",
+      "images/products/burberry-black-logo-hoodie-09f214da-2.jpg"
+    ],
+    "detailImage": "images/products/burberry-black-logo-hoodie-09f214da-1.jpg",
+    "isActive": true,
+    "createdAt": "2026-07-14T11:30:34.231088+00:00"
   }
 ]
