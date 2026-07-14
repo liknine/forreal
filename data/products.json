@@ -2311,5 +2311,28 @@
     "detailImage": "images/products/mastermind-c2h4-x-alpha-industries-b-6a8a3f44-1.jpg",
     "isActive": true,
     "createdAt": "2026-07-14T10:43:59.420962+00:00"
+  },
+  {
+    "id": "helmut-lang-black-logo-hoodie-52f7e0ac",
+    "brand": "HELMUT LANG",
+    "name": "BLACK LOGO HOODIE",
+    "price": 12500,
+    "currency": "RUB",
+    "category": "ХУДИ",
+    "sizes": [
+      "S",
+      "L"
+    ],
+    "sizeStock": {
+      "S": 1,
+      "L": 1
+    },
+    "details": "Полностью новый",
+    "images": [
+      "images/products/helmut-lang-black-logo-hoodie-52f7e0ac-1.jpg"
+    ],
+    "detailImage": "images/products/helmut-lang-black-logo-hoodie-52f7e0ac-1.jpg",
+    "isActive": true,
+    "createdAt": "2026-07-14T10:46:45.387312+00:00"
   }
 ]
