@@ -2011,5 +2011,28 @@
     "detailImage": "images/products/c2h4-green-logo-zip-hoodie-9a4a3d4e-1.jpg",
     "isActive": true,
     "createdAt": "2026-07-13T18:01:05.392153+00:00"
+  },
+  {
+    "id": "424-black-logo-stars-hoodie-ca34a083",
+    "brand": "424",
+    "name": "BLACK LOGO STARS HOODIE",
+    "price": 12500,
+    "currency": "RUB",
+    "category": "ХУДИ",
+    "sizes": [
+      "M",
+      "L"
+    ],
+    "sizeStock": {
+      "M": 1,
+      "L": 1
+    },
+    "details": "Полностью новый \n\n-M\n\n-L",
+    "images": [
+      "images/products/424-black-logo-stars-hoodie-ca34a083-1.jpg"
+    ],
+    "detailImage": "images/products/424-black-logo-stars-hoodie-ca34a083-1.jpg",
+    "isActive": true,
+    "createdAt": "2026-07-14T08:54:32.302702+00:00"
   }
 ]
