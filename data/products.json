@@ -2377,5 +2377,27 @@
     "detailImage": "images/products/saint-laurent-black-logo-hoodie-7f8e06e7-1.jpg",
     "isActive": true,
     "createdAt": "2026-07-14T10:52:22.889737+00:00"
+  },
+  {
+    "id": "undercover-black-skeleton-logo-hoodi-febebf88",
+    "brand": "UNDERCOVER",
+    "name": "BLACK SKELETON LOGO HOODIE",
+    "price": 15500,
+    "currency": "RUB",
+    "category": "ХУДИ",
+    "sizes": [
+      "L"
+    ],
+    "sizeStock": {
+      "L": 1
+    },
+    "details": "В отличном состоянии \n\n3 ( фактически L )",
+    "images": [
+      "images/products/undercover-black-skeleton-logo-hoodi-febebf88-1.jpg",
+      "images/products/undercover-black-skeleton-logo-hoodi-febebf88-2.jpg"
+    ],
+    "detailImage": "images/products/undercover-black-skeleton-logo-hoodi-febebf88-1.jpg",
+    "isActive": true,
+    "createdAt": "2026-07-14T10:54:46.358075+00:00"
   }
 ]
