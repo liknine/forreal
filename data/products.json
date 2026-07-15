@@ -2990,5 +2990,27 @@
     "detailImage": "images/products/boris-bidjan-11-black-logo-tee-f9dfc321-1.jpg",
     "isActive": true,
     "createdAt": "2026-07-15T19:56:31.208622+00:00"
+  },
+  {
+    "id": "yohji-yamamoto-black-logo-tee-655a9aec",
+    "brand": "YOHJI YAMAMOTO",
+    "name": "BLACK LOGO TEE",
+    "price": 10500,
+    "currency": "RUB",
+    "category": "ФУТБОЛКИ",
+    "sizes": [
+      "L"
+    ],
+    "sizeStock": {
+      "L": 1
+    },
+    "details": "В отличном состоянии \n\n3 ( фактически L )",
+    "images": [
+      "images/products/yohji-yamamoto-black-logo-tee-655a9aec-1.jpg",
+      "images/products/yohji-yamamoto-black-logo-tee-655a9aec-2.jpg"
+    ],
+    "detailImage": "images/products/yohji-yamamoto-black-logo-tee-655a9aec-1.jpg",
+    "isActive": true,
+    "createdAt": "2026-07-15T19:58:30.123365+00:00"
   }
 ]
