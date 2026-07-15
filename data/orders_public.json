@@ -1,5 +1,29 @@
 [
   {
+    "id": "cff86628-98bc-40d5-9fee-7fbd826fc474",
+    "orderNumber": 1019,
+    "clientOrderId": "forreal-1784150343376-f8a8f86f7fcef8",
+    "telegramId": 6679851290,
+    "username": "finance_log",
+    "items": [
+      {
+        "productId": "rick-owens-black-cargo-shorts-66335a72",
+        "brand": "RICK OWENS",
+        "name": "BLACK CARGO SHORTS",
+        "size": "L",
+        "quantity": 1,
+        "price": 20500,
+        "image": "images/products/rick-owens-black-cargo-shorts-66335a72-1.jpg"
+      }
+    ],
+    "totalPrice": 20500,
+    "currency": "RUB",
+    "deliveryMethod": "cdek",
+    "status": "awaiting_payment",
+    "createdAt": "2026-07-15T21:19:03.674963+00:00",
+    "updatedAt": "2026-07-15T21:19:03.674963+00:00"
+  },
+  {
     "id": "0eba9d4f-759f-4b5f-af69-07bf59b82c00",
     "orderNumber": 1018,
     "clientOrderId": "forreal-1784149712635-259d0eb86f2da",
