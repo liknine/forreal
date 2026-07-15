@@ -2795,5 +2795,26 @@
     "detailImage": "images/products/saint-michael-grey-vintage-logo-hood-f02f5146-1.jpg",
     "isActive": true,
     "createdAt": "2026-07-14T18:26:51.790754+00:00"
+  },
+  {
+    "id": "lanvin-blue-logo-tee-3854efc3",
+    "brand": "LANVIN",
+    "name": "BLUE LOGO TEE",
+    "price": 8000,
+    "currency": "RUB",
+    "category": "ФУТБОЛКИ",
+    "sizes": [
+      "M"
+    ],
+    "sizeStock": {
+      "M": 1
+    },
+    "details": "В отличном состоянии\n\nS ( фактически M )",
+    "images": [
+      "images/products/lanvin-blue-logo-tee-3854efc3-1.jpg"
+    ],
+    "detailImage": "images/products/lanvin-blue-logo-tee-3854efc3-1.jpg",
+    "isActive": true,
+    "createdAt": "2026-07-15T19:41:24.608638+00:00"
   }
 ]
