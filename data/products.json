@@ -2924,5 +2924,27 @@
     "detailImage": "images/products/rick-owens-gimp-black-logo-shorts-a1197f0d-1.jpg",
     "isActive": true,
     "createdAt": "2026-07-15T19:51:49.812021+00:00"
+  },
+  {
+    "id": "farfromwhat-green-logo-shorts-6c5b98a0",
+    "brand": "FARFROMWHAT",
+    "name": "GREEN LOGO SHORTS",
+    "price": 12000,
+    "currency": "RUB",
+    "category": "ШОРТЫ",
+    "sizes": [
+      "L"
+    ],
+    "sizeStock": {
+      "L": 1
+    },
+    "details": "В отличном состоянии \n\n3 ( фактически L )",
+    "images": [
+      "images/products/farfromwhat-green-logo-shorts-6c5b98a0-1.jpg",
+      "images/products/farfromwhat-green-logo-shorts-6c5b98a0-2.jpg"
+    ],
+    "detailImage": "images/products/farfromwhat-green-logo-shorts-6c5b98a0-1.jpg",
+    "isActive": true,
+    "createdAt": "2026-07-15T19:53:45.532938+00:00"
   }
 ]
