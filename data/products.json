@@ -2958,7 +2958,7 @@
       "L"
     ],
     "sizeStock": {
-      "L": 1
+      "L": 0
     },
     "details": "В отличном состоянии \n\n48 ( фактически L )",
     "images": [
@@ -2966,10 +2966,11 @@
       "images/products/rick-owens-black-cargo-shorts-66335a72-2.jpg"
     ],
     "detailImage": "images/products/rick-owens-black-cargo-shorts-66335a72-1.jpg",
-    "isActive": true,
+    "isActive": false,
     "createdAt": "2026-07-15T19:55:35.727035+00:00",
-    "updatedAt": "2026-07-15T21:06:13.035901+00:00",
-    "autoHiddenNoStock": false
+    "updatedAt": "2026-07-15T21:09:10.111261+00:00",
+    "autoHiddenNoStock": true,
+    "soldOutAt": "2026-07-15T21:09:10.111289+00:00"
   },
   {
     "id": "boris-bidjan-11-black-logo-tee-f9dfc321",
