@@ -2837,5 +2837,26 @@
     "detailImage": "images/products/amiri-black-flower-logo-tee-896da7e5-1.jpg",
     "isActive": true,
     "createdAt": "2026-07-15T19:42:41.693454+00:00"
+  },
+  {
+    "id": "givenchy-chito-green-logo-tee-82bcf3d2",
+    "brand": "GIVENCHY",
+    "name": "CHITO GREEN LOGO TEE",
+    "price": 15500,
+    "currency": "RUB",
+    "category": "ФУТБОЛКИ",
+    "sizes": [
+      "XL"
+    ],
+    "sizeStock": {
+      "XL": 1
+    },
+    "details": "В отличном состоянии \n\nM ( фактически L-XL )",
+    "images": [
+      "images/products/givenchy-chito-green-logo-tee-82bcf3d2-1.jpg"
+    ],
+    "detailImage": "images/products/givenchy-chito-green-logo-tee-82bcf3d2-1.jpg",
+    "isActive": true,
+    "createdAt": "2026-07-15T19:44:14.327407+00:00"
   }
 ]
