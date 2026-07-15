@@ -2968,5 +2968,27 @@
     "detailImage": "images/products/rick-owens-black-cargo-shorts-66335a72-1.jpg",
     "isActive": true,
     "createdAt": "2026-07-15T19:55:35.727035+00:00"
+  },
+  {
+    "id": "boris-bidjan-11-black-logo-tee-f9dfc321",
+    "brand": "BORIS BIDJAN 11",
+    "name": "BLACK LOGO TEE",
+    "price": 14000,
+    "currency": "RUB",
+    "category": "ФУТБОЛКИ",
+    "sizes": [
+      "L"
+    ],
+    "sizeStock": {
+      "L": 1
+    },
+    "details": "В отличном состоянии",
+    "images": [
+      "images/products/boris-bidjan-11-black-logo-tee-f9dfc321-1.jpg",
+      "images/products/boris-bidjan-11-black-logo-tee-f9dfc321-2.jpg"
+    ],
+    "detailImage": "images/products/boris-bidjan-11-black-logo-tee-f9dfc321-1.jpg",
+    "isActive": true,
+    "createdAt": "2026-07-15T19:56:31.208622+00:00"
   }
 ]
