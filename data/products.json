@@ -2958,7 +2958,7 @@
       "L"
     ],
     "sizeStock": {
-      "L": 2
+      "L": 1
     },
     "details": "В отличном состоянии \n\n48 ( фактически L )",
     "images": [
@@ -2968,7 +2968,7 @@
     "detailImage": "images/products/rick-owens-black-cargo-shorts-66335a72-1.jpg",
     "isActive": true,
     "createdAt": "2026-07-15T19:55:35.727035+00:00",
-    "updatedAt": "2026-07-15T21:11:31.799827+00:00",
+    "updatedAt": "2026-07-15T21:23:22.929961+00:00",
     "autoHiddenNoStock": false
   },
   {
