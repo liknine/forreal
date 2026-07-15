@@ -2816,5 +2816,26 @@
     "detailImage": "images/products/lanvin-blue-logo-tee-3854efc3-1.jpg",
     "isActive": true,
     "createdAt": "2026-07-15T19:41:24.608638+00:00"
+  },
+  {
+    "id": "amiri-black-flower-logo-tee-896da7e5",
+    "brand": "AMIRI",
+    "name": "BLACK FLOWER LOGO TEE",
+    "price": 14000,
+    "currency": "RUB",
+    "category": "ФУТБОЛКИ",
+    "sizes": [
+      "L"
+    ],
+    "sizeStock": {
+      "L": 1
+    },
+    "details": "S ( фактически L )",
+    "images": [
+      "images/products/amiri-black-flower-logo-tee-896da7e5-1.jpg"
+    ],
+    "detailImage": "images/products/amiri-black-flower-logo-tee-896da7e5-1.jpg",
+    "isActive": true,
+    "createdAt": "2026-07-15T19:42:41.693454+00:00"
   }
 ]
