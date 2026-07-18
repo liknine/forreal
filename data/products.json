@@ -3166,5 +3166,27 @@
     "detailImage": "images/products/1017-alyx-9sm-black-logo-tee-3f2aa9e0-1.jpg",
     "isActive": true,
     "createdAt": "2026-07-18T11:15:47.360275+00:00"
+  },
+  {
+    "id": "cav-empt-black-logo-tee-e9eba88c",
+    "brand": "CAV EMPT",
+    "name": "BLACK LOGO TEE",
+    "price": 7000,
+    "currency": "RUB",
+    "category": "ФУТБОЛКИ",
+    "sizes": [
+      "M"
+    ],
+    "sizeStock": {
+      "M": 1
+    },
+    "details": "В отличном состоянии \n\nM ( ближе к L )",
+    "images": [
+      "images/products/cav-empt-black-logo-tee-e9eba88c-1.jpg",
+      "images/products/cav-empt-black-logo-tee-e9eba88c-2.jpg"
+    ],
+    "detailImage": "images/products/cav-empt-black-logo-tee-e9eba88c-1.jpg",
+    "isActive": true,
+    "createdAt": "2026-07-18T11:19:10.435440+00:00"
   }
 ]
