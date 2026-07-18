@@ -3188,5 +3188,27 @@
     "detailImage": "images/products/cav-empt-black-logo-tee-e9eba88c-1.jpg",
     "isActive": true,
     "createdAt": "2026-07-18T11:19:10.435440+00:00"
+  },
+  {
+    "id": "hysteric-glamour-neigborhood-black-l-511ecfdd",
+    "brand": "HYSTERIC GLAMOUR",
+    "name": "NEIGBORHOOD BLACK LOGO TEE",
+    "price": 11000,
+    "currency": "RUB",
+    "category": "ФУТБОЛКИ",
+    "sizes": [
+      "M"
+    ],
+    "sizeStock": {
+      "M": 1
+    },
+    "details": "В отличном состоянии",
+    "images": [
+      "images/products/hysteric-glamour-neigborhood-black-l-511ecfdd-1.jpg",
+      "images/products/hysteric-glamour-neigborhood-black-l-511ecfdd-2.jpg"
+    ],
+    "detailImage": "images/products/hysteric-glamour-neigborhood-black-l-511ecfdd-1.jpg",
+    "isActive": true,
+    "createdAt": "2026-07-18T11:24:40.849903+00:00"
   }
 ]
