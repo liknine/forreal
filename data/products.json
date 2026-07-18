@@ -3301,5 +3301,28 @@
     "detailImage": "images/products/balenciaga-paris-black-graffiti-snea-cfc7af70-1.jpg",
     "isActive": true,
     "createdAt": "2026-07-18T13:23:16.709733+00:00"
+  },
+  {
+    "id": "mihara-yasuhiro-black-leather-sneake-23b79e5f",
+    "brand": "MIHARA YASUHIRO",
+    "name": "BLACK LEATHER SNEAKERS",
+    "price": 17000,
+    "currency": "RUB",
+    "category": "ОБУВЬ",
+    "sizes": [
+      "41"
+    ],
+    "sizeStock": {
+      "41": 1
+    },
+    "details": "В отличном состоянии \n\n41 / 27 см",
+    "images": [
+      "images/products/mihara-yasuhiro-black-leather-sneake-23b79e5f-1.jpg",
+      "images/products/mihara-yasuhiro-black-leather-sneake-23b79e5f-2.jpg",
+      "images/products/mihara-yasuhiro-black-leather-sneake-23b79e5f-3.jpg"
+    ],
+    "detailImage": "images/products/mihara-yasuhiro-black-leather-sneake-23b79e5f-1.jpg",
+    "isActive": true,
+    "createdAt": "2026-07-18T13:27:43.778548+00:00"
   }
 ]
