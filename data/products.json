@@ -3101,5 +3101,26 @@
     "detailImage": "images/products/undercover-mint-logo-tee-2b4733ac-1.jpg",
     "isActive": true,
     "createdAt": "2026-07-18T11:04:18.878251+00:00"
+  },
+  {
+    "id": "saint-laurent-black-logo-tee-9441ca95",
+    "brand": "SAINT LAURENT",
+    "name": "BLACK LOGO TEE",
+    "price": 10500,
+    "currency": "RUB",
+    "category": "ФУТБОЛКИ",
+    "sizes": [
+      "S"
+    ],
+    "sizeStock": {
+      "S": 1
+    },
+    "details": "В отличном состоянии",
+    "images": [
+      "images/products/saint-laurent-black-logo-tee-9441ca95-1.jpg"
+    ],
+    "detailImage": "images/products/saint-laurent-black-logo-tee-9441ca95-1.jpg",
+    "isActive": true,
+    "createdAt": "2026-07-18T11:10:18.641570+00:00"
   }
 ]
