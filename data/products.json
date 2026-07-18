@@ -3143,5 +3143,28 @@
     "detailImage": "images/products/undercover-black-logo-tee-e15fdcd3-1.jpg",
     "isActive": true,
     "createdAt": "2026-07-18T11:14:40.999851+00:00"
+  },
+  {
+    "id": "1017-alyx-9sm-black-logo-tee-3f2aa9e0",
+    "brand": "1017 ALYX 9SM",
+    "name": "BLACK LOGO TEE",
+    "price": 8000,
+    "currency": "RUB",
+    "category": "ФУТБОЛКИ",
+    "sizes": [
+      "ПОЛНОСТЬЮ НОВАЯ",
+      "M ( ФАКТИЧЕСКИ L )"
+    ],
+    "sizeStock": {
+      "ПОЛНОСТЬЮ НОВАЯ": 1,
+      "M ( ФАКТИЧЕСКИ L )": 1
+    },
+    "details": "Полностью новая \n\nM ( фактически L )",
+    "images": [
+      "images/products/1017-alyx-9sm-black-logo-tee-3f2aa9e0-1.jpg"
+    ],
+    "detailImage": "images/products/1017-alyx-9sm-black-logo-tee-3f2aa9e0-1.jpg",
+    "isActive": true,
+    "createdAt": "2026-07-18T11:15:47.360275+00:00"
   }
 ]
