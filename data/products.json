@@ -3277,5 +3277,29 @@
     "detailImage": "images/products/lanvin-curb-blue-jeans-sneakers-39ebd9af-1.jpg",
     "isActive": true,
     "createdAt": "2026-07-18T13:20:22.969071+00:00"
+  },
+  {
+    "id": "balenciaga-paris-black-graffiti-snea-cfc7af70",
+    "brand": "BALENCIAGA",
+    "name": "PARIS BLACK GRAFFITI SNEAKERS",
+    "price": 24500,
+    "currency": "RUB",
+    "category": "ОБУВЬ",
+    "sizes": [
+      "43"
+    ],
+    "sizeStock": {
+      "43": 1
+    },
+    "details": "В отличном состоянии \n\n43 / 28 см",
+    "images": [
+      "images/products/balenciaga-paris-black-graffiti-snea-cfc7af70-1.jpg",
+      "images/products/balenciaga-paris-black-graffiti-snea-cfc7af70-2.jpg",
+      "images/products/balenciaga-paris-black-graffiti-snea-cfc7af70-3.jpg",
+      "images/products/balenciaga-paris-black-graffiti-snea-cfc7af70-4.jpg"
+    ],
+    "detailImage": "images/products/balenciaga-paris-black-graffiti-snea-cfc7af70-1.jpg",
+    "isActive": true,
+    "createdAt": "2026-07-18T13:23:16.709733+00:00"
   }
 ]
