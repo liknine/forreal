@@ -3122,5 +3122,26 @@
     "detailImage": "images/products/saint-laurent-black-logo-tee-9441ca95-1.jpg",
     "isActive": true,
     "createdAt": "2026-07-18T11:10:18.641570+00:00"
+  },
+  {
+    "id": "undercover-black-logo-tee-e15fdcd3",
+    "brand": "UNDERCOVER",
+    "name": "BLACK LOGO TEE",
+    "price": 10500,
+    "currency": "RUB",
+    "category": "ФУТБОЛКИ",
+    "sizes": [
+      "L"
+    ],
+    "sizeStock": {
+      "L": 1
+    },
+    "details": "В отличном состоянии \n\n4 ( фактически L-XL )",
+    "images": [
+      "images/products/undercover-black-logo-tee-e15fdcd3-1.jpg"
+    ],
+    "detailImage": "images/products/undercover-black-logo-tee-e15fdcd3-1.jpg",
+    "isActive": true,
+    "createdAt": "2026-07-18T11:14:40.999851+00:00"
   }
 ]
