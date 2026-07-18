@@ -3462,5 +3462,28 @@
     "detailImage": "images/products/balenciaga-track-2-beige-sneakers-0e5d3ff5-1.jpg",
     "isActive": true,
     "createdAt": "2026-07-18T14:09:17.173823+00:00"
+  },
+  {
+    "id": "salvatore-ferragamo-blue-logo-sneake-a206273b",
+    "brand": "SALVATORE FERRAGAMO",
+    "name": "BLUE LOGO SNEAKERS",
+    "price": 14000,
+    "currency": "RUB",
+    "category": "ОБУВЬ",
+    "sizes": [
+      "42"
+    ],
+    "sizeStock": {
+      "42": 1
+    },
+    "details": "В отличном состоянии \n\n42 / 27 см",
+    "images": [
+      "images/products/salvatore-ferragamo-blue-logo-sneake-a206273b-1.jpg",
+      "images/products/salvatore-ferragamo-blue-logo-sneake-a206273b-2.jpg",
+      "images/products/salvatore-ferragamo-blue-logo-sneake-a206273b-3.jpg"
+    ],
+    "detailImage": "images/products/salvatore-ferragamo-blue-logo-sneake-a206273b-1.jpg",
+    "isActive": true,
+    "createdAt": "2026-07-18T14:10:41.617786+00:00"
   }
 ]
