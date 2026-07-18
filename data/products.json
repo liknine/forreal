@@ -3370,5 +3370,28 @@
     "detailImage": "images/products/gucci-ace-tiger-logo-sneakers-9edb6d37-1.jpg",
     "isActive": true,
     "createdAt": "2026-07-18T13:31:07.981801+00:00"
+  },
+  {
+    "id": "valentino-open-skate-white-green-sne-2aff2cc3",
+    "brand": "VALENTINO",
+    "name": "OPEN SKATE WHITE GREEN SNEAKERS",
+    "price": 21000,
+    "currency": "RUB",
+    "category": "ОБУВЬ",
+    "sizes": [
+      "42"
+    ],
+    "sizeStock": {
+      "42": 1
+    },
+    "details": "В отличном состоянии \n\n42 / 27.5 см",
+    "images": [
+      "images/products/valentino-open-skate-white-green-sne-2aff2cc3-1.jpg",
+      "images/products/valentino-open-skate-white-green-sne-2aff2cc3-2.jpg",
+      "images/products/valentino-open-skate-white-green-sne-2aff2cc3-3.jpg"
+    ],
+    "detailImage": "images/products/valentino-open-skate-white-green-sne-2aff2cc3-1.jpg",
+    "isActive": true,
+    "createdAt": "2026-07-18T13:38:24.340914+00:00"
   }
 ]
