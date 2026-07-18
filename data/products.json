@@ -3550,5 +3550,26 @@
     "detailImage": "images/products/ksubi-patch-logo-jeans-cffb8bfa-1.jpg",
     "isActive": true,
     "createdAt": "2026-07-18T16:53:18.060151+00:00"
+  },
+  {
+    "id": "amiri-distress-black-jeans-541d6509",
+    "brand": "AMIRI",
+    "name": "DISTRESS BLACK JEANS",
+    "price": 28500,
+    "currency": "RUB",
+    "category": "ШТАНЫ",
+    "sizes": [
+      "M"
+    ],
+    "sizeStock": {
+      "M": 1
+    },
+    "details": "В отличном состоянии \n\n31 ( фактически M-L )",
+    "images": [
+      "images/products/amiri-distress-black-jeans-541d6509-1.jpg"
+    ],
+    "detailImage": "images/products/amiri-distress-black-jeans-541d6509-1.jpg",
+    "isActive": true,
+    "createdAt": "2026-07-18T16:56:34.801456+00:00"
   }
 ]
