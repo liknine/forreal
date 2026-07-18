@@ -3232,5 +3232,27 @@
     "detailImage": "images/products/amiri-distress-palm-logo-shorts-1692c6ed-1.jpg",
     "isActive": true,
     "createdAt": "2026-07-18T12:16:26.014786+00:00"
+  },
+  {
+    "id": "saint-laurent-black-logo-sneakers-728a99a0",
+    "brand": "SAINT LAURENT",
+    "name": "BLACK LOGO SNEAKERS",
+    "price": 18500,
+    "currency": "RUB",
+    "category": "ОБУВЬ",
+    "sizes": [
+      "44.5"
+    ],
+    "sizeStock": {
+      "44.5": 1
+    },
+    "details": "В отличном состоянии \n\n44.5 / 29 см",
+    "images": [
+      "images/products/saint-laurent-black-logo-sneakers-728a99a0-1.jpg",
+      "images/products/saint-laurent-black-logo-sneakers-728a99a0-2.jpg"
+    ],
+    "detailImage": "images/products/saint-laurent-black-logo-sneakers-728a99a0-1.jpg",
+    "isActive": true,
+    "createdAt": "2026-07-18T13:17:30.618313+00:00"
   }
 ]
