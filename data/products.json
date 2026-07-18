@@ -3571,5 +3571,27 @@
     "detailImage": "images/products/amiri-distress-black-jeans-541d6509-1.jpg",
     "isActive": true,
     "createdAt": "2026-07-18T16:56:34.801456+00:00"
+  },
+  {
+    "id": "undercover-white-logo-jeans-026eebae",
+    "brand": "UNDERCOVER",
+    "name": "WHITE LOGO JEANS",
+    "price": 14000,
+    "currency": "RUB",
+    "category": "ШТАНЫ",
+    "sizes": [
+      "L"
+    ],
+    "sizeStock": {
+      "L": 1
+    },
+    "details": "В отличном состоянии \n\n3 ( фактически M-L )",
+    "images": [
+      "images/products/undercover-white-logo-jeans-026eebae-1.jpg",
+      "images/products/undercover-white-logo-jeans-026eebae-2.jpg"
+    ],
+    "detailImage": "images/products/undercover-white-logo-jeans-026eebae-1.jpg",
+    "isActive": true,
+    "createdAt": "2026-07-18T16:59:12.828191+00:00"
   }
 ]
