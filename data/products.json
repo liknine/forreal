@@ -3347,5 +3347,28 @@
     "detailImage": "images/products/mihara-yasuhiro-beige-leather-sneake-9491dcc9-1.jpg",
     "isActive": true,
     "createdAt": "2026-07-18T13:29:15.180353+00:00"
+  },
+  {
+    "id": "gucci-ace-tiger-logo-sneakers-9edb6d37",
+    "brand": "GUCCI",
+    "name": "ACE TIGER LOGO SNEAKERS",
+    "price": 20500,
+    "currency": "RUB",
+    "category": "ОБУВЬ",
+    "sizes": [
+      "43.5"
+    ],
+    "sizeStock": {
+      "43.5": 1
+    },
+    "details": "В отличном состоянии \n\n43.5 / 28.2 см",
+    "images": [
+      "images/products/gucci-ace-tiger-logo-sneakers-9edb6d37-1.jpg",
+      "images/products/gucci-ace-tiger-logo-sneakers-9edb6d37-2.jpg",
+      "images/products/gucci-ace-tiger-logo-sneakers-9edb6d37-3.jpg"
+    ],
+    "detailImage": "images/products/gucci-ace-tiger-logo-sneakers-9edb6d37-1.jpg",
+    "isActive": true,
+    "createdAt": "2026-07-18T13:31:07.981801+00:00"
   }
 ]
