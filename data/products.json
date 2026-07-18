@@ -3080,5 +3080,26 @@
     "detailImage": "images/products/1017-alyx-9sm-beige-logo-tee-ce89fba0-1.jpg",
     "isActive": true,
     "createdAt": "2026-07-18T11:02:46.762992+00:00"
+  },
+  {
+    "id": "undercover-mint-logo-tee-2b4733ac",
+    "brand": "UNDERCOVER",
+    "name": "MINT LOGO TEE",
+    "price": 10500,
+    "currency": "RUB",
+    "category": "ФУТБОЛКИ",
+    "sizes": [
+      "L"
+    ],
+    "sizeStock": {
+      "L": 1
+    },
+    "details": "В отличном состоянии \n\n3 ( фактически L )",
+    "images": [
+      "images/products/undercover-mint-logo-tee-2b4733ac-1.jpg"
+    ],
+    "detailImage": "images/products/undercover-mint-logo-tee-2b4733ac-1.jpg",
+    "isActive": true,
+    "createdAt": "2026-07-18T11:04:18.878251+00:00"
   }
 ]
