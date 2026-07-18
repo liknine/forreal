@@ -3210,5 +3210,27 @@
     "detailImage": "images/products/hysteric-glamour-neigborhood-black-l-511ecfdd-1.jpg",
     "isActive": true,
     "createdAt": "2026-07-18T11:24:40.849903+00:00"
+  },
+  {
+    "id": "amiri-distress-palm-logo-shorts-1692c6ed",
+    "brand": "AMIRI",
+    "name": "DISTRESS PALM LOGO SHORTS",
+    "price": 20500,
+    "currency": "RUB",
+    "category": "ШОРТЫ",
+    "sizes": [
+      "M"
+    ],
+    "sizeStock": {
+      "M": 1
+    },
+    "details": "В отличном состоянии \n\n31 ( фактически M )",
+    "images": [
+      "images/products/amiri-distress-palm-logo-shorts-1692c6ed-1.jpg",
+      "images/products/amiri-distress-palm-logo-shorts-1692c6ed-2.jpg"
+    ],
+    "detailImage": "images/products/amiri-distress-palm-logo-shorts-1692c6ed-1.jpg",
+    "isActive": true,
+    "createdAt": "2026-07-18T12:16:26.014786+00:00"
   }
 ]
