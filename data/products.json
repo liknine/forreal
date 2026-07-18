@@ -3324,5 +3324,28 @@
     "detailImage": "images/products/mihara-yasuhiro-black-leather-sneake-23b79e5f-1.jpg",
     "isActive": true,
     "createdAt": "2026-07-18T13:27:43.778548+00:00"
+  },
+  {
+    "id": "mihara-yasuhiro-beige-leather-sneake-9491dcc9",
+    "brand": "MIHARA YASUHIRO",
+    "name": "BEIGE LEATHER SNEAKERS",
+    "price": 17000,
+    "currency": "RUB",
+    "category": "ОБУВЬ",
+    "sizes": [
+      "41"
+    ],
+    "sizeStock": {
+      "41": 1
+    },
+    "details": "В отличном состоянии \n\n41 / 27 см",
+    "images": [
+      "images/products/mihara-yasuhiro-beige-leather-sneake-9491dcc9-1.jpg",
+      "images/products/mihara-yasuhiro-beige-leather-sneake-9491dcc9-2.jpg",
+      "images/products/mihara-yasuhiro-beige-leather-sneake-9491dcc9-3.jpg"
+    ],
+    "detailImage": "images/products/mihara-yasuhiro-beige-leather-sneake-9491dcc9-1.jpg",
+    "isActive": true,
+    "createdAt": "2026-07-18T13:29:15.180353+00:00"
   }
 ]
