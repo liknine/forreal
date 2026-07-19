@@ -4087,5 +4087,27 @@
     "detailImage": "images/products/maison-margiela-black-11-wallet-c1f49349-1.jpg",
     "isActive": true,
     "createdAt": "2026-07-19T09:35:32.151810+00:00"
+  },
+  {
+    "id": "maison-margiela-white-logo-wallet-9816a22c",
+    "brand": "MAISON MARGIELA",
+    "name": "WHITE LOGO WALLET",
+    "price": 10500,
+    "currency": "RUB",
+    "category": "АКСЕССУАРЫ",
+    "sizes": [
+      "OS"
+    ],
+    "sizeStock": {
+      "OS": 1
+    },
+    "details": "В очень хорошем состоянии",
+    "images": [
+      "images/products/maison-margiela-white-logo-wallet-9816a22c-1.jpg",
+      "images/products/maison-margiela-white-logo-wallet-9816a22c-2.jpg"
+    ],
+    "detailImage": "images/products/maison-margiela-white-logo-wallet-9816a22c-1.jpg",
+    "isActive": true,
+    "createdAt": "2026-07-19T09:36:36.055778+00:00"
   }
 ]
