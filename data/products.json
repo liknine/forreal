@@ -3978,5 +3978,26 @@
     "detailImage": "images/products/dolce-gabanna-black-logo-jeans-3e8bfb85-1.jpg",
     "isActive": true,
     "createdAt": "2026-07-19T08:49:59.678258+00:00"
+  },
+  {
+    "id": "dolce-gabanna-blue-patch-logo-jeans-a6fbe2f9",
+    "brand": "DOLCE GABANNA",
+    "name": "BLUE PATCH LOGO JEANS",
+    "price": 14000,
+    "currency": "RUB",
+    "category": "ШТАНЫ",
+    "sizes": [
+      "S"
+    ],
+    "sizeStock": {
+      "S": 1
+    },
+    "details": "В отличном состоянии \n\n44 ( фактически S )",
+    "images": [
+      "images/products/dolce-gabanna-blue-patch-logo-jeans-a6fbe2f9-1.jpg"
+    ],
+    "detailImage": "images/products/dolce-gabanna-blue-patch-logo-jeans-a6fbe2f9-1.jpg",
+    "isActive": true,
+    "createdAt": "2026-07-19T08:52:13.925286+00:00"
   }
 ]
