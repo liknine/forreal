@@ -3699,5 +3699,26 @@
     "detailImage": "images/products/a-cold-wall-black-logo-tee-6bd75b72-1.jpg",
     "isActive": true,
     "createdAt": "2026-07-19T07:50:43.596515+00:00"
+  },
+  {
+    "id": "rhude-black-washed-eagle-logo-tee-56aabbcf",
+    "brand": "RHUDE",
+    "name": "BLACK WASHED EAGLE LOGO TEE",
+    "price": 9000,
+    "currency": "RUB",
+    "category": "ФУТБОЛКИ",
+    "sizes": [
+      "XL"
+    ],
+    "sizeStock": {
+      "XL": 1
+    },
+    "details": "В отличном состоянии \n\nM ( фактически L-XL )",
+    "images": [
+      "images/products/rhude-black-washed-eagle-logo-tee-56aabbcf-1.jpg"
+    ],
+    "detailImage": "images/products/rhude-black-washed-eagle-logo-tee-56aabbcf-1.jpg",
+    "isActive": true,
+    "createdAt": "2026-07-19T07:52:58.503289+00:00"
   }
 ]
