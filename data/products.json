@@ -3635,5 +3635,26 @@
     "detailImage": "images/products/amiri-black-logo-shorts-2f24fde7-1.jpg",
     "isActive": true,
     "createdAt": "2026-07-19T07:43:36.520917+00:00"
+  },
+  {
+    "id": "heliot-emil-black-logo-shorts-c03faff2",
+    "brand": "HELIOT EMIL",
+    "name": "BLACK LOGO SHORTS",
+    "price": 12500,
+    "currency": "RUB",
+    "category": "ШОРТЫ",
+    "sizes": [
+      "M"
+    ],
+    "sizeStock": {
+      "M": 1
+    },
+    "details": "Полностью новые",
+    "images": [
+      "images/products/heliot-emil-black-logo-shorts-c03faff2-1.jpg"
+    ],
+    "detailImage": "images/products/heliot-emil-black-logo-shorts-c03faff2-1.jpg",
+    "isActive": true,
+    "createdAt": "2026-07-19T07:45:31.295183+00:00"
   }
 ]
