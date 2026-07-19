@@ -3763,5 +3763,26 @@
     "detailImage": "images/products/givenchy-black-logo-tee-08f29481-1.jpg",
     "isActive": true,
     "createdAt": "2026-07-19T08:04:02.088088+00:00"
+  },
+  {
+    "id": "cav-empt-black-logo-tee-0d7b157a",
+    "brand": "CAV EMPT",
+    "name": "BLACK LOGO TEE",
+    "price": 10000,
+    "currency": "RUB",
+    "category": "ФУТБОЛКИ",
+    "sizes": [
+      "L"
+    ],
+    "sizeStock": {
+      "L": 1
+    },
+    "details": "В очень хорошем состоянии",
+    "images": [
+      "images/products/cav-empt-black-logo-tee-0d7b157a-1.jpg"
+    ],
+    "detailImage": "images/products/cav-empt-black-logo-tee-0d7b157a-1.jpg",
+    "isActive": true,
+    "createdAt": "2026-07-19T08:08:49.235746+00:00"
   }
 ]
