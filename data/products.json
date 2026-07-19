@@ -4023,28 +4023,6 @@
     "createdAt": "2026-07-19T08:55:21.631222+00:00"
   },
   {
-    "id": "balenciaga-black-logo-wallet-205d2192",
-    "brand": "BALENCIAGA",
-    "name": "BLACK LOGO WALLET",
-    "price": 12000,
-    "currency": "RUB",
-    "category": "АКСЕССУАРЫ",
-    "sizes": [
-      "OS"
-    ],
-    "sizeStock": {
-      "OS": 1
-    },
-    "details": "В очень хорошем состоянии",
-    "images": [
-      "images/products/balenciaga-black-logo-wallet-205d2192-1.jpg",
-      "images/products/balenciaga-black-logo-wallet-205d2192-2.jpg"
-    ],
-    "detailImage": "images/products/balenciaga-black-logo-wallet-205d2192-1.jpg",
-    "isActive": true,
-    "createdAt": "2026-07-19T08:57:39.719874+00:00"
-  },
-  {
     "id": "balenciaga-black-logo-wallet-00947ad6",
     "brand": "BALENCIAGA",
     "name": "BLACK LOGO WALLET",
