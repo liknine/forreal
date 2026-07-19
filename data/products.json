@@ -3805,5 +3805,27 @@
     "detailImage": "images/products/givenchy-black-logo-polo-3b228af4-1.jpg",
     "isActive": true,
     "createdAt": "2026-07-19T08:12:54.814172+00:00"
+  },
+  {
+    "id": "amiri-black-logo-tee-5e1d1aee",
+    "brand": "AMIRI",
+    "name": "BLACK LOGO TEE",
+    "price": 14000,
+    "currency": "RUB",
+    "category": "ФУТБОЛКИ",
+    "sizes": [
+      "L"
+    ],
+    "sizeStock": {
+      "L": 1
+    },
+    "details": "Полностью новая \n\nS ( фактически L )",
+    "images": [
+      "images/products/amiri-black-logo-tee-5e1d1aee-1.jpg",
+      "images/products/amiri-black-logo-tee-5e1d1aee-2.jpg"
+    ],
+    "detailImage": "images/products/amiri-black-logo-tee-5e1d1aee-1.jpg",
+    "isActive": true,
+    "createdAt": "2026-07-19T08:15:56.499186+00:00"
   }
 ]
