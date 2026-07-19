@@ -4043,5 +4043,27 @@
     "detailImage": "images/products/balenciaga-black-logo-wallet-00947ad6-1.jpg",
     "isActive": true,
     "createdAt": "2026-07-19T08:57:41.673302+00:00"
+  },
+  {
+    "id": "maison-margiela-blue-logo-wallet-2f77eb0d",
+    "brand": "MAISON MARGIELA",
+    "name": "BLUE LOGO WALLET",
+    "price": 9500,
+    "currency": "RUB",
+    "category": "АКСЕССУАРЫ",
+    "sizes": [
+      "OS"
+    ],
+    "sizeStock": {
+      "OS": 1
+    },
+    "details": "В хорошем состоянии",
+    "images": [
+      "images/products/maison-margiela-blue-logo-wallet-2f77eb0d-1.jpg",
+      "images/products/maison-margiela-blue-logo-wallet-2f77eb0d-2.jpg"
+    ],
+    "detailImage": "images/products/maison-margiela-blue-logo-wallet-2f77eb0d-1.jpg",
+    "isActive": true,
+    "createdAt": "2026-07-19T09:34:29.098445+00:00"
   }
 ]
