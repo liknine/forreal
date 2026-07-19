@@ -3892,5 +3892,26 @@
     "detailImage": "images/products/saint-laurent-black-logo-tee-82b096f5-1.jpg",
     "isActive": true,
     "createdAt": "2026-07-19T08:25:32.844359+00:00"
+  },
+  {
+    "id": "saint-laurent-black-skull-logo-tee-edb2a5e9",
+    "brand": "SAINT LAURENT",
+    "name": "BLACK SKULL LОGO TEE",
+    "price": 17000,
+    "currency": "RUB",
+    "category": "ФУТБОЛКИ",
+    "sizes": [
+      "L"
+    ],
+    "sizeStock": {
+      "L": 1
+    },
+    "details": "В отличном состоянии \n\nM ( ближе к L )",
+    "images": [
+      "images/products/saint-laurent-black-skull-logo-tee-edb2a5e9-1.jpg"
+    ],
+    "detailImage": "images/products/saint-laurent-black-skull-logo-tee-edb2a5e9-1.jpg",
+    "isActive": true,
+    "createdAt": "2026-07-19T08:38:21.533046+00:00"
   }
 ]
