@@ -4065,5 +4065,27 @@
     "detailImage": "images/products/maison-margiela-blue-logo-wallet-2f77eb0d-1.jpg",
     "isActive": true,
     "createdAt": "2026-07-19T09:34:29.098445+00:00"
+  },
+  {
+    "id": "maison-margiela-black-11-wallet-c1f49349",
+    "brand": "MAISON MARGIELA",
+    "name": "BLACK 11 WALLET",
+    "price": 10500,
+    "currency": "RUB",
+    "category": "АКСЕССУАРЫ",
+    "sizes": [
+      "OS"
+    ],
+    "sizeStock": {
+      "OS": 1
+    },
+    "details": "В хорошем состоянии",
+    "images": [
+      "images/products/maison-margiela-black-11-wallet-c1f49349-1.jpg",
+      "images/products/maison-margiela-black-11-wallet-c1f49349-2.jpg"
+    ],
+    "detailImage": "images/products/maison-margiela-black-11-wallet-c1f49349-1.jpg",
+    "isActive": true,
+    "createdAt": "2026-07-19T09:35:32.151810+00:00"
   }
 ]
