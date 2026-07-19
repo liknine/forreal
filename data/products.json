@@ -3784,5 +3784,26 @@
     "detailImage": "images/products/cav-empt-black-logo-tee-0d7b157a-1.jpg",
     "isActive": true,
     "createdAt": "2026-07-19T08:08:49.235746+00:00"
+  },
+  {
+    "id": "givenchy-black-logo-polo-3b228af4",
+    "brand": "GIVENCHY",
+    "name": "BLACK LOGO POLO",
+    "price": 11000,
+    "currency": "RUB",
+    "category": "ФУТБОЛКИ",
+    "sizes": [
+      "M"
+    ],
+    "sizeStock": {
+      "M": 1
+    },
+    "details": "В отличном состоянии \n\nXS ( фактически M )",
+    "images": [
+      "images/products/givenchy-black-logo-polo-3b228af4-1.jpg"
+    ],
+    "detailImage": "images/products/givenchy-black-logo-polo-3b228af4-1.jpg",
+    "isActive": true,
+    "createdAt": "2026-07-19T08:12:54.814172+00:00"
   }
 ]
