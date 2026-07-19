@@ -3720,5 +3720,26 @@
     "detailImage": "images/products/rhude-black-washed-eagle-logo-tee-56aabbcf-1.jpg",
     "isActive": true,
     "createdAt": "2026-07-19T07:52:58.503289+00:00"
+  },
+  {
+    "id": "amiri-motley-crue-black-logo-tee-e7201f8a",
+    "brand": "AMIRI",
+    "name": "MOTLEY CRUE BLACK LOGO TEE",
+    "price": 15500,
+    "currency": "RUB",
+    "category": "ФУТБОЛКИ",
+    "sizes": [
+      "L"
+    ],
+    "sizeStock": {
+      "L": 1
+    },
+    "details": "В отличном состоянии \n\nM ( ближе к L )",
+    "images": [
+      "images/products/amiri-motley-crue-black-logo-tee-e7201f8a-1.jpg"
+    ],
+    "detailImage": "images/products/amiri-motley-crue-black-logo-tee-e7201f8a-1.jpg",
+    "isActive": true,
+    "createdAt": "2026-07-19T07:57:01.536901+00:00"
   }
 ]
