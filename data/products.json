@@ -4154,5 +4154,28 @@
     "detailImage": "images/products/balenciaga-runner-burgundy-sneakers-93f698e5-1.jpg",
     "isActive": true,
     "createdAt": "2026-07-19T18:40:58.338713+00:00"
+  },
+  {
+    "id": "dior-b23-white-sneakers-017d0a9b",
+    "brand": "DIOR",
+    "name": "B23 WHITE SNEAKERS",
+    "price": 28500,
+    "currency": "RUB",
+    "category": "ОБУВЬ",
+    "sizes": [
+      "45"
+    ],
+    "sizeStock": {
+      "45": 1
+    },
+    "details": "В отличном состоянии \n\n45 / 29.5 см",
+    "images": [
+      "images/products/dior-b23-white-sneakers-017d0a9b-1.jpg",
+      "images/products/dior-b23-white-sneakers-017d0a9b-2.jpg",
+      "images/products/dior-b23-white-sneakers-017d0a9b-3.jpg"
+    ],
+    "detailImage": "images/products/dior-b23-white-sneakers-017d0a9b-1.jpg",
+    "isActive": true,
+    "createdAt": "2026-07-19T18:43:00.245233+00:00"
   }
 ]
