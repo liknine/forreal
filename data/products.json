@@ -3741,5 +3741,27 @@
     "detailImage": "images/products/amiri-motley-crue-black-logo-tee-e7201f8a-1.jpg",
     "isActive": true,
     "createdAt": "2026-07-19T07:57:01.536901+00:00"
+  },
+  {
+    "id": "givenchy-black-logo-tee-08f29481",
+    "brand": "GIVENCHY",
+    "name": "BLACK LOGO TEE",
+    "price": 10000,
+    "currency": "RUB",
+    "category": "ФУТБОЛКИ",
+    "sizes": [
+      "M"
+    ],
+    "sizeStock": {
+      "M": 1
+    },
+    "details": "В отличном состоянии \n\nXS ( фактически M )",
+    "images": [
+      "images/products/givenchy-black-logo-tee-08f29481-1.jpg",
+      "images/products/givenchy-black-logo-tee-08f29481-2.jpg"
+    ],
+    "detailImage": "images/products/givenchy-black-logo-tee-08f29481-1.jpg",
+    "isActive": true,
+    "createdAt": "2026-07-19T08:04:02.088088+00:00"
   }
 ]
