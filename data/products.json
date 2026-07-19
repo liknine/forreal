@@ -3614,5 +3614,26 @@
     "detailImage": "images/products/givenchy-chtio-black-logo-shorts-2c8dbeca-1.jpg",
     "isActive": true,
     "createdAt": "2026-07-19T07:42:06.530210+00:00"
+  },
+  {
+    "id": "amiri-black-logo-shorts-2f24fde7",
+    "brand": "AMIRI",
+    "name": "BLACK LOGO SHORTS",
+    "price": 20500,
+    "currency": "RUB",
+    "category": "ШОРТЫ",
+    "sizes": [
+      "M"
+    ],
+    "sizeStock": {
+      "M": 1
+    },
+    "details": "В отличном состоянии \n\nS ( фактически M )",
+    "images": [
+      "images/products/amiri-black-logo-shorts-2f24fde7-1.jpg"
+    ],
+    "detailImage": "images/products/amiri-black-logo-shorts-2f24fde7-1.jpg",
+    "isActive": true,
+    "createdAt": "2026-07-19T07:43:36.520917+00:00"
   }
 ]
