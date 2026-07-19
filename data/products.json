@@ -3956,5 +3956,27 @@
     "detailImage": "images/products/dolce-gabanna-blue-distressed-jeans-95cd7189-1.jpg",
     "isActive": true,
     "createdAt": "2026-07-19T08:46:26.463194+00:00"
+  },
+  {
+    "id": "dolce-gabanna-black-logo-jeans-3e8bfb85",
+    "brand": "DOLCE GABANNA",
+    "name": "BLACK LOGO JEANS",
+    "price": 12000,
+    "currency": "RUB",
+    "category": "ШТАНЫ",
+    "sizes": [
+      "L"
+    ],
+    "sizeStock": {
+      "L": 1
+    },
+    "details": "В очень хорошем состоянии \n\n31 ( фактически L )",
+    "images": [
+      "images/products/dolce-gabanna-black-logo-jeans-3e8bfb85-1.jpg",
+      "images/products/dolce-gabanna-black-logo-jeans-3e8bfb85-2.jpg"
+    ],
+    "detailImage": "images/products/dolce-gabanna-black-logo-jeans-3e8bfb85-1.jpg",
+    "isActive": true,
+    "createdAt": "2026-07-19T08:49:59.678258+00:00"
   }
 ]
