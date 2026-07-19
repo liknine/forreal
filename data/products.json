@@ -4131,5 +4131,28 @@
     "detailImage": "images/products/1017-alyx-9sm-white-logo-tee-d605b0c0-1.jpg",
     "isActive": true,
     "createdAt": "2026-07-19T09:38:30.482531+00:00"
+  },
+  {
+    "id": "balenciaga-runner-burgundy-sneakers-93f698e5",
+    "brand": "BALENCIAGA",
+    "name": "RUNNER BURGUNDY SNEAKERS",
+    "price": 40000,
+    "currency": "RUB",
+    "category": "ОБУВЬ",
+    "sizes": [
+      "44"
+    ],
+    "sizeStock": {
+      "44": 1
+    },
+    "details": "В отличном состоянии \n\n44 / 29 см",
+    "images": [
+      "images/products/balenciaga-runner-burgundy-sneakers-93f698e5-1.jpg",
+      "images/products/balenciaga-runner-burgundy-sneakers-93f698e5-2.jpg",
+      "images/products/balenciaga-runner-burgundy-sneakers-93f698e5-3.jpg"
+    ],
+    "detailImage": "images/products/balenciaga-runner-burgundy-sneakers-93f698e5-1.jpg",
+    "isActive": true,
+    "createdAt": "2026-07-19T18:40:58.338713+00:00"
   }
 ]
