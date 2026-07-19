@@ -3935,5 +3935,26 @@
     "isActive": true,
     "createdAt": "2026-07-19T08:43:34.310361+00:00",
     "updatedAt": "2026-07-19T08:43:57.909492+00:00"
+  },
+  {
+    "id": "dolce-gabanna-blue-distressed-jeans-bfdc1863",
+    "brand": "DOLCE GABANNA",
+    "name": "BLUE DISTRESSED JEANS",
+    "price": 12000,
+    "currency": "RUB",
+    "category": "ШТАНЫ",
+    "sizes": [
+      "M"
+    ],
+    "sizeStock": {
+      "M": 1
+    },
+    "details": "В отличном состоянии \n\n46 ( фактически S-M )",
+    "images": [
+      "images/products/dolce-gabanna-blue-distressed-jeans-bfdc1863-1.jpg"
+    ],
+    "detailImage": "images/products/dolce-gabanna-blue-distressed-jeans-bfdc1863-1.jpg",
+    "isActive": true,
+    "createdAt": "2026-07-19T08:46:24.582022+00:00"
   }
 ]
