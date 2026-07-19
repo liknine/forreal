@@ -4001,28 +4001,6 @@
     "createdAt": "2026-07-19T08:52:13.925286+00:00"
   },
   {
-    "id": "valentino-green-patch-logo-wallet-a316e711",
-    "brand": "VALENTINO",
-    "name": "GREEN PATCH LOGO WALLET",
-    "price": 12500,
-    "currency": "RUB",
-    "category": "АКСЕССУАРЫ",
-    "sizes": [
-      "OS"
-    ],
-    "sizeStock": {
-      "OS": 1
-    },
-    "details": "В отличном состоянии",
-    "images": [
-      "images/products/valentino-green-patch-logo-wallet-a316e711-1.jpg",
-      "images/products/valentino-green-patch-logo-wallet-a316e711-2.jpg"
-    ],
-    "detailImage": "images/products/valentino-green-patch-logo-wallet-a316e711-1.jpg",
-    "isActive": true,
-    "createdAt": "2026-07-19T08:55:19.398171+00:00"
-  },
-  {
     "id": "valentino-green-patch-logo-wallet-3a70449f",
     "brand": "VALENTINO",
     "name": "GREEN PATCH LOGO WALLET",
