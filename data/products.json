@@ -3871,5 +3871,26 @@
     "detailImage": "images/products/comme-des-gar-ons-asap-nast-white-lo-57df3e91-1.jpg",
     "isActive": true,
     "createdAt": "2026-07-19T08:22:27.336030+00:00"
+  },
+  {
+    "id": "saint-laurent-black-logo-tee-82b096f5",
+    "brand": "SAINT LAURENT",
+    "name": "BLACK LOGO TEE",
+    "price": 9000,
+    "currency": "RUB",
+    "category": "ФУТБОЛКИ",
+    "sizes": [
+      "M"
+    ],
+    "sizeStock": {
+      "M": 1
+    },
+    "details": "В очень хорошем состоянии \n\nXS ( фактически M )",
+    "images": [
+      "images/products/saint-laurent-black-logo-tee-82b096f5-1.jpg"
+    ],
+    "detailImage": "images/products/saint-laurent-black-logo-tee-82b096f5-1.jpg",
+    "isActive": true,
+    "createdAt": "2026-07-19T08:25:32.844359+00:00"
   }
 ]
