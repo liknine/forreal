@@ -4688,5 +4688,27 @@
     "detailImage": "images/products/cav-empt-black-logo-tee-ede9247b-1.jpg",
     "isActive": true,
     "createdAt": "2026-07-20T08:40:24.720343+00:00"
+  },
+  {
+    "id": "saint-laurent-black-logo-tee-e1c2a889",
+    "brand": "SAINT LAURENT",
+    "name": "BLACK LOGO TEE",
+    "price": 12000,
+    "currency": "RUB",
+    "category": "ФУТБОЛКИ",
+    "sizes": [
+      "M"
+    ],
+    "sizeStock": {
+      "M": 1
+    },
+    "details": "Полностью новая",
+    "images": [
+      "images/products/saint-laurent-black-logo-tee-e1c2a889-1.jpg",
+      "images/products/saint-laurent-black-logo-tee-e1c2a889-2.jpg"
+    ],
+    "detailImage": "images/products/saint-laurent-black-logo-tee-e1c2a889-1.jpg",
+    "isActive": true,
+    "createdAt": "2026-07-20T08:41:37.209622+00:00"
   }
 ]
