@@ -5015,5 +5015,27 @@
     "detailImage": "images/products/1017-alyx-9sm-black-logo-tee-854ef7f0-1.jpg",
     "isActive": true,
     "createdAt": "2026-07-20T10:13:19.615089+00:00"
+  },
+  {
+    "id": "saint-michael-white-logo-tee-5b71fdc3",
+    "brand": "SAINT MICHAEL",
+    "name": "WHITE LOGO TEE",
+    "price": 17500,
+    "currency": "RUB",
+    "category": "ФУТБОЛКИ",
+    "sizes": [
+      "M"
+    ],
+    "sizeStock": {
+      "M": 1
+    },
+    "details": "В очень хорошем состоянии",
+    "images": [
+      "images/products/saint-michael-white-logo-tee-5b71fdc3-1.jpg",
+      "images/products/saint-michael-white-logo-tee-5b71fdc3-2.jpg"
+    ],
+    "detailImage": "images/products/saint-michael-white-logo-tee-5b71fdc3-1.jpg",
+    "isActive": true,
+    "createdAt": "2026-07-20T10:14:34.394992+00:00"
   }
 ]
