@@ -5037,5 +5037,27 @@
     "detailImage": "images/products/saint-michael-white-logo-tee-5b71fdc3-1.jpg",
     "isActive": true,
     "createdAt": "2026-07-20T10:14:34.394992+00:00"
+  },
+  {
+    "id": "mihara-yasuhiro-black-carabiner-logo-af0f3f58",
+    "brand": "MIHARA YASUHIRO",
+    "name": "BLACK CARABINER LOGO TEE",
+    "price": 11000,
+    "currency": "RUB",
+    "category": "ФУТБОЛКИ",
+    "sizes": [
+      "2XL"
+    ],
+    "sizeStock": {
+      "2XL": 1
+    },
+    "details": "В очень хорошем состоянии \n\n50 ( фактически 2XL )",
+    "images": [
+      "images/products/mihara-yasuhiro-black-carabiner-logo-af0f3f58-1.jpg",
+      "images/products/mihara-yasuhiro-black-carabiner-logo-af0f3f58-2.jpg"
+    ],
+    "detailImage": "images/products/mihara-yasuhiro-black-carabiner-logo-af0f3f58-1.jpg",
+    "isActive": true,
+    "createdAt": "2026-07-20T10:16:26.289286+00:00"
   }
 ]
