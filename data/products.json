@@ -4220,5 +4220,27 @@
     "detailImage": "images/products/givenchy-black-logo-hoodie-5d773e67-1.jpg",
     "isActive": true,
     "createdAt": "2026-07-20T07:05:22.788007+00:00"
+  },
+  {
+    "id": "mihara-yasuhiro-grey-logo-hoodie-79316e2a",
+    "brand": "MIHARA YASUHIRO",
+    "name": "GREY LOGO HOODIE",
+    "price": 15500,
+    "currency": "RUB",
+    "category": "ХУДИ",
+    "sizes": [
+      "XL"
+    ],
+    "sizeStock": {
+      "XL": 1
+    },
+    "details": "В отличном состоянии \n\n48 ( фактически L-XL )",
+    "images": [
+      "images/products/mihara-yasuhiro-grey-logo-hoodie-79316e2a-1.jpg",
+      "images/products/mihara-yasuhiro-grey-logo-hoodie-79316e2a-2.jpg"
+    ],
+    "detailImage": "images/products/mihara-yasuhiro-grey-logo-hoodie-79316e2a-1.jpg",
+    "isActive": true,
+    "createdAt": "2026-07-20T07:10:05.179316+00:00"
   }
 ]
