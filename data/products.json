@@ -4555,5 +4555,28 @@
     "detailImage": "images/products/balenciaga-black-white-logo-sneakers-fd8b2467-1.jpg",
     "isActive": true,
     "createdAt": "2026-07-20T07:59:42.095337+00:00"
+  },
+  {
+    "id": "y-3-black-logo-sneakers-6b0df191",
+    "brand": "Y-3",
+    "name": "BLACK LOGO SNEAKERS",
+    "price": 11000,
+    "currency": "RUB",
+    "category": "ОБУВЬ",
+    "sizes": [
+      "44"
+    ],
+    "sizeStock": {
+      "44": 1
+    },
+    "details": "В отличном состоянии \n\n44 / 28 см",
+    "images": [
+      "images/products/y-3-black-logo-sneakers-6b0df191-1.jpg",
+      "images/products/y-3-black-logo-sneakers-6b0df191-2.jpg",
+      "images/products/y-3-black-logo-sneakers-6b0df191-3.jpg"
+    ],
+    "detailImage": "images/products/y-3-black-logo-sneakers-6b0df191-1.jpg",
+    "isActive": true,
+    "createdAt": "2026-07-20T08:00:54.616013+00:00"
   }
 ]
