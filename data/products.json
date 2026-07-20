@@ -4644,5 +4644,27 @@
     "detailImage": "images/products/lanvin-beige-logo-tee-3d43a4cd-1.jpg",
     "isActive": true,
     "createdAt": "2026-07-20T08:32:18.921661+00:00"
+  },
+  {
+    "id": "mihara-yasuhiro-black-logo-tee-afb787ca",
+    "brand": "MIHARA YASUHIRO",
+    "name": "BLACK LOGO TEE",
+    "price": 12500,
+    "currency": "RUB",
+    "category": "ФУТБОЛКИ",
+    "sizes": [
+      "XL"
+    ],
+    "sizeStock": {
+      "XL": 1
+    },
+    "details": "В хорошем состоянии \n\n48 ( фактически XL )",
+    "images": [
+      "images/products/mihara-yasuhiro-black-logo-tee-afb787ca-1.jpg",
+      "images/products/mihara-yasuhiro-black-logo-tee-afb787ca-2.jpg"
+    ],
+    "detailImage": "images/products/mihara-yasuhiro-black-logo-tee-afb787ca-1.jpg",
+    "isActive": true,
+    "createdAt": "2026-07-20T08:33:51.672173+00:00"
   }
 ]
