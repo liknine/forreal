@@ -4906,5 +4906,27 @@
     "detailImage": "images/products/gucci-tiger-logo-sweatshirt-0ad2e463-1.jpg",
     "isActive": true,
     "createdAt": "2026-07-20T09:38:35.857122+00:00"
+  },
+  {
+    "id": "mcm-multicolor-logo-bag-88d6f3e1",
+    "brand": "MCM",
+    "name": "MULTICOLOR LOGO BAG",
+    "price": 18500,
+    "currency": "RUB",
+    "category": "АКСЕССУАРЫ",
+    "sizes": [
+      "OS"
+    ],
+    "sizeStock": {
+      "OS": 1
+    },
+    "details": "В отличном состоянии",
+    "images": [
+      "images/products/mcm-multicolor-logo-bag-88d6f3e1-1.jpg",
+      "images/products/mcm-multicolor-logo-bag-88d6f3e1-2.jpg"
+    ],
+    "detailImage": "images/products/mcm-multicolor-logo-bag-88d6f3e1-1.jpg",
+    "isActive": true,
+    "createdAt": "2026-07-20T09:40:17.421762+00:00"
   }
 ]
