@@ -4309,5 +4309,27 @@
     "detailImage": "images/products/pioneer-of-heroism-grey-logo-hoodie-c70f3c7c-1.jpg",
     "isActive": true,
     "createdAt": "2026-07-20T07:18:45.439771+00:00"
+  },
+  {
+    "id": "maison-margiela-blue-washed-logo-hoo-8719c064",
+    "brand": "MAISON MARGIELA",
+    "name": "BLUE WASHED LOGO HOODIE",
+    "price": 28500,
+    "currency": "RUB",
+    "category": "ХУДИ",
+    "sizes": [
+      "XL"
+    ],
+    "sizeStock": {
+      "XL": 1
+    },
+    "details": "В очень хорошем состоянии \n\nM ( фактически XL )",
+    "images": [
+      "images/products/maison-margiela-blue-washed-logo-hoo-8719c064-1.jpg",
+      "images/products/maison-margiela-blue-washed-logo-hoo-8719c064-2.jpg"
+    ],
+    "detailImage": "images/products/maison-margiela-blue-washed-logo-hoo-8719c064-1.jpg",
+    "isActive": true,
+    "createdAt": "2026-07-20T07:20:48.791058+00:00"
   }
 ]
