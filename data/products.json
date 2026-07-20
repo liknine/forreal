@@ -4578,5 +4578,27 @@
     "detailImage": "images/products/y-3-black-logo-sneakers-6b0df191-1.jpg",
     "isActive": true,
     "createdAt": "2026-07-20T08:00:54.616013+00:00"
+  },
+  {
+    "id": "mastermind-roar-guns-black-logo-tee-8a2f01eb",
+    "brand": "MASTERMIND",
+    "name": "ROAR GUNS BLACK LOGO TEE",
+    "price": 14000,
+    "currency": "RUB",
+    "category": "ФУТБОЛКИ",
+    "sizes": [
+      "L"
+    ],
+    "sizeStock": {
+      "L": 1
+    },
+    "details": "В отличном состоянии \n\n3 ( фактически L )",
+    "images": [
+      "images/products/mastermind-roar-guns-black-logo-tee-8a2f01eb-1.jpg",
+      "images/products/mastermind-roar-guns-black-logo-tee-8a2f01eb-2.jpg"
+    ],
+    "detailImage": "images/products/mastermind-roar-guns-black-logo-tee-8a2f01eb-1.jpg",
+    "isActive": true,
+    "createdAt": "2026-07-20T08:28:42.537350+00:00"
   }
 ]
