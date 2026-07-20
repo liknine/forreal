@@ -4374,5 +4374,27 @@
     "detailImage": "images/products/vivienne-westwood-grey-logo-zip-hood-4dc60c53-1.jpg",
     "isActive": true,
     "createdAt": "2026-07-20T07:25:35.710976+00:00"
+  },
+  {
+    "id": "the-soloist-new-era-blue-logo-hoodie-bc67e40c",
+    "brand": "THE SOLOIST",
+    "name": "NEW ERA BLUE LOGO HOODIE",
+    "price": 10000,
+    "currency": "RUB",
+    "category": "ХУДИ",
+    "sizes": [
+      "S"
+    ],
+    "sizeStock": {
+      "S": 1
+    },
+    "details": "В отличном состоянии",
+    "images": [
+      "images/products/the-soloist-new-era-blue-logo-hoodie-bc67e40c-1.jpg",
+      "images/products/the-soloist-new-era-blue-logo-hoodie-bc67e40c-2.jpg"
+    ],
+    "detailImage": "images/products/the-soloist-new-era-blue-logo-hoodie-bc67e40c-1.jpg",
+    "isActive": true,
+    "createdAt": "2026-07-20T07:27:17.299530+00:00"
   }
 ]
