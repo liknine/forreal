@@ -4353,5 +4353,26 @@
     "detailImage": "images/products/mastermind-black-logo-hoodie-108cc543-1.jpg",
     "isActive": true,
     "createdAt": "2026-07-20T07:24:02.842148+00:00"
+  },
+  {
+    "id": "vivienne-westwood-grey-logo-zip-hood-4dc60c53",
+    "brand": "VIVIENNE WESTWOOD",
+    "name": "GREY LOGO ZIP HOODIE",
+    "price": 13000,
+    "currency": "RUB",
+    "category": "ЗИП-ХУДИ",
+    "sizes": [
+      "XL"
+    ],
+    "sizeStock": {
+      "XL": 1
+    },
+    "details": "В отличном состоянии",
+    "images": [
+      "images/products/vivienne-westwood-grey-logo-zip-hood-4dc60c53-1.jpg"
+    ],
+    "detailImage": "images/products/vivienne-westwood-grey-logo-zip-hood-4dc60c53-1.jpg",
+    "isActive": true,
+    "createdAt": "2026-07-20T07:25:35.710976+00:00"
   }
 ]
