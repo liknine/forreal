@@ -5104,5 +5104,27 @@
     "detailImage": "images/products/golden-goose-white-logo-sneakers-5ac2e380-1.jpg",
     "isActive": true,
     "createdAt": "2026-07-20T10:20:21.813255+00:00"
+  },
+  {
+    "id": "online-ceramics-black-logo-tee-94192d2b",
+    "brand": "ONLINE CERAMICS",
+    "name": "BLACK LOGO TEE",
+    "price": 12000,
+    "currency": "RUB",
+    "category": "ФУТБОЛКИ",
+    "sizes": [
+      "M"
+    ],
+    "sizeStock": {
+      "M": 1
+    },
+    "details": "В отличном состоянии \n\nS ( фактически M )",
+    "images": [
+      "images/products/online-ceramics-black-logo-tee-94192d2b-1.jpg",
+      "images/products/online-ceramics-black-logo-tee-94192d2b-2.jpg"
+    ],
+    "detailImage": "images/products/online-ceramics-black-logo-tee-94192d2b-1.jpg",
+    "isActive": true,
+    "createdAt": "2026-07-20T10:24:50.914369+00:00"
   }
 ]
