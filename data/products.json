@@ -4396,5 +4396,27 @@
     "detailImage": "images/products/the-soloist-new-era-blue-logo-hoodie-bc67e40c-1.jpg",
     "isActive": true,
     "createdAt": "2026-07-20T07:27:17.299530+00:00"
+  },
+  {
+    "id": "cav-empt-black-logo-tee-c7a7439e",
+    "brand": "CAV EMPT",
+    "name": "BLACK LOGO TEE",
+    "price": 7000,
+    "currency": "RUB",
+    "category": "ФУТБОЛКИ",
+    "sizes": [
+      "L"
+    ],
+    "sizeStock": {
+      "L": 1
+    },
+    "details": "В отличном состоянии",
+    "images": [
+      "images/products/cav-empt-black-logo-tee-c7a7439e-1.jpg",
+      "images/products/cav-empt-black-logo-tee-c7a7439e-2.jpg"
+    ],
+    "detailImage": "images/products/cav-empt-black-logo-tee-c7a7439e-1.jpg",
+    "isActive": true,
+    "createdAt": "2026-07-20T07:31:05.890215+00:00"
   }
 ]
