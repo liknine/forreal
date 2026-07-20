@@ -4971,5 +4971,27 @@
     "detailImage": "images/products/1017-alyx-9sm-camo-logo-tee-8522dd9d-1.jpg",
     "isActive": true,
     "createdAt": "2026-07-20T10:07:34.864334+00:00"
+  },
+  {
+    "id": "givenchy-black-angel-logo-tee-ddb2984a",
+    "brand": "GIVENCHY",
+    "name": "BLACK ANGEL LOGO TEE",
+    "price": 10000,
+    "currency": "RUB",
+    "category": "ФУТБОЛКИ",
+    "sizes": [
+      "M"
+    ],
+    "sizeStock": {
+      "M": 1
+    },
+    "details": "В отличном состоянии\n\nXS ( фактически M )",
+    "images": [
+      "images/products/givenchy-black-angel-logo-tee-ddb2984a-1.jpg",
+      "images/products/givenchy-black-angel-logo-tee-ddb2984a-2.jpg"
+    ],
+    "detailImage": "images/products/givenchy-black-angel-logo-tee-ddb2984a-1.jpg",
+    "isActive": true,
+    "createdAt": "2026-07-20T10:11:22.792132+00:00"
   }
 ]
