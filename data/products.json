@@ -5082,5 +5082,27 @@
     "detailImage": "images/products/golden-goose-white-logo-sneakers-622f54c5-1.jpg",
     "isActive": true,
     "createdAt": "2026-07-20T10:19:04.037120+00:00"
+  },
+  {
+    "id": "golden-goose-white-logo-sneakers-5ac2e380",
+    "brand": "GOLDEN GOOSE",
+    "name": "WHITE LOGO SNEAKERS",
+    "price": 24500,
+    "currency": "RUB",
+    "category": "ОБУВЬ",
+    "sizes": [
+      "42"
+    ],
+    "sizeStock": {
+      "42": 1
+    },
+    "details": "В отличном состоянии \n\n42 / 27.5 см",
+    "images": [
+      "images/products/golden-goose-white-logo-sneakers-5ac2e380-1.jpg",
+      "images/products/golden-goose-white-logo-sneakers-5ac2e380-2.jpg"
+    ],
+    "detailImage": "images/products/golden-goose-white-logo-sneakers-5ac2e380-1.jpg",
+    "isActive": true,
+    "createdAt": "2026-07-20T10:20:21.813255+00:00"
   }
 ]
