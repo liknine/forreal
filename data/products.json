@@ -4331,5 +4331,27 @@
     "detailImage": "images/products/maison-margiela-blue-washed-logo-hoo-8719c064-1.jpg",
     "isActive": true,
     "createdAt": "2026-07-20T07:20:48.791058+00:00"
+  },
+  {
+    "id": "mastermind-black-logo-hoodie-108cc543",
+    "brand": "MASTERMIND",
+    "name": "BLACK LOGO HOODIE",
+    "price": 17000,
+    "currency": "RUB",
+    "category": "ХУДИ",
+    "sizes": [
+      "L"
+    ],
+    "sizeStock": {
+      "L": 1
+    },
+    "details": "В отличном состоянии \n\nXL ( фактически L )",
+    "images": [
+      "images/products/mastermind-black-logo-hoodie-108cc543-1.jpg",
+      "images/products/mastermind-black-logo-hoodie-108cc543-2.jpg"
+    ],
+    "detailImage": "images/products/mastermind-black-logo-hoodie-108cc543-1.jpg",
+    "isActive": true,
+    "createdAt": "2026-07-20T07:24:02.842148+00:00"
   }
 ]
