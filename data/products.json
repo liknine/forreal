@@ -4622,5 +4622,27 @@
     "detailImage": "images/products/valentino-white-logo-tee-458b51ee-1.jpg",
     "isActive": true,
     "createdAt": "2026-07-20T08:31:38.201224+00:00"
+  },
+  {
+    "id": "lanvin-beige-logo-tee-3d43a4cd",
+    "brand": "LANVIN",
+    "name": "BEIGE LOGO TEE",
+    "price": 8000,
+    "currency": "RUB",
+    "category": "ФУТБОЛКИ",
+    "sizes": [
+      "S"
+    ],
+    "sizeStock": {
+      "S": 1
+    },
+    "details": "В отличном состоянии",
+    "images": [
+      "images/products/lanvin-beige-logo-tee-3d43a4cd-1.jpg",
+      "images/products/lanvin-beige-logo-tee-3d43a4cd-2.jpg"
+    ],
+    "detailImage": "images/products/lanvin-beige-logo-tee-3d43a4cd-1.jpg",
+    "isActive": true,
+    "createdAt": "2026-07-20T08:32:18.921661+00:00"
   }
 ]
