@@ -4885,5 +4885,26 @@
     "detailImage": "images/products/gucci-black-logo-hoodie-d1a78712-1.jpg",
     "isActive": true,
     "createdAt": "2026-07-20T09:36:56.511447+00:00"
+  },
+  {
+    "id": "gucci-tiger-logo-sweatshirt-0ad2e463",
+    "brand": "GUCCI",
+    "name": "TIGER LOGO SWEATSHIRT",
+    "price": 22500,
+    "currency": "RUB",
+    "category": "ХУДИ",
+    "sizes": [
+      "L"
+    ],
+    "sizeStock": {
+      "L": 1
+    },
+    "details": "В отличном состоянии \n\nXS ( фактически L )",
+    "images": [
+      "images/products/gucci-tiger-logo-sweatshirt-0ad2e463-1.jpg"
+    ],
+    "detailImage": "images/products/gucci-tiger-logo-sweatshirt-0ad2e463-1.jpg",
+    "isActive": true,
+    "createdAt": "2026-07-20T09:38:35.857122+00:00"
   }
 ]
