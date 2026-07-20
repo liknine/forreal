@@ -4532,5 +4532,28 @@
     "detailImage": "images/products/valentino-open-white-logo-sneakers-b631283d-1.jpg",
     "isActive": true,
     "createdAt": "2026-07-20T07:56:08.561056+00:00"
+  },
+  {
+    "id": "balenciaga-black-white-logo-sneakers-fd8b2467",
+    "brand": "BALENCIAGA",
+    "name": "BLACK WHITE LOGO SNEAKERS",
+    "price": 40000,
+    "currency": "RUB",
+    "category": "ОБУВЬ",
+    "sizes": [
+      "42"
+    ],
+    "sizeStock": {
+      "42": 1
+    },
+    "details": "В отличном состоянии \n\n42 / 27.5 см",
+    "images": [
+      "images/products/balenciaga-black-white-logo-sneakers-fd8b2467-1.jpg",
+      "images/products/balenciaga-black-white-logo-sneakers-fd8b2467-2.jpg",
+      "images/products/balenciaga-black-white-logo-sneakers-fd8b2467-3.jpg"
+    ],
+    "detailImage": "images/products/balenciaga-black-white-logo-sneakers-fd8b2467-1.jpg",
+    "isActive": true,
+    "createdAt": "2026-07-20T07:59:42.095337+00:00"
   }
 ]
