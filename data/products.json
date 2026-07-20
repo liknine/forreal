@@ -4820,5 +4820,27 @@
     "detailImage": "images/products/givenchy-black-washed-tee-bfd65110-1.jpg",
     "isActive": true,
     "createdAt": "2026-07-20T09:25:15.518461+00:00"
+  },
+  {
+    "id": "raga-black-white-logo-tee-17fda0dd",
+    "brand": "RAGA",
+    "name": "BLACK WHITE LOGO TEE",
+    "price": 14000,
+    "currency": "RUB",
+    "category": "ФУТБОЛКИ",
+    "sizes": [
+      "M"
+    ],
+    "sizeStock": {
+      "M": 1
+    },
+    "details": "В отличном состоянии",
+    "images": [
+      "images/products/raga-black-white-logo-tee-17fda0dd-1.jpg",
+      "images/products/raga-black-white-logo-tee-17fda0dd-2.jpg"
+    ],
+    "detailImage": "images/products/raga-black-white-logo-tee-17fda0dd-1.jpg",
+    "isActive": true,
+    "createdAt": "2026-07-20T09:26:38.059199+00:00"
   }
 ]
