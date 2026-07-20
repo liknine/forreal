@@ -4486,5 +4486,28 @@
     "detailImage": "images/products/valentino-open-black-logo-sneakers-0e4c4215-1.jpg",
     "isActive": true,
     "createdAt": "2026-07-20T07:37:14.456573+00:00"
+  },
+  {
+    "id": "valentino-undercover-open-white-logo-822b1063",
+    "brand": "VALENTINO",
+    "name": "UNDERCOVER OPEN WHITE LOGO SNEAKERS",
+    "price": 15500,
+    "currency": "RUB",
+    "category": "ОБУВЬ",
+    "sizes": [
+      "39"
+    ],
+    "sizeStock": {
+      "39": 1
+    },
+    "details": "В отличном состоянии \n\n39 / 25.5 см",
+    "images": [
+      "images/products/valentino-undercover-open-white-logo-822b1063-1.jpg",
+      "images/products/valentino-undercover-open-white-logo-822b1063-2.jpg",
+      "images/products/valentino-undercover-open-white-logo-822b1063-3.jpg"
+    ],
+    "detailImage": "images/products/valentino-undercover-open-white-logo-822b1063-1.jpg",
+    "isActive": true,
+    "createdAt": "2026-07-20T07:38:46.875731+00:00"
   }
 ]
