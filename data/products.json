@@ -4666,5 +4666,27 @@
     "detailImage": "images/products/mihara-yasuhiro-black-logo-tee-afb787ca-1.jpg",
     "isActive": true,
     "createdAt": "2026-07-20T08:33:51.672173+00:00"
+  },
+  {
+    "id": "cav-empt-black-logo-tee-ede9247b",
+    "brand": "CAV EMPT",
+    "name": "BLACK LOGO TEE",
+    "price": 7500,
+    "currency": "RUB",
+    "category": "ФУТБОЛКИ",
+    "sizes": [
+      "XL"
+    ],
+    "sizeStock": {
+      "XL": 1
+    },
+    "details": "Полностью новая",
+    "images": [
+      "images/products/cav-empt-black-logo-tee-ede9247b-1.jpg",
+      "images/products/cav-empt-black-logo-tee-ede9247b-2.jpg"
+    ],
+    "detailImage": "images/products/cav-empt-black-logo-tee-ede9247b-1.jpg",
+    "isActive": true,
+    "createdAt": "2026-07-20T08:40:24.720343+00:00"
   }
 ]
