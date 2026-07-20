@@ -4242,5 +4242,27 @@
     "detailImage": "images/products/mihara-yasuhiro-grey-logo-hoodie-79316e2a-1.jpg",
     "isActive": true,
     "createdAt": "2026-07-20T07:10:05.179316+00:00"
+  },
+  {
+    "id": "essentials-black-logo-hoodie-3768bd75",
+    "brand": "ESSENTIALS",
+    "name": "BLACK LOGO HOODIE",
+    "price": 10500,
+    "currency": "RUB",
+    "category": "ХУДИ",
+    "sizes": [
+      "S"
+    ],
+    "sizeStock": {
+      "S": 1
+    },
+    "details": "Полностью новый",
+    "images": [
+      "images/products/essentials-black-logo-hoodie-3768bd75-1.jpg",
+      "images/products/essentials-black-logo-hoodie-3768bd75-2.jpg"
+    ],
+    "detailImage": "images/products/essentials-black-logo-hoodie-3768bd75-1.jpg",
+    "isActive": true,
+    "createdAt": "2026-07-20T07:12:13.697633+00:00"
   }
 ]
