@@ -490,30 +490,6 @@
     "createdAt": "2026-07-11T14:59:38.822906+00:00"
   },
   {
-    "id": "giuseppe-zanotti-black-logo-sneaeker-88ad0a39",
-    "brand": "GIUSEPPE ZANOTTI",
-    "name": "BLACK LOGO SNEAEKERS",
-    "price": 15500,
-    "currency": "RUB",
-    "category": "ОБУВЬ",
-    "sizes": [
-      "42"
-    ],
-    "sizeStock": {
-      "42": 1
-    },
-    "details": "В отличном состоянии \n\n42 / 27.5 см",
-    "images": [
-      "images/products/giuseppe-zanotti-black-logo-sneaeker-88ad0a39-1.jpg",
-      "images/products/giuseppe-zanotti-black-logo-sneaeker-88ad0a39-2.jpg",
-      "images/products/giuseppe-zanotti-black-logo-sneaeker-88ad0a39-3.jpg",
-      "images/products/giuseppe-zanotti-black-logo-sneaeker-88ad0a39-4.jpg"
-    ],
-    "detailImage": "images/products/giuseppe-zanotti-black-logo-sneaeker-88ad0a39-1.jpg",
-    "isActive": true,
-    "createdAt": "2026-07-11T15:01:14.928227+00:00"
-  },
-  {
     "id": "giuseppe-zanotti-fangs-black-logo-sn-9d3032e6",
     "brand": "GIUSEPPE ZANOTTI",
     "name": "FANGS BLACK LOGO SNEAKERS",
