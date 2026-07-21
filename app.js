@@ -421,11 +421,22 @@ function renderProductGallery(product) {
 function bindProductGallery() {
   if (productGalleryViewport) {
     productGalleryViewport.addEventListener('touchstart', (event) => {
-      if (productGalleryImages.length <= 1) return;
-      const touch = event.changedTouches?.[0];
-      if (!touch) return;
+      if (productGalleryImages.length <= 1 || event.touches?.length !== 1) {
+        productGalleryTouchStartX = null;
+        productGalleryTouchStartY = null;
+        return;
+      }
+
+      const touch = event.touches[0];
       productGalleryTouchStartX = touch.clientX;
       productGalleryTouchStartY = touch.clientY;
+    }, { passive: true });
+
+    productGalleryViewport.addEventListener('touchmove', (event) => {
+      if ((event.touches?.length || 0) > 1) {
+        productGalleryTouchStartX = null;
+        productGalleryTouchStartY = null;
+      }
     }, { passive: true });
 
     productGalleryViewport.addEventListener('touchend', (event) => {
