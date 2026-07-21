@@ -1,5 +1,29 @@
 [
   {
+    "id": "e4b64411-69c0-4db9-988e-255fa2ed256c",
+    "orderNumber": 1023,
+    "clientOrderId": "forreal-1784646340982-da2e024071d29",
+    "telegramId": 6173928848,
+    "username": "elxyzik",
+    "items": [
+      {
+        "productId": "maison-margiela-future-blue-faded-lo-12dd23cb",
+        "brand": "MAISON MARGIELA",
+        "name": "FUTURE BLUE FADED LOGO SNEAKERS",
+        "size": "42",
+        "quantity": 1,
+        "price": 45000,
+        "image": "images/products/maison-margiela-future-blue-faded-lo-12dd23cb-1.jpg"
+      }
+    ],
+    "totalPrice": 45000,
+    "currency": "RUB",
+    "deliveryMethod": "yandex",
+    "status": "awaiting_payment",
+    "createdAt": "2026-07-21T15:05:41.362541+00:00",
+    "updatedAt": "2026-07-21T15:05:41.362541+00:00"
+  },
+  {
     "id": "6a72aed3-d12d-461d-b391-67a2769bf29c",
     "orderNumber": 1022,
     "clientOrderId": "forreal-1784150737120-76337ce7cd3cf",
