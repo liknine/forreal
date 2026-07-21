@@ -559,29 +559,6 @@
     "createdAt": "2026-07-11T15:12:55.494013+00:00"
   },
   {
-    "id": "lanvin-black-paint-logo-sneakers-19633545",
-    "brand": "LANVIN",
-    "name": "BLACK PAINT LOGO SNEAKERS",
-    "price": 28500,
-    "currency": "RUB",
-    "category": "ОБУВЬ",
-    "sizes": [
-      "41"
-    ],
-    "sizeStock": {
-      "41": 1
-    },
-    "details": "В отличном состоянии \n\n41 / 27 см",
-    "images": [
-      "images/products/lanvin-black-paint-logo-sneakers-19633545-1.jpg",
-      "images/products/lanvin-black-paint-logo-sneakers-19633545-2.jpg",
-      "images/products/lanvin-black-paint-logo-sneakers-19633545-3.jpg"
-    ],
-    "detailImage": "images/products/lanvin-black-paint-logo-sneakers-19633545-1.jpg",
-    "isActive": true,
-    "createdAt": "2026-07-11T15:14:55.351377+00:00"
-  },
-  {
     "id": "erl-vamp-beige-logo-sneakers-cf19ede3",
     "brand": "ERL",
     "name": "VAMP BEIGE LOGO SNEAKERS",
