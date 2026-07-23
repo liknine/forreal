@@ -1169,29 +1169,6 @@
     "createdAt": "2026-07-13T13:00:15.939597+00:00"
   },
   {
-    "id": "project-g-r-navy-blue-zip-hoodie-8f655499",
-    "brand": "PROJECT G/R",
-    "name": "NAVY BLUE ZIP HOODIE",
-    "price": 25500,
-    "currency": "RUB",
-    "category": "ЗИП-ХУДИ",
-    "sizes": [
-      "M"
-    ],
-    "sizeStock": {
-      "M": 1
-    },
-    "details": "В отличном состоянии\n\n1 ( фактически M-L )",
-    "images": [
-      "images/products/project-g-r-navy-blue-zip-hoodie-8f655499-1.jpg",
-      "images/products/project-g-r-navy-blue-zip-hoodie-8f655499-2.jpg",
-      "images/products/project-g-r-navy-blue-zip-hoodie-8f655499-3.jpg"
-    ],
-    "detailImage": "images/products/project-g-r-navy-blue-zip-hoodie-8f655499-1.jpg",
-    "isActive": true,
-    "createdAt": "2026-07-13T13:02:26.745281+00:00"
-  },
-  {
     "id": "grailz-project-grey-logo-zip-hoodie-752d7220",
     "brand": "GRAILZ PROJECT",
     "name": "GREY LOGO ZIP HOODIE",
