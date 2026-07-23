@@ -4759,5 +4759,26 @@
     "detailImage": "images/products/online-ceramics-black-logo-tee-94192d2b-1.jpg",
     "isActive": true,
     "createdAt": "2026-07-20T10:24:50.914369+00:00"
+  },
+  {
+    "id": "comme-des-gar-on-cpfm-white-logo-tee-f6da4ec5",
+    "brand": "COMME DES GARÇON",
+    "name": "CPFM WHITE LOGO TEE",
+    "price": 10500,
+    "currency": "RUB",
+    "category": "ФУТБОЛКИ",
+    "sizes": [
+      "XL"
+    ],
+    "sizeStock": {
+      "XL": 1
+    },
+    "details": "Полностью новая",
+    "images": [
+      "images/products/comme-des-gar-on-cpfm-white-logo-tee-f6da4ec5-1.jpg"
+    ],
+    "detailImage": "images/products/comme-des-gar-on-cpfm-white-logo-tee-f6da4ec5-1.jpg",
+    "isActive": true,
+    "createdAt": "2026-07-23T21:43:17.676117+00:00"
   }
 ]
