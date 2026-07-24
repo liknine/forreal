@@ -1555,29 +1555,6 @@
     "createdAt": "2026-07-13T15:38:41.313736+00:00"
   },
   {
-    "id": "a-cold-wall-brown-yellow-logo-hoodie-71b4389b",
-    "brand": "A COLD WALL",
-    "name": "BROWN YELLOW LOGO HOODIE",
-    "price": 11000,
-    "currency": "RUB",
-    "category": "ХУДИ",
-    "sizes": [
-      "XL"
-    ],
-    "sizeStock": {
-      "XL": 1
-    },
-    "details": "В отличном состоянии",
-    "images": [
-      "images/products/a-cold-wall-brown-yellow-logo-hoodie-71b4389b-1.jpg",
-      "images/products/a-cold-wall-brown-yellow-logo-hoodie-71b4389b-2.jpg",
-      "images/products/a-cold-wall-brown-yellow-logo-hoodie-71b4389b-3.jpg"
-    ],
-    "detailImage": "images/products/a-cold-wall-brown-yellow-logo-hoodie-71b4389b-1.jpg",
-    "isActive": true,
-    "createdAt": "2026-07-13T15:40:40.782565+00:00"
-  },
-  {
     "id": "a-cold-wall-black-logo-hoodie-c1e12264",
     "brand": "A COLD WALL",
     "name": "BLACK LOGO HOODIE",
