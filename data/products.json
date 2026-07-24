@@ -3187,27 +3187,6 @@
     "createdAt": "2026-07-18T14:11:31.746860+00:00"
   },
   {
-    "id": "amiri-patch-logo-jeans-84902395",
-    "brand": "AMIRI",
-    "name": "PATCH LOGO JEANS",
-    "price": 33000,
-    "currency": "RUB",
-    "category": "ШТАНЫ",
-    "sizes": [
-      "L"
-    ],
-    "sizeStock": {
-      "L": 1
-    },
-    "details": "В отличном состоянии \n\n32 ( фактически L )",
-    "images": [
-      "images/products/amiri-patch-logo-jeans-84902395-1.jpg"
-    ],
-    "detailImage": "images/products/amiri-patch-logo-jeans-84902395-1.jpg",
-    "isActive": true,
-    "createdAt": "2026-07-18T16:49:15.272417+00:00"
-  },
-  {
     "id": "ksubi-patch-logo-jeans-cffb8bfa",
     "brand": "KSUBI",
     "name": "PATCH LOGO JEANS",
