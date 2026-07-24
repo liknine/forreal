@@ -9,6 +9,7 @@ const openFiltersButton = document.querySelector('[data-open-filters]');
 const filterOverlay = document.querySelector('[data-filter-overlay]');
 const closeFiltersButtons = [...document.querySelectorAll('[data-close-filters]')];
 const resetFiltersButton = document.querySelector('[data-reset-filters]');
+const filterSizeOptionsRoot = document.querySelector('.filter-options--sizes');
 let filterOptions = [...document.querySelectorAll('.filter-option')];
 const categoryButtons = [...document.querySelectorAll('.category-row button[data-category]')];
 const openCheckoutButton = document.querySelector('[data-open-checkout]');
@@ -926,6 +927,49 @@ function setActive(screen) {
   }, transitionDuration + 40);
 }
 
+const CLOTHING_FILTER_SIZES = ['S', 'M', 'L', 'XL'];
+
+function getAvailableShoeFilterSizes() {
+  const sizes = new Set();
+
+  Object.values(products).forEach((product) => {
+    if (!product?.categories?.includes('shoes')) return;
+
+    (product.sizes || []).forEach((rawSize) => {
+      const size = String(rawSize || '').trim().replace(',', '.');
+      if (!size || !/^\d+(?:\.\d+)?$/.test(size)) return;
+      if (!isSizeAvailable(product, size)) return;
+      sizes.add(size);
+    });
+  });
+
+  return [...sizes].sort((a, b) => Number(a) - Number(b) || a.localeCompare(b, 'ru'));
+}
+
+function updateFilterSizeOptions() {
+  if (!filterSizeOptionsRoot) return;
+
+  const isShoesCategory = filterState.category === 'shoes';
+  const sizes = isShoesCategory ? getAvailableShoeFilterSizes() : CLOTHING_FILTER_SIZES;
+  const normalizedSizes = sizes.map((size) => String(size).toLowerCase());
+  const modeKey = `${isShoesCategory ? 'shoes' : 'clothing'}:${normalizedSizes.join('|')}`;
+
+  if (filterState.size && !normalizedSizes.includes(String(filterState.size).toLowerCase())) {
+    filterState.size = null;
+  }
+
+  if (filterSizeOptionsRoot.dataset.sizeMode === modeKey) return;
+
+  filterSizeOptionsRoot.dataset.sizeMode = modeKey;
+  filterSizeOptionsRoot.innerHTML = sizes.map((size) => {
+    const label = String(size);
+    const value = label.toLowerCase();
+    return `<button class="filter-option" type="button" data-filter-group="size" data-filter-value="${value}">${label}</button>`;
+  }).join('');
+
+  filterOptions = [...document.querySelectorAll('.filter-option')];
+  bindFilterOptions();
+}
 function syncCategory(value) {
   filterState.category = value || 'all';
 
@@ -1012,6 +1056,7 @@ function renderCatalog() {
   if (!productGrid) return;
 
   syncSearchInputs();
+  updateFilterSizeOptions();
   syncFilterOptions();
   const productIds = getFilteredProductIds();
   const hasProducts = productIds.length > 0;
