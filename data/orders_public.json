@@ -1,5 +1,29 @@
 [
   {
+    "id": "46502941-f608-44f6-8304-09c992b51030",
+    "orderNumber": 1024,
+    "clientOrderId": "forreal-1784997668923-76225effc1e9c8",
+    "telegramId": 730639127,
+    "username": "fruitiloopsss",
+    "items": [
+      {
+        "productId": "yohji-yamamoto-ground-y-black-logo-h-47aa45a7",
+        "brand": "YOHJI YAMAMOTO",
+        "name": "GROUND Y BLACK LOGO HOODIE",
+        "size": "L",
+        "quantity": 1,
+        "price": 15500,
+        "image": "images/products/yohji-yamamoto-ground-y-black-logo-h-47aa45a7-1.jpg"
+      }
+    ],
+    "totalPrice": 15500,
+    "currency": "RUB",
+    "deliveryMethod": "cdek",
+    "status": "awaiting_payment",
+    "createdAt": "2026-07-25T16:41:09.402605+00:00",
+    "updatedAt": "2026-07-25T16:41:09.402605+00:00"
+  },
+  {
     "id": "e4b64411-69c0-4db9-988e-255fa2ed256c",
     "orderNumber": 1023,
     "clientOrderId": "forreal-1784646340982-da2e024071d29",
