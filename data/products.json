@@ -4687,5 +4687,27 @@
     "detailImage": "images/products/y-project-black-logo-tee-cb91dd83-1.jpg",
     "isActive": true,
     "createdAt": "2026-07-26T13:09:50.972954+00:00"
+  },
+  {
+    "id": "cav-empt-black-logo-tee-6bf3e830",
+    "brand": "CAV EMPT",
+    "name": "BLACK LOGO TEE",
+    "price": 7000,
+    "currency": "RUB",
+    "category": "ФУТБОЛКИ",
+    "sizes": [
+      "L"
+    ],
+    "sizeStock": {
+      "L": 1
+    },
+    "details": "В отличном состоянии",
+    "images": [
+      "images/products/cav-empt-black-logo-tee-6bf3e830-1.jpg",
+      "images/products/cav-empt-black-logo-tee-6bf3e830-2.jpg"
+    ],
+    "detailImage": "images/products/cav-empt-black-logo-tee-6bf3e830-1.jpg",
+    "isActive": true,
+    "createdAt": "2026-07-26T13:10:59.216597+00:00"
   }
 ]
