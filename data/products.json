@@ -4754,5 +4754,28 @@
     "createdAt": "2026-07-26T13:17:44.602571+00:00",
     "autoHiddenNoStock": true,
     "soldOutAt": "2026-07-26T13:17:44.602606+00:00"
+  },
+  {
+    "id": "project-g-r-black-logo-tee-a2d9374d",
+    "brand": "PROJECT G/R",
+    "name": "BLACK LOGO TEE",
+    "price": 12500,
+    "currency": "RUB",
+    "category": "ФУТБОЛКИ",
+    "sizes": [
+      "XL"
+    ],
+    "sizeStock": {
+      "XL": 0
+    },
+    "details": "В отличном состоянии",
+    "images": [
+      "images/products/project-g-r-black-logo-tee-a2d9374d-1.jpg"
+    ],
+    "detailImage": "images/products/project-g-r-black-logo-tee-a2d9374d-1.jpg",
+    "isActive": false,
+    "createdAt": "2026-07-26T13:19:47.670705+00:00",
+    "autoHiddenNoStock": true,
+    "soldOutAt": "2026-07-26T13:19:47.670731+00:00"
   }
 ]
