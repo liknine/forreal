@@ -4581,5 +4581,26 @@
     "detailImage": "images/products/comme-des-gar-on-cpfm-white-logo-tee-f6da4ec5-1.jpg",
     "isActive": true,
     "createdAt": "2026-07-23T21:43:17.676117+00:00"
+  },
+  {
+    "id": "project-g-r-10-corso-como-542a0c4d",
+    "brand": "PROJECT G/R",
+    "name": "10 CORSO COMO",
+    "price": 12500,
+    "currency": "RUB",
+    "category": "ФУТБОЛКИ",
+    "sizes": [
+      "L"
+    ],
+    "sizeStock": {
+      "L": 1
+    },
+    "details": "В отличном состоянии",
+    "images": [
+      "images/products/project-g-r-10-corso-como-542a0c4d-1.jpg"
+    ],
+    "detailImage": "images/products/project-g-r-10-corso-como-542a0c4d-1.jpg",
+    "isActive": true,
+    "createdAt": "2026-07-26T13:02:56.050999+00:00"
   }
 ]
