@@ -4666,5 +4666,26 @@
     "detailImage": "images/products/cav-empt-white-logo-tee-219652c1-1.jpg",
     "isActive": true,
     "createdAt": "2026-07-26T13:08:14.100430+00:00"
+  },
+  {
+    "id": "y-project-black-logo-tee-cb91dd83",
+    "brand": "Y/PROJECT",
+    "name": "BLACK LOGO TEE",
+    "price": 7000,
+    "currency": "RUB",
+    "category": "ФУТБОЛКИ",
+    "sizes": [
+      "M"
+    ],
+    "sizeStock": {
+      "M": 3
+    },
+    "details": "в отличном состоянии",
+    "images": [
+      "images/products/y-project-black-logo-tee-cb91dd83-1.jpg"
+    ],
+    "detailImage": "images/products/y-project-black-logo-tee-cb91dd83-1.jpg",
+    "isActive": true,
+    "createdAt": "2026-07-26T13:09:50.972954+00:00"
   }
 ]
