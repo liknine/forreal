@@ -4868,5 +4868,27 @@
     "createdAt": "2026-07-26T14:02:32.712760+00:00",
     "autoHiddenNoStock": true,
     "soldOutAt": "2026-07-26T14:02:32.712781+00:00"
+  },
+  {
+    "id": "bape-kid-cudi-black-logo-tee-eb2dd5d6",
+    "brand": "BAPE",
+    "name": "KID CUDI BLACK LOGO TEE",
+    "price": 9000,
+    "currency": "RUB",
+    "category": "ФУТБОЛКИ",
+    "sizes": [
+      "L"
+    ],
+    "sizeStock": {
+      "L": 1
+    },
+    "details": "в отличном состоянии",
+    "images": [
+      "images/products/bape-kid-cudi-black-logo-tee-eb2dd5d6-1.jpg",
+      "images/products/bape-kid-cudi-black-logo-tee-eb2dd5d6-2.jpg"
+    ],
+    "detailImage": "images/products/bape-kid-cudi-black-logo-tee-eb2dd5d6-1.jpg",
+    "isActive": true,
+    "createdAt": "2026-07-26T14:04:47.782598+00:00"
   }
 ]
