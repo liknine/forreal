@@ -4845,5 +4845,28 @@
     "detailImage": "images/products/mastermind-black-logo-tee-01cd6451-1.jpg",
     "isActive": true,
     "createdAt": "2026-07-26T14:00:14.881492+00:00"
+  },
+  {
+    "id": "burberry-black-logo-tee-f5912487",
+    "brand": "BURBERRY",
+    "name": "BLACK LOGO TEE",
+    "price": 15500,
+    "currency": "RUB",
+    "category": "ФУТБОЛКИ",
+    "sizes": [
+      "XL"
+    ],
+    "sizeStock": {
+      "XL": 0
+    },
+    "details": "В отличном состоянии",
+    "images": [
+      "images/products/burberry-black-logo-tee-f5912487-1.jpg"
+    ],
+    "detailImage": "images/products/burberry-black-logo-tee-f5912487-1.jpg",
+    "isActive": false,
+    "createdAt": "2026-07-26T14:02:32.712760+00:00",
+    "autoHiddenNoStock": true,
+    "soldOutAt": "2026-07-26T14:02:32.712781+00:00"
   }
 ]
