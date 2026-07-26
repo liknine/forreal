@@ -4823,5 +4823,27 @@
     "detailImage": "images/products/cav-empt-white-logo-tee-5ef7c7bf-1.jpg",
     "isActive": true,
     "createdAt": "2026-07-26T13:22:54.139387+00:00"
+  },
+  {
+    "id": "mastermind-black-logo-tee-01cd6451",
+    "brand": "MASTERMIND",
+    "name": "BLACK LOGO TEE",
+    "price": 10500,
+    "currency": "RUB",
+    "category": "ФУТБОЛКИ",
+    "sizes": [
+      "M"
+    ],
+    "sizeStock": {
+      "M": 3
+    },
+    "details": "отличное состояние",
+    "images": [
+      "images/products/mastermind-black-logo-tee-01cd6451-1.jpg",
+      "images/products/mastermind-black-logo-tee-01cd6451-2.jpg"
+    ],
+    "detailImage": "images/products/mastermind-black-logo-tee-01cd6451-1.jpg",
+    "isActive": true,
+    "createdAt": "2026-07-26T14:00:14.881492+00:00"
   }
 ]
