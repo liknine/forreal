@@ -43,9 +43,9 @@
     "totalPrice": 45000,
     "currency": "RUB",
     "deliveryMethod": "yandex",
-    "status": "awaiting_payment",
+    "status": "canceled",
     "createdAt": "2026-07-21T15:05:41.362541+00:00",
-    "updatedAt": "2026-07-21T15:05:41.362541+00:00"
+    "updatedAt": "2026-07-26T16:31:21.502951+00:00"
   },
   {
     "id": "6a72aed3-d12d-461d-b391-67a2769bf29c",
