@@ -3766,29 +3766,6 @@
     "createdAt": "2026-07-20T07:12:13.697633+00:00"
   },
   {
-    "id": "vans-mastermind-black-logo-sneakers-194bc2b6",
-    "brand": "VANS",
-    "name": "MASTERMIND BLACK LOGO SNEAKERS",
-    "price": 10500,
-    "currency": "RUB",
-    "category": "ОБУВЬ",
-    "sizes": [
-      "42.5"
-    ],
-    "sizeStock": {
-      "42.5": 1
-    },
-    "details": "В отличном состоянии \n\n42.5 / 27.5 см",
-    "images": [
-      "images/products/vans-mastermind-black-logo-sneakers-194bc2b6-1.jpg",
-      "images/products/vans-mastermind-black-logo-sneakers-194bc2b6-2.jpg",
-      "images/products/vans-mastermind-black-logo-sneakers-194bc2b6-3.jpg"
-    ],
-    "detailImage": "images/products/vans-mastermind-black-logo-sneakers-194bc2b6-1.jpg",
-    "isActive": true,
-    "createdAt": "2026-07-20T07:13:35.107614+00:00"
-  },
-  {
     "id": "pioneer-of-heroism-grey-logo-hoodie-c70f3c7c",
     "brand": "PIONEER OF HEROISM",
     "name": "GREY LOGO HOODIE",
