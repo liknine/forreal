@@ -4167,28 +4167,6 @@
     "createdAt": "2026-07-20T08:41:37.209622+00:00"
   },
   {
-    "id": "maison-margiela-white-logo-tee-d6aade53",
-    "brand": "MAISON MARGIELA",
-    "name": "WHITE LOGO TEE",
-    "price": 12000,
-    "currency": "RUB",
-    "category": "ФУТБОЛКИ",
-    "sizes": [
-      "XL"
-    ],
-    "sizeStock": {
-      "XL": 1
-    },
-    "details": "В отличном состоянии \n\nM ( фактически XL )",
-    "images": [
-      "images/products/maison-margiela-white-logo-tee-d6aade53-1.jpg",
-      "images/products/maison-margiela-white-logo-tee-d6aade53-2.jpg"
-    ],
-    "detailImage": "images/products/maison-margiela-white-logo-tee-d6aade53-1.jpg",
-    "isActive": true,
-    "createdAt": "2026-07-20T08:45:27.955369+00:00"
-  },
-  {
     "id": "hysteric-glamour-black-logo-tee-927c9eb5",
     "brand": "HYSTERIC GLAMOUR",
     "name": "BLACK LOGO TEE",
