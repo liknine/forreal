@@ -629,30 +629,6 @@
     "createdAt": "2026-07-11T18:32:43.361369+00:00"
   },
   {
-    "id": "alexander-mcqueen-black-knight-logo-5cd841be",
-    "brand": "ALEXANDER MCQUEEN",
-    "name": "BLACK KNIGHT LOGO HOODIE",
-    "price": 11000,
-    "currency": "RUB",
-    "category": "ХУДИ",
-    "sizes": [
-      "S"
-    ],
-    "sizeStock": {
-      "S": 1
-    },
-    "details": "В отличном состоянии \n\nРазмер XS ( фактически S-M )",
-    "images": [
-      "images/products/alexander-mcqueen-black-knight-logo-5cd841be-1.jpg",
-      "images/products/alexander-mcqueen-black-knight-logo-5cd841be-2.jpg",
-      "images/products/alexander-mcqueen-black-knight-logo-5cd841be-3.jpg",
-      "images/products/alexander-mcqueen-black-knight-logo-5cd841be-4.jpg"
-    ],
-    "detailImage": "images/products/alexander-mcqueen-black-knight-logo-5cd841be-1.jpg",
-    "isActive": true,
-    "createdAt": "2026-07-11T18:41:32.650133+00:00"
-  },
-  {
     "id": "valentino-black-logo-tee-4e26d3cb",
     "brand": "VALENTINO",
     "name": "BLACK LOGO TEE",
