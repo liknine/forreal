@@ -1583,11 +1583,9 @@
     "currency": "RUB",
     "category": "ХУДИ",
     "sizes": [
-      "M",
       "L"
     ],
     "sizeStock": {
-      "M": 1,
       "L": 1
     },
     "details": "Полностью новый \n\n-M\n\n-L",
@@ -1596,7 +1594,8 @@
     ],
     "detailImage": "images/products/424-black-logo-stars-hoodie-ca34a083-1.jpg",
     "isActive": true,
-    "createdAt": "2026-07-14T08:54:32.302702+00:00"
+    "createdAt": "2026-07-14T08:54:32.302702+00:00",
+    "updatedAt": "2026-07-30T14:16:49.921877+00:00"
   },
   {
     "id": "burberry-black-logo-hoodie-d6be2784",
