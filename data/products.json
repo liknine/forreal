@@ -4697,5 +4697,27 @@
     "detailImage": "images/products/gucci-black-yellow-hoodie-a28756cc-1.jpg",
     "isActive": true,
     "createdAt": "2026-07-31T18:05:56.729639+00:00"
+  },
+  {
+    "id": "undercover-black-logo-tee-927bf9d6",
+    "brand": "UNDERCOVER",
+    "name": "BLACK LOGO TEE",
+    "price": 11000,
+    "currency": "RUB",
+    "category": "ФУТБОЛКИ",
+    "sizes": [
+      "XL"
+    ],
+    "sizeStock": {
+      "XL": 1
+    },
+    "details": "В отличном состоянии",
+    "images": [
+      "images/products/undercover-black-logo-tee-927bf9d6-1.jpg",
+      "images/products/undercover-black-logo-tee-927bf9d6-2.jpg"
+    ],
+    "detailImage": "images/products/undercover-black-logo-tee-927bf9d6-1.jpg",
+    "isActive": true,
+    "createdAt": "2026-07-31T18:16:05.956484+00:00"
   }
 ]
