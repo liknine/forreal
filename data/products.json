@@ -4585,5 +4585,28 @@
     "detailImage": "images/products/project-gr-black-red-logo-pants-swea-8ffa5346-1.jpg",
     "isActive": true,
     "createdAt": "2026-07-31T13:33:31.124554+00:00"
+  },
+  {
+    "id": "mastermind-white-logo-longsleeve-ca0e7293",
+    "brand": "MASTERMIND",
+    "name": "WHITE LOGO LONGSLEEVE",
+    "price": 14000,
+    "currency": "RUB",
+    "category": "ФУТБОЛКИ",
+    "sizes": [
+      "XL"
+    ],
+    "sizeStock": {
+      "XL": 1
+    },
+    "details": "В отличном состоянии",
+    "images": [
+      "images/products/mastermind-white-logo-longsleeve-ca0e7293-1.jpg",
+      "images/products/mastermind-white-logo-longsleeve-ca0e7293-2.jpg",
+      "images/products/mastermind-white-logo-longsleeve-ca0e7293-3.jpg"
+    ],
+    "detailImage": "images/products/mastermind-white-logo-longsleeve-ca0e7293-1.jpg",
+    "isActive": true,
+    "createdAt": "2026-07-31T13:36:30.615758+00:00"
   }
 ]
