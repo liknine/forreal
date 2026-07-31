@@ -421,29 +421,6 @@
     "createdAt": "2026-07-11T14:40:07.852131+00:00"
   },
   {
-    "id": "giuseppe-zanotti-black-silver-logo-s-cd99fc16",
-    "brand": "GIUSEPPE ZANOTTI",
-    "name": "BLACK SILVER LOGO SNEAKERS",
-    "price": 15500,
-    "currency": "RUB",
-    "category": "ОБУВЬ",
-    "sizes": [
-      "43"
-    ],
-    "sizeStock": {
-      "43": 1
-    },
-    "details": "В очень хорошем состоянии \n\n43 / 28 см",
-    "images": [
-      "images/products/giuseppe-zanotti-black-silver-logo-s-cd99fc16-1.jpg",
-      "images/products/giuseppe-zanotti-black-silver-logo-s-cd99fc16-2.jpg",
-      "images/products/giuseppe-zanotti-black-silver-logo-s-cd99fc16-3.jpg"
-    ],
-    "detailImage": "images/products/giuseppe-zanotti-black-silver-logo-s-cd99fc16-1.jpg",
-    "isActive": true,
-    "createdAt": "2026-07-11T14:59:38.822906+00:00"
-  },
-  {
     "id": "giuseppe-zanotti-fangs-black-logo-sn-9d3032e6",
     "brand": "GIUSEPPE ZANOTTI",
     "name": "FANGS BLACK LOGO SNEAKERS",
