@@ -4630,5 +4630,27 @@
     "detailImage": "images/products/greg-lauren-green-distressed-usa-zip-88b9d47f-1.jpg",
     "isActive": true,
     "createdAt": "2026-07-31T13:40:47.508325+00:00"
+  },
+  {
+    "id": "a-cold-wall-cream-logo-hoodie-5ca7f8ca",
+    "brand": "A COLD WALL",
+    "name": "CREAM LOGO HOODIE",
+    "price": 11000,
+    "currency": "RUB",
+    "category": "ХУДИ",
+    "sizes": [
+      "L"
+    ],
+    "sizeStock": {
+      "L": 1
+    },
+    "details": "В отличном состоянии",
+    "images": [
+      "images/products/a-cold-wall-cream-logo-hoodie-5ca7f8ca-1.jpg",
+      "images/products/a-cold-wall-cream-logo-hoodie-5ca7f8ca-2.jpg"
+    ],
+    "detailImage": "images/products/a-cold-wall-cream-logo-hoodie-5ca7f8ca-1.jpg",
+    "isActive": true,
+    "createdAt": "2026-07-31T13:48:28.639477+00:00"
   }
 ]
