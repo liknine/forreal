@@ -4674,5 +4674,28 @@
     "detailImage": "images/products/bape-black-sneakers-logo-zip-hoodie-abd0664b-1.jpg",
     "isActive": true,
     "createdAt": "2026-07-31T18:02:15.950612+00:00"
+  },
+  {
+    "id": "gucci-black-yellow-hoodie-a28756cc",
+    "brand": "GUCCI",
+    "name": "BLACK YELLOW HOODIE",
+    "price": 30500,
+    "currency": "RUB",
+    "category": "ХУДИ",
+    "sizes": [
+      "S"
+    ],
+    "sizeStock": {
+      "S": 1
+    },
+    "details": "В отличном состоянии",
+    "images": [
+      "images/products/gucci-black-yellow-hoodie-a28756cc-1.jpg",
+      "images/products/gucci-black-yellow-hoodie-a28756cc-2.jpg",
+      "images/products/gucci-black-yellow-hoodie-a28756cc-3.jpg"
+    ],
+    "detailImage": "images/products/gucci-black-yellow-hoodie-a28756cc-1.jpg",
+    "isActive": true,
+    "createdAt": "2026-07-31T18:05:56.729639+00:00"
   }
 ]
