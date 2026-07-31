@@ -4608,5 +4608,27 @@
     "detailImage": "images/products/mastermind-white-logo-longsleeve-ca0e7293-1.jpg",
     "isActive": true,
     "createdAt": "2026-07-31T13:36:30.615758+00:00"
+  },
+  {
+    "id": "greg-lauren-green-distressed-usa-zip-88b9d47f",
+    "brand": "GREG LAUREN",
+    "name": "GREEN DISTRESSED USA ZIP HOODIE",
+    "price": 30500,
+    "currency": "RUB",
+    "category": "ЗИП-ХУДИ",
+    "sizes": [
+      "M"
+    ],
+    "sizeStock": {
+      "M": 1
+    },
+    "details": "В отличном состоянии",
+    "images": [
+      "images/products/greg-lauren-green-distressed-usa-zip-88b9d47f-1.jpg",
+      "images/products/greg-lauren-green-distressed-usa-zip-88b9d47f-2.jpg"
+    ],
+    "detailImage": "images/products/greg-lauren-green-distressed-usa-zip-88b9d47f-1.jpg",
+    "isActive": true,
+    "createdAt": "2026-07-31T13:40:47.508325+00:00"
   }
 ]
