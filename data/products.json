@@ -2333,28 +2333,6 @@
     "createdAt": "2026-07-15T19:44:14.327407+00:00"
   },
   {
-    "id": "gallery-dept-black-logo-shorts-ff70ac31",
-    "brand": "GALLERY DEPT",
-    "name": "BLACK LOGO SHORTS",
-    "price": 20000,
-    "currency": "RUB",
-    "category": "ШОРТЫ",
-    "sizes": [
-      "L"
-    ],
-    "sizeStock": {
-      "L": 1
-    },
-    "details": "В отличном состоянии",
-    "images": [
-      "images/products/gallery-dept-black-logo-shorts-ff70ac31-1.jpg",
-      "images/products/gallery-dept-black-logo-shorts-ff70ac31-2.jpg"
-    ],
-    "detailImage": "images/products/gallery-dept-black-logo-shorts-ff70ac31-1.jpg",
-    "isActive": true,
-    "createdAt": "2026-07-15T19:46:12.417098+00:00"
-  },
-  {
     "id": "amiri-black-multicolor-shorts-a9f76cff",
     "brand": "AMIRI",
     "name": "BLACK MULTICOLOR SHORTS",
