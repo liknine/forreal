@@ -4539,5 +4539,28 @@
     "detailImage": "images/products/yeezy-cream-sample-zip-hoodie-fddb4e2b-1.jpg",
     "isActive": true,
     "createdAt": "2026-07-31T13:27:50.202742+00:00"
+  },
+  {
+    "id": "doublet-blue-silver-zip-0-15-sample-30833504",
+    "brand": "DOUBLET",
+    "name": "BLUE SILVER ZIP 0/15 SAMPLE",
+    "price": 45000,
+    "currency": "RUB",
+    "category": "ЗИП-ХУДИ",
+    "sizes": [
+      "L"
+    ],
+    "sizeStock": {
+      "L": 1
+    },
+    "details": "В хорошем состоянии",
+    "images": [
+      "images/products/doublet-blue-silver-zip-0-15-sample-30833504-1.jpg",
+      "images/products/doublet-blue-silver-zip-0-15-sample-30833504-2.jpg",
+      "images/products/doublet-blue-silver-zip-0-15-sample-30833504-3.jpg"
+    ],
+    "detailImage": "images/products/doublet-blue-silver-zip-0-15-sample-30833504-1.jpg",
+    "isActive": true,
+    "createdAt": "2026-07-31T13:31:21.936900+00:00"
   }
 ]
