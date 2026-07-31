@@ -4741,5 +4741,28 @@
     "detailImage": "images/products/project-gr-black-up-logo-hoodie-a115d5a7-1.jpg",
     "isActive": true,
     "createdAt": "2026-07-31T18:20:42.038047+00:00"
+  },
+  {
+    "id": "vetements-black-metall-red-tour-hood-b39d5ed2",
+    "brand": "VETEMENTS",
+    "name": "BLACK METALL RED TOUR HOODIE",
+    "price": 25000,
+    "currency": "RUB",
+    "category": "ХУДИ",
+    "sizes": [
+      "S"
+    ],
+    "sizeStock": {
+      "S": 1
+    },
+    "details": "В отличном состоянии",
+    "images": [
+      "images/products/vetements-black-metall-red-tour-hood-b39d5ed2-1.jpg",
+      "images/products/vetements-black-metall-red-tour-hood-b39d5ed2-2.jpg",
+      "images/products/vetements-black-metall-red-tour-hood-b39d5ed2-3.jpg"
+    ],
+    "detailImage": "images/products/vetements-black-metall-red-tour-hood-b39d5ed2-1.jpg",
+    "isActive": true,
+    "createdAt": "2026-07-31T18:31:22.798121+00:00"
   }
 ]
