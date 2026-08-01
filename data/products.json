@@ -2910,27 +2910,6 @@
     "createdAt": "2026-07-19T07:45:31.295183+00:00"
   },
   {
-    "id": "1017-alyx-9sm-black-logo-tee-f1e558c3",
-    "brand": "1017 ALYX 9SM",
-    "name": "BLACK LOGO TEE",
-    "price": 7000,
-    "currency": "RUB",
-    "category": "ФУТБОЛКИ",
-    "sizes": [
-      "M"
-    ],
-    "sizeStock": {
-      "M": 1
-    },
-    "details": "В отличном состоянии \n\nXS ( фактически M )",
-    "images": [
-      "images/products/1017-alyx-9sm-black-logo-tee-f1e558c3-1.jpg"
-    ],
-    "detailImage": "images/products/1017-alyx-9sm-black-logo-tee-f1e558c3-1.jpg",
-    "isActive": true,
-    "createdAt": "2026-07-19T07:46:50.409842+00:00"
-  },
-  {
     "id": "a-cold-wall-black-logo-tee-6bd75b72",
     "brand": "A COLD WALL",
     "name": "BLACK LOGO TEE",
