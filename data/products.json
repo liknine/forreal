@@ -986,30 +986,6 @@
     "createdAt": "2026-07-13T13:00:15.939597+00:00"
   },
   {
-    "id": "grailz-project-grey-logo-zip-hoodie-752d7220",
-    "brand": "GRAILZ PROJECT",
-    "name": "GREY LOGO ZIP HOODIE",
-    "price": 17000,
-    "currency": "RUB",
-    "category": "ЗИП-ХУДИ",
-    "sizes": [
-      "M"
-    ],
-    "sizeStock": {
-      "M": 1
-    },
-    "details": "В отличном состоянии\n\n2 ( фактически M-L )",
-    "images": [
-      "images/products/grailz-project-grey-logo-zip-hoodie-752d7220-1.jpg",
-      "images/products/grailz-project-grey-logo-zip-hoodie-752d7220-2.jpg",
-      "images/products/grailz-project-grey-logo-zip-hoodie-752d7220-3.jpg"
-    ],
-    "detailImage": "images/products/grailz-project-grey-logo-zip-hoodie-752d7220-1.jpg",
-    "isActive": true,
-    "createdAt": "2026-07-13T13:04:24.063107+00:00",
-    "updatedAt": "2026-07-13T13:04:59.013386+00:00"
-  },
-  {
     "id": "mastermind-betty-boop-black-logo-zip-09a98319",
     "brand": "MASTERMIND",
     "name": "BETTY BOOP BLACK LOGO ZIP HOODIE",
