@@ -1,5 +1,29 @@
 [
   {
+    "id": "c54558a7-d8b9-46e9-bbe8-885953a1ad2c",
+    "orderNumber": 1025,
+    "clientOrderId": "forreal-1785607674803-a54cf6a41454d8",
+    "telegramId": 1291627538,
+    "username": "clearneeeet",
+    "items": [
+      {
+        "productId": "converse-isabel-marant-black-logo-4551f82a",
+        "brand": "CONVERSE",
+        "name": "ISABEL MARANT BLACK LOGO",
+        "size": "42.5",
+        "quantity": 1,
+        "price": 14000,
+        "image": "images/products/converse-isabel-marant-black-logo-4551f82a-1.jpg"
+      }
+    ],
+    "totalPrice": 14000,
+    "currency": "RUB",
+    "deliveryMethod": "cdek",
+    "status": "awaiting_payment",
+    "createdAt": "2026-08-01T18:07:54.975395+00:00",
+    "updatedAt": "2026-08-01T18:07:54.975395+00:00"
+  },
+  {
     "id": "46502941-f608-44f6-8304-09c992b51030",
     "orderNumber": 1024,
     "clientOrderId": "forreal-1784997668923-76225effc1e9c8",
