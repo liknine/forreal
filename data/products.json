@@ -3893,29 +3893,6 @@
     "createdAt": "2026-07-20T10:16:26.289286+00:00"
   },
   {
-    "id": "golden-goose-white-logo-sneakers-622f54c5",
-    "brand": "GOLDEN GOOSE",
-    "name": "WHITE LOGO SNEAKERS",
-    "price": 22500,
-    "currency": "RUB",
-    "category": "ОБУВЬ",
-    "sizes": [
-      "43"
-    ],
-    "sizeStock": {
-      "43": 1
-    },
-    "details": "В очень хорошем состоянии \n\n43 / 28 см",
-    "images": [
-      "images/products/golden-goose-white-logo-sneakers-622f54c5-1.jpg",
-      "images/products/golden-goose-white-logo-sneakers-622f54c5-2.jpg",
-      "images/products/golden-goose-white-logo-sneakers-622f54c5-3.jpg"
-    ],
-    "detailImage": "images/products/golden-goose-white-logo-sneakers-622f54c5-1.jpg",
-    "isActive": true,
-    "createdAt": "2026-07-20T10:19:04.037120+00:00"
-  },
-  {
     "id": "comme-des-gar-on-cpfm-white-logo-tee-f6da4ec5",
     "brand": "COMME DES GARÇON",
     "name": "CPFM WHITE LOGO TEE",
