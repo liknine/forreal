@@ -3889,27 +3889,6 @@
     "createdAt": "2026-07-26T13:04:23.991149+00:00"
   },
   {
-    "id": "grailz-white-logo-tee-4a0cb8e7",
-    "brand": "GRAILZ",
-    "name": "WHITE LOGO TEE",
-    "price": 9000,
-    "currency": "RUB",
-    "category": "ФУТБОЛКИ",
-    "sizes": [
-      "L"
-    ],
-    "sizeStock": {
-      "L": 1
-    },
-    "details": "WHITE LOGO TEE",
-    "images": [
-      "images/products/grailz-white-logo-tee-4a0cb8e7-1.jpg"
-    ],
-    "detailImage": "images/products/grailz-white-logo-tee-4a0cb8e7-1.jpg",
-    "isActive": true,
-    "createdAt": "2026-07-26T13:05:54.301518+00:00"
-  },
-  {
     "id": "y-project-black-logo-tee-cb91dd83",
     "brand": "Y/PROJECT",
     "name": "BLACK LOGO TEE",
