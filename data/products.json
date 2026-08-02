@@ -2240,28 +2240,6 @@
     "createdAt": "2026-07-15T19:47:27.715998+00:00"
   },
   {
-    "id": "rick-owens-gimp-black-logo-shorts-a1197f0d",
-    "brand": "RICK OWENS",
-    "name": "GIMP BLACK LOGO SHORTS",
-    "price": 30000,
-    "currency": "RUB",
-    "category": "ШОРТЫ",
-    "sizes": [
-      "L"
-    ],
-    "sizeStock": {
-      "L": 1
-    },
-    "details": "Полностью новые \n\nM ( фактически L )",
-    "images": [
-      "images/products/rick-owens-gimp-black-logo-shorts-a1197f0d-1.jpg",
-      "images/products/rick-owens-gimp-black-logo-shorts-a1197f0d-2.jpg"
-    ],
-    "detailImage": "images/products/rick-owens-gimp-black-logo-shorts-a1197f0d-1.jpg",
-    "isActive": true,
-    "createdAt": "2026-07-15T19:51:49.812021+00:00"
-  },
-  {
     "id": "rick-owens-black-cargo-shorts-66335a72",
     "brand": "RICK OWENS",
     "name": "BLACK CARGO SHORTS",
