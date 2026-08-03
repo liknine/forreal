@@ -329,29 +329,6 @@
     "createdAt": "2026-07-11T14:33:20.923380+00:00"
   },
   {
-    "id": "lanvin-white-beige-logo-sneakers-a7d12938",
-    "brand": "LANVIN",
-    "name": "WHITE BEIGE LOGO SNEAKERS",
-    "price": 28500,
-    "currency": "RUB",
-    "category": "ОБУВЬ",
-    "sizes": [
-      "41"
-    ],
-    "sizeStock": {
-      "41": 1
-    },
-    "details": "Полностью новые\n\n41 / 27 см",
-    "images": [
-      "images/products/lanvin-white-beige-logo-sneakers-a7d12938-1.jpg",
-      "images/products/lanvin-white-beige-logo-sneakers-a7d12938-2.jpg",
-      "images/products/lanvin-white-beige-logo-sneakers-a7d12938-3.jpg"
-    ],
-    "detailImage": "images/products/lanvin-white-beige-logo-sneakers-a7d12938-1.jpg",
-    "isActive": true,
-    "createdAt": "2026-07-11T14:35:17.439797+00:00"
-  },
-  {
     "id": "maison-margiela-future-blue-faded-lo-12dd23cb",
     "brand": "MAISON MARGIELA",
     "name": "FUTURE BLUE FADED LOGO SNEAKERS",
