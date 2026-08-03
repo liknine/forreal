@@ -1,5 +1,29 @@
 [
   {
+    "id": "90299741-7405-4953-9915-9763b7161ff3",
+    "orderNumber": 1026,
+    "clientOrderId": "forreal-1785728402552-7c789787def748",
+    "telegramId": 7810000819,
+    "username": "smurk0000",
+    "items": [
+      {
+        "productId": "lanvin-white-beige-logo-sneakers-a7d12938",
+        "brand": "LANVIN",
+        "name": "WHITE BEIGE LOGO SNEAKERS",
+        "size": "41",
+        "quantity": 1,
+        "price": 28500,
+        "image": "images/products/lanvin-white-beige-logo-sneakers-a7d12938-1.jpg"
+      }
+    ],
+    "totalPrice": 28500,
+    "currency": "RUB",
+    "deliveryMethod": "yandex",
+    "status": "awaiting_payment",
+    "createdAt": "2026-08-03T03:40:02.694668+00:00",
+    "updatedAt": "2026-08-03T03:40:02.694668+00:00"
+  },
+  {
     "id": "c54558a7-d8b9-46e9-bbe8-885953a1ad2c",
     "orderNumber": 1025,
     "clientOrderId": "forreal-1785607674803-a54cf6a41454d8",
