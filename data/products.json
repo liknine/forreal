@@ -2618,27 +2618,6 @@
     "createdAt": "2026-07-18T16:59:12.828191+00:00"
   },
   {
-    "id": "givenchy-chtio-black-logo-shorts-2c8dbeca",
-    "brand": "GIVENCHY",
-    "name": "CHTIO BLACK LOGO SHORTS",
-    "price": 15500,
-    "currency": "RUB",
-    "category": "ШОРТЫ",
-    "sizes": [
-      "L"
-    ],
-    "sizeStock": {
-      "L": 1
-    },
-    "details": "В отличном состоянии \n\nS ( фактически L )",
-    "images": [
-      "images/products/givenchy-chtio-black-logo-shorts-2c8dbeca-1.jpg"
-    ],
-    "detailImage": "images/products/givenchy-chtio-black-logo-shorts-2c8dbeca-1.jpg",
-    "isActive": true,
-    "createdAt": "2026-07-19T07:42:06.530210+00:00"
-  },
-  {
     "id": "heliot-emil-black-logo-shorts-c03faff2",
     "brand": "HELIOT EMIL",
     "name": "BLACK LOGO SHORTS",
