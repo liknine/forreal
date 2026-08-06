@@ -4116,29 +4116,6 @@
     "createdAt": "2026-07-31T13:52:14.131504+00:00"
   },
   {
-    "id": "cav-empt-white-logo-longsleeve-eee1dd3d",
-    "brand": "CAV EMPT",
-    "name": "WHITE LOGO LONGSLEEVE",
-    "price": 10500,
-    "currency": "RUB",
-    "category": "ФУТБОЛКИ",
-    "sizes": [
-      "XL"
-    ],
-    "sizeStock": {
-      "XL": 1
-    },
-    "details": "В отличном состоянии",
-    "images": [
-      "images/products/cav-empt-white-logo-longsleeve-eee1dd3d-1.jpg",
-      "images/products/cav-empt-white-logo-longsleeve-eee1dd3d-2.jpg",
-      "images/products/cav-empt-white-logo-longsleeve-eee1dd3d-3.jpg"
-    ],
-    "detailImage": "images/products/cav-empt-white-logo-longsleeve-eee1dd3d-1.jpg",
-    "isActive": true,
-    "createdAt": "2026-07-31T14:03:19.246774+00:00"
-  },
-  {
     "id": "bape-black-sneakers-logo-zip-hoodie-abd0664b",
     "brand": "BAPE",
     "name": "BLACK SNEAKERS LOGO ZIP HOODIE",
