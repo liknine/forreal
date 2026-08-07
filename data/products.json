@@ -3250,29 +3250,6 @@
     "createdAt": "2026-07-20T07:34:00.643877+00:00"
   },
   {
-    "id": "golden-goose-white-logo-sneakers-5a5e9e5b",
-    "brand": "GOLDEN GOOSE",
-    "name": "WHITE LOGO SNEAKERS",
-    "price": 22000,
-    "currency": "RUB",
-    "category": "ОБУВЬ",
-    "sizes": [
-      "42"
-    ],
-    "sizeStock": {
-      "42": 1
-    },
-    "details": "В очень хорошем состоянии \n\n42 / 27.5 см",
-    "images": [
-      "images/products/golden-goose-white-logo-sneakers-5a5e9e5b-1.jpg",
-      "images/products/golden-goose-white-logo-sneakers-5a5e9e5b-2.jpg",
-      "images/products/golden-goose-white-logo-sneakers-5a5e9e5b-3.jpg"
-    ],
-    "detailImage": "images/products/golden-goose-white-logo-sneakers-5a5e9e5b-1.jpg",
-    "isActive": true,
-    "createdAt": "2026-07-20T07:36:30.314491+00:00"
-  },
-  {
     "id": "valentino-open-black-logo-sneakers-0e4c4215",
     "brand": "VALENTINO",
     "name": "OPEN BLACK LOGO SNEAKERS",
