@@ -4440,7 +4440,7 @@
   },
   {
     "id": "stone-island-orange-logo-longsleeve-137d357c",
-    "brand": "STONE ISLAND",
+    "brand": "STONE ISLAND SHADOW PROJECT",
     "name": "ORANGE LOGO LONGSLEEVE",
     "price": 12000,
     "currency": "RUB",
@@ -4458,6 +4458,7 @@
     ],
     "detailImage": "images/products/stone-island-orange-logo-longsleeve-137d357c-1.jpg",
     "isActive": true,
-    "createdAt": "2026-08-08T17:30:30.496737+00:00"
+    "createdAt": "2026-08-08T17:30:30.496737+00:00",
+    "updatedAt": "2026-08-08T17:30:59.254324+00:00"
   }
 ]
