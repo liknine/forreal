@@ -4346,5 +4346,27 @@
     "detailImage": "images/products/stone-island-green-logo-hoodie-ca6cc6ee-1.jpg",
     "isActive": true,
     "createdAt": "2026-08-08T14:14:55.747653+00:00"
+  },
+  {
+    "id": "a-cold-wall-black-logo-sweatshirt-c45678a1",
+    "brand": "A COLD WALL",
+    "name": "BLACK LOGO SWEATSHIRT",
+    "price": 5000,
+    "currency": "RUB",
+    "category": "ХУДИ",
+    "sizes": [
+      "M"
+    ],
+    "sizeStock": {
+      "M": 3
+    },
+    "details": "в отличном состоянии \nспина 73\nподмышки 51\nплечи 48",
+    "images": [
+      "images/products/a-cold-wall-black-logo-sweatshirt-c45678a1-1.jpg",
+      "images/products/a-cold-wall-black-logo-sweatshirt-c45678a1-2.jpg"
+    ],
+    "detailImage": "images/products/a-cold-wall-black-logo-sweatshirt-c45678a1-1.jpg",
+    "isActive": true,
+    "createdAt": "2026-08-08T14:19:11.790377+00:00"
   }
 ]
