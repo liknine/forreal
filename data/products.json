@@ -4437,5 +4437,27 @@
     "detailImage": "images/products/mastermind-naruto-black-logo-tee-aa51ca06-1.jpg",
     "isActive": true,
     "createdAt": "2026-08-08T14:34:49.964933+00:00"
+  },
+  {
+    "id": "stone-island-orange-logo-longsleeve-137d357c",
+    "brand": "STONE ISLAND",
+    "name": "ORANGE LOGO LONGSLEEVE",
+    "price": 12000,
+    "currency": "RUB",
+    "category": "ФУТБОЛКИ",
+    "sizes": [
+      "M"
+    ],
+    "sizeStock": {
+      "M": 3
+    },
+    "details": "отличное состояние\n спина 70\nподмышки 53\nплечи 45",
+    "images": [
+      "images/products/stone-island-orange-logo-longsleeve-137d357c-1.jpg",
+      "images/products/stone-island-orange-logo-longsleeve-137d357c-2.jpg"
+    ],
+    "detailImage": "images/products/stone-island-orange-logo-longsleeve-137d357c-1.jpg",
+    "isActive": true,
+    "createdAt": "2026-08-08T17:30:30.496737+00:00"
   }
 ]
