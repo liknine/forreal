@@ -4484,5 +4484,30 @@
     "detailImage": "images/products/maison-margiela-white-logo-tee-1a6657b1-1.jpg",
     "isActive": true,
     "createdAt": "2026-08-08T23:44:03.306665+00:00"
+  },
+  {
+    "id": "songadon-white-logo-tee-e0bff469",
+    "brand": "SONGADON",
+    "name": "WHITE LOGO TEE",
+    "price": 7000,
+    "currency": "RUB",
+    "category": "ФУТБОЛКИ",
+    "sizes": [
+      "XL"
+    ],
+    "sizeStock": {
+      "XL": 0
+    },
+    "details": "в отличном состоянии \nспина 66\nподмышки 55\nплечи 54",
+    "images": [
+      "images/products/songadon-white-logo-tee-e0bff469-1.jpg",
+      "images/products/songadon-white-logo-tee-e0bff469-2.jpg",
+      "images/products/songadon-white-logo-tee-e0bff469-3.jpg"
+    ],
+    "detailImage": "images/products/songadon-white-logo-tee-e0bff469-1.jpg",
+    "isActive": false,
+    "createdAt": "2026-08-08T23:45:30.250442+00:00",
+    "autoHiddenNoStock": true,
+    "soldOutAt": "2026-08-08T23:45:30.250471+00:00"
   }
 ]
