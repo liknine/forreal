@@ -4230,5 +4230,52 @@
     "createdAt": "2026-08-08T13:59:38.764620+00:00",
     "autoHiddenNoStock": true,
     "soldOutAt": "2026-08-08T13:59:38.764647+00:00"
+  },
+  {
+    "id": "pioneer-of-heroism-grey-logo-hoodie-688efdfc",
+    "brand": "PIONEER OF HEROISM",
+    "name": "GREY LOGO HOODIE",
+    "price": 9000,
+    "currency": "RUB",
+    "category": "ХУДИ",
+    "sizes": [
+      "XL"
+    ],
+    "sizeStock": {
+      "XL": 0
+    },
+    "details": "В отличном состоянии \nспина 72\nподмышки 66\nплечи 69",
+    "images": [
+      "images/products/pioneer-of-heroism-grey-logo-hoodie-688efdfc-1.jpg",
+      "images/products/pioneer-of-heroism-grey-logo-hoodie-688efdfc-2.jpg",
+      "images/products/pioneer-of-heroism-grey-logo-hoodie-688efdfc-3.jpg"
+    ],
+    "detailImage": "images/products/pioneer-of-heroism-grey-logo-hoodie-688efdfc-1.jpg",
+    "isActive": false,
+    "createdAt": "2026-08-08T13:59:43.038720+00:00",
+    "autoHiddenNoStock": true,
+    "soldOutAt": "2026-08-08T13:59:43.038747+00:00"
+  },
+  {
+    "id": "c-p-company-green-goggle-zip-hoodie-40c08319",
+    "brand": "C.P.COMPANY",
+    "name": "GREEN GOGGLE ZIP HOODIE",
+    "price": 18500,
+    "currency": "RUB",
+    "category": "ЗИП-ХУДИ",
+    "sizes": [
+      "L"
+    ],
+    "sizeStock": {
+      "L": 1
+    },
+    "details": "в отличном состоянии \nспина 73\nподмышки 54\nплечи 55",
+    "images": [
+      "images/products/c-p-company-green-goggle-zip-hoodie-40c08319-1.jpg",
+      "images/products/c-p-company-green-goggle-zip-hoodie-40c08319-2.jpg"
+    ],
+    "detailImage": "images/products/c-p-company-green-goggle-zip-hoodie-40c08319-1.jpg",
+    "isActive": true,
+    "createdAt": "2026-08-08T14:02:45.223652+00:00"
   }
 ]
