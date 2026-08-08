@@ -4509,5 +4509,30 @@
     "createdAt": "2026-08-08T23:45:30.250442+00:00",
     "autoHiddenNoStock": true,
     "soldOutAt": "2026-08-08T23:45:30.250471+00:00"
+  },
+  {
+    "id": "cav-empt-white-logo-tee-eae2b9a1",
+    "brand": "CAV EMPT",
+    "name": "WHITE LOGO TEE",
+    "price": 7000,
+    "currency": "RUB",
+    "category": "ФУТБОЛКИ",
+    "sizes": [
+      "XL"
+    ],
+    "sizeStock": {
+      "XL": 0
+    },
+    "details": "в отличном состоянии \nспина 78\nподмышки 59\nплечи 52",
+    "images": [
+      "images/products/cav-empt-white-logo-tee-eae2b9a1-1.jpg",
+      "images/products/cav-empt-white-logo-tee-eae2b9a1-2.jpg",
+      "images/products/cav-empt-white-logo-tee-eae2b9a1-3.jpg"
+    ],
+    "detailImage": "images/products/cav-empt-white-logo-tee-eae2b9a1-1.jpg",
+    "isActive": false,
+    "createdAt": "2026-08-08T23:48:37.296071+00:00",
+    "autoHiddenNoStock": true,
+    "soldOutAt": "2026-08-08T23:48:37.296101+00:00"
   }
 ]
