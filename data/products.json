@@ -4193,7 +4193,7 @@
     "sizeStock": {
       "XL": 0
     },
-    "details": "в отличном состоянии",
+    "details": "в отличном состоянии \nспина 74\nподмышки 63\nплечи 66",
     "images": [
       "images/products/cav-empt-black-logo-hoodie-e2cee751-1.jpg",
       "images/products/cav-empt-black-logo-hoodie-e2cee751-2.jpg",
@@ -4203,6 +4203,7 @@
     "isActive": false,
     "createdAt": "2026-08-08T13:46:44.521741+00:00",
     "autoHiddenNoStock": true,
-    "soldOutAt": "2026-08-08T13:46:44.521779+00:00"
+    "soldOutAt": "2026-08-08T13:46:44.521779+00:00",
+    "updatedAt": "2026-08-08T13:48:23.378051+00:00"
   }
 ]
