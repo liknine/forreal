@@ -4534,5 +4534,28 @@
     "createdAt": "2026-08-08T23:48:37.296071+00:00",
     "autoHiddenNoStock": true,
     "soldOutAt": "2026-08-08T23:48:37.296101+00:00"
+  },
+  {
+    "id": "cav-empt-black-logo-tee-5d58cc82",
+    "brand": "CAV EMPT",
+    "name": "BLACK LOGO TEE",
+    "price": 7000,
+    "currency": "RUB",
+    "category": "ФУТБОЛКИ",
+    "sizes": [
+      "L"
+    ],
+    "sizeStock": {
+      "L": 1
+    },
+    "details": "в отличном состоянии \nспина 75\nподмышки 57\nплечи 53",
+    "images": [
+      "images/products/cav-empt-black-logo-tee-5d58cc82-1.jpg",
+      "images/products/cav-empt-black-logo-tee-5d58cc82-2.jpg",
+      "images/products/cav-empt-black-logo-tee-5d58cc82-3.jpg"
+    ],
+    "detailImage": "images/products/cav-empt-black-logo-tee-5d58cc82-1.jpg",
+    "isActive": true,
+    "createdAt": "2026-08-08T23:52:56.143812+00:00"
   }
 ]
