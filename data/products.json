@@ -4416,5 +4416,26 @@
     "detailImage": "images/products/the-soloist-new-era-black-logo-longs-0837caa7-1.jpg",
     "isActive": true,
     "createdAt": "2026-08-08T14:29:10.106513+00:00"
+  },
+  {
+    "id": "mastermind-naruto-black-logo-tee-aa51ca06",
+    "brand": "MASTERMIND",
+    "name": "NARUTO BLACK LOGO TEE",
+    "price": 15500,
+    "currency": "RUB",
+    "category": "ФУТБОЛКИ",
+    "sizes": [
+      "L"
+    ],
+    "sizeStock": {
+      "L": 1
+    },
+    "details": "в отличном состоянии \nспина  84\nподмышки 61\nплечи 58",
+    "images": [
+      "images/products/mastermind-naruto-black-logo-tee-aa51ca06-1.jpg"
+    ],
+    "detailImage": "images/products/mastermind-naruto-black-logo-tee-aa51ca06-1.jpg",
+    "isActive": true,
+    "createdAt": "2026-08-08T14:34:49.964933+00:00"
   }
 ]
