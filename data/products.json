@@ -4135,5 +4135,27 @@
     "detailImage": "images/products/1017-alyx-9sm-black-logo-hoodie-62b1c480-1.jpg",
     "isActive": true,
     "createdAt": "2026-08-08T13:25:49.924172+00:00"
+  },
+  {
+    "id": "polythene-black-logo-hoodie-7bb31bf3",
+    "brand": "POLYTHENE",
+    "name": "BLACK LOGO HOODIE",
+    "price": 5000,
+    "currency": "RUB",
+    "category": "ХУДИ",
+    "sizes": [
+      "M"
+    ],
+    "sizeStock": {
+      "M": 3
+    },
+    "details": "в отличном состоянии \nспина 74\nподмышки 55 \nплечи 50",
+    "images": [
+      "images/products/polythene-black-logo-hoodie-7bb31bf3-1.jpg",
+      "images/products/polythene-black-logo-hoodie-7bb31bf3-2.jpg"
+    ],
+    "detailImage": "images/products/polythene-black-logo-hoodie-7bb31bf3-1.jpg",
+    "isActive": true,
+    "createdAt": "2026-08-08T13:30:08.833333+00:00"
   }
 ]
