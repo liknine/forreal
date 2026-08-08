@@ -4299,5 +4299,30 @@
     "detailImage": "images/products/mihara-yasuhiro-grey-logo-hoodie-ea2dc786-1.jpg",
     "isActive": true,
     "createdAt": "2026-08-08T14:06:49.962373+00:00"
+  },
+  {
+    "id": "stone-island-shadow-project-beige-lo-d616b468",
+    "brand": "STONE ISLAND SHADOW PROJECT",
+    "name": "BEIGE LOGO HOODIE",
+    "price": 25500,
+    "currency": "RUB",
+    "category": "ХУДИ",
+    "sizes": [
+      "XL"
+    ],
+    "sizeStock": {
+      "XL": 0
+    },
+    "details": "в отличном состоянии \nспина 77\nподмышки 60\nплечи 53",
+    "images": [
+      "images/products/stone-island-shadow-project-beige-lo-d616b468-1.jpg",
+      "images/products/stone-island-shadow-project-beige-lo-d616b468-2.jpg",
+      "images/products/stone-island-shadow-project-beige-lo-d616b468-3.jpg"
+    ],
+    "detailImage": "images/products/stone-island-shadow-project-beige-lo-d616b468-1.jpg",
+    "isActive": false,
+    "createdAt": "2026-08-08T14:12:12.738556+00:00",
+    "autoHiddenNoStock": true,
+    "soldOutAt": "2026-08-08T14:12:12.738626+00:00"
   }
 ]
