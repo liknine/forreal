@@ -4277,5 +4277,27 @@
     "detailImage": "images/products/c-p-company-green-goggle-zip-hoodie-40c08319-1.jpg",
     "isActive": true,
     "createdAt": "2026-08-08T14:02:45.223652+00:00"
+  },
+  {
+    "id": "mihara-yasuhiro-grey-logo-hoodie-ea2dc786",
+    "brand": "MIHARA YASUHIRO",
+    "name": "GREY LOGO HOODIE",
+    "price": 14500,
+    "currency": "RUB",
+    "category": "ХУДИ",
+    "sizes": [
+      "M"
+    ],
+    "sizeStock": {
+      "M": 3
+    },
+    "details": "в отличном состоянии \nспина 73\nподмышки 65\nплечи 61",
+    "images": [
+      "images/products/mihara-yasuhiro-grey-logo-hoodie-ea2dc786-1.jpg",
+      "images/products/mihara-yasuhiro-grey-logo-hoodie-ea2dc786-2.jpg"
+    ],
+    "detailImage": "images/products/mihara-yasuhiro-grey-logo-hoodie-ea2dc786-1.jpg",
+    "isActive": true,
+    "createdAt": "2026-08-08T14:06:49.962373+00:00"
   }
 ]
