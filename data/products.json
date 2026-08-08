@@ -4543,10 +4543,14 @@
     "currency": "RUB",
     "category": "ФУТБОЛКИ",
     "sizes": [
-      "L"
+      "XL",
+      "L",
+      "1"
     ],
     "sizeStock": {
-      "L": 2
+      "XL": 1,
+      "L": 1,
+      "1": 1
     },
     "details": "в отличном состоянии \nспина 75\nподмышки 57\nплечи 53",
     "images": [
@@ -4557,7 +4561,7 @@
     "detailImage": "images/products/cav-empt-black-logo-tee-5d58cc82-1.jpg",
     "isActive": true,
     "createdAt": "2026-08-08T23:52:56.143812+00:00",
-    "updatedAt": "2026-08-08T23:53:21.784278+00:00"
+    "updatedAt": "2026-08-08T23:55:52.414954+00:00"
   },
   {
     "id": "c-p-company-black-logo-tee-e1fa540f",
