@@ -4179,5 +4179,30 @@
     "detailImage": "images/products/maison-margiela-black-logo-hoodie-9e976ace-1.jpg",
     "isActive": true,
     "createdAt": "2026-08-08T13:35:47.992180+00:00"
+  },
+  {
+    "id": "cav-empt-black-logo-hoodie-e2cee751",
+    "brand": "CAV EMPT",
+    "name": "BLACK LOGO HOODIE",
+    "price": 18500,
+    "currency": "RUB",
+    "category": "ХУДИ",
+    "sizes": [
+      "XL"
+    ],
+    "sizeStock": {
+      "XL": 0
+    },
+    "details": "в отличном состоянии",
+    "images": [
+      "images/products/cav-empt-black-logo-hoodie-e2cee751-1.jpg",
+      "images/products/cav-empt-black-logo-hoodie-e2cee751-2.jpg",
+      "images/products/cav-empt-black-logo-hoodie-e2cee751-3.jpg"
+    ],
+    "detailImage": "images/products/cav-empt-black-logo-hoodie-e2cee751-1.jpg",
+    "isActive": false,
+    "createdAt": "2026-08-08T13:46:44.521741+00:00",
+    "autoHiddenNoStock": true,
+    "soldOutAt": "2026-08-08T13:46:44.521779+00:00"
   }
 ]
