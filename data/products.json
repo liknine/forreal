@@ -4461,5 +4461,28 @@
     "detailImage": "images/products/c2h4-black-logo-tank-top-2cc58f14-1.jpg",
     "isActive": true,
     "createdAt": "2026-08-08T23:41:34.718668+00:00"
+  },
+  {
+    "id": "maison-margiela-white-logo-tee-1a6657b1",
+    "brand": "MAISON MARGIELA",
+    "name": "WHITE LOGO TEE",
+    "price": 14000,
+    "currency": "RUB",
+    "category": "ФУТБОЛКИ",
+    "sizes": [
+      "M"
+    ],
+    "sizeStock": {
+      "M": 3
+    },
+    "details": "в отличном состоянии \nспина 69\nподмышки 48\nплечи 42",
+    "images": [
+      "images/products/maison-margiela-white-logo-tee-1a6657b1-1.jpg",
+      "images/products/maison-margiela-white-logo-tee-1a6657b1-2.jpg",
+      "images/products/maison-margiela-white-logo-tee-1a6657b1-3.jpg"
+    ],
+    "detailImage": "images/products/maison-margiela-white-logo-tee-1a6657b1-1.jpg",
+    "isActive": true,
+    "createdAt": "2026-08-08T23:44:03.306665+00:00"
   }
 ]
