@@ -4205,5 +4205,30 @@
     "autoHiddenNoStock": true,
     "soldOutAt": "2026-08-08T13:46:44.521779+00:00",
     "updatedAt": "2026-08-08T13:48:23.378051+00:00"
+  },
+  {
+    "id": "pioneer-of-heroism-grey-logo-hoodie-97775b3c",
+    "brand": "PIONEER OF HEROISM",
+    "name": "GREY LOGO HOODIE",
+    "price": 9000,
+    "currency": "RUB",
+    "category": "ХУДИ",
+    "sizes": [
+      "XL"
+    ],
+    "sizeStock": {
+      "XL": 0
+    },
+    "details": "В отличном состоянии \nспина 72\nподмышки 66\nплечи 69",
+    "images": [
+      "images/products/pioneer-of-heroism-grey-logo-hoodie-97775b3c-1.jpg",
+      "images/products/pioneer-of-heroism-grey-logo-hoodie-97775b3c-2.jpg",
+      "images/products/pioneer-of-heroism-grey-logo-hoodie-97775b3c-3.jpg"
+    ],
+    "detailImage": "images/products/pioneer-of-heroism-grey-logo-hoodie-97775b3c-1.jpg",
+    "isActive": false,
+    "createdAt": "2026-08-08T13:59:38.764620+00:00",
+    "autoHiddenNoStock": true,
+    "soldOutAt": "2026-08-08T13:59:38.764647+00:00"
   }
 ]
