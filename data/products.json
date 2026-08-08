@@ -4393,5 +4393,28 @@
     "detailImage": "images/products/cav-empt-black-logo-sweatshirt-0e0f923c-1.jpg",
     "isActive": true,
     "createdAt": "2026-08-08T14:24:15.893031+00:00"
+  },
+  {
+    "id": "the-soloist-new-era-black-logo-longs-0837caa7",
+    "brand": "THE SOLOIST",
+    "name": "NEW ERA BLACK LOGO LONGSLEEVE",
+    "price": 9000,
+    "currency": "RUB",
+    "category": "ФУТБОЛКИ",
+    "sizes": [
+      "M"
+    ],
+    "sizeStock": {
+      "M": 3
+    },
+    "details": "в отличном состоянии \nспина 70\nподмышки 42\nплечи 44",
+    "images": [
+      "images/products/the-soloist-new-era-black-logo-longs-0837caa7-1.jpg",
+      "images/products/the-soloist-new-era-black-logo-longs-0837caa7-2.jpg",
+      "images/products/the-soloist-new-era-black-logo-longs-0837caa7-3.jpg"
+    ],
+    "detailImage": "images/products/the-soloist-new-era-black-logo-longs-0837caa7-1.jpg",
+    "isActive": true,
+    "createdAt": "2026-08-08T14:29:10.106513+00:00"
   }
 ]
