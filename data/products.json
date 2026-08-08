@@ -4438,5 +4438,28 @@
     "isActive": true,
     "createdAt": "2026-08-08T17:30:30.496737+00:00",
     "updatedAt": "2026-08-08T17:31:22.037371+00:00"
+  },
+  {
+    "id": "c2h4-black-logo-tank-top-2cc58f14",
+    "brand": "C2H4",
+    "name": "BLACK LOGO TANK TOP",
+    "price": 8000,
+    "currency": "RUB",
+    "category": "ФУТБОЛКИ",
+    "sizes": [
+      "M"
+    ],
+    "sizeStock": {
+      "M": 3
+    },
+    "details": "в новом состоянии \nспина 70\nподмышки 52",
+    "images": [
+      "images/products/c2h4-black-logo-tank-top-2cc58f14-1.jpg",
+      "images/products/c2h4-black-logo-tank-top-2cc58f14-2.jpg",
+      "images/products/c2h4-black-logo-tank-top-2cc58f14-3.jpg"
+    ],
+    "detailImage": "images/products/c2h4-black-logo-tank-top-2cc58f14-1.jpg",
+    "isActive": true,
+    "createdAt": "2026-08-08T23:41:34.718668+00:00"
   }
 ]
