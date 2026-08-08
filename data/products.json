@@ -4324,5 +4324,27 @@
     "createdAt": "2026-08-08T14:12:12.738556+00:00",
     "autoHiddenNoStock": true,
     "soldOutAt": "2026-08-08T14:12:12.738626+00:00"
+  },
+  {
+    "id": "stone-island-green-logo-hoodie-ca6cc6ee",
+    "brand": "STONE ISLAND",
+    "name": "GREEN LOGO HOODIE",
+    "price": 14500,
+    "currency": "RUB",
+    "category": "ХУДИ",
+    "sizes": [
+      "M"
+    ],
+    "sizeStock": {
+      "M": 3
+    },
+    "details": "в отличном состоянии \nспина 70\nподмышки 51\nплечи 44",
+    "images": [
+      "images/products/stone-island-green-logo-hoodie-ca6cc6ee-1.jpg",
+      "images/products/stone-island-green-logo-hoodie-ca6cc6ee-2.jpg"
+    ],
+    "detailImage": "images/products/stone-island-green-logo-hoodie-ca6cc6ee-1.jpg",
+    "isActive": true,
+    "createdAt": "2026-08-08T14:14:55.747653+00:00"
   }
 ]
