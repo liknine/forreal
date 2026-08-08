@@ -4368,5 +4368,30 @@
     "detailImage": "images/products/a-cold-wall-black-logo-sweatshirt-c45678a1-1.jpg",
     "isActive": true,
     "createdAt": "2026-08-08T14:19:11.790377+00:00"
+  },
+  {
+    "id": "cav-empt-black-logo-sweatshirt-0e0f923c",
+    "brand": "CAV EMPT",
+    "name": "BLACK LOGO SWEATSHIRT",
+    "price": 14000,
+    "currency": "RUB",
+    "category": "ХУДИ",
+    "sizes": [
+      "XL",
+      "0"
+    ],
+    "sizeStock": {
+      "XL": 1,
+      "0": 1
+    },
+    "details": "в отличном состоянии \nспина 74\nподмышки 67\nплечи 64",
+    "images": [
+      "images/products/cav-empt-black-logo-sweatshirt-0e0f923c-1.jpg",
+      "images/products/cav-empt-black-logo-sweatshirt-0e0f923c-2.jpg",
+      "images/products/cav-empt-black-logo-sweatshirt-0e0f923c-3.jpg"
+    ],
+    "detailImage": "images/products/cav-empt-black-logo-sweatshirt-0e0f923c-1.jpg",
+    "isActive": true,
+    "createdAt": "2026-08-08T14:24:15.893031+00:00"
   }
 ]
