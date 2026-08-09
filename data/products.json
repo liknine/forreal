@@ -3943,10 +3943,12 @@
     "currency": "RUB",
     "category": "ХУДИ",
     "sizes": [
-      "L"
+      "L",
+      "M"
     ],
     "sizeStock": {
-      "L": 1
+      "L": 1,
+      "M": 2
     },
     "details": "В отличном состоянии",
     "images": [
@@ -3955,7 +3957,8 @@
     ],
     "detailImage": "images/products/a-cold-wall-white-painted-logo-hoodi-c222c0de-1.jpg",
     "isActive": true,
-    "createdAt": "2026-07-31T13:52:14.131504+00:00"
+    "createdAt": "2026-07-31T13:52:14.131504+00:00",
+    "updatedAt": "2026-08-09T17:29:30.310300+00:00"
   },
   {
     "id": "bape-black-sneakers-logo-zip-hoodie-abd0664b",
