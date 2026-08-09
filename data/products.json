@@ -4619,12 +4619,13 @@
     "sizeStock": {
       "L": 1
     },
-    "details": "В отличном состоянии",
+    "details": "в отличном состоянии \nспина 60\nподмышки 42\nплечи 37",
     "images": [
       "images/products/comme-des-gar-on-white-logo-tee-4e4cab9a-1.jpg"
     ],
     "detailImage": "images/products/comme-des-gar-on-white-logo-tee-4e4cab9a-1.jpg",
     "isActive": true,
-    "createdAt": "2026-08-09T00:03:25.925128+00:00"
+    "createdAt": "2026-08-09T00:03:25.925128+00:00",
+    "updatedAt": "2026-08-09T00:03:46.560519+00:00"
   }
 ]
