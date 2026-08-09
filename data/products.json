@@ -4736,5 +4736,27 @@
     "detailImage": "images/products/project-j-r-yellow-logo-tee-cbabff77-1.jpg",
     "isActive": true,
     "createdAt": "2026-08-09T00:20:00.961310+00:00"
+  },
+  {
+    "id": "esoteric-camo-logo-tee-332c227a",
+    "brand": "ESOTERIC",
+    "name": "CAMO LOGO TEE",
+    "price": 7000,
+    "currency": "RUB",
+    "category": "ФУТБОЛКИ",
+    "sizes": [
+      "XL"
+    ],
+    "sizeStock": {
+      "XL": 1
+    },
+    "details": "в отличном состоянии \nспина 72\nподмышки 56\nплечи 55",
+    "images": [
+      "images/products/esoteric-camo-logo-tee-332c227a-1.jpg",
+      "images/products/esoteric-camo-logo-tee-332c227a-2.jpg"
+    ],
+    "detailImage": "images/products/esoteric-camo-logo-tee-332c227a-1.jpg",
+    "isActive": true,
+    "createdAt": "2026-08-09T00:21:55.104575+00:00"
   }
 ]
