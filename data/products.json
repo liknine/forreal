@@ -4605,5 +4605,26 @@
     "detailImage": "images/products/burberry-black-logo-tee-e33e3327-1.jpg",
     "isActive": true,
     "createdAt": "2026-08-09T00:00:25.682414+00:00"
+  },
+  {
+    "id": "comme-des-gar-on-white-logo-tee-4e4cab9a",
+    "brand": "COMME DES GARÇON",
+    "name": "WHITE LOGO TEE",
+    "price": 5500,
+    "currency": "RUB",
+    "category": "ФУТБОЛКИ",
+    "sizes": [
+      "L"
+    ],
+    "sizeStock": {
+      "L": 1
+    },
+    "details": "В отличном состоянии",
+    "images": [
+      "images/products/comme-des-gar-on-white-logo-tee-4e4cab9a-1.jpg"
+    ],
+    "detailImage": "images/products/comme-des-gar-on-white-logo-tee-4e4cab9a-1.jpg",
+    "isActive": true,
+    "createdAt": "2026-08-09T00:03:25.925128+00:00"
   }
 ]
