@@ -4758,5 +4758,28 @@
     "detailImage": "images/products/esoteric-camo-logo-tee-332c227a-1.jpg",
     "isActive": true,
     "createdAt": "2026-08-09T00:21:55.104575+00:00"
+  },
+  {
+    "id": "c2h4-blue-logo-sweatshirt-b671b3d8",
+    "brand": "C2H4",
+    "name": "BLUE LOGO SWEATSHIRT",
+    "price": 10000,
+    "currency": "RUB",
+    "category": "ХУДИ",
+    "sizes": [
+      "M"
+    ],
+    "sizeStock": {
+      "M": 1
+    },
+    "details": "в отличном состоянии \nспина 69\nподмышки 56\nплечи 55",
+    "images": [
+      "images/products/c2h4-blue-logo-sweatshirt-b671b3d8-1.jpg",
+      "images/products/c2h4-blue-logo-sweatshirt-b671b3d8-2.jpg",
+      "images/products/c2h4-blue-logo-sweatshirt-b671b3d8-3.jpg"
+    ],
+    "detailImage": "images/products/c2h4-blue-logo-sweatshirt-b671b3d8-1.jpg",
+    "isActive": true,
+    "createdAt": "2026-08-09T00:24:01.885052+00:00"
   }
 ]
