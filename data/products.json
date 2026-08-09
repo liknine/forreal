@@ -4986,5 +4986,28 @@
     "detailImage": "images/products/palm-angels-black-logo-sweatshirt-3973db25-1.jpg",
     "isActive": true,
     "createdAt": "2026-08-09T11:04:31.215616+00:00"
+  },
+  {
+    "id": "vivienne-westwood-black-logo-sweatsh-8d871fc4",
+    "brand": "VIVIENNE WESTWOOD",
+    "name": "BLACK LOGO SWEATSHIRT",
+    "price": 10500,
+    "currency": "RUB",
+    "category": "ХУДИ",
+    "sizes": [
+      "L"
+    ],
+    "sizeStock": {
+      "L": 1
+    },
+    "details": "в отличном состоянии \nспина 79\nподмышки 67\nплечи 63",
+    "images": [
+      "images/products/vivienne-westwood-black-logo-sweatsh-8d871fc4-1.jpg",
+      "images/products/vivienne-westwood-black-logo-sweatsh-8d871fc4-2.jpg",
+      "images/products/vivienne-westwood-black-logo-sweatsh-8d871fc4-3.jpg"
+    ],
+    "detailImage": "images/products/vivienne-westwood-black-logo-sweatsh-8d871fc4-1.jpg",
+    "isActive": true,
+    "createdAt": "2026-08-09T11:07:06.098853+00:00"
   }
 ]
