@@ -5002,12 +5002,12 @@
     },
     "details": "в отличном состоянии \nспина 79\nподмышки 67\nплечи 63",
     "images": [
-      "images/products/vivienne-westwood-black-logo-sweatsh-8d871fc4-1.jpg",
-      "images/products/vivienne-westwood-black-logo-sweatsh-8d871fc4-2.jpg",
-      "images/products/vivienne-westwood-black-logo-sweatsh-8d871fc4-3.jpg"
+      "images/products/vivienne-westwood-black-logo-sweatsh-8d871fc4-4898d96e-1.jpg",
+      "images/products/vivienne-westwood-black-logo-sweatsh-8d871fc4-4898d96e-2.jpg"
     ],
-    "detailImage": "images/products/vivienne-westwood-black-logo-sweatsh-8d871fc4-1.jpg",
+    "detailImage": "images/products/vivienne-westwood-black-logo-sweatsh-8d871fc4-4898d96e-1.jpg",
     "isActive": true,
-    "createdAt": "2026-08-09T11:07:06.098853+00:00"
+    "createdAt": "2026-08-09T11:07:06.098853+00:00",
+    "updatedAt": "2026-08-09T11:07:39.173124+00:00"
   }
 ]
