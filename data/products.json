@@ -5009,5 +5009,28 @@
     "isActive": true,
     "createdAt": "2026-08-09T11:07:06.098853+00:00",
     "updatedAt": "2026-08-09T11:07:39.173124+00:00"
+  },
+  {
+    "id": "cav-empt-white-logo-sweatshirt-e6e38d23",
+    "brand": "CAV EMPT",
+    "name": "WHITE LOGO SWEATSHIRT",
+    "price": 14000,
+    "currency": "RUB",
+    "category": "ХУДИ",
+    "sizes": [
+      "XL"
+    ],
+    "sizeStock": {
+      "XL": 1
+    },
+    "details": "в отличном состоянии \nспина -73\nподмышки 63\nплечи 65",
+    "images": [
+      "images/products/cav-empt-white-logo-sweatshirt-e6e38d23-1.jpg",
+      "images/products/cav-empt-white-logo-sweatshirt-e6e38d23-2.jpg",
+      "images/products/cav-empt-white-logo-sweatshirt-e6e38d23-3.jpg"
+    ],
+    "detailImage": "images/products/cav-empt-white-logo-sweatshirt-e6e38d23-1.jpg",
+    "isActive": true,
+    "createdAt": "2026-08-09T11:08:57.576577+00:00"
   }
 ]
