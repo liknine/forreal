@@ -4895,5 +4895,27 @@
     "detailImage": "images/products/1017-alyx-9sm-black-logo-longsleeve-a3de0544-1.jpg",
     "isActive": true,
     "createdAt": "2026-08-09T00:36:11.894126+00:00"
+  },
+  {
+    "id": "helmut-lang-black-logo-sweatshirt-5dd9f0b3",
+    "brand": "HELMUT LANG",
+    "name": "BLACK LOGO SWEATSHIRT",
+    "price": 10500,
+    "currency": "RUB",
+    "category": "ХУДИ",
+    "sizes": [
+      "L"
+    ],
+    "sizeStock": {
+      "L": 1
+    },
+    "details": "В отличном состоянии \nспина 80\nподмышки 61\nплечи 51",
+    "images": [
+      "images/products/helmut-lang-black-logo-sweatshirt-5dd9f0b3-1.jpg",
+      "images/products/helmut-lang-black-logo-sweatshirt-5dd9f0b3-2.jpg"
+    ],
+    "detailImage": "images/products/helmut-lang-black-logo-sweatshirt-5dd9f0b3-1.jpg",
+    "isActive": true,
+    "createdAt": "2026-08-09T00:38:21.058755+00:00"
   }
 ]
