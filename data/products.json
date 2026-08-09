@@ -4583,5 +4583,27 @@
     "detailImage": "images/products/c-p-company-black-logo-tee-e1fa540f-1.jpg",
     "isActive": true,
     "createdAt": "2026-08-08T23:55:18.960893+00:00"
+  },
+  {
+    "id": "burberry-black-logo-tee-e33e3327",
+    "brand": "BURBERRY",
+    "name": "BLACK LOGO TEE",
+    "price": 15500,
+    "currency": "RUB",
+    "category": "ФУТБОЛКИ",
+    "sizes": [
+      "XL"
+    ],
+    "sizeStock": {
+      "XL": 1
+    },
+    "details": "В отличном состоянии \nспина 79\nподмышки 66\nплечи 55",
+    "images": [
+      "images/products/burberry-black-logo-tee-e33e3327-1.jpg",
+      "images/products/burberry-black-logo-tee-e33e3327-2.jpg"
+    ],
+    "detailImage": "images/products/burberry-black-logo-tee-e33e3327-1.jpg",
+    "isActive": true,
+    "createdAt": "2026-08-09T00:00:25.682414+00:00"
   }
 ]
