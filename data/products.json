@@ -4648,5 +4648,26 @@
     "detailImage": "images/products/martine-rose-black-logo-tee-5b988eab-1.jpg",
     "isActive": true,
     "createdAt": "2026-08-09T00:06:56.935609+00:00"
+  },
+  {
+    "id": "maison-margiela-white-logo-tee-15b5f420",
+    "brand": "MAISON MARGIELA",
+    "name": "WHITE LOGO TEE",
+    "price": 5000,
+    "currency": "RUB",
+    "category": "ФУТБОЛКИ",
+    "sizes": [
+      "M"
+    ],
+    "sizeStock": {
+      "M": 1
+    },
+    "details": "В отличном состоянии \nспина 61\nподмышки 41\nплечи 40",
+    "images": [
+      "images/products/maison-margiela-white-logo-tee-15b5f420-1.jpg"
+    ],
+    "detailImage": "images/products/maison-margiela-white-logo-tee-15b5f420-1.jpg",
+    "isActive": true,
+    "createdAt": "2026-08-09T00:10:25.716450+00:00"
   }
 ]
