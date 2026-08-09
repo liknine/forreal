@@ -4627,5 +4627,26 @@
     "isActive": true,
     "createdAt": "2026-08-09T00:03:25.925128+00:00",
     "updatedAt": "2026-08-09T00:03:46.560519+00:00"
+  },
+  {
+    "id": "martine-rose-black-logo-tee-5b988eab",
+    "brand": "MARTINE ROSE",
+    "name": "BLACK LOGO TEE",
+    "price": 7000,
+    "currency": "RUB",
+    "category": "ФУТБОЛКИ",
+    "sizes": [
+      "M"
+    ],
+    "sizeStock": {
+      "M": 1
+    },
+    "details": "в хорошем состоянии \nспина 74\nподмышки 51\nплечи 41",
+    "images": [
+      "images/products/martine-rose-black-logo-tee-5b988eab-1.jpg"
+    ],
+    "detailImage": "images/products/martine-rose-black-logo-tee-5b988eab-1.jpg",
+    "isActive": true,
+    "createdAt": "2026-08-09T00:06:56.935609+00:00"
   }
 ]
