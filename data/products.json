@@ -4781,5 +4781,27 @@
     "detailImage": "images/products/c2h4-blue-logo-sweatshirt-b671b3d8-1.jpg",
     "isActive": true,
     "createdAt": "2026-08-09T00:24:01.885052+00:00"
+  },
+  {
+    "id": "heliot-emil-green-logo-sweatshirt-263ce938",
+    "brand": "HELIOT EMIL",
+    "name": "GREEN LOGO SWEATSHIRT",
+    "price": 10500,
+    "currency": "RUB",
+    "category": "ХУДИ",
+    "sizes": [
+      "L"
+    ],
+    "sizeStock": {
+      "L": 1
+    },
+    "details": "в отличном состоянии \nспина 61\nподмышки 60\nплечи 42",
+    "images": [
+      "images/products/heliot-emil-green-logo-sweatshirt-263ce938-1.jpg",
+      "images/products/heliot-emil-green-logo-sweatshirt-263ce938-2.jpg"
+    ],
+    "detailImage": "images/products/heliot-emil-green-logo-sweatshirt-263ce938-1.jpg",
+    "isActive": true,
+    "createdAt": "2026-08-09T00:26:04.528612+00:00"
   }
 ]
