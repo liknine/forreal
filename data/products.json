@@ -4917,5 +4917,28 @@
     "detailImage": "images/products/helmut-lang-black-logo-sweatshirt-5dd9f0b3-1.jpg",
     "isActive": true,
     "createdAt": "2026-08-09T00:38:21.058755+00:00"
+  },
+  {
+    "id": "black-logo-longsleeve-black-logo-lon-657bdb0f",
+    "brand": "BLACK LOGO LONGSLEEVE",
+    "name": "BLACK LOGO LONGSLEEVE",
+    "price": 8000,
+    "currency": "RUB",
+    "category": "ФУТБОЛКИ",
+    "sizes": [
+      "S"
+    ],
+    "sizeStock": {
+      "S": 1
+    },
+    "details": "в отличном состоянии \nспина 85\nподмышки 53\nплечи61",
+    "images": [
+      "images/products/black-logo-longsleeve-black-logo-lon-657bdb0f-1.jpg",
+      "images/products/black-logo-longsleeve-black-logo-lon-657bdb0f-2.jpg",
+      "images/products/black-logo-longsleeve-black-logo-lon-657bdb0f-3.jpg"
+    ],
+    "detailImage": "images/products/black-logo-longsleeve-black-logo-lon-657bdb0f-1.jpg",
+    "isActive": true,
+    "createdAt": "2026-08-09T00:40:39.875186+00:00"
   }
 ]
