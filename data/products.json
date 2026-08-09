@@ -4714,5 +4714,27 @@
     "detailImage": "images/products/lanvin-white-logo-tee-fd13d0c6-1.jpg",
     "isActive": true,
     "createdAt": "2026-08-09T00:17:49.314779+00:00"
+  },
+  {
+    "id": "project-j-r-yellow-logo-tee-cbabff77",
+    "brand": "PROJECT J/R",
+    "name": "YELLOW LOGO TEE",
+    "price": 12000,
+    "currency": "RUB",
+    "category": "ФУТБОЛКИ",
+    "sizes": [
+      "M"
+    ],
+    "sizeStock": {
+      "M": 1
+    },
+    "details": "в отличном состоянии \nспина 80\nподмышки 64\nплечи 59",
+    "images": [
+      "images/products/project-j-r-yellow-logo-tee-cbabff77-1.jpg",
+      "images/products/project-j-r-yellow-logo-tee-cbabff77-2.jpg"
+    ],
+    "detailImage": "images/products/project-j-r-yellow-logo-tee-cbabff77-1.jpg",
+    "isActive": true,
+    "createdAt": "2026-08-09T00:20:00.961310+00:00"
   }
 ]
