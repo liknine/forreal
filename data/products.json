@@ -4921,7 +4921,7 @@
   {
     "id": "black-logo-longsleeve-black-logo-lon-657bdb0f",
     "brand": "BLACK LOGO LONGSLEEVE",
-    "name": "BLACK LOGO LONGSLEEVE",
+    "name": "A COLD WALL",
     "price": 8000,
     "currency": "RUB",
     "category": "ФУТБОЛКИ",
@@ -4939,6 +4939,7 @@
     ],
     "detailImage": "images/products/black-logo-longsleeve-black-logo-lon-657bdb0f-1.jpg",
     "isActive": true,
-    "createdAt": "2026-08-09T00:40:39.875186+00:00"
+    "createdAt": "2026-08-09T00:40:39.875186+00:00",
+    "updatedAt": "2026-08-09T00:40:55.538264+00:00"
   }
 ]
