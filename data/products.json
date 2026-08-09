@@ -5023,7 +5023,7 @@
     "sizeStock": {
       "XL": 1
     },
-    "details": "в отличном состоянии \nспина -73\nподмышки 63\nплечи 65",
+    "details": "в отличном состоянии \nспина 73\nподмышки 63\nплечи 65",
     "images": [
       "images/products/cav-empt-white-logo-sweatshirt-e6e38d23-1.jpg",
       "images/products/cav-empt-white-logo-sweatshirt-e6e38d23-2.jpg",
@@ -5031,6 +5031,7 @@
     ],
     "detailImage": "images/products/cav-empt-white-logo-sweatshirt-e6e38d23-1.jpg",
     "isActive": true,
-    "createdAt": "2026-08-09T11:08:57.576577+00:00"
+    "createdAt": "2026-08-09T11:08:57.576577+00:00",
+    "updatedAt": "2026-08-09T11:09:20.668475+00:00"
   }
 ]
