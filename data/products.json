@@ -4820,12 +4820,13 @@
     },
     "details": "в отличном состоянии \nспина 71\nподмышки 62\nплечи 60",
     "images": [
-      "images/products/project-g-r-black-logo-longsleeve-86dfaba0-1.jpg",
-      "images/products/project-g-r-black-logo-longsleeve-86dfaba0-2.jpg",
-      "images/products/project-g-r-black-logo-longsleeve-86dfaba0-3.jpg"
+      "images/products/project-g-r-black-logo-longsleeve-86dfaba0-0b9b948f-1.jpg",
+      "images/products/project-g-r-black-logo-longsleeve-86dfaba0-0b9b948f-2.jpg",
+      "images/products/project-g-r-black-logo-longsleeve-86dfaba0-0b9b948f-3.jpg"
     ],
-    "detailImage": "images/products/project-g-r-black-logo-longsleeve-86dfaba0-1.jpg",
+    "detailImage": "images/products/project-g-r-black-logo-longsleeve-86dfaba0-0b9b948f-1.jpg",
     "isActive": true,
-    "createdAt": "2026-08-09T00:28:28.182462+00:00"
+    "createdAt": "2026-08-09T00:28:28.182462+00:00",
+    "updatedAt": "2026-08-09T00:30:26.137085+00:00"
   }
 ]
