@@ -4854,7 +4854,7 @@
   {
     "id": "project-g-r-black-logo-tee-9e0ded6a",
     "brand": "PROJECT G/R",
-    "name": "BLACK LOGO TEE",
+    "name": "PROJECT G/R",
     "price": 15500,
     "currency": "RUB",
     "category": "ФУТБОЛКИ",
@@ -4872,7 +4872,8 @@
     ],
     "detailImage": "images/products/project-g-r-black-logo-tee-9e0ded6a-1.jpg",
     "isActive": true,
-    "createdAt": "2026-08-09T00:34:05.082863+00:00"
+    "createdAt": "2026-08-09T00:34:05.082863+00:00",
+    "updatedAt": "2026-08-09T00:36:30.892801+00:00"
   },
   {
     "id": "1017-alyx-9sm-black-logo-longsleeve-a3de0544",
