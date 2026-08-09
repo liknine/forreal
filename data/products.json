@@ -4964,5 +4964,27 @@
     "isActive": true,
     "createdAt": "2026-08-09T00:42:11.256121+00:00",
     "updatedAt": "2026-08-09T00:42:50.821542+00:00"
+  },
+  {
+    "id": "palm-angels-black-logo-sweatshirt-3973db25",
+    "brand": "PALM ANGELS",
+    "name": "BLACK LOGO SWEATSHIRT",
+    "price": 5500,
+    "currency": "RUB",
+    "category": "ХУДИ",
+    "sizes": [
+      "M"
+    ],
+    "sizeStock": {
+      "M": 1
+    },
+    "details": "в отличном состоянии\nспина 75\nподмышки 57\nплечи 73",
+    "images": [
+      "images/products/palm-angels-black-logo-sweatshirt-3973db25-1.jpg",
+      "images/products/palm-angels-black-logo-sweatshirt-3973db25-2.jpg"
+    ],
+    "detailImage": "images/products/palm-angels-black-logo-sweatshirt-3973db25-1.jpg",
+    "isActive": true,
+    "createdAt": "2026-08-09T11:04:31.215616+00:00"
   }
 ]
