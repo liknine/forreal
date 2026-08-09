@@ -4803,5 +4803,28 @@
     "detailImage": "images/products/heliot-emil-green-logo-sweatshirt-263ce938-1.jpg",
     "isActive": true,
     "createdAt": "2026-08-09T00:26:04.528612+00:00"
+  },
+  {
+    "id": "project-g-r-black-logo-longsleeve-86dfaba0",
+    "brand": "PROJECT G/R",
+    "name": "BLACK LOGO LONGSLEEVE",
+    "price": 10000,
+    "currency": "RUB",
+    "category": "ФУТБОЛКИ",
+    "sizes": [
+      "L"
+    ],
+    "sizeStock": {
+      "L": 1
+    },
+    "details": "в отличном состоянии \nспина 71\nподмышки 62\nплечи 60",
+    "images": [
+      "images/products/project-g-r-black-logo-longsleeve-86dfaba0-1.jpg",
+      "images/products/project-g-r-black-logo-longsleeve-86dfaba0-2.jpg",
+      "images/products/project-g-r-black-logo-longsleeve-86dfaba0-3.jpg"
+    ],
+    "detailImage": "images/products/project-g-r-black-logo-longsleeve-86dfaba0-1.jpg",
+    "isActive": true,
+    "createdAt": "2026-08-09T00:28:28.182462+00:00"
   }
 ]
