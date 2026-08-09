@@ -4941,5 +4941,27 @@
     "isActive": true,
     "createdAt": "2026-08-09T00:40:39.875186+00:00",
     "updatedAt": "2026-08-09T00:40:55.538264+00:00"
+  },
+  {
+    "id": "a-cold-wall-black-logo-longsleeve-6ae1770b",
+    "brand": "A COLD WALL",
+    "name": "BLACK LOGO LONGSLEEVE",
+    "price": 7000,
+    "currency": "RUB",
+    "category": "ФУТБОЛКИ",
+    "sizes": [
+      "L"
+    ],
+    "sizeStock": {
+      "L": 1
+    },
+    "details": "В отличном состоянии",
+    "images": [
+      "images/products/a-cold-wall-black-logo-longsleeve-6ae1770b-1.jpg",
+      "images/products/a-cold-wall-black-logo-longsleeve-6ae1770b-2.jpg"
+    ],
+    "detailImage": "images/products/a-cold-wall-black-logo-longsleeve-6ae1770b-1.jpg",
+    "isActive": true,
+    "createdAt": "2026-08-09T00:42:11.256121+00:00"
   }
 ]
