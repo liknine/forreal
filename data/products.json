@@ -2394,29 +2394,6 @@
     "createdAt": "2026-07-18T13:38:24.340914+00:00"
   },
   {
-    "id": "balenciaga-purple-track-1-sneakers-931ed945",
-    "brand": "BALENCIAGA",
-    "name": "PURPLE TRACK 1 SNEAKERS",
-    "price": 33000,
-    "currency": "RUB",
-    "category": "ОБУВЬ",
-    "sizes": [
-      "43"
-    ],
-    "sizeStock": {
-      "43": 1
-    },
-    "details": "В отличном состоянии \n\n43 / 28.5 см",
-    "images": [
-      "images/products/balenciaga-purple-track-1-sneakers-931ed945-1.jpg",
-      "images/products/balenciaga-purple-track-1-sneakers-931ed945-2.jpg",
-      "images/products/balenciaga-purple-track-1-sneakers-931ed945-3.jpg"
-    ],
-    "detailImage": "images/products/balenciaga-purple-track-1-sneakers-931ed945-1.jpg",
-    "isActive": true,
-    "createdAt": "2026-07-18T13:42:57.976038+00:00"
-  },
-  {
     "id": "balenciaga-track-2-black-sneakers-3b0956d0",
     "brand": "BALENCIAGA",
     "name": "TRACK 2 BLACK SNEAKERS",
