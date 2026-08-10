@@ -1211,29 +1211,6 @@
     "createdAt": "2026-07-13T15:50:05.000965+00:00"
   },
   {
-    "id": "supreme-black-police-logo-hoodie-8007f0d6",
-    "brand": "SUPREME",
-    "name": "BLACK POLICE LOGO HOODIE",
-    "price": 9000,
-    "currency": "RUB",
-    "category": "ХУДИ",
-    "sizes": [
-      "M"
-    ],
-    "sizeStock": {
-      "M": 1
-    },
-    "details": "В отличном состоянии \n\nS ( фактически M )",
-    "images": [
-      "images/products/supreme-black-police-logo-hoodie-8007f0d6-1.jpg",
-      "images/products/supreme-black-police-logo-hoodie-8007f0d6-2.jpg",
-      "images/products/supreme-black-police-logo-hoodie-8007f0d6-3.jpg"
-    ],
-    "detailImage": "images/products/supreme-black-police-logo-hoodie-8007f0d6-1.jpg",
-    "isActive": true,
-    "createdAt": "2026-07-13T15:53:09.503740+00:00"
-  },
-  {
     "id": "c2h4-black-logo-zip-hoodie-437ffebc",
     "brand": "C2H4",
     "name": "BLACK LOGO ZIP HOODIE",
