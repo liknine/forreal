@@ -5027,7 +5027,7 @@
       "M"
     ],
     "sizeStock": {
-      "M": 0
+      "M": 1
     },
     "details": "В отличном состоянии \nспина 71\nподмышки 51\nплечи 51",
     "images": [
@@ -5035,9 +5035,9 @@
       "images/products/rhude-black-logo-longsleeve-c64485ad-2.jpg"
     ],
     "detailImage": "images/products/rhude-black-logo-longsleeve-c64485ad-1.jpg",
-    "isActive": false,
+    "isActive": true,
     "createdAt": "2026-08-10T09:05:11.139491+00:00",
-    "autoHiddenNoStock": true,
-    "soldOutAt": "2026-08-10T09:05:11.139523+00:00"
+    "autoHiddenNoStock": false,
+    "updatedAt": "2026-08-10T09:05:35.883567+00:00"
   }
 ]
