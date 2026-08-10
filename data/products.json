@@ -5083,5 +5083,28 @@
     "detailImage": "images/products/stone-island-grey-logo-sweater-1d0a02a2-1.jpg",
     "isActive": true,
     "createdAt": "2026-08-10T09:10:50.638453+00:00"
+  },
+  {
+    "id": "saint-tears-white-logo-sweatshirt-fd3fe615",
+    "brand": "SAINT TEARS",
+    "name": "WHITE LOGO SWEATSHIRT",
+    "price": 14000,
+    "currency": "RUB",
+    "category": "ХУДИ",
+    "sizes": [
+      "L"
+    ],
+    "sizeStock": {
+      "L": 1
+    },
+    "details": "в отличном состоянии \nспина 71\nподмышки 62\nплечи 65",
+    "images": [
+      "images/products/saint-tears-white-logo-sweatshirt-fd3fe615-1.jpg",
+      "images/products/saint-tears-white-logo-sweatshirt-fd3fe615-2.jpg",
+      "images/products/saint-tears-white-logo-sweatshirt-fd3fe615-3.jpg"
+    ],
+    "detailImage": "images/products/saint-tears-white-logo-sweatshirt-fd3fe615-1.jpg",
+    "isActive": true,
+    "createdAt": "2026-08-10T09:14:05.128125+00:00"
   }
 ]
