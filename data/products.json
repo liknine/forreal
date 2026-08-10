@@ -5086,7 +5086,7 @@
   },
   {
     "id": "saint-tears-white-logo-sweatshirt-fd3fe615",
-    "brand": "SAINT TEARS",
+    "brand": "CAV EMPT",
     "name": "WHITE LOGO SWEATSHIRT",
     "price": 14000,
     "currency": "RUB",
@@ -5105,6 +5105,7 @@
     ],
     "detailImage": "images/products/saint-tears-white-logo-sweatshirt-fd3fe615-1.jpg",
     "isActive": true,
-    "createdAt": "2026-08-10T09:14:05.128125+00:00"
+    "createdAt": "2026-08-10T09:14:05.128125+00:00",
+    "updatedAt": "2026-08-10T09:14:18.846965+00:00"
   }
 ]
