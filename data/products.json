@@ -4992,5 +4992,28 @@
     "isActive": true,
     "createdAt": "2026-08-09T11:08:57.576577+00:00",
     "updatedAt": "2026-08-09T11:09:20.668475+00:00"
+  },
+  {
+    "id": "hamcus-grey-logo-sweatshirt-d074a934",
+    "brand": "HAMCUS",
+    "name": "GREY LOGO SWEATSHIRT",
+    "price": 14000,
+    "currency": "RUB",
+    "category": "ХУДИ",
+    "sizes": [
+      "L"
+    ],
+    "sizeStock": {
+      "L": 1
+    },
+    "details": "в отличном состоянии \nспина 80\nподмышки 70\nплечи 60",
+    "images": [
+      "images/products/hamcus-grey-logo-sweatshirt-d074a934-1.jpg",
+      "images/products/hamcus-grey-logo-sweatshirt-d074a934-2.jpg",
+      "images/products/hamcus-grey-logo-sweatshirt-d074a934-3.jpg"
+    ],
+    "detailImage": "images/products/hamcus-grey-logo-sweatshirt-d074a934-1.jpg",
+    "isActive": true,
+    "createdAt": "2026-08-10T09:03:21.788041+00:00"
   }
 ]
