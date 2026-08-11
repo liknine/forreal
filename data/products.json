@@ -4538,28 +4538,6 @@
     "createdAt": "2026-08-09T00:10:25.716450+00:00"
   },
   {
-    "id": "songadon-white-logo-tee-4f71f2ac",
-    "brand": "SONGADON",
-    "name": "WHITE LOGO TEE",
-    "price": 7000,
-    "currency": "RUB",
-    "category": "ФУТБОЛКИ",
-    "sizes": [
-      "XL"
-    ],
-    "sizeStock": {
-      "XL": 1
-    },
-    "details": "в отличном состоянии \nспина 64\nподмышки 44\nплечи 42",
-    "images": [
-      "images/products/songadon-white-logo-tee-4f71f2ac-1.jpg",
-      "images/products/songadon-white-logo-tee-4f71f2ac-2.jpg"
-    ],
-    "detailImage": "images/products/songadon-white-logo-tee-4f71f2ac-1.jpg",
-    "isActive": true,
-    "createdAt": "2026-08-09T00:13:11.556826+00:00"
-  },
-  {
     "id": "lanvin-white-logo-tee-fd13d0c6",
     "brand": "LANVIN",
     "name": "WHITE LOGO TEE",
