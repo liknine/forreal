@@ -96,29 +96,6 @@
     "createdAt": "2026-07-07T08:28:08.830153+00:00"
   },
   {
-    "id": "rhude-black-washed-logo-tee-6bd351f9",
-    "brand": "RHUDE",
-    "name": "BLACK WASHED LOGO TEE",
-    "price": 10500,
-    "currency": "RUB",
-    "category": "ФУТБОЛКИ",
-    "sizes": [
-      "L"
-    ],
-    "sizeStock": {
-      "L": 1
-    },
-    "details": "В отличном состоянии \n\nS ( фактически L )",
-    "images": [
-      "images/products/rhude-black-washed-logo-tee-6bd351f9-1.jpg",
-      "images/products/rhude-black-washed-logo-tee-6bd351f9-2.jpg",
-      "images/products/rhude-black-washed-logo-tee-6bd351f9-3.jpg"
-    ],
-    "detailImage": "images/products/rhude-black-washed-logo-tee-6bd351f9-1.jpg",
-    "isActive": true,
-    "createdAt": "2026-07-07T08:38:09.950939+00:00"
-  },
-  {
     "id": "converse-isabel-marant-black-logo-4551f82a",
     "brand": "CONVERSE",
     "name": "ISABEL MARANT BLACK LOGO",
