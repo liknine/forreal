@@ -2608,28 +2608,6 @@
     "createdAt": "2026-07-19T08:19:05.354554+00:00"
   },
   {
-    "id": "comme-des-gar-ons-asap-nast-white-lo-57df3e91",
-    "brand": "COMME DES GARÇONS",
-    "name": "ASAP NAST WHITE LOGO SNEAKERS",
-    "price": 12000,
-    "currency": "RUB",
-    "category": "ФУТБОЛКИ",
-    "sizes": [
-      "L"
-    ],
-    "sizeStock": {
-      "L": 1
-    },
-    "details": "Полностью новая",
-    "images": [
-      "images/products/comme-des-gar-ons-asap-nast-white-lo-57df3e91-1.jpg",
-      "images/products/comme-des-gar-ons-asap-nast-white-lo-57df3e91-2.jpg"
-    ],
-    "detailImage": "images/products/comme-des-gar-ons-asap-nast-white-lo-57df3e91-1.jpg",
-    "isActive": true,
-    "createdAt": "2026-07-19T08:22:27.336030+00:00"
-  },
-  {
     "id": "saint-laurent-black-logo-tee-82b096f5",
     "brand": "SAINT LAURENT",
     "name": "BLACK LOGO TEE",
