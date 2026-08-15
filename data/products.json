@@ -4385,29 +4385,6 @@
     "createdAt": "2026-08-09T00:10:25.716450+00:00"
   },
   {
-    "id": "lanvin-white-logo-tee-fd13d0c6",
-    "brand": "LANVIN",
-    "name": "WHITE LOGO TEE",
-    "price": 15500,
-    "currency": "RUB",
-    "category": "ФУТБОЛКИ",
-    "sizes": [
-      "S"
-    ],
-    "sizeStock": {
-      "S": 1
-    },
-    "details": "в отличном состоянии \nспина 65\nподмышки 55\nплечи 43",
-    "images": [
-      "images/products/lanvin-white-logo-tee-fd13d0c6-1.jpg",
-      "images/products/lanvin-white-logo-tee-fd13d0c6-2.jpg",
-      "images/products/lanvin-white-logo-tee-fd13d0c6-3.jpg"
-    ],
-    "detailImage": "images/products/lanvin-white-logo-tee-fd13d0c6-1.jpg",
-    "isActive": true,
-    "createdAt": "2026-08-09T00:17:49.314779+00:00"
-  },
-  {
     "id": "project-j-r-yellow-logo-tee-cbabff77",
     "brand": "PROJECT G/R",
     "name": "YELLOW LOGO TEE",
