@@ -503,14 +503,15 @@
     "sizeStock": {
       "XL": 1
     },
-    "details": "В отличном состоянии \n\nM ( фактически L-XL )",
+    "details": "в отличном состоянии \nспина 80 \nподмышки 62 \nплечи 52",
     "images": [
       "images/products/givenchy-chito-black-washed-logo-tee-abbdcdff-1.jpg",
       "images/products/givenchy-chito-black-washed-logo-tee-abbdcdff-2.jpg"
     ],
     "detailImage": "images/products/givenchy-chito-black-washed-logo-tee-abbdcdff-1.jpg",
     "isActive": true,
-    "createdAt": "2026-07-11T19:18:49.470934+00:00"
+    "createdAt": "2026-07-11T19:18:49.470934+00:00",
+    "updatedAt": "2026-08-17T19:46:08.711292+00:00"
   },
   {
     "id": "1017-alyx-9sm-black-paint-logo-tee-f4fa9fbe",
