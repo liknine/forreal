@@ -3546,14 +3546,15 @@
     "sizeStock": {
       "M": 3
     },
-    "details": "отличное состояние",
+    "details": "в отличном состоянии \nспина 70 \nподмышки 46 \nплечи 40",
     "images": [
       "images/products/mastermind-black-logo-tee-01cd6451-1.jpg",
       "images/products/mastermind-black-logo-tee-01cd6451-2.jpg"
     ],
     "detailImage": "images/products/mastermind-black-logo-tee-01cd6451-1.jpg",
     "isActive": true,
-    "createdAt": "2026-07-26T14:00:14.881492+00:00"
+    "createdAt": "2026-07-26T14:00:14.881492+00:00",
+    "updatedAt": "2026-08-17T19:47:16.132770+00:00"
   },
   {
     "id": "burberry-black-logo-tee-f5912487",
