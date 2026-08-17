@@ -3368,13 +3368,14 @@
     "sizeStock": {
       "L": 1
     },
-    "details": "В отличном состоянии",
+    "details": "в отличном состоянии \nспина 77 \nподмышки 58 \nплечи 55.5",
     "images": [
       "images/products/yohji-yamamoto-black-logo-tee-0803eff5-1.jpg"
     ],
     "detailImage": "images/products/yohji-yamamoto-black-logo-tee-0803eff5-1.jpg",
     "isActive": true,
-    "createdAt": "2026-07-26T13:04:23.991149+00:00"
+    "createdAt": "2026-07-26T13:04:23.991149+00:00",
+    "updatedAt": "2026-08-17T19:51:42.608104+00:00"
   },
   {
     "id": "y-project-black-logo-tee-cb91dd83",
