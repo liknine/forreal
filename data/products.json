@@ -3592,14 +3592,15 @@
     "sizeStock": {
       "L": 1
     },
-    "details": "в отличном состоянии",
+    "details": "в отличном состоянии \nподмышки 51\nспина 67 \nплечи 47",
     "images": [
       "images/products/bape-kid-cudi-black-logo-tee-eb2dd5d6-1.jpg",
       "images/products/bape-kid-cudi-black-logo-tee-eb2dd5d6-2.jpg"
     ],
     "detailImage": "images/products/bape-kid-cudi-black-logo-tee-eb2dd5d6-1.jpg",
     "isActive": true,
-    "createdAt": "2026-07-26T14:04:47.782598+00:00"
+    "createdAt": "2026-07-26T14:04:47.782598+00:00",
+    "updatedAt": "2026-08-17T19:49:09.225652+00:00"
   },
   {
     "id": "yeezy-cream-sample-zip-hoodie-fddb4e2b",
