@@ -3108,14 +3108,15 @@
     "sizeStock": {
       "L": 1
     },
-    "details": "В отличном состоянии \n\nS ( фактически L )",
+    "details": "В отличном состоянии \nспина 65 \nподмышки 48\nплечи 47",
     "images": [
       "images/products/valentino-white-logo-tee-458b51ee-1.jpg",
       "images/products/valentino-white-logo-tee-458b51ee-2.jpg"
     ],
     "detailImage": "images/products/valentino-white-logo-tee-458b51ee-1.jpg",
     "isActive": true,
-    "createdAt": "2026-07-20T08:31:38.201224+00:00"
+    "createdAt": "2026-07-20T08:31:38.201224+00:00",
+    "updatedAt": "2026-08-18T03:00:00.737970+00:00"
   },
   {
     "id": "mihara-yasuhiro-black-logo-tee-afb787ca",
