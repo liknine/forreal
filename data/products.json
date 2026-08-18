@@ -4845,5 +4845,27 @@
     "detailImage": "images/products/free-world-order-black-logo-shorts-5053a59c-1.jpg",
     "isActive": true,
     "createdAt": "2026-08-18T23:29:45.232344+00:00"
+  },
+  {
+    "id": "stone-island-shorts-black-logo-short-1b30a260",
+    "brand": "STONE ISLAND SHORTS",
+    "name": "BLACK LOGO SHORTS",
+    "price": 15500,
+    "currency": "RUB",
+    "category": "ШОРТЫ",
+    "sizes": [
+      "S"
+    ],
+    "sizeStock": {
+      "S": 1
+    },
+    "details": "в отличном состоянии",
+    "images": [
+      "images/products/stone-island-shorts-black-logo-short-1b30a260-1.jpg",
+      "images/products/stone-island-shorts-black-logo-short-1b30a260-2.jpg"
+    ],
+    "detailImage": "images/products/stone-island-shorts-black-logo-short-1b30a260-1.jpg",
+    "isActive": true,
+    "createdAt": "2026-08-18T23:32:29.083899+00:00"
   }
 ]
