@@ -2543,13 +2543,14 @@
     "sizeStock": {
       "L": 1
     },
-    "details": "В очень хорошем состоянии",
+    "details": "в отличном состоянии \nспина 72 \nподмышки 52\nплечи 45",
     "images": [
       "images/products/cav-empt-black-logo-tee-0d7b157a-1.jpg"
     ],
     "detailImage": "images/products/cav-empt-black-logo-tee-0d7b157a-1.jpg",
     "isActive": true,
-    "createdAt": "2026-07-19T08:08:49.235746+00:00"
+    "createdAt": "2026-07-19T08:08:49.235746+00:00",
+    "updatedAt": "2026-08-18T03:17:43.883542+00:00"
   },
   {
     "id": "givenchy-black-logo-polo-3b228af4",
