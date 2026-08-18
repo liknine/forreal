@@ -4801,5 +4801,27 @@
     "detailImage": "images/products/the-soloist-takahiro-miyashita-black-746e7012-1.jpg",
     "isActive": true,
     "createdAt": "2026-08-18T23:25:46.739972+00:00"
+  },
+  {
+    "id": "alexander-mcqueen-black-logo-tee-9bbf021b",
+    "brand": "ALEXANDER MCQUEEN",
+    "name": "BLACK LOGO TEE",
+    "price": 10000,
+    "currency": "RUB",
+    "category": "ФУТБОЛКИ",
+    "sizes": [
+      "M"
+    ],
+    "sizeStock": {
+      "M": 1
+    },
+    "details": "в отличном состоянии \nспина 70\nподмышки 47\nплечи 46",
+    "images": [
+      "images/products/alexander-mcqueen-black-logo-tee-9bbf021b-1.jpg",
+      "images/products/alexander-mcqueen-black-logo-tee-9bbf021b-2.jpg"
+    ],
+    "detailImage": "images/products/alexander-mcqueen-black-logo-tee-9bbf021b-1.jpg",
+    "isActive": true,
+    "createdAt": "2026-08-18T23:27:37.551917+00:00"
   }
 ]
