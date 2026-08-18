@@ -2219,14 +2219,15 @@
     "sizeStock": {
       "M": 1
     },
-    "details": "В отличном состоянии",
+    "details": "в отличном состоянии \nспина 69\nподмышки 46\nплечи 39",
     "images": [
       "images/products/hysteric-glamour-neigborhood-black-l-511ecfdd-1.jpg",
       "images/products/hysteric-glamour-neigborhood-black-l-511ecfdd-2.jpg"
     ],
     "detailImage": "images/products/hysteric-glamour-neigborhood-black-l-511ecfdd-1.jpg",
     "isActive": true,
-    "createdAt": "2026-07-18T11:24:40.849903+00:00"
+    "createdAt": "2026-07-18T11:24:40.849903+00:00",
+    "updatedAt": "2026-08-18T03:44:58.323692+00:00"
   },
   {
     "id": "amiri-distress-palm-logo-shorts-1692c6ed",
