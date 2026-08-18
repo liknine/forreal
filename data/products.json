@@ -3724,7 +3724,7 @@
     "sizeStock": {
       "L": 1
     },
-    "details": "в отличном состоянии",
+    "details": "в отличном состоянии\nспина 77\nподмышки 70\nплечи 69",
     "images": [
       "images/products/a-cold-wall-cream-logo-hoodie-5ca7f8ca-1.jpg",
       "images/products/a-cold-wall-cream-logo-hoodie-5ca7f8ca-2.jpg"
@@ -3732,7 +3732,7 @@
     "detailImage": "images/products/a-cold-wall-cream-logo-hoodie-5ca7f8ca-1.jpg",
     "isActive": true,
     "createdAt": "2026-07-31T13:48:28.639477+00:00",
-    "updatedAt": "2026-08-18T03:30:06.749126+00:00"
+    "updatedAt": "2026-08-18T03:30:21.585805+00:00"
   },
   {
     "id": "a-cold-wall-white-painted-logo-hoodi-c222c0de",
