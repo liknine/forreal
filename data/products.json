@@ -4757,5 +4757,27 @@
     "detailImage": "images/products/the-soloist-takahiro-miyashita-black-b1297a25-1.jpg",
     "isActive": true,
     "createdAt": "2026-08-18T23:21:51.997090+00:00"
+  },
+  {
+    "id": "givenchy-black-logo-tee-ae8eec5a",
+    "brand": "GIVENCHY",
+    "name": "BLACK LOGO TEE",
+    "price": 10500,
+    "currency": "RUB",
+    "category": "ФУТБОЛКИ",
+    "sizes": [
+      "XL"
+    ],
+    "sizeStock": {
+      "XL": 1
+    },
+    "details": "в отличном состоянии \nспина 70\nподмышки 55\nплечи 44",
+    "images": [
+      "images/products/givenchy-black-logo-tee-ae8eec5a-1.jpg",
+      "images/products/givenchy-black-logo-tee-ae8eec5a-2.jpg"
+    ],
+    "detailImage": "images/products/givenchy-black-logo-tee-ae8eec5a-1.jpg",
+    "isActive": true,
+    "createdAt": "2026-08-18T23:24:14.260670+00:00"
   }
 ]
