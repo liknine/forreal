@@ -1879,14 +1879,15 @@
     "sizeStock": {
       "L": 1
     },
-    "details": "В очень хорошем состоянии \n\nM ( ближе к L )",
+    "details": "в отличном состоянии \nспина72\nподмышки 51\nплечи54",
     "images": [
       "images/products/hysteric-glamour-white-graffiti-logo-a37ea7a0-1.jpg",
       "images/products/hysteric-glamour-white-graffiti-logo-a37ea7a0-2.jpg"
     ],
     "detailImage": "images/products/hysteric-glamour-white-graffiti-logo-a37ea7a0-1.jpg",
     "isActive": true,
-    "createdAt": "2026-07-14T14:54:55.887833+00:00"
+    "createdAt": "2026-07-14T14:54:55.887833+00:00",
+    "updatedAt": "2026-08-18T03:32:43.653987+00:00"
   },
   {
     "id": "yohji-yamamoto-black-logo-hoodie-83a562a4",
