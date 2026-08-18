@@ -3337,13 +3337,14 @@
     "sizeStock": {
       "2XL": 1
     },
-    "details": "В отличном состоянии",
+    "details": "в отличном состоянии \nспина 81\nподмышки 58\nплечи 49",
     "images": [
       "images/products/1017-alyx-9sm-camo-logo-tee-8522dd9d-1.jpg"
     ],
     "detailImage": "images/products/1017-alyx-9sm-camo-logo-tee-8522dd9d-1.jpg",
     "isActive": true,
-    "createdAt": "2026-07-20T10:07:34.864334+00:00"
+    "createdAt": "2026-07-20T10:07:34.864334+00:00",
+    "updatedAt": "2026-08-18T03:51:53.776914+00:00"
   },
   {
     "id": "mihara-yasuhiro-black-carabiner-logo-af0f3f58",
