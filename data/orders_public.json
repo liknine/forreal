@@ -1,5 +1,29 @@
 [
   {
+    "id": "fe0677d3-5498-404d-858a-64e45a820a9f",
+    "orderNumber": 1028,
+    "clientOrderId": "forreal-1787096813424-16347eaa9e359",
+    "telegramId": 7715859427,
+    "username": "Iondonsecurity",
+    "items": [
+      {
+        "productId": "valentino-open-black-logo-sneakers-0e4c4215",
+        "brand": "VALENTINO",
+        "name": "OPEN BLACK LOGO SNEAKERS",
+        "size": "41",
+        "quantity": 1,
+        "price": 18500,
+        "image": "images/products/valentino-open-black-logo-sneakers-0e4c4215-1.jpg"
+      }
+    ],
+    "totalPrice": 18500,
+    "currency": "RUB",
+    "deliveryMethod": "yandex",
+    "status": "awaiting_payment",
+    "createdAt": "2026-08-18T23:46:53.584911+00:00",
+    "updatedAt": "2026-08-18T23:46:53.584911+00:00"
+  },
+  {
     "id": "49c608b6-f9ed-4a0d-a5a2-68ca5ec60aae",
     "orderNumber": 1027,
     "clientOrderId": "forreal-1786034014230-15e4cf58d3d8e8",
