@@ -3061,29 +3061,6 @@
     "createdAt": "2026-07-20T08:00:54.616013+00:00"
   },
   {
-    "id": "valentino-white-logo-tee-458b51ee",
-    "brand": "VALENTINO",
-    "name": "WHITE LOGO TEE",
-    "price": 9000,
-    "currency": "RUB",
-    "category": "ФУТБОЛКИ",
-    "sizes": [
-      "L"
-    ],
-    "sizeStock": {
-      "L": 1
-    },
-    "details": "В отличном состоянии \nспина 65 \nподмышки 48\nплечи 47",
-    "images": [
-      "images/products/valentino-white-logo-tee-458b51ee-1.jpg",
-      "images/products/valentino-white-logo-tee-458b51ee-2.jpg"
-    ],
-    "detailImage": "images/products/valentino-white-logo-tee-458b51ee-1.jpg",
-    "isActive": true,
-    "createdAt": "2026-07-20T08:31:38.201224+00:00",
-    "updatedAt": "2026-08-18T03:00:00.737970+00:00"
-  },
-  {
     "id": "mihara-yasuhiro-black-logo-tee-afb787ca",
     "brand": "MIHARA YASUHIRO",
     "name": "BLACK LOGO TEE",
