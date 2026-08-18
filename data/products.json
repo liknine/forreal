@@ -1248,13 +1248,14 @@
     "sizeStock": {
       "L": 1
     },
-    "details": "В отличном состоянии\n\nM ( фактически L )",
+    "details": "в отличном состоянии \nспина 68\nподмышки 52\nплечи 48",
     "images": [
       "images/products/burberry-black-logo-hoodie-d6be2784-1.jpg"
     ],
     "detailImage": "images/products/burberry-black-logo-hoodie-d6be2784-1.jpg",
     "isActive": true,
-    "createdAt": "2026-07-14T08:56:37.167008+00:00"
+    "createdAt": "2026-07-14T08:56:37.167008+00:00",
+    "updatedAt": "2026-08-18T03:38:34.252842+00:00"
   },
   {
     "id": "mastermind-sex-pistols-black-pink-lo-aec4215b",
