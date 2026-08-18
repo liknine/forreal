@@ -3791,7 +3791,7 @@
     "sizeStock": {
       "M": 1
     },
-    "details": "В отличном состоянии",
+    "details": "в отличном состоянии \nспина 73\nподмышки 56_\nплечи 47",
     "images": [
       "images/products/bape-black-sneakers-logo-zip-hoodie-abd0664b-1.jpg",
       "images/products/bape-black-sneakers-logo-zip-hoodie-abd0664b-2.jpg",
@@ -3799,7 +3799,8 @@
     ],
     "detailImage": "images/products/bape-black-sneakers-logo-zip-hoodie-abd0664b-1.jpg",
     "isActive": true,
-    "createdAt": "2026-07-31T18:02:15.950612+00:00"
+    "createdAt": "2026-07-31T18:02:15.950612+00:00",
+    "updatedAt": "2026-08-18T03:53:36.830054+00:00"
   },
   {
     "id": "gucci-black-yellow-hoodie-a28756cc",
