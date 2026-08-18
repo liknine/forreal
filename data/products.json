@@ -3794,7 +3794,7 @@
     "sizeStock": {
       "S": 1
     },
-    "details": "В отличном состоянии",
+    "details": "в отличном состоянии \nспина 68\nподмышки 55\nплечи 50",
     "images": [
       "images/products/gucci-black-yellow-hoodie-a28756cc-1.jpg",
       "images/products/gucci-black-yellow-hoodie-a28756cc-2.jpg",
@@ -3802,7 +3802,8 @@
     ],
     "detailImage": "images/products/gucci-black-yellow-hoodie-a28756cc-1.jpg",
     "isActive": true,
-    "createdAt": "2026-07-31T18:05:56.729639+00:00"
+    "createdAt": "2026-07-31T18:05:56.729639+00:00",
+    "updatedAt": "2026-08-18T03:28:51.362661+00:00"
   },
   {
     "id": "undercover-black-logo-tee-927bf9d6",
