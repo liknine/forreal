@@ -2137,13 +2137,14 @@
     "sizeStock": {
       "L": 1
     },
-    "details": "В отличном состоянии \n\n3 ( фактически L )",
+    "details": "в отличном состоянии \nспина 68\nподмышки 51.5\nплечи 49",
     "images": [
       "images/products/undercover-mint-logo-tee-2b4733ac-1.jpg"
     ],
     "detailImage": "images/products/undercover-mint-logo-tee-2b4733ac-1.jpg",
     "isActive": true,
-    "createdAt": "2026-07-18T11:04:18.878251+00:00"
+    "createdAt": "2026-07-18T11:04:18.878251+00:00",
+    "updatedAt": "2026-08-18T03:01:17.903589+00:00"
   },
   {
     "id": "undercover-black-logo-tee-e15fdcd3",
