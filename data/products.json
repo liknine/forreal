@@ -4711,5 +4711,27 @@
     "detailImage": "images/products/the-soloist-takahiro-miyashita-black-abf84dec-1.jpg",
     "isActive": true,
     "createdAt": "2026-08-18T23:18:33.815415+00:00"
+  },
+  {
+    "id": "the-soloist-takahiro-miyashita-black-6ae41ae8",
+    "brand": "THE SOLOIST TAKAHIRO MIYASHITA",
+    "name": "BLACK LOGO TEE",
+    "price": 9000,
+    "currency": "RUB",
+    "category": "ФУТБОЛКИ",
+    "sizes": [
+      "XL"
+    ],
+    "sizeStock": {
+      "XL": 1
+    },
+    "details": "в отличном состоянии \nспина 73\nподмышки 53\nплечи48",
+    "images": [
+      "images/products/the-soloist-takahiro-miyashita-black-6ae41ae8-1.jpg",
+      "images/products/the-soloist-takahiro-miyashita-black-6ae41ae8-2.jpg"
+    ],
+    "detailImage": "images/products/the-soloist-takahiro-miyashita-black-6ae41ae8-1.jpg",
+    "isActive": true,
+    "createdAt": "2026-08-18T23:20:08.060013+00:00"
   }
 ]
