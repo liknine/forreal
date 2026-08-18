@@ -2799,14 +2799,15 @@
     "sizeStock": {
       "XL": 1
     },
-    "details": "В отличном состоянии",
+    "details": "в отличном состоянии \nспина 74 \nподмышки 57\nплечи 47",
     "images": [
       "images/products/1017-alyx-9sm-white-logo-tee-d605b0c0-1.jpg",
       "images/products/1017-alyx-9sm-white-logo-tee-d605b0c0-2.jpg"
     ],
     "detailImage": "images/products/1017-alyx-9sm-white-logo-tee-d605b0c0-1.jpg",
     "isActive": true,
-    "createdAt": "2026-07-19T09:38:30.482531+00:00"
+    "createdAt": "2026-07-19T09:38:30.482531+00:00",
+    "updatedAt": "2026-08-18T03:05:27.926917+00:00"
   },
   {
     "id": "dior-b23-white-sneakers-017d0a9b",
