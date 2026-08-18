@@ -1115,7 +1115,7 @@
     "sizeStock": {
       "XL": 1
     },
-    "details": "В отличном состоянии \n\n1 ( фактически XL )",
+    "details": "в отличном состоянии \nспина 76\nподмышки 77\nплечи 78",
     "images": [
       "images/products/project-g-r-brown-logo-hoodie-5eaf0175-1.jpg",
       "images/products/project-g-r-brown-logo-hoodie-5eaf0175-2.jpg",
@@ -1123,7 +1123,8 @@
     ],
     "detailImage": "images/products/project-g-r-brown-logo-hoodie-5eaf0175-1.jpg",
     "isActive": true,
-    "createdAt": "2026-07-13T15:35:23.938616+00:00"
+    "createdAt": "2026-07-13T15:35:23.938616+00:00",
+    "updatedAt": "2026-08-18T03:40:56.938247+00:00"
   },
   {
     "id": "1017-alyx-9sm-black-logo-hoodie-94766c22",
