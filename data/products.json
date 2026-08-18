@@ -4956,7 +4956,7 @@
   },
   {
     "id": "black-logo-sport-pants-black-logo-sp-2ae91e02",
-    "brand": "BLACK LOGO SPORT PANTS",
+    "brand": "A COLD WALL",
     "name": "BLACK LOGO SPORT PANTS",
     "price": 8000,
     "currency": "RUB",
@@ -4974,7 +4974,8 @@
     ],
     "detailImage": "images/products/black-logo-sport-pants-black-logo-sp-2ae91e02-1.jpg",
     "isActive": true,
-    "createdAt": "2026-08-18T23:46:33.352232+00:00"
+    "createdAt": "2026-08-18T23:46:33.352232+00:00",
+    "updatedAt": "2026-08-18T23:55:24.112872+00:00"
   },
   {
     "id": "thug-club-blue-logo-jeans-84cf3a1b",
