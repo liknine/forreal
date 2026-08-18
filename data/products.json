@@ -1309,13 +1309,14 @@
     "sizeStock": {
       "L": 1
     },
-    "details": "12000",
+    "details": "в отличном состоянии \nспина 75\nподмышки 55\nплечи 46",
     "images": [
       "images/products/doublet-ai-brown-logo-tee-8357cc82-1.jpg"
     ],
     "detailImage": "images/products/doublet-ai-brown-logo-tee-8357cc82-1.jpg",
     "isActive": true,
-    "createdAt": "2026-07-14T09:05:37.058852+00:00"
+    "createdAt": "2026-07-14T09:05:37.058852+00:00",
+    "updatedAt": "2026-08-18T03:04:34.220129+00:00"
   },
   {
     "id": "saint-laurent-black-logo-hoodie-f0829e88",
