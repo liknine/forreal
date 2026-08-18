@@ -2513,14 +2513,15 @@
     "sizeStock": {
       "M": 1
     },
-    "details": "В отличном состоянии \n\nXS ( фактически M )",
+    "details": "в отличном состоянии\nподмышки 46\nспина 68 \nплечи 41",
     "images": [
       "images/products/givenchy-black-logo-tee-08f29481-1.jpg",
       "images/products/givenchy-black-logo-tee-08f29481-2.jpg"
     ],
     "detailImage": "images/products/givenchy-black-logo-tee-08f29481-1.jpg",
     "isActive": true,
-    "createdAt": "2026-07-19T08:04:02.088088+00:00"
+    "createdAt": "2026-07-19T08:04:02.088088+00:00",
+    "updatedAt": "2026-08-18T02:59:12.151290+00:00"
   },
   {
     "id": "cav-empt-black-logo-tee-0d7b157a",
