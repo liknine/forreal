@@ -597,14 +597,15 @@
     "sizeStock": {
       "L": 1
     },
-    "details": "В отличном состоянии \n\nM ( фактически L )",
+    "details": "в отличном состоянии \nспина 77\nподмышки 48\nплечи",
     "images": [
       "images/products/vivienne-westwood-grey-logo-sweatshi-a14efe87-1.jpg",
       "images/products/vivienne-westwood-grey-logo-sweatshi-a14efe87-2.jpg"
     ],
     "detailImage": "images/products/vivienne-westwood-grey-logo-sweatshi-a14efe87-1.jpg",
     "isActive": true,
-    "createdAt": "2026-07-11T19:51:08.315661+00:00"
+    "createdAt": "2026-07-11T19:51:08.315661+00:00",
+    "updatedAt": "2026-08-18T03:44:12.070665+00:00"
   },
   {
     "id": "hysteric-glamour-black-logo-longslee-c9693606",
