@@ -2657,28 +2657,6 @@
     "createdAt": "2026-07-19T08:25:32.844359+00:00"
   },
   {
-    "id": "dolce-gabanna-blue-distressed-jeans-d757865d",
-    "brand": "DOLCE GABANNA",
-    "name": "BLUE DISTRESSED JEANS",
-    "price": 12000,
-    "currency": "RUB",
-    "category": "ШТАНЫ",
-    "sizes": [
-      "M"
-    ],
-    "sizeStock": {
-      "M": 1
-    },
-    "details": "В отличном состоянии \n\n48 ( фактически M-L )",
-    "images": [
-      "images/products/dolce-gabanna-blue-distressed-jeans-d757865d-1.jpg"
-    ],
-    "detailImage": "images/products/dolce-gabanna-blue-distressed-jeans-d757865d-1.jpg",
-    "isActive": true,
-    "createdAt": "2026-07-19T08:43:34.310361+00:00",
-    "updatedAt": "2026-07-19T08:43:57.909492+00:00"
-  },
-  {
     "id": "valentino-green-patch-logo-wallet-3a70449f",
     "brand": "VALENTINO",
     "name": "GREEN PATCH LOGO WALLET",
