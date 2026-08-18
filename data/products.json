@@ -4823,5 +4823,27 @@
     "detailImage": "images/products/alexander-mcqueen-black-logo-tee-9bbf021b-1.jpg",
     "isActive": true,
     "createdAt": "2026-08-18T23:27:37.551917+00:00"
+  },
+  {
+    "id": "free-world-order-black-logo-shorts-5053a59c",
+    "brand": "FREE WORLD ORDER",
+    "name": "BLACK LOGO SHORTS",
+    "price": 10500,
+    "currency": "RUB",
+    "category": "ШОРТЫ",
+    "sizes": [
+      "L"
+    ],
+    "sizeStock": {
+      "L": 1
+    },
+    "details": "в отличном состоянии",
+    "images": [
+      "images/products/free-world-order-black-logo-shorts-5053a59c-1.jpg",
+      "images/products/free-world-order-black-logo-shorts-5053a59c-2.jpg"
+    ],
+    "detailImage": "images/products/free-world-order-black-logo-shorts-5053a59c-1.jpg",
+    "isActive": true,
+    "createdAt": "2026-08-18T23:29:45.232344+00:00"
   }
 ]
