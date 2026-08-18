@@ -1749,13 +1749,14 @@
     "sizeStock": {
       "L": 1
     },
-    "details": "Полностью новый",
+    "details": "в отличном состоянии \nспина 75\nподмышки 58\nплечи 53",
     "images": [
       "images/products/424-black-logo-hoodie-cb0f4fc8-1.jpg"
     ],
     "detailImage": "images/products/424-black-logo-hoodie-cb0f4fc8-1.jpg",
     "isActive": true,
-    "createdAt": "2026-07-14T11:37:16.640040+00:00"
+    "createdAt": "2026-07-14T11:37:16.640040+00:00",
+    "updatedAt": "2026-08-18T03:34:02.603117+00:00"
   },
   {
     "id": "1017-alyx-9sm-black-washed-fuck-it-h-f3d8cc40",
