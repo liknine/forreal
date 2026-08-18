@@ -4997,5 +4997,27 @@
     "detailImage": "images/products/thug-club-blue-logo-jeans-84cf3a1b-1.jpg",
     "isActive": true,
     "createdAt": "2026-08-18T23:49:05.578841+00:00"
+  },
+  {
+    "id": "mason-prince-blue-distressed-logo-je-1177d1f5",
+    "brand": "MASON PRINCE",
+    "name": "BLUE DISTRESSED LOGO JEANS",
+    "price": 11000,
+    "currency": "RUB",
+    "category": "ШТАНЫ",
+    "sizes": [
+      "L"
+    ],
+    "sizeStock": {
+      "L": 1
+    },
+    "details": "в отличном состоянии \nпояс 41\nдлина 107\nвыход 24",
+    "images": [
+      "images/products/mason-prince-blue-distressed-logo-je-1177d1f5-1.jpg",
+      "images/products/mason-prince-blue-distressed-logo-je-1177d1f5-2.jpg"
+    ],
+    "detailImage": "images/products/mason-prince-blue-distressed-logo-je-1177d1f5-1.jpg",
+    "isActive": true,
+    "createdAt": "2026-08-18T23:51:42.597794+00:00"
   }
 ]
