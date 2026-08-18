@@ -2997,14 +2997,15 @@
     "sizeStock": {
       "S": 1
     },
-    "details": "В отличном состоянии",
+    "details": "в отличном состоянии \nспина 63\nподмышки 48\nплечи 43",
     "images": [
       "images/products/the-soloist-new-era-blue-logo-hoodie-bc67e40c-1.jpg",
       "images/products/the-soloist-new-era-blue-logo-hoodie-bc67e40c-2.jpg"
     ],
     "detailImage": "images/products/the-soloist-new-era-blue-logo-hoodie-bc67e40c-1.jpg",
     "isActive": true,
-    "createdAt": "2026-07-20T07:27:17.299530+00:00"
+    "createdAt": "2026-07-20T07:27:17.299530+00:00",
+    "updatedAt": "2026-08-18T09:58:52.719611+00:00"
   },
   {
     "id": "pioneer-of-heroism-red-logo-hoodie-2244fc1e",
