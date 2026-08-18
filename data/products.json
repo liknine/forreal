@@ -4975,5 +4975,27 @@
     "detailImage": "images/products/black-logo-sport-pants-black-logo-sp-2ae91e02-1.jpg",
     "isActive": true,
     "createdAt": "2026-08-18T23:46:33.352232+00:00"
+  },
+  {
+    "id": "thug-club-blue-logo-jeans-84cf3a1b",
+    "brand": "THUG CLUB",
+    "name": "BLUE LOGO JEANS",
+    "price": 20000,
+    "currency": "RUB",
+    "category": "ШТАНЫ",
+    "sizes": [
+      "M"
+    ],
+    "sizeStock": {
+      "M": 1
+    },
+    "details": "в отличном состоянии \nпояс 39\nдлина 101\nвыход 25",
+    "images": [
+      "images/products/thug-club-blue-logo-jeans-84cf3a1b-1.jpg",
+      "images/products/thug-club-blue-logo-jeans-84cf3a1b-2.jpg"
+    ],
+    "detailImage": "images/products/thug-club-blue-logo-jeans-84cf3a1b-1.jpg",
+    "isActive": true,
+    "createdAt": "2026-08-18T23:49:05.578841+00:00"
   }
 ]
