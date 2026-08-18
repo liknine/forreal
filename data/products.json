@@ -2609,14 +2609,15 @@
     "sizeStock": {
       "L": 1
     },
-    "details": "Полностью новая \n\nM ( ближе к L )",
+    "details": "в отличном состоянии \nспина 70\nподмышки 52\nплечи 48",
     "images": [
       "images/products/puma-asap-rocky-black-logo-tee-95baa298-1.jpg",
       "images/products/puma-asap-rocky-black-logo-tee-95baa298-2.jpg"
     ],
     "detailImage": "images/products/puma-asap-rocky-black-logo-tee-95baa298-1.jpg",
     "isActive": true,
-    "createdAt": "2026-07-19T08:19:05.354554+00:00"
+    "createdAt": "2026-07-19T08:19:05.354554+00:00",
+    "updatedAt": "2026-08-18T03:27:23.563211+00:00"
   },
   {
     "id": "saint-laurent-black-logo-tee-82b096f5",
