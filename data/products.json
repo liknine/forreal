@@ -1942,13 +1942,14 @@
     "sizeStock": {
       "M": 1
     },
-    "details": "В отличном состоянии\n\nS ( фактически M )",
+    "details": "в отличном состоянии \nподмышки 46 \nспина 72 \nплечи 41",
     "images": [
       "images/products/lanvin-blue-logo-tee-3854efc3-1.jpg"
     ],
     "detailImage": "images/products/lanvin-blue-logo-tee-3854efc3-1.jpg",
     "isActive": true,
-    "createdAt": "2026-07-15T19:41:24.608638+00:00"
+    "createdAt": "2026-07-15T19:41:24.608638+00:00",
+    "updatedAt": "2026-08-18T03:06:50.628744+00:00"
   },
   {
     "id": "amiri-black-flower-logo-tee-896da7e5",
