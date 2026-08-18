@@ -4073,14 +4073,15 @@
     "sizeStock": {
       "M": 3
     },
-    "details": "в отличном состоянии \nспина 73\nподмышки 65\nплечи 61",
+    "details": "в отличном состоянии \nспина 64\nподмышки 60\nплечи 58",
     "images": [
       "images/products/mihara-yasuhiro-grey-logo-hoodie-ea2dc786-1.jpg",
       "images/products/mihara-yasuhiro-grey-logo-hoodie-ea2dc786-2.jpg"
     ],
     "detailImage": "images/products/mihara-yasuhiro-grey-logo-hoodie-ea2dc786-1.jpg",
     "isActive": true,
-    "createdAt": "2026-08-08T14:06:49.962373+00:00"
+    "createdAt": "2026-08-08T14:06:49.962373+00:00",
+    "updatedAt": "2026-08-18T10:04:53.932758+00:00"
   },
   {
     "id": "stone-island-shadow-project-beige-lo-d616b468",
