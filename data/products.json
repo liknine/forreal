@@ -1549,14 +1549,15 @@
     "sizeStock": {
       "L": 1
     },
-    "details": "В очень хорошем состоянии",
+    "details": "в отличном состоянии \nспина 71\nподмышки 59\nплечи 56",
     "images": [
       "images/products/gucci-tiger-black-logo-hoodie-1c08e4a0-1.jpg",
       "images/products/gucci-tiger-black-logo-hoodie-1c08e4a0-2.jpg"
     ],
     "detailImage": "images/products/gucci-tiger-black-logo-hoodie-1c08e4a0-1.jpg",
     "isActive": true,
-    "createdAt": "2026-07-14T10:51:01.641351+00:00"
+    "createdAt": "2026-07-14T10:51:01.641351+00:00",
+    "updatedAt": "2026-08-18T03:35:36.221937+00:00"
   },
   {
     "id": "saint-laurent-black-logo-hoodie-7f8e06e7",
