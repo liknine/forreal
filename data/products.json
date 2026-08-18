@@ -1463,13 +1463,14 @@
     "sizeStock": {
       "L": 1
     },
-    "details": "В отличном состоянии \n\nXS ( фактически M-L )",
+    "details": "в отличном состоянии \nспина 72\nподмышки 63\nплечи 56",
     "images": [
       "images/products/valentino-undercover-rose-logo-hoodi-21718e9d-1.jpg"
     ],
     "detailImage": "images/products/valentino-undercover-rose-logo-hoodi-21718e9d-1.jpg",
     "isActive": true,
-    "createdAt": "2026-07-14T10:07:35.983181+00:00"
+    "createdAt": "2026-07-14T10:07:35.983181+00:00",
+    "updatedAt": "2026-08-18T03:36:51.069828+00:00"
   },
   {
     "id": "1017-alyx-9sm-black-logo-hoodie-6174782d",
