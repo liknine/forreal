@@ -2909,14 +2909,15 @@
     "sizeStock": {
       "S": 1
     },
-    "details": "Полностью новый",
+    "details": "в отличном состоянии \nспина 62\nподмышки 60\nплечи 58",
     "images": [
       "images/products/essentials-black-logo-hoodie-3768bd75-1.jpg",
       "images/products/essentials-black-logo-hoodie-3768bd75-2.jpg"
     ],
     "detailImage": "images/products/essentials-black-logo-hoodie-3768bd75-1.jpg",
     "isActive": true,
-    "createdAt": "2026-07-20T07:12:13.697633+00:00"
+    "createdAt": "2026-07-20T07:12:13.697633+00:00",
+    "updatedAt": "2026-08-18T10:03:32.455874+00:00"
   },
   {
     "id": "pioneer-of-heroism-grey-logo-hoodie-c70f3c7c",
