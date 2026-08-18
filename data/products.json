@@ -821,14 +821,15 @@
     "sizeStock": {
       "L": 1
     },
-    "details": "В отличном состоянии\n\n2 ( фактически L )",
+    "details": "в отличном состоянии \nспина 73\nподмышки 57\nплечи 56",
     "images": [
       "images/products/yohji-yamamoto-syte-black-logo-hoodi-2faa2fe9-1.jpg",
       "images/products/yohji-yamamoto-syte-black-logo-hoodi-2faa2fe9-2.jpg"
     ],
     "detailImage": "images/products/yohji-yamamoto-syte-black-logo-hoodi-2faa2fe9-1.jpg",
     "isActive": true,
-    "createdAt": "2026-07-13T13:00:15.939597+00:00"
+    "createdAt": "2026-07-13T13:00:15.939597+00:00",
+    "updatedAt": "2026-08-18T03:43:07.467210+00:00"
   },
   {
     "id": "project-g-r-10-corso-como-zip-hoodie-5ad9191b",
