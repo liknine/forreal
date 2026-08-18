@@ -3234,14 +3234,15 @@
     "sizeStock": {
       "M": 1
     },
-    "details": "В отличном состоянии \n\nS ( фактически M )",
+    "details": "в отличном состоянии \nспина 65\nподмышки 58\nплечи 56",
     "images": [
       "images/products/pioneer-of-heroism-green-logo-hoodie-cb7c3ab2-1.jpg",
       "images/products/pioneer-of-heroism-green-logo-hoodie-cb7c3ab2-2.jpg"
     ],
     "detailImage": "images/products/pioneer-of-heroism-green-logo-hoodie-cb7c3ab2-1.jpg",
     "isActive": true,
-    "createdAt": "2026-07-20T09:29:29.082777+00:00"
+    "createdAt": "2026-07-20T09:29:29.082777+00:00",
+    "updatedAt": "2026-08-18T03:30:56.424159+00:00"
   },
   {
     "id": "gucci-tiger-logo-sweatshirt-0ad2e463",
