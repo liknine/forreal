@@ -2477,13 +2477,14 @@
     "sizeStock": {
       "XL": 1
     },
-    "details": "В отличном состоянии \n\nM ( фактически L-XL )",
+    "details": "в отличном состоянии \nспина 71\nподмышки 57\nплечи 44",
     "images": [
       "images/products/rhude-black-washed-eagle-logo-tee-56aabbcf-1.jpg"
     ],
     "detailImage": "images/products/rhude-black-washed-eagle-logo-tee-56aabbcf-1.jpg",
     "isActive": true,
-    "createdAt": "2026-07-19T07:52:58.503289+00:00"
+    "createdAt": "2026-07-19T07:52:58.503289+00:00",
+    "updatedAt": "2026-08-18T03:15:28.427656+00:00"
   },
   {
     "id": "amiri-motley-crue-black-logo-tee-e7201f8a",
