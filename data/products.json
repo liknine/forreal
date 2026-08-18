@@ -4953,5 +4953,27 @@
     "detailImage": "images/products/amiri-blue-logo-jeans-c321501c-1.jpg",
     "isActive": true,
     "createdAt": "2026-08-18T23:44:08.794963+00:00"
+  },
+  {
+    "id": "black-logo-sport-pants-black-logo-sp-2ae91e02",
+    "brand": "BLACK LOGO SPORT PANTS",
+    "name": "BLACK LOGO SPORT PANTS",
+    "price": 8000,
+    "currency": "RUB",
+    "category": "ШТАНЫ",
+    "sizes": [
+      "M"
+    ],
+    "sizeStock": {
+      "M": 1
+    },
+    "details": "В отличном состоянии \nпояс 42\nдлина 100\nвыход 20",
+    "images": [
+      "images/products/black-logo-sport-pants-black-logo-sp-2ae91e02-1.jpg",
+      "images/products/black-logo-sport-pants-black-logo-sp-2ae91e02-2.jpg"
+    ],
+    "detailImage": "images/products/black-logo-sport-pants-black-logo-sp-2ae91e02-1.jpg",
+    "isActive": true,
+    "createdAt": "2026-08-18T23:46:33.352232+00:00"
   }
 ]
