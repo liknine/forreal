@@ -5064,5 +5064,27 @@
     "detailImage": "images/products/hysteric-glamour-black-logo-zip-hood-5e8a9c09-1.jpg",
     "isActive": true,
     "createdAt": "2026-08-19T10:10:09.026574+00:00"
+  },
+  {
+    "id": "rick-owens-gimp-black-logo-zip-hoodi-d47bcae0",
+    "brand": "RICK OWENS GIMP",
+    "name": "BLACK LOGO ZIP HOODIE",
+    "price": 40000,
+    "currency": "RUB",
+    "category": "ЗИП-ХУДИ",
+    "sizes": [
+      "L"
+    ],
+    "sizeStock": {
+      "L": 1
+    },
+    "details": "в отличном состоянии",
+    "images": [
+      "images/products/rick-owens-gimp-black-logo-zip-hoodi-d47bcae0-1.jpg",
+      "images/products/rick-owens-gimp-black-logo-zip-hoodi-d47bcae0-2.jpg"
+    ],
+    "detailImage": "images/products/rick-owens-gimp-black-logo-zip-hoodi-d47bcae0-1.jpg",
+    "isActive": true,
+    "createdAt": "2026-08-19T10:14:05.566275+00:00"
   }
 ]
