@@ -424,29 +424,6 @@
     "updatedAt": "2026-07-14T00:12:23.111502+00:00"
   },
   {
-    "id": "balenciaga-track-1-white-beige-logo-f0d330d5",
-    "brand": "BALENCIAGA",
-    "name": "TRACK 1 WHITE BEIGE LOGO SNEAKERS",
-    "price": 30000,
-    "currency": "RUB",
-    "category": "ОБУВЬ",
-    "sizes": [
-      "42"
-    ],
-    "sizeStock": {
-      "42": 1
-    },
-    "details": "В отличном состоянии \n\n42 / 27.5 см",
-    "images": [
-      "images/products/balenciaga-track-1-white-beige-logo-f0d330d5-1.jpg",
-      "images/products/balenciaga-track-1-white-beige-logo-f0d330d5-2.jpg",
-      "images/products/balenciaga-track-1-white-beige-logo-f0d330d5-3.jpg"
-    ],
-    "detailImage": "images/products/balenciaga-track-1-white-beige-logo-f0d330d5-1.jpg",
-    "isActive": true,
-    "createdAt": "2026-07-11T15:22:42.663099+00:00"
-  },
-  {
     "id": "balenciaga-track-1-brown-logo-sneake-67dee7e0",
     "brand": "BALENCIAGA",
     "name": "TRACK 1 BROWN LOGO SNEAKERS",
