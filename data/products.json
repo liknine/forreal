@@ -4777,28 +4777,6 @@
     "createdAt": "2026-08-18T23:32:29.083899+00:00"
   },
   {
-    "id": "vivienne-westwood-blue-logo-jeans-3c3b2938",
-    "brand": "VIVIENNE WESTWOOD",
-    "name": "BLUE LOGO JEANS",
-    "price": 22000,
-    "currency": "RUB",
-    "category": "ШТАНЫ",
-    "sizes": [
-      "M"
-    ],
-    "sizeStock": {
-      "M": 1
-    },
-    "details": "в отличном состоянии \nпояс 43\nдлина 107\nвыход 20",
-    "images": [
-      "images/products/vivienne-westwood-blue-logo-jeans-3c3b2938-1.jpg",
-      "images/products/vivienne-westwood-blue-logo-jeans-3c3b2938-2.jpg"
-    ],
-    "detailImage": "images/products/vivienne-westwood-blue-logo-jeans-3c3b2938-1.jpg",
-    "isActive": true,
-    "createdAt": "2026-08-18T23:36:39.390942+00:00"
-  },
-  {
     "id": "dolce-gabbana-blue-logo-jeans-0cdea0f0",
     "brand": "DOLCE GABBANA",
     "name": "BLUE LOGO JEANS",
