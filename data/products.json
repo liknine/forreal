@@ -2162,29 +2162,6 @@
     "createdAt": "2026-07-18T12:16:26.014786+00:00"
   },
   {
-    "id": "lanvin-curb-blue-jeans-sneakers-39ebd9af",
-    "brand": "LANVIN",
-    "name": "CURB BLUE JEANS SNEAKERS",
-    "price": 30500,
-    "currency": "RUB",
-    "category": "ОБУВЬ",
-    "sizes": [
-      "42"
-    ],
-    "sizeStock": {
-      "42": 1
-    },
-    "details": "Полностью новые \n\n42 / 27.5 см",
-    "images": [
-      "images/products/lanvin-curb-blue-jeans-sneakers-39ebd9af-1.jpg",
-      "images/products/lanvin-curb-blue-jeans-sneakers-39ebd9af-2.jpg",
-      "images/products/lanvin-curb-blue-jeans-sneakers-39ebd9af-3.jpg"
-    ],
-    "detailImage": "images/products/lanvin-curb-blue-jeans-sneakers-39ebd9af-1.jpg",
-    "isActive": true,
-    "createdAt": "2026-07-18T13:20:22.969071+00:00"
-  },
-  {
     "id": "mihara-yasuhiro-black-leather-sneake-23b79e5f",
     "brand": "MIHARA YASUHIRO",
     "name": "BLACK LEATHER SNEAKERS",
