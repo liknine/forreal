@@ -1,5 +1,29 @@
 [
   {
+    "id": "ae0d89ba-da2a-4b69-8500-2fbb800ac291",
+    "orderNumber": 1029,
+    "clientOrderId": "forreal-1787925789452-3411f41ddb7788",
+    "telegramId": 2035992056,
+    "username": "glokkspazz",
+    "items": [
+      {
+        "productId": "y-3-black-logo-sneakers-6b0df191",
+        "brand": "Y-3",
+        "name": "BLACK LOGO SNEAKERS",
+        "size": "44",
+        "quantity": 1,
+        "price": 11000,
+        "image": "images/products/y-3-black-logo-sneakers-6b0df191-1.jpg"
+      }
+    ],
+    "totalPrice": 11000,
+    "currency": "RUB",
+    "deliveryMethod": "cdek",
+    "status": "awaiting_payment",
+    "createdAt": "2026-08-28T14:03:10.288732+00:00",
+    "updatedAt": "2026-08-28T14:03:10.288732+00:00"
+  },
+  {
     "id": "fe0677d3-5498-404d-858a-64e45a820a9f",
     "orderNumber": 1028,
     "clientOrderId": "forreal-1787096813424-16347eaa9e359",
