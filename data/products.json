@@ -2886,7 +2886,7 @@
       "44"
     ],
     "sizeStock": {
-      "44": 1
+      "44": 0
     },
     "details": "В отличном состоянии \n\n44 / 28 см",
     "images": [
@@ -2895,8 +2895,11 @@
       "images/products/y-3-black-logo-sneakers-6b0df191-3.jpg"
     ],
     "detailImage": "images/products/y-3-black-logo-sneakers-6b0df191-1.jpg",
-    "isActive": true,
-    "createdAt": "2026-07-20T08:00:54.616013+00:00"
+    "isActive": false,
+    "createdAt": "2026-07-20T08:00:54.616013+00:00",
+    "updatedAt": "2026-08-28T14:36:49.746755+00:00",
+    "autoHiddenNoStock": true,
+    "soldOutAt": "2026-08-28T14:36:49.746896+00:00"
   },
   {
     "id": "mihara-yasuhiro-black-logo-tee-afb787ca",
