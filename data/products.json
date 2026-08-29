@@ -308,29 +308,6 @@
     "createdAt": "2026-07-11T15:12:55.494013+00:00"
   },
   {
-    "id": "erl-vamp-beige-logo-sneakers-cf19ede3",
-    "brand": "ERL",
-    "name": "VAMP BEIGE LOGO SNEAKERS",
-    "price": 35000,
-    "currency": "RUB",
-    "category": "ОБУВЬ",
-    "sizes": [
-      "43"
-    ],
-    "sizeStock": {
-      "43": 1
-    },
-    "details": "В отличном состоянии \n\n43 / 27.7 см",
-    "images": [
-      "images/products/erl-vamp-beige-logo-sneakers-cf19ede3-1.jpg",
-      "images/products/erl-vamp-beige-logo-sneakers-cf19ede3-2.jpg",
-      "images/products/erl-vamp-beige-logo-sneakers-cf19ede3-3.jpg"
-    ],
-    "detailImage": "images/products/erl-vamp-beige-logo-sneakers-cf19ede3-1.jpg",
-    "isActive": true,
-    "createdAt": "2026-07-11T15:17:08.075516+00:00"
-  },
-  {
     "id": "erl-vamp-black-logo-sneakers-b6de9d61",
     "brand": "ERL",
     "name": "VAMP BLACK LOGO SNEAKERS",
