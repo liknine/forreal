@@ -1295,27 +1295,6 @@
     "createdAt": "2026-07-14T10:01:17.562490+00:00"
   },
   {
-    "id": "424-doublet-black-logo-hoodie-0dcd4eb8",
-    "brand": "424",
-    "name": "DOUBLET BLACK LOGO HOODIE",
-    "price": 19000,
-    "currency": "RUB",
-    "category": "ХУДИ",
-    "sizes": [
-      "L"
-    ],
-    "sizeStock": {
-      "L": 1
-    },
-    "details": "Полностью новый",
-    "images": [
-      "images/products/424-doublet-black-logo-hoodie-0dcd4eb8-1.jpg"
-    ],
-    "detailImage": "images/products/424-doublet-black-logo-hoodie-0dcd4eb8-1.jpg",
-    "isActive": true,
-    "createdAt": "2026-07-14T10:03:50.658075+00:00"
-  },
-  {
     "id": "valentino-undercover-rose-logo-hoodi-21718e9d",
     "brand": "VALENTINO",
     "name": "UNDERCOVER ROSE LOGO HOODIE",
