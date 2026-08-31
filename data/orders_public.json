@@ -1,5 +1,29 @@
 [
   {
+    "id": "18c89f1f-eab6-4868-a06a-8799ebba403f",
+    "orderNumber": 1030,
+    "clientOrderId": "forreal-1788165531999-4d5230f77a0d",
+    "telegramId": 8584936943,
+    "username": "",
+    "items": [
+      {
+        "productId": "giuseppe-zanotti-fangs-black-logo-sn-9d3032e6",
+        "brand": "GIUSEPPE ZANOTTI",
+        "name": "FANGS BLACK LOGO SNEAKERS",
+        "size": "42",
+        "quantity": 1,
+        "price": 18000,
+        "image": "images/products/giuseppe-zanotti-fangs-black-logo-sn-9d3032e6-1.jpg"
+      }
+    ],
+    "totalPrice": 18000,
+    "currency": "RUB",
+    "deliveryMethod": "yandex",
+    "status": "awaiting_payment",
+    "createdAt": "2026-08-31T08:38:52.285071+00:00",
+    "updatedAt": "2026-08-31T08:38:52.285071+00:00"
+  },
+  {
     "id": "ae0d89ba-da2a-4b69-8500-2fbb800ac291",
     "orderNumber": 1029,
     "clientOrderId": "forreal-1787925789452-3411f41ddb7788",
