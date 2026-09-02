@@ -50,14 +50,31 @@ def accept_photos_kb() -> InlineKeyboardMarkup:
     )
 
 
-def products_list_kb(products: list[dict], page: int = 0, page_size: int = 12) -> InlineKeyboardMarkup:
+def product_search_prompt_kb() -> InlineKeyboardMarkup:
+    return InlineKeyboardMarkup(
+        inline_keyboard=[
+            [InlineKeyboardButton(text="Показать все товары", callback_data="product:search:all")],
+            [InlineKeyboardButton(text="Назад", callback_data="admin:back")],
+        ]
+    )
+
+
+def products_list_kb(
+    products: list[dict],
+    page: int = 0,
+    page_size: int = 12,
+    *,
+    pagination_prefix: str = "product:list",
+    search_mode: bool = False,
+) -> InlineKeyboardMarkup:
     total = len(products)
     pages = max(1, (total + page_size - 1) // page_size)
     page = max(0, min(page, pages - 1))
     start = page * page_size
     end = start + page_size
 
-    rows = []
+    search_text = "🔎 Новый поиск" if search_mode else "🔎 Поиск товара"
+    rows = [[InlineKeyboardButton(text=search_text, callback_data="product:search:start")]]
     for product in products[start:end]:
         active = "🟢" if product.get("isActive", True) else "⚫️"
         text = f"{active} {product.get('brand', '')} — {product.get('name', '')}"[:55]
@@ -66,12 +83,15 @@ def products_list_kb(products: list[dict], page: int = 0, page_size: int = 12) -
     if pages > 1:
         nav = []
         if page > 0:
-            nav.append(InlineKeyboardButton(text="‹", callback_data=f"product:list:{page - 1}"))
-        nav.append(InlineKeyboardButton(text=f"{page + 1}/{pages}", callback_data=f"product:list:{page}"))
+            nav.append(InlineKeyboardButton(text="‹", callback_data=f"{pagination_prefix}:{page - 1}"))
+        current_callback = "product:search:noop" if search_mode else f"{pagination_prefix}:{page}"
+        nav.append(InlineKeyboardButton(text=f"{page + 1}/{pages}", callback_data=current_callback))
         if page < pages - 1:
-            nav.append(InlineKeyboardButton(text="›", callback_data=f"product:list:{page + 1}"))
+            nav.append(InlineKeyboardButton(text="›", callback_data=f"{pagination_prefix}:{page + 1}"))
         rows.append(nav)
 
+    if search_mode:
+        rows.append([InlineKeyboardButton(text="Показать все товары", callback_data="product:search:all")])
     rows.append([InlineKeyboardButton(text="Добавить товар", callback_data="admin:add_product")])
     rows.append([InlineKeyboardButton(text="Назад", callback_data="admin:back")])
     return InlineKeyboardMarkup(inline_keyboard=rows)
