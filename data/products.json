@@ -4928,5 +4928,27 @@
     "detailImage": "images/products/rhude-white-sex-tasy-logo-tee-6938c404-1.jpg",
     "isActive": true,
     "createdAt": "2026-09-02T14:59:03.478889+00:00"
+  },
+  {
+    "id": "vivienne-westwood-white-all-stars-lo-9df6c4ac",
+    "brand": "VIVIENNE WESTWOOD",
+    "name": "WHITE «ALL STARS» LOGO TEE",
+    "price": 12000,
+    "currency": "RUB",
+    "category": "ФУТБОЛКИ",
+    "sizes": [
+      "L"
+    ],
+    "sizeStock": {
+      "L": 1
+    },
+    "details": "В Отличном состоянии!",
+    "images": [
+      "images/products/vivienne-westwood-white-all-stars-lo-9df6c4ac-1.jpg",
+      "images/products/vivienne-westwood-white-all-stars-lo-9df6c4ac-2.jpg"
+    ],
+    "detailImage": "images/products/vivienne-westwood-white-all-stars-lo-9df6c4ac-1.jpg",
+    "isActive": true,
+    "createdAt": "2026-09-02T15:00:26.393669+00:00"
   }
 ]
