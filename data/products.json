@@ -4862,5 +4862,27 @@
     "detailImage": "images/products/lanvin-black-blue-roses-logo-tee-3618d2d0-1.jpg",
     "isActive": true,
     "createdAt": "2026-09-02T14:46:57.076468+00:00"
+  },
+  {
+    "id": "mastermind-black-bullshit-logo-tee-6b0d187f",
+    "brand": "MASTERMIND",
+    "name": "BLACK «BULLSHIT» LOGO TEE",
+    "price": 15500,
+    "currency": "RUB",
+    "category": "ФУТБОЛКИ",
+    "sizes": [
+      "S"
+    ],
+    "sizeStock": {
+      "S": 1
+    },
+    "details": "В Отличном состоянии!",
+    "images": [
+      "images/products/mastermind-black-bullshit-logo-tee-6b0d187f-1.jpg",
+      "images/products/mastermind-black-bullshit-logo-tee-6b0d187f-2.jpg"
+    ],
+    "detailImage": "images/products/mastermind-black-bullshit-logo-tee-6b0d187f-1.jpg",
+    "isActive": true,
+    "createdAt": "2026-09-02T14:48:35.327568+00:00"
   }
 ]
