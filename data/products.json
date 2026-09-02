@@ -4950,5 +4950,27 @@
     "detailImage": "images/products/vivienne-westwood-white-all-stars-lo-9df6c4ac-1.jpg",
     "isActive": true,
     "createdAt": "2026-09-02T15:00:26.393669+00:00"
+  },
+  {
+    "id": "yohji-yamamoto-black-logo-tee-22c0d795",
+    "brand": "YOHJI YAMAMOTO",
+    "name": "BLACK LOGO TEE",
+    "price": 12000,
+    "currency": "RUB",
+    "category": "ФУТБОЛКИ",
+    "sizes": [
+      "M"
+    ],
+    "sizeStock": {
+      "M": 1
+    },
+    "details": "В Отличном состоянии!",
+    "images": [
+      "images/products/yohji-yamamoto-black-logo-tee-22c0d795-1.jpg",
+      "images/products/yohji-yamamoto-black-logo-tee-22c0d795-2.jpg"
+    ],
+    "detailImage": "images/products/yohji-yamamoto-black-logo-tee-22c0d795-1.jpg",
+    "isActive": true,
+    "createdAt": "2026-09-02T15:06:11.595556+00:00"
   }
 ]
