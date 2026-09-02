@@ -4796,5 +4796,27 @@
     "detailImage": "images/products/givenchy-black-skull-logo-tee-c48c9cfb-1.jpg",
     "isActive": true,
     "createdAt": "2026-09-02T14:31:56.894505+00:00"
+  },
+  {
+    "id": "hysteric-glamour-black-radio-hoe-log-98a8bc94",
+    "brand": "HYSTERIC GLAMOUR",
+    "name": "BLACK «RADIO HOE» LOGO TEE",
+    "price": 11000,
+    "currency": "RUB",
+    "category": "ФУТБОЛКИ",
+    "sizes": [
+      "L"
+    ],
+    "sizeStock": {
+      "L": 1
+    },
+    "details": "В Отличном состоянии!",
+    "images": [
+      "images/products/hysteric-glamour-black-radio-hoe-log-98a8bc94-1.jpg",
+      "images/products/hysteric-glamour-black-radio-hoe-log-98a8bc94-2.jpg"
+    ],
+    "detailImage": "images/products/hysteric-glamour-black-radio-hoe-log-98a8bc94-1.jpg",
+    "isActive": true,
+    "createdAt": "2026-09-02T14:37:06.115461+00:00"
   }
 ]
