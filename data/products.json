@@ -4729,5 +4729,28 @@
     "detailImage": "images/products/alexander-mcqueen-black-skull-logo-t-e60286b6-1.jpg",
     "isActive": true,
     "createdAt": "2026-09-02T13:35:41.201882+00:00"
+  },
+  {
+    "id": "amiri-grey-faded-logo-tee-3e082171",
+    "brand": "AMIRI",
+    "name": "GREY FADED LOGO TEE",
+    "price": 15500,
+    "currency": "RUB",
+    "category": "ФУТБОЛКИ",
+    "sizes": [
+      "L"
+    ],
+    "sizeStock": {
+      "L": 1
+    },
+    "details": "В Отличном состоянии!",
+    "images": [
+      "images/products/amiri-grey-faded-logo-tee-3e082171-1.jpg",
+      "images/products/amiri-grey-faded-logo-tee-3e082171-2.jpg",
+      "images/products/amiri-grey-faded-logo-tee-3e082171-3.jpg"
+    ],
+    "detailImage": "images/products/amiri-grey-faded-logo-tee-3e082171-1.jpg",
+    "isActive": true,
+    "createdAt": "2026-09-02T14:19:09.362002+00:00"
   }
 ]
