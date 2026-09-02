@@ -46,6 +46,7 @@ from keyboards import (
     product_edit_kb,
     product_edit_photos_kb,
     product_manage_kb,
+    product_search_prompt_kb,
     products_list_kb,
 )
 from order_messages import build_admin_order_text, build_client_payment_text
@@ -80,6 +81,11 @@ class AddProductState(StatesGroup):
 class EditProductState(StatesGroup):
     value = State()
     photos = State()
+
+
+class ProductSearchState(StatesGroup):
+    query = State()
+    results = State()
 
 
 class AdminSettingsState(StatesGroup):
@@ -294,9 +300,10 @@ async def cmd_orders(message: Message) -> None:
 
 
 @dp.message(Command("products"))
-async def cmd_products(message: Message) -> None:
+async def cmd_products(message: Message, state: FSMContext) -> None:
     if not await require_admin_message(message):
         return
+    await state.clear()
     await send_products_list(message)
 
 
@@ -310,6 +317,7 @@ async def admin_callbacks(callback: CallbackQuery, state: FSMContext) -> None:
     if action == "orders":
         await send_recent_orders(callback.message)
     elif action == "products":
+        await state.clear()
         await send_products_list(callback.message)
     elif action == "add_product":
         await state.clear()
@@ -445,15 +453,54 @@ async def send_recent_orders(message: Message) -> None:
         await message.answer(build_order_short_text(order), reply_markup=admin_order_kb(order["id"]))
 
 
+PRODUCTS_PAGE_SIZE = 12
+
+
+def sorted_products(products: list[dict]) -> list[dict]:
+    return sorted(products, key=lambda item: item.get("createdAt", ""), reverse=True)
+
+
+def normalize_product_search_text(value: object) -> str:
+    return " ".join(str(value or "").casefold().replace("ё", "е").split())
+
+
+def filter_products_by_query(products: list[dict], query: str) -> list[dict]:
+    terms = normalize_product_search_text(query).split()
+    if not terms:
+        return []
+
+    matches = []
+    for product in products:
+        searchable = normalize_product_search_text(
+            f"{product.get('brand', '')} {product.get('name', '')}"
+        )
+        if all(term in searchable for term in terms):
+            matches.append(product)
+    return matches
+
+
+def build_product_search_text(query: str, count: int) -> str:
+    if count:
+        return f"Поиск товаров: {code(query)}\nНайдено: {count}"
+    return f"Поиск товаров: {code(query)}\n\nНичего не найдено."
+
+
+async def load_sorted_products() -> list[dict]:
+    return sorted_products(await load_products())
+
+
+async def load_product_search_results(query: str) -> list[dict]:
+    return filter_products_by_query(await load_sorted_products(), query)
+
+
 async def send_products_list(message: Message, page: int = 0) -> None:
-    products = await load_products()
-    products = sorted(products, key=lambda item: item.get("createdAt", ""), reverse=True)
+    products = await load_sorted_products()
     if not products:
         await message.answer("Товаров пока нет.", reply_markup=admin_panel_kb())
         return
     await message.answer(
         f"Товары ForReal: {len(products)}",
-        reply_markup=products_list_kb(products, page=page),
+        reply_markup=products_list_kb(products, page=page, page_size=PRODUCTS_PAGE_SIZE),
     )
 
 
@@ -467,19 +514,120 @@ async def products_list_page_callback(callback: CallbackQuery) -> None:
     except (TypeError, ValueError):
         page = 0
 
-    products = await load_products()
-    products = sorted(products, key=lambda item: item.get("createdAt", ""), reverse=True)
+    products = await load_sorted_products()
     if not products:
         await callback.message.edit_text("Товаров пока нет.", reply_markup=admin_panel_kb())
         await callback.answer()
         return
 
-    page_size = 12
+    page_size = PRODUCTS_PAGE_SIZE
     pages = max(1, (len(products) + page_size - 1) // page_size)
     page = max(0, min(page, pages - 1))
     await callback.message.edit_text(
         f"Товары ForReal: {len(products)}",
         reply_markup=products_list_kb(products, page=page, page_size=page_size),
+    )
+    await callback.answer()
+
+
+@dp.callback_query(F.data.startswith("product:search:"))
+async def product_search_actions(callback: CallbackQuery, state: FSMContext) -> None:
+    if not await require_admin_callback(callback):
+        return
+
+    action = callback.data.split(":", 2)[2]
+    if action == "noop":
+        await callback.answer()
+        return
+
+    if action == "start":
+        await state.clear()
+        await state.set_state(ProductSearchState.query)
+        await callback.message.answer(
+            "Введи бренд или название товара одним сообщением.\n\n"
+            "Например:\n"
+            "LANVIN\n"
+            "BLACK LOGO TEE\n"
+            "LANVIN BLACK",
+            reply_markup=product_search_prompt_kb(),
+        )
+        await callback.answer()
+        return
+
+    if action == "all":
+        await state.clear()
+        await send_products_list(callback.message)
+        await callback.answer()
+        return
+
+    await callback.answer("Неизвестное действие", show_alert=True)
+
+
+@dp.message(ProductSearchState.query)
+async def product_search_query(message: Message, state: FSMContext) -> None:
+    if not await require_admin_message(message):
+        return
+
+    query = " ".join((message.text or "").split())
+    if not query:
+        await message.answer(
+            "Отправь название или бренд текстом.",
+            reply_markup=product_search_prompt_kb(),
+        )
+        return
+    if len(query) > 100:
+        await message.answer(
+            "Запрос слишком длинный. Введи бренд или название короче 100 символов.",
+            reply_markup=product_search_prompt_kb(),
+        )
+        return
+
+    products = await load_product_search_results(query)
+    await state.update_data(product_search_query=query, product_search_page=0)
+    await state.set_state(ProductSearchState.results)
+    await message.answer(
+        build_product_search_text(query, len(products)),
+        reply_markup=products_list_kb(
+            products,
+            page=0,
+            page_size=PRODUCTS_PAGE_SIZE,
+            pagination_prefix="product:search_page",
+            search_mode=True,
+        ),
+    )
+
+
+@dp.callback_query(F.data.startswith("product:search_page:"))
+async def product_search_page(callback: CallbackQuery, state: FSMContext) -> None:
+    if not await require_admin_callback(callback):
+        return
+
+    data = await state.get_data()
+    query = str(data.get("product_search_query") or "").strip()
+    if not query:
+        await state.clear()
+        await callback.answer("Поиск устарел. Начни заново.", show_alert=True)
+        await send_products_list(callback.message)
+        return
+
+    try:
+        page = int(callback.data.rsplit(":", 1)[1])
+    except (TypeError, ValueError):
+        page = 0
+
+    products = await load_product_search_results(query)
+    pages = max(1, (len(products) + PRODUCTS_PAGE_SIZE - 1) // PRODUCTS_PAGE_SIZE)
+    page = max(0, min(page, pages - 1))
+    await state.update_data(product_search_page=page)
+    await callback.message.edit_text(
+        build_product_search_text(query, len(products)),
+        reply_markup=products_list_kb(
+            products,
+            page=page,
+            page_size=PRODUCTS_PAGE_SIZE,
+            pagination_prefix="product:search_page",
+            search_mode=True,
+        ),
     )
     await callback.answer()
 
