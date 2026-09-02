@@ -4774,5 +4774,27 @@
     "detailImage": "images/products/rhude-black-logo-tee-bebad8c9-1.jpg",
     "isActive": true,
     "createdAt": "2026-09-02T14:24:05.134051+00:00"
+  },
+  {
+    "id": "givenchy-black-skull-logo-tee-c48c9cfb",
+    "brand": "GIVENCHY",
+    "name": "BLACK SKULL LOGO TEE",
+    "price": 12000,
+    "currency": "RUB",
+    "category": "ФУТБОЛКИ",
+    "sizes": [
+      "M"
+    ],
+    "sizeStock": {
+      "M": 1
+    },
+    "details": "В Отличном состоянии!",
+    "images": [
+      "images/products/givenchy-black-skull-logo-tee-c48c9cfb-1.jpg",
+      "images/products/givenchy-black-skull-logo-tee-c48c9cfb-2.jpg"
+    ],
+    "detailImage": "images/products/givenchy-black-skull-logo-tee-c48c9cfb-1.jpg",
+    "isActive": true,
+    "createdAt": "2026-09-02T14:31:56.894505+00:00"
   }
 ]
