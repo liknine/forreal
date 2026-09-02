@@ -4752,5 +4752,27 @@
     "detailImage": "images/products/amiri-grey-faded-logo-tee-3e082171-1.jpg",
     "isActive": true,
     "createdAt": "2026-09-02T14:19:09.362002+00:00"
+  },
+  {
+    "id": "rhude-black-logo-tee-bebad8c9",
+    "brand": "RHUDE",
+    "name": "BLACK LOGO TEE",
+    "price": 12000,
+    "currency": "RUB",
+    "category": "ФУТБОЛКИ",
+    "sizes": [
+      "L"
+    ],
+    "sizeStock": {
+      "L": 1
+    },
+    "details": "В Отличном состоянии!",
+    "images": [
+      "images/products/rhude-black-logo-tee-bebad8c9-1.jpg",
+      "images/products/rhude-black-logo-tee-bebad8c9-2.jpg"
+    ],
+    "detailImage": "images/products/rhude-black-logo-tee-bebad8c9-1.jpg",
+    "isActive": true,
+    "createdAt": "2026-09-02T14:24:05.134051+00:00"
   }
 ]
