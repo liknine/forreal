@@ -4906,5 +4906,27 @@
     "detailImage": "images/products/vivienne-westwood-blue-polo-logo-tee-9e8e1bc4-1.jpg",
     "isActive": true,
     "createdAt": "2026-09-02T14:50:23.369510+00:00"
+  },
+  {
+    "id": "rhude-white-sex-tasy-logo-tee-6938c404",
+    "brand": "RHUDE",
+    "name": "WHITE «SEX-TASY» LOGO TEE",
+    "price": 12000,
+    "currency": "RUB",
+    "category": "ФУТБОЛКИ",
+    "sizes": [
+      "L"
+    ],
+    "sizeStock": {
+      "L": 1
+    },
+    "details": "В Отличном состоянии!",
+    "images": [
+      "images/products/rhude-white-sex-tasy-logo-tee-6938c404-1.jpg",
+      "images/products/rhude-white-sex-tasy-logo-tee-6938c404-2.jpg"
+    ],
+    "detailImage": "images/products/rhude-white-sex-tasy-logo-tee-6938c404-1.jpg",
+    "isActive": true,
+    "createdAt": "2026-09-02T14:59:03.478889+00:00"
   }
 ]
