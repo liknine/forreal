@@ -5016,5 +5016,27 @@
     "detailImage": "images/products/gallery-dept-black-logo-tee-6bd9572c-1.jpg",
     "isActive": true,
     "createdAt": "2026-09-02T15:12:55.228011+00:00"
+  },
+  {
+    "id": "lanvin-black-monogram-logo-tee-db28be01",
+    "brand": "LANVIN",
+    "name": "BLACK «MONOGRAM» LOGO TEE",
+    "price": 10000,
+    "currency": "RUB",
+    "category": "ФУТБОЛКИ",
+    "sizes": [
+      "S"
+    ],
+    "sizeStock": {
+      "S": 1
+    },
+    "details": "В Отличном состоянии!",
+    "images": [
+      "images/products/lanvin-black-monogram-logo-tee-db28be01-1.jpg",
+      "images/products/lanvin-black-monogram-logo-tee-db28be01-2.jpg"
+    ],
+    "detailImage": "images/products/lanvin-black-monogram-logo-tee-db28be01-1.jpg",
+    "isActive": true,
+    "createdAt": "2026-09-02T15:15:08.924164+00:00"
   }
 ]
