@@ -4994,5 +4994,27 @@
     "detailImage": "images/products/raf-simons-black-yellow-butterflies-5130dbd5-1.jpg",
     "isActive": true,
     "createdAt": "2026-09-02T15:08:16.465369+00:00"
+  },
+  {
+    "id": "gallery-dept-black-logo-tee-6bd9572c",
+    "brand": "GALLERY DEPT",
+    "name": "BLACK LOGO TEE",
+    "price": 14000,
+    "currency": "RUB",
+    "category": "ФУТБОЛКИ",
+    "sizes": [
+      "S"
+    ],
+    "sizeStock": {
+      "S": 1
+    },
+    "details": "В Отличном состоянии!",
+    "images": [
+      "images/products/gallery-dept-black-logo-tee-6bd9572c-1.jpg",
+      "images/products/gallery-dept-black-logo-tee-6bd9572c-2.jpg"
+    ],
+    "detailImage": "images/products/gallery-dept-black-logo-tee-6bd9572c-1.jpg",
+    "isActive": true,
+    "createdAt": "2026-09-02T15:12:55.228011+00:00"
   }
 ]
