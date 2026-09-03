@@ -2371,7 +2371,7 @@
       "OS"
     ],
     "sizeStock": {
-      "OS": 1
+      "OS": 0
     },
     "details": "В очень хорошем состоянии",
     "images": [
@@ -2379,8 +2379,11 @@
       "images/products/balenciaga-black-logo-wallet-00947ad6-2.jpg"
     ],
     "detailImage": "images/products/balenciaga-black-logo-wallet-00947ad6-1.jpg",
-    "isActive": true,
-    "createdAt": "2026-07-19T08:57:41.673302+00:00"
+    "isActive": false,
+    "createdAt": "2026-07-19T08:57:41.673302+00:00",
+    "updatedAt": "2026-09-03T13:16:49.689111+00:00",
+    "autoHiddenNoStock": true,
+    "soldOutAt": "2026-09-03T13:16:49.689133+00:00"
   },
   {
     "id": "maison-margiela-blue-logo-wallet-2f77eb0d",
