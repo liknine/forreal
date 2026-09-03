@@ -19,9 +19,9 @@
     "totalPrice": 12000,
     "currency": "RUB",
     "deliveryMethod": "cdek",
-    "status": "awaiting_payment",
+    "status": "paid",
     "createdAt": "2026-09-03T13:10:22.802079+00:00",
-    "updatedAt": "2026-09-03T13:10:22.802079+00:00"
+    "updatedAt": "2026-09-03T13:16:51.398097+00:00"
   },
   {
     "id": "18c89f1f-eab6-4868-a06a-8799ebba403f",
