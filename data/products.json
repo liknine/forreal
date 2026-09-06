@@ -2464,7 +2464,7 @@
       "45"
     ],
     "sizeStock": {
-      "45": 1
+      "45": 0
     },
     "details": "В отличном состоянии \n\n45 / 29.5 см",
     "images": [
@@ -2473,8 +2473,11 @@
       "images/products/dior-b23-white-sneakers-017d0a9b-3.jpg"
     ],
     "detailImage": "images/products/dior-b23-white-sneakers-017d0a9b-1.jpg",
-    "isActive": true,
-    "createdAt": "2026-07-19T18:43:00.245233+00:00"
+    "isActive": false,
+    "createdAt": "2026-07-19T18:43:00.245233+00:00",
+    "updatedAt": "2026-09-06T10:51:24.415439+00:00",
+    "autoHiddenNoStock": true,
+    "soldOutAt": "2026-09-06T10:51:24.415468+00:00"
   },
   {
     "id": "1017-alyx-9sm-black-logo-hoodie-8749d02f",
