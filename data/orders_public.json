@@ -1,5 +1,29 @@
 [
   {
+    "id": "9db67e6d-2bb9-4b28-8a0b-523de3e26750",
+    "orderNumber": 1032,
+    "clientOrderId": "forreal-1788691699554-9e5ef22efc3e2",
+    "telegramId": 8715912235,
+    "username": "eghww",
+    "items": [
+      {
+        "productId": "dior-b23-white-sneakers-017d0a9b",
+        "brand": "DIOR",
+        "name": "B23 WHITE SNEAKERS",
+        "size": "45",
+        "quantity": 1,
+        "price": 28500,
+        "image": "images/products/dior-b23-white-sneakers-017d0a9b-1.jpg"
+      }
+    ],
+    "totalPrice": 28500,
+    "currency": "RUB",
+    "deliveryMethod": "cdek",
+    "status": "awaiting_payment",
+    "createdAt": "2026-09-06T10:48:19.696427+00:00",
+    "updatedAt": "2026-09-06T10:48:19.696427+00:00"
+  },
+  {
     "id": "12bce1a6-5aa1-4e5b-9ba8-8c13b54939bb",
     "orderNumber": 1031,
     "clientOrderId": "forreal-1788441018739-495d90afc616a",
