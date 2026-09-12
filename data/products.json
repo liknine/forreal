@@ -58,7 +58,7 @@
       "L"
     ],
     "sizeStock": {
-      "L": 1
+      "L": 0
     },
     "details": "в отличном состоянии \nспина 78 \nподмышки 57.5\nплечи 53",
     "images": [
@@ -68,9 +68,11 @@
       "images/products/gallery-dept-paint-logo-tee-50ac7766-4.jpg"
     ],
     "detailImage": "images/products/gallery-dept-paint-logo-tee-50ac7766-1.jpg",
-    "isActive": true,
+    "isActive": false,
     "createdAt": "2026-07-07T08:23:50.123698+00:00",
-    "updatedAt": "2026-08-18T03:14:06.452401+00:00"
+    "updatedAt": "2026-09-12T17:30:49.299555+00:00",
+    "autoHiddenNoStock": true,
+    "soldOutAt": "2026-09-12T17:30:49.299583+00:00"
   },
   {
     "id": "gallery-dept-paint-logo-tee-89a222f9",
