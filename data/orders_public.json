@@ -1,5 +1,29 @@
 [
   {
+    "id": "87b8c40d-1274-43cf-88e7-f40af8271ac8",
+    "orderNumber": 1033,
+    "clientOrderId": "forreal-1789233566192-953d1fa1a4319",
+    "telegramId": 898722096,
+    "username": "smserez",
+    "items": [
+      {
+        "productId": "gallery-dept-paint-logo-tee-50ac7766",
+        "brand": "GALLERY DEPT",
+        "name": "PAINT LOGO TEE",
+        "size": "L",
+        "quantity": 1,
+        "price": 14500,
+        "image": "images/products/gallery-dept-paint-logo-tee-50ac7766-1.jpg"
+      }
+    ],
+    "totalPrice": 14500,
+    "currency": "RUB",
+    "deliveryMethod": "yandex",
+    "status": "awaiting_payment",
+    "createdAt": "2026-09-12T17:19:26.438992+00:00",
+    "updatedAt": "2026-09-12T17:19:26.438992+00:00"
+  },
+  {
     "id": "9db67e6d-2bb9-4b28-8a0b-523de3e26750",
     "orderNumber": 1032,
     "clientOrderId": "forreal-1788691699554-9e5ef22efc3e2",
