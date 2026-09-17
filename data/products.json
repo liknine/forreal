@@ -753,7 +753,7 @@
       "L"
     ],
     "sizeStock": {
-      "L": 1
+      "L": 0
     },
     "details": "В отличном состоянии\n\n2 ( фактически L )",
     "images": [
@@ -762,8 +762,11 @@
       "images/products/project-g-r-gap-blue-logo-hoodie-615e59b8-3.jpg"
     ],
     "detailImage": "images/products/project-g-r-gap-blue-logo-hoodie-615e59b8-1.jpg",
-    "isActive": true,
-    "createdAt": "2026-07-13T13:16:56.419300+00:00"
+    "isActive": false,
+    "createdAt": "2026-07-13T13:16:56.419300+00:00",
+    "updatedAt": "2026-09-17T10:22:49.526007+00:00",
+    "autoHiddenNoStock": true,
+    "soldOutAt": "2026-09-17T10:22:49.526025+00:00"
   },
   {
     "id": "1017-alyx-9sm-black-chain-logo-hoodi-621ae39e",
