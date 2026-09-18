@@ -1656,29 +1656,6 @@
     "updatedAt": "2026-08-18T03:32:43.653987+00:00"
   },
   {
-    "id": "yohji-yamamoto-black-logo-hoodie-83a562a4",
-    "brand": "YOHJI YAMAMOTO",
-    "name": "BLACK LOGO HOODIE",
-    "price": 12000,
-    "currency": "RUB",
-    "category": "ХУДИ",
-    "sizes": [
-      "L"
-    ],
-    "sizeStock": {
-      "L": 1
-    },
-    "details": "в отличном состоянии \nспина 67\nподмышки 52\nплечи 49",
-    "images": [
-      "images/products/yohji-yamamoto-black-logo-hoodie-83a562a4-1.jpg",
-      "images/products/yohji-yamamoto-black-logo-hoodie-83a562a4-2.jpg"
-    ],
-    "detailImage": "images/products/yohji-yamamoto-black-logo-hoodie-83a562a4-1.jpg",
-    "isActive": true,
-    "createdAt": "2026-07-14T18:23:14.772068+00:00",
-    "updatedAt": "2026-08-18T10:08:02.409314+00:00"
-  },
-  {
     "id": "saint-michael-grey-vintage-logo-hood-f02f5146",
     "brand": "SAINT MICHAEL",
     "name": "GREY VINTAGE LOGO HOODIE",
