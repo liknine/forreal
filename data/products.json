@@ -75,31 +75,6 @@
     "soldOutAt": "2026-09-12T17:30:49.299583+00:00"
   },
   {
-    "id": "gallery-dept-paint-logo-tee-89a222f9",
-    "brand": "GALLERY DEPT",
-    "name": "PAINT LOGO TEE",
-    "price": 14500,
-    "currency": "RUB",
-    "category": "ФУТБОЛКИ",
-    "sizes": [
-      "L"
-    ],
-    "sizeStock": {
-      "L": 1
-    },
-    "details": "в отличном состоянии \nспина 78 \nподмышки 57.5\nплечи 53",
-    "images": [
-      "images/products/gallery-dept-paint-logo-tee-89a222f9-1.jpg",
-      "images/products/gallery-dept-paint-logo-tee-89a222f9-2.jpg",
-      "images/products/gallery-dept-paint-logo-tee-89a222f9-3.jpg",
-      "images/products/gallery-dept-paint-logo-tee-89a222f9-4.jpg"
-    ],
-    "detailImage": "images/products/gallery-dept-paint-logo-tee-89a222f9-1.jpg",
-    "isActive": true,
-    "createdAt": "2026-07-07T08:28:08.830153+00:00",
-    "updatedAt": "2026-08-18T03:13:47.376743+00:00"
-  },
-  {
     "id": "converse-isabel-marant-black-logo-4551f82a",
     "brand": "CONVERSE",
     "name": "ISABEL MARANT BLACK LOGO",
