@@ -4766,28 +4766,6 @@
     "createdAt": "2026-09-02T14:46:57.076468+00:00"
   },
   {
-    "id": "vivienne-westwood-blue-polo-logo-tee-9e8e1bc4",
-    "brand": "VIVIENNE WESTWOOD",
-    "name": "BLUE «POLO» LOGO TEE",
-    "price": 10000,
-    "currency": "RUB",
-    "category": "ФУТБОЛКИ",
-    "sizes": [
-      "M"
-    ],
-    "sizeStock": {
-      "M": 1
-    },
-    "details": "В Отличном состоянии!",
-    "images": [
-      "images/products/vivienne-westwood-blue-polo-logo-tee-9e8e1bc4-1.jpg",
-      "images/products/vivienne-westwood-blue-polo-logo-tee-9e8e1bc4-2.jpg"
-    ],
-    "detailImage": "images/products/vivienne-westwood-blue-polo-logo-tee-9e8e1bc4-1.jpg",
-    "isActive": true,
-    "createdAt": "2026-09-02T14:50:23.369510+00:00"
-  },
-  {
     "id": "rhude-white-sex-tasy-logo-tee-6938c404",
     "brand": "RHUDE",
     "name": "WHITE «SEX-TASY» LOGO TEE",
