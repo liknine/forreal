@@ -1,5 +1,38 @@
 [
   {
+    "id": "bd251ea9-8695-4944-a6d8-092efc77aa35",
+    "orderNumber": 1036,
+    "clientOrderId": "forreal-1789919047206-a6d8cd8813226",
+    "telegramId": 7171631415,
+    "username": "decentystore",
+    "items": [
+      {
+        "productId": "a-cold-wall-white-painted-logo-hoodi-c222c0de",
+        "brand": "A COLD WALL",
+        "name": "WHITE PAINTED LOGO HOODIE",
+        "size": "L",
+        "quantity": 1,
+        "price": 11000,
+        "image": "images/products/a-cold-wall-white-painted-logo-hoodi-c222c0de-1.jpg"
+      },
+      {
+        "productId": "yohji-yamamoto-black-logo-hoodie-49549f4d",
+        "brand": "YOHJI YAMAMOTO",
+        "name": "BLACK LOGO HOODIE",
+        "size": "L",
+        "quantity": 1,
+        "price": 15500,
+        "image": "images/products/yohji-yamamoto-black-logo-hoodie-49549f4d-1.jpg"
+      }
+    ],
+    "totalPrice": 26500,
+    "currency": "RUB",
+    "deliveryMethod": "cdek",
+    "status": "awaiting_payment",
+    "createdAt": "2026-09-20T15:44:08.200929+00:00",
+    "updatedAt": "2026-09-20T15:44:08.200929+00:00"
+  },
+  {
     "id": "f1b4b493-5a65-4c53-8d4f-f0b60f0fba6d",
     "orderNumber": 1035,
     "clientOrderId": "forreal-1789640422483-c3313e4f9c1dc",
