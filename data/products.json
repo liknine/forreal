@@ -4165,28 +4165,6 @@
     "updatedAt": "2026-08-10T09:14:41.711256+00:00"
   },
   {
-    "id": "yohji-yamamoto-black-logo-hoodie-2026be8e",
-    "brand": "YOHJI YAMAMOTO",
-    "name": "BLACK LOGO HOODIE",
-    "price": 11000,
-    "currency": "RUB",
-    "category": "ХУДИ",
-    "sizes": [
-      "M"
-    ],
-    "sizeStock": {
-      "M": 1
-    },
-    "details": "в отличном состоянии \nспина 74\nподмышки 60\nплечи 50",
-    "images": [
-      "images/products/yohji-yamamoto-black-logo-hoodie-2026be8e-1.jpg",
-      "images/products/yohji-yamamoto-black-logo-hoodie-2026be8e-2.jpg"
-    ],
-    "detailImage": "images/products/yohji-yamamoto-black-logo-hoodie-2026be8e-1.jpg",
-    "isActive": true,
-    "createdAt": "2026-08-18T23:15:25.903246+00:00"
-  },
-  {
     "id": "the-soloist-takahiro-miyashita-black-abf84dec",
     "brand": "THE SOLOIST TAKAHIRO MIYASHITA",
     "name": "BLACK LOGO TEE",
