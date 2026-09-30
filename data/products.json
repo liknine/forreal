@@ -2957,7 +2957,7 @@
     "id": "cav-empt-white-logo-tee-5ef7c7bf",
     "brand": "CAV EMPT",
     "name": "WHITE LOGO TEE",
-    "price": 10500,
+    "price": 11000,
     "currency": "RUB",
     "category": "ФУТБОЛКИ",
     "sizes": [
@@ -2973,7 +2973,8 @@
     ],
     "detailImage": "images/products/cav-empt-white-logo-tee-5ef7c7bf-1.jpg",
     "isActive": true,
-    "createdAt": "2026-07-26T13:22:54.139387+00:00"
+    "createdAt": "2026-07-26T13:22:54.139387+00:00",
+    "updatedAt": "2026-09-30T12:15:28.106497+00:00"
   },
   {
     "id": "mastermind-black-logo-tee-01cd6451",
