@@ -3513,7 +3513,7 @@
     "id": "the-soloist-new-era-black-logo-longs-0837caa7",
     "brand": "THE SOLOIST",
     "name": "NEW ERA BLACK LOGO LONGSLEEVE",
-    "price": 9000,
+    "price": 14000,
     "currency": "RUB",
     "category": "ФУТБОЛКИ",
     "sizes": [
@@ -3530,7 +3530,8 @@
     ],
     "detailImage": "images/products/the-soloist-new-era-black-logo-longs-0837caa7-1.jpg",
     "isActive": true,
-    "createdAt": "2026-08-08T14:29:10.106513+00:00"
+    "createdAt": "2026-08-08T14:29:10.106513+00:00",
+    "updatedAt": "2026-09-30T11:46:41.528527+00:00"
   },
   {
     "id": "mastermind-naruto-black-logo-tee-aa51ca06",
