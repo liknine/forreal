@@ -451,7 +451,7 @@
     "id": "alexander-wang-black-logo-longsleeve-b2552529",
     "brand": "ALEXANDER WANG",
     "name": "BLACK LOGO LONGSLEEVE",
-    "price": 10500,
+    "price": 11000,
     "currency": "RUB",
     "category": "ФУТБОЛКИ",
     "sizes": [
@@ -467,7 +467,8 @@
     ],
     "detailImage": "images/products/alexander-wang-black-logo-longsleeve-b2552529-1.jpg",
     "isActive": true,
-    "createdAt": "2026-07-12T11:56:04.518360+00:00"
+    "createdAt": "2026-07-12T11:56:04.518360+00:00",
+    "updatedAt": "2026-09-30T11:43:07.555889+00:00"
   },
   {
     "id": "c2h4-white-grey-logo-sweatshirt-ba22944f",
