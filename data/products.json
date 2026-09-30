@@ -1217,7 +1217,7 @@
     "id": "mastermind-c2h4-x-alpha-industries-b-6a8a3f44",
     "brand": "MASTERMIND",
     "name": "C2H4 x ALPHA INDUSTRIES BLACK LOGO HOODIE",
-    "price": 15500,
+    "price": 17000,
     "currency": "RUB",
     "category": "ХУДИ",
     "sizes": [
@@ -1232,7 +1232,8 @@
     ],
     "detailImage": "images/products/mastermind-c2h4-x-alpha-industries-b-6a8a3f44-1.jpg",
     "isActive": true,
-    "createdAt": "2026-07-14T10:43:59.420962+00:00"
+    "createdAt": "2026-07-14T10:43:59.420962+00:00",
+    "updatedAt": "2026-09-30T12:42:27.671582+00:00"
   },
   {
     "id": "helmut-lang-black-logo-hoodie-52f7e0ac",
