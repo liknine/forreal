@@ -1143,7 +1143,7 @@
     "id": "heliot-emil-1-4-zip-black-logo-hoodi-dbd7d21d",
     "brand": "HELIOT EMIL",
     "name": "1/4 ZIP BLACK LOGO HOODIE",
-    "price": 15000,
+    "price": 17000,
     "currency": "RUB",
     "category": "ХУДИ",
     "sizes": [
@@ -1159,7 +1159,8 @@
     ],
     "detailImage": "images/products/heliot-emil-1-4-zip-black-logo-hoodi-dbd7d21d-1.jpg",
     "isActive": true,
-    "createdAt": "2026-07-14T10:01:17.562490+00:00"
+    "createdAt": "2026-07-14T10:01:17.562490+00:00",
+    "updatedAt": "2026-09-30T09:47:19.973023+00:00"
   },
   {
     "id": "valentino-undercover-rose-logo-hoodi-21718e9d",
