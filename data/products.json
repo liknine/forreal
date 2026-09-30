@@ -4087,7 +4087,7 @@
     "id": "032c-black-logo-sweatshirt-85871db2",
     "brand": "032C",
     "name": "BLACK LOGO SWEATSHIRT",
-    "price": 12500,
+    "price": 15500,
     "currency": "RUB",
     "category": "ХУДИ",
     "sizes": [
@@ -4103,7 +4103,8 @@
     ],
     "detailImage": "images/products/032c-black-logo-sweatshirt-85871db2-1.jpg",
     "isActive": true,
-    "createdAt": "2026-08-10T09:07:53.553354+00:00"
+    "createdAt": "2026-08-10T09:07:53.553354+00:00",
+    "updatedAt": "2026-09-30T11:39:21.435621+00:00"
   },
   {
     "id": "stone-island-grey-logo-sweater-1d0a02a2",
