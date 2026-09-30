@@ -4681,7 +4681,7 @@
     "id": "lanvin-black-blue-roses-logo-tee-3618d2d0",
     "brand": "LANVIN",
     "name": "BLACK «BLUE ROSES» LOGO TEE",
-    "price": 12000,
+    "price": 14000,
     "currency": "RUB",
     "category": "ФУТБОЛКИ",
     "sizes": [
@@ -4697,7 +4697,8 @@
     ],
     "detailImage": "images/products/lanvin-black-blue-roses-logo-tee-3618d2d0-1.jpg",
     "isActive": true,
-    "createdAt": "2026-09-02T14:46:57.076468+00:00"
+    "createdAt": "2026-09-02T14:46:57.076468+00:00",
+    "updatedAt": "2026-09-30T13:46:25.073372+00:00"
   },
   {
     "id": "yohji-yamamoto-black-logo-tee-22c0d795",
