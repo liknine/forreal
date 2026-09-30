@@ -4499,7 +4499,7 @@
     "id": "hysteric-glamour-black-logo-zip-hood-5e8a9c09",
     "brand": "HYSTERIC GLAMOUR",
     "name": "BLACK LOGO ZIP HOODIE",
-    "price": 20500,
+    "price": 22500,
     "currency": "RUB",
     "category": "ЗИП-ХУДИ",
     "sizes": [
@@ -4515,7 +4515,8 @@
     ],
     "detailImage": "images/products/hysteric-glamour-black-logo-zip-hood-5e8a9c09-1.jpg",
     "isActive": true,
-    "createdAt": "2026-08-19T10:10:09.026574+00:00"
+    "createdAt": "2026-08-19T10:10:09.026574+00:00",
+    "updatedAt": "2026-09-30T12:41:10.619292+00:00"
   },
   {
     "id": "rick-owens-gimp-black-logo-zip-hoodi-d47bcae0",
