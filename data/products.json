@@ -1412,7 +1412,7 @@
     "id": "c2h4-black-logo-hoodie-0412b209",
     "brand": "C2H4",
     "name": "BLACK LOGO HOODIE",
-    "price": 11000,
+    "price": 14000,
     "currency": "RUB",
     "category": "ХУДИ",
     "sizes": [
@@ -1430,7 +1430,8 @@
     ],
     "detailImage": "images/products/c2h4-black-logo-hoodie-0412b209-1.jpg",
     "isActive": true,
-    "createdAt": "2026-07-14T11:35:36.141283+00:00"
+    "createdAt": "2026-07-14T11:35:36.141283+00:00",
+    "updatedAt": "2026-09-30T10:14:27.550587+00:00"
   },
   {
     "id": "424-black-logo-hoodie-cb0f4fc8",
