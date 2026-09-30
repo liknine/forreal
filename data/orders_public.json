@@ -1,5 +1,29 @@
 [
   {
+    "id": "9432bfc9-98fe-4ca2-b74f-a7ff34adde8d",
+    "orderNumber": 1037,
+    "clientOrderId": "forreal-1790790803608-85980d43463ba",
+    "telegramId": 2046057445,
+    "username": "wa1deee",
+    "items": [
+      {
+        "productId": "raf-simons-fred-perry-black-logo-hoo-1460099b",
+        "brand": "RAF SIMONS",
+        "name": "FRED PERRY BLACK LOGO HOODIE",
+        "size": "L",
+        "quantity": 1,
+        "price": 20000,
+        "image": "images/products/raf-simons-fred-perry-black-logo-hoo-1460099b-1.jpg"
+      }
+    ],
+    "totalPrice": 20000,
+    "currency": "RUB",
+    "deliveryMethod": "cdek",
+    "status": "awaiting_payment",
+    "createdAt": "2026-09-30T17:53:24.370461+00:00",
+    "updatedAt": "2026-09-30T17:53:24.370461+00:00"
+  },
+  {
     "id": "bd251ea9-8695-4944-a6d8-092efc77aa35",
     "orderNumber": 1036,
     "clientOrderId": "forreal-1789919047206-a6d8cd8813226",
