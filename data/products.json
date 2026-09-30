@@ -2479,7 +2479,7 @@
     "id": "maison-margiela-blue-washed-logo-hoo-8719c064",
     "brand": "MAISON MARGIELA",
     "name": "BLUE WASHED LOGO HOODIE",
-    "price": 28500,
+    "price": 33000,
     "currency": "RUB",
     "category": "ХУДИ",
     "sizes": [
@@ -2495,7 +2495,8 @@
     ],
     "detailImage": "images/products/maison-margiela-blue-washed-logo-hoo-8719c064-1.jpg",
     "isActive": true,
-    "createdAt": "2026-07-20T07:20:48.791058+00:00"
+    "createdAt": "2026-07-20T07:20:48.791058+00:00",
+    "updatedAt": "2026-09-30T12:45:00.003977+00:00"
   },
   {
     "id": "the-soloist-new-era-blue-logo-hoodie-bc67e40c",
