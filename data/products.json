@@ -675,7 +675,7 @@
     "id": "ambush-black-logo-dreads-zip-hoodie-8025e26c",
     "brand": "AMBUSH",
     "name": "BLACK LOGO DREADS ZIP HOODIE",
-    "price": 13000,
+    "price": 17000,
     "currency": "RUB",
     "category": "ЗИП-ХУДИ",
     "sizes": [
@@ -692,7 +692,8 @@
     ],
     "detailImage": "images/products/ambush-black-logo-dreads-zip-hoodie-8025e26c-1.jpg",
     "isActive": true,
-    "createdAt": "2026-07-13T13:13:35.300372+00:00"
+    "createdAt": "2026-07-13T13:13:35.300372+00:00",
+    "updatedAt": "2026-09-30T09:49:24.754081+00:00"
   },
   {
     "id": "project-g-r-gap-blue-logo-hoodie-615e59b8",
