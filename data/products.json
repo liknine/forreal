@@ -815,7 +815,7 @@
     "id": "424-black-logo-hoodie-31d7bd9a",
     "brand": "424",
     "name": "BLACK LOGO HOODIE",
-    "price": 12500,
+    "price": 15500,
     "currency": "RUB",
     "category": "ХУДИ",
     "sizes": [
@@ -831,7 +831,8 @@
     ],
     "detailImage": "images/products/424-black-logo-hoodie-31d7bd9a-1.jpg",
     "isActive": true,
-    "createdAt": "2026-07-13T13:44:56.857206+00:00"
+    "createdAt": "2026-07-13T13:44:56.857206+00:00",
+    "updatedAt": "2026-09-30T09:50:41.993778+00:00"
   },
   {
     "id": "1017-alyx-9sm-black-logo-hoodie-42a25e39",
