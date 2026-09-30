@@ -4640,7 +4640,7 @@
     "id": "hysteric-glamour-black-radio-hoe-log-98a8bc94",
     "brand": "HYSTERIC GLAMOUR",
     "name": "BLACK «RADIO HOE» LOGO TEE",
-    "price": 11000,
+    "price": 14500,
     "currency": "RUB",
     "category": "ФУТБОЛКИ",
     "sizes": [
@@ -4656,7 +4656,8 @@
     ],
     "detailImage": "images/products/hysteric-glamour-black-radio-hoe-log-98a8bc94-1.jpg",
     "isActive": true,
-    "createdAt": "2026-09-02T14:37:06.115461+00:00"
+    "createdAt": "2026-09-02T14:37:06.115461+00:00",
+    "updatedAt": "2026-09-30T13:57:12.510601+00:00"
   },
   {
     "id": "givenchy-black-devil-logo-tee-04a6f3e2",
