@@ -999,7 +999,7 @@
     "id": "mastermind-sex-pistols-black-pink-lo-aec4215b",
     "brand": "MASTERMIND",
     "name": "SEX PISTOLS BLACK PINK LOGO",
-    "price": 12000,
+    "price": 18000,
     "currency": "RUB",
     "category": "ФУТБОЛКИ",
     "sizes": [
@@ -1015,7 +1015,8 @@
     ],
     "detailImage": "images/products/mastermind-sex-pistols-black-pink-lo-aec4215b-1.jpg",
     "isActive": true,
-    "createdAt": "2026-07-14T08:57:54.842428+00:00"
+    "createdAt": "2026-07-14T08:57:54.842428+00:00",
+    "updatedAt": "2026-09-30T13:47:20.361527+00:00"
   },
   {
     "id": "doublet-black-distress-logo-tee-27882744",
