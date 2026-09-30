@@ -3810,7 +3810,7 @@
     "id": "c2h4-blue-logo-sweatshirt-b671b3d8",
     "brand": "C2H4",
     "name": "BLUE LOGO SWEATSHIRT",
-    "price": 10000,
+    "price": 11000,
     "currency": "RUB",
     "category": "ХУДИ",
     "sizes": [
@@ -3827,7 +3827,8 @@
     ],
     "detailImage": "images/products/c2h4-blue-logo-sweatshirt-b671b3d8-1.jpg",
     "isActive": true,
-    "createdAt": "2026-08-09T00:24:01.885052+00:00"
+    "createdAt": "2026-08-09T00:24:01.885052+00:00",
+    "updatedAt": "2026-09-30T11:41:44.607204+00:00"
   },
   {
     "id": "heliot-emil-green-logo-sweatshirt-263ce938",
