@@ -404,7 +404,7 @@
     "id": "mihara-yasuhiro-black-logo-sweatshir-3a89f3bb",
     "brand": "MIHARA YASUHIRO",
     "name": "BLACK LOGO SWEATSHIRT",
-    "price": 14000,
+    "price": 15500,
     "currency": "RUB",
     "category": "ХУДИ",
     "sizes": [
@@ -421,7 +421,8 @@
     ],
     "detailImage": "images/products/mihara-yasuhiro-black-logo-sweatshir-3a89f3bb-1.jpg",
     "isActive": true,
-    "createdAt": "2026-07-11T19:46:11.054587+00:00"
+    "createdAt": "2026-07-11T19:46:11.054587+00:00",
+    "updatedAt": "2026-09-30T11:38:54.557692+00:00"
   },
   {
     "id": "vivienne-westwood-grey-logo-sweatshi-a14efe87",
