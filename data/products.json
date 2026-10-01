@@ -5094,5 +5094,27 @@
     "detailImage": "images/products/sacai-black-logo-hoodie-be810c26-1.jpg",
     "isActive": true,
     "createdAt": "2026-10-01T12:41:24.847876+00:00"
+  },
+  {
+    "id": "a-bathing-ape-grey-logo-hoodie-f7a78abf",
+    "brand": "A BATHING APE",
+    "name": "GREY LOGO HOODIE",
+    "price": 14000,
+    "currency": "RUB",
+    "category": "ХУДИ",
+    "sizes": [
+      "2XL"
+    ],
+    "sizeStock": {
+      "2XL": 1
+    },
+    "details": "Вещь в отличном состоянии!",
+    "images": [
+      "images/products/a-bathing-ape-grey-logo-hoodie-f7a78abf-1.jpg",
+      "images/products/a-bathing-ape-grey-logo-hoodie-f7a78abf-2.jpg"
+    ],
+    "detailImage": "images/products/a-bathing-ape-grey-logo-hoodie-f7a78abf-1.jpg",
+    "isActive": true,
+    "createdAt": "2026-10-01T12:45:11.015908+00:00"
   }
 ]
