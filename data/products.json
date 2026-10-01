@@ -5532,5 +5532,27 @@
     "detailImage": "images/products/poh-green-logo-hoodie-b2d02c6a-1.jpg",
     "isActive": true,
     "createdAt": "2026-10-01T14:33:06.994603+00:00"
+  },
+  {
+    "id": "ed-hardy-green-logo-zip-hoodie-4d1d6ca4",
+    "brand": "ED HARDY",
+    "name": "GREEN LOGO ZIP HOODIE",
+    "price": 12000,
+    "currency": "RUB",
+    "category": "ЗИП-ХУДИ",
+    "sizes": [
+      "M"
+    ],
+    "sizeStock": {
+      "M": 1
+    },
+    "details": "Вещь в отличном состоянии",
+    "images": [
+      "images/products/ed-hardy-green-logo-zip-hoodie-4d1d6ca4-1.jpg",
+      "images/products/ed-hardy-green-logo-zip-hoodie-4d1d6ca4-2.jpg"
+    ],
+    "detailImage": "images/products/ed-hardy-green-logo-zip-hoodie-4d1d6ca4-1.jpg",
+    "isActive": true,
+    "createdAt": "2026-10-01T14:34:20.562861+00:00"
   }
 ]
