@@ -5943,5 +5943,26 @@
     "detailImage": "images/products/cav-empt-washed-green-tee-833b728d-1.jpg",
     "isActive": true,
     "createdAt": "2026-10-01T16:34:31.813190+00:00"
+  },
+  {
+    "id": "graizl-multicolour-logo-shirt-b529ce50",
+    "brand": "GRAIZL",
+    "name": "MULTICOLOUR LOGO SHIRT",
+    "price": 15500,
+    "currency": "RUB",
+    "category": "ФУТБОЛКИ",
+    "sizes": [
+      "OS"
+    ],
+    "sizeStock": {
+      "OS": 1
+    },
+    "details": "Вещь в отличном состоянии!",
+    "images": [
+      "images/products/graizl-multicolour-logo-shirt-b529ce50-1.jpg"
+    ],
+    "detailImage": "images/products/graizl-multicolour-logo-shirt-b529ce50-1.jpg",
+    "isActive": true,
+    "createdAt": "2026-10-01T16:36:20.871310+00:00"
   }
 ]
