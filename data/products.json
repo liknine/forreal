@@ -5423,5 +5423,26 @@
     "detailImage": "images/products/yohji-yamamoto-x-stranger-things-bla-989b07dd-1.jpg",
     "isActive": true,
     "createdAt": "2026-10-01T14:14:15.916725+00:00"
+  },
+  {
+    "id": "undermycar-grey-logo-zip-hoodie-02309fe3",
+    "brand": "UNDERMYCAR",
+    "name": "GREY LOGO ZIP HOODIE",
+    "price": 16000,
+    "currency": "RUB",
+    "category": "ЗИП-ХУДИ",
+    "sizes": [
+      "XXL"
+    ],
+    "sizeStock": {
+      "XXL": 1
+    },
+    "details": "Вещь в отличном состоянии!",
+    "images": [
+      "images/products/undermycar-grey-logo-zip-hoodie-02309fe3-1.jpg"
+    ],
+    "detailImage": "images/products/undermycar-grey-logo-zip-hoodie-02309fe3-1.jpg",
+    "isActive": true,
+    "createdAt": "2026-10-01T14:16:06.135690+00:00"
   }
 ]
