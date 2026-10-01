@@ -5878,5 +5878,27 @@
     "detailImage": "images/products/project-g-r-black-logo-tee-3b8b6d0a-1.jpg",
     "isActive": true,
     "createdAt": "2026-10-01T16:30:27.790470+00:00"
+  },
+  {
+    "id": "1017-alyx-9sm-grey-logo-tee-6afa163f",
+    "brand": "1017 ALYX 9SM",
+    "name": "GREY LOGO TEE",
+    "price": 9000,
+    "currency": "RUB",
+    "category": "ФУТБОЛКИ",
+    "sizes": [
+      "XL"
+    ],
+    "sizeStock": {
+      "XL": 1
+    },
+    "details": "Вещь в отличном состоянии!",
+    "images": [
+      "images/products/1017-alyx-9sm-grey-logo-tee-6afa163f-1.jpg",
+      "images/products/1017-alyx-9sm-grey-logo-tee-6afa163f-2.jpg"
+    ],
+    "detailImage": "images/products/1017-alyx-9sm-grey-logo-tee-6afa163f-1.jpg",
+    "isActive": true,
+    "createdAt": "2026-10-01T16:31:48.149825+00:00"
   }
 ]
