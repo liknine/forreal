@@ -5313,5 +5313,27 @@
     "detailImage": "images/products/c2h4-x-mastermind-black-logo-hoodie-1af9ba36-1.jpg",
     "isActive": true,
     "createdAt": "2026-10-01T14:02:47.496226+00:00"
+  },
+  {
+    "id": "undermycar-black-logo-hoodie-c5fea7b2",
+    "brand": "UNDERMYCAR",
+    "name": "BLACK LOGO HOODIE",
+    "price": 15000,
+    "currency": "RUB",
+    "category": "ХУДИ",
+    "sizes": [
+      "XL"
+    ],
+    "sizeStock": {
+      "XL": 1
+    },
+    "details": "Вещь в отличном состоянии!",
+    "images": [
+      "images/products/undermycar-black-logo-hoodie-c5fea7b2-1.jpg",
+      "images/products/undermycar-black-logo-hoodie-c5fea7b2-2.jpg"
+    ],
+    "detailImage": "images/products/undermycar-black-logo-hoodie-c5fea7b2-1.jpg",
+    "isActive": true,
+    "createdAt": "2026-10-01T14:04:28.644816+00:00"
   }
 ]
