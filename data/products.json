@@ -5921,5 +5921,27 @@
     "detailImage": "images/products/raga-white-black-tee-944d4e25-1.jpg",
     "isActive": true,
     "createdAt": "2026-10-01T16:33:07.003921+00:00"
+  },
+  {
+    "id": "cav-empt-washed-green-tee-833b728d",
+    "brand": "CAV EMPT",
+    "name": "WASHED GREEN TEE",
+    "price": 8000,
+    "currency": "RUB",
+    "category": "ФУТБОЛКИ",
+    "sizes": [
+      "XL"
+    ],
+    "sizeStock": {
+      "XL": 1
+    },
+    "details": "Вещь в отличном состоянии!",
+    "images": [
+      "images/products/cav-empt-washed-green-tee-833b728d-1.jpg",
+      "images/products/cav-empt-washed-green-tee-833b728d-2.jpg"
+    ],
+    "detailImage": "images/products/cav-empt-washed-green-tee-833b728d-1.jpg",
+    "isActive": true,
+    "createdAt": "2026-10-01T16:34:31.813190+00:00"
   }
 ]
