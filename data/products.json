@@ -4856,5 +4856,26 @@
     "detailImage": "images/products/comme-des-garcons-black-logo-hoodie-646dd632-1.jpg",
     "isActive": true,
     "createdAt": "2026-10-01T11:35:31.706568+00:00"
+  },
+  {
+    "id": "a-bathing-ape-black-painted-logo-hoo-d171ce2f",
+    "brand": "A BATHING APE",
+    "name": "BLACK PAINTED LOGO HOODIE",
+    "price": 14000,
+    "currency": "RUB",
+    "category": "ХУДИ",
+    "sizes": [
+      "2XL"
+    ],
+    "sizeStock": {
+      "2XL": 1
+    },
+    "details": "Вещь в отличном состоянии!",
+    "images": [
+      "images/products/a-bathing-ape-black-painted-logo-hoo-d171ce2f-1.jpg"
+    ],
+    "detailImage": "images/products/a-bathing-ape-black-painted-logo-hoo-d171ce2f-1.jpg",
+    "isActive": true,
+    "createdAt": "2026-10-01T11:37:24.086306+00:00"
   }
 ]
