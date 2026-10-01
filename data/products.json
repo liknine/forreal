@@ -5444,5 +5444,27 @@
     "detailImage": "images/products/undermycar-grey-logo-zip-hoodie-02309fe3-1.jpg",
     "isActive": true,
     "createdAt": "2026-10-01T14:16:06.135690+00:00"
+  },
+  {
+    "id": "takahiro-miyashita-x-new-era-blue-lo-84cc6efd",
+    "brand": "TAKAHIRO MIYASHITA x NEW ERA",
+    "name": "BLUE LOGO HOODIE",
+    "price": 14000,
+    "currency": "RUB",
+    "category": "ХУДИ",
+    "sizes": [
+      "S"
+    ],
+    "sizeStock": {
+      "S": 1
+    },
+    "details": "Вещь в отличном состоянии!",
+    "images": [
+      "images/products/takahiro-miyashita-x-new-era-blue-lo-84cc6efd-1.jpg",
+      "images/products/takahiro-miyashita-x-new-era-blue-lo-84cc6efd-2.jpg"
+    ],
+    "detailImage": "images/products/takahiro-miyashita-x-new-era-blue-lo-84cc6efd-1.jpg",
+    "isActive": true,
+    "createdAt": "2026-10-01T14:19:37.134136+00:00"
   }
 ]
