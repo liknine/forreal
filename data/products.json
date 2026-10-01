@@ -5007,5 +5007,26 @@
     "detailImage": "images/products/a-bathing-ape-black-brown-logo-zip-h-699ba9e1-1.jpg",
     "isActive": true,
     "createdAt": "2026-10-01T12:11:52.429913+00:00"
+  },
+  {
+    "id": "a-cold-wall-grey-logo-hoodie-07fc2bc5",
+    "brand": "A COLD WALL",
+    "name": "GREY LOGO HOODIE",
+    "price": 12000,
+    "currency": "RUB",
+    "category": "ХУДИ",
+    "sizes": [
+      "XL"
+    ],
+    "sizeStock": {
+      "XL": 1
+    },
+    "details": "Вещь в отличном состоянии!",
+    "images": [
+      "images/products/a-cold-wall-grey-logo-hoodie-07fc2bc5-1.jpg"
+    ],
+    "detailImage": "images/products/a-cold-wall-grey-logo-hoodie-07fc2bc5-1.jpg",
+    "isActive": true,
+    "createdAt": "2026-10-01T12:28:10.700426+00:00"
   }
 ]
