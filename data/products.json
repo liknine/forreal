@@ -5684,5 +5684,26 @@
     "detailImage": "images/products/dolce-gabbana-grey-logo-hoodie-d0d309eb-1.jpg",
     "isActive": true,
     "createdAt": "2026-10-01T16:16:23.517222+00:00"
+  },
+  {
+    "id": "1017-alyx-9sm-grey-logo-hoodie-65c3b231",
+    "brand": "1017 ALYX 9SM",
+    "name": "GREY LOGO HOODIE",
+    "price": 15500,
+    "currency": "RUB",
+    "category": "ХУДИ",
+    "sizes": [
+      "XL"
+    ],
+    "sizeStock": {
+      "XL": 1
+    },
+    "details": "Вещь в отличном состоянии!",
+    "images": [
+      "images/products/1017-alyx-9sm-grey-logo-hoodie-65c3b231-1.jpg"
+    ],
+    "detailImage": "images/products/1017-alyx-9sm-grey-logo-hoodie-65c3b231-1.jpg",
+    "isActive": true,
+    "createdAt": "2026-10-01T16:17:51.870533+00:00"
   }
 ]
