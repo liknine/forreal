@@ -5769,5 +5769,27 @@
     "detailImage": "images/products/hamcus-beige-logo-sweatshirt-5a5f6082-1.jpg",
     "isActive": true,
     "createdAt": "2026-10-01T16:23:05.605197+00:00"
+  },
+  {
+    "id": "takahiro-miyashita-x-new-era-black-l-fb8ca23d",
+    "brand": "TAKAHIRO MIYASHITA x NEW ERA",
+    "name": "BLACK LOGO TEE",
+    "price": 12000,
+    "currency": "RUB",
+    "category": "ФУТБОЛКИ",
+    "sizes": [
+      "L"
+    ],
+    "sizeStock": {
+      "L": 1
+    },
+    "details": "Вещь в отличном состоянии!",
+    "images": [
+      "images/products/takahiro-miyashita-x-new-era-black-l-fb8ca23d-1.jpg",
+      "images/products/takahiro-miyashita-x-new-era-black-l-fb8ca23d-2.jpg"
+    ],
+    "detailImage": "images/products/takahiro-miyashita-x-new-era-black-l-fb8ca23d-1.jpg",
+    "isActive": true,
+    "createdAt": "2026-10-01T16:24:51.937346+00:00"
   }
 ]
