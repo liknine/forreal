@@ -5663,5 +5663,26 @@
     "detailImage": "images/products/heliot-emil-beige-logo-hoodie-2edd5bae-1.jpg",
     "isActive": true,
     "createdAt": "2026-10-01T16:12:40.839251+00:00"
+  },
+  {
+    "id": "dolce-gabbana-grey-logo-hoodie-d0d309eb",
+    "brand": "DOLCE & GABBANA",
+    "name": "GREY LOGO HOODIE",
+    "price": 17000,
+    "currency": "RUB",
+    "category": "ХУДИ",
+    "sizes": [
+      "S"
+    ],
+    "sizeStock": {
+      "S": 1
+    },
+    "details": "Вещь в отличном состоянии!",
+    "images": [
+      "images/products/dolce-gabbana-grey-logo-hoodie-d0d309eb-1.jpg"
+    ],
+    "detailImage": "images/products/dolce-gabbana-grey-logo-hoodie-d0d309eb-1.jpg",
+    "isActive": true,
+    "createdAt": "2026-10-01T16:16:23.517222+00:00"
   }
 ]
