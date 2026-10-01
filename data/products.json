@@ -5576,5 +5576,27 @@
     "detailImage": "images/products/c2h4-brown-logo-hoodie-2e031145-1.jpg",
     "isActive": true,
     "createdAt": "2026-10-01T14:36:01.104410+00:00"
+  },
+  {
+    "id": "cav-empt-grey-logo-hoodie-88f1d03d",
+    "brand": "CAV EMPT",
+    "name": "GREY LOGO HOODIE",
+    "price": 20000,
+    "currency": "RUB",
+    "category": "ХУДИ",
+    "sizes": [
+      "XL"
+    ],
+    "sizeStock": {
+      "XL": 1
+    },
+    "details": "Вещь в отличном состоянии!",
+    "images": [
+      "images/products/cav-empt-grey-logo-hoodie-88f1d03d-1.jpg",
+      "images/products/cav-empt-grey-logo-hoodie-88f1d03d-2.jpg"
+    ],
+    "detailImage": "images/products/cav-empt-grey-logo-hoodie-88f1d03d-1.jpg",
+    "isActive": true,
+    "createdAt": "2026-10-01T14:37:23.280913+00:00"
   }
 ]
