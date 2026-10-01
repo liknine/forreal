@@ -5466,5 +5466,27 @@
     "detailImage": "images/products/takahiro-miyashita-x-new-era-blue-lo-84cc6efd-1.jpg",
     "isActive": true,
     "createdAt": "2026-10-01T14:19:37.134136+00:00"
+  },
+  {
+    "id": "saint-michael-blue-logo-sweatshirt-db65c894",
+    "brand": "SAINT MICHAEL",
+    "name": "BLUE LOGO SWEATSHIRT",
+    "price": 37000,
+    "currency": "RUB",
+    "category": "ХУДИ",
+    "sizes": [
+      "M"
+    ],
+    "sizeStock": {
+      "M": 1
+    },
+    "details": "Вещь в отличном состоянии!",
+    "images": [
+      "images/products/saint-michael-blue-logo-sweatshirt-db65c894-1.jpg",
+      "images/products/saint-michael-blue-logo-sweatshirt-db65c894-2.jpg"
+    ],
+    "detailImage": "images/products/saint-michael-blue-logo-sweatshirt-db65c894-1.jpg",
+    "isActive": true,
+    "createdAt": "2026-10-01T14:21:53.505514+00:00"
   }
 ]
