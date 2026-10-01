@@ -5291,5 +5291,27 @@
     "detailImage": "images/products/c2h4-grey-logo-hoodie-4d625293-1.jpg",
     "isActive": true,
     "createdAt": "2026-10-01T14:00:38.097892+00:00"
+  },
+  {
+    "id": "c2h4-x-mastermind-black-logo-hoodie-1af9ba36",
+    "brand": "C2H4 x MASTERMIND",
+    "name": "BLACK LOGO HOODIE",
+    "price": 20000,
+    "currency": "RUB",
+    "category": "ХУДИ",
+    "sizes": [
+      "M"
+    ],
+    "sizeStock": {
+      "M": 1
+    },
+    "details": "Вещь в отличном состоянии!",
+    "images": [
+      "images/products/c2h4-x-mastermind-black-logo-hoodie-1af9ba36-1.jpg",
+      "images/products/c2h4-x-mastermind-black-logo-hoodie-1af9ba36-2.jpg"
+    ],
+    "detailImage": "images/products/c2h4-x-mastermind-black-logo-hoodie-1af9ba36-1.jpg",
+    "isActive": true,
+    "createdAt": "2026-10-01T14:02:47.496226+00:00"
   }
 ]
