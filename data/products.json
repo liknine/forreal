@@ -5726,5 +5726,26 @@
     "detailImage": "images/products/project-g-r-black-logo-sweatshirt-f036bc6b-1.jpg",
     "isActive": true,
     "createdAt": "2026-10-01T16:18:54.926700+00:00"
+  },
+  {
+    "id": "dior-x-cactus-jack-grey-logo-sweatsh-202c2df8",
+    "brand": "DIOR x CACTUS JACK",
+    "name": "GREY LOGO SWEATSHIRT",
+    "price": 35000,
+    "currency": "RUB",
+    "category": "ХУДИ",
+    "sizes": [
+      "XL"
+    ],
+    "sizeStock": {
+      "XL": 1
+    },
+    "details": "Вещь в отличном состоянии!",
+    "images": [
+      "images/products/dior-x-cactus-jack-grey-logo-sweatsh-202c2df8-1.jpg"
+    ],
+    "detailImage": "images/products/dior-x-cactus-jack-grey-logo-sweatsh-202c2df8-1.jpg",
+    "isActive": true,
+    "createdAt": "2026-10-01T16:20:45.822411+00:00"
   }
 ]
