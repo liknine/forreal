@@ -4964,5 +4964,26 @@
     "detailImage": "images/products/kith-black-logo-hoodie-e0abe7fa-1.jpg",
     "isActive": true,
     "createdAt": "2026-10-01T12:07:05.288778+00:00"
+  },
+  {
+    "id": "complexcon-black-logo-hoodie-0357df05",
+    "brand": "COMPLEXCON",
+    "name": "BLACK LOGO HOODIE",
+    "price": 12000,
+    "currency": "RUB",
+    "category": "ХУДИ",
+    "sizes": [
+      "L"
+    ],
+    "sizeStock": {
+      "L": 1
+    },
+    "details": "Вещь в отличном состоянии!",
+    "images": [
+      "images/products/complexcon-black-logo-hoodie-0357df05-1.jpg"
+    ],
+    "detailImage": "images/products/complexcon-black-logo-hoodie-0357df05-1.jpg",
+    "isActive": true,
+    "createdAt": "2026-10-01T12:09:40.339622+00:00"
   }
 ]
