@@ -5028,5 +5028,27 @@
     "detailImage": "images/products/a-cold-wall-grey-logo-hoodie-07fc2bc5-1.jpg",
     "isActive": true,
     "createdAt": "2026-10-01T12:28:10.700426+00:00"
+  },
+  {
+    "id": "maison-mihara-yasuhiro-black-logo-zi-e5fb924a",
+    "brand": "MAISON MIHARA YASUHIRO",
+    "name": "BLACK LOGO ZIP HOODIE",
+    "price": 20000,
+    "currency": "RUB",
+    "category": "ЗИП-ХУДИ",
+    "sizes": [
+      "M"
+    ],
+    "sizeStock": {
+      "M": 1
+    },
+    "details": "Вещь в отличном состоянии!",
+    "images": [
+      "images/products/maison-mihara-yasuhiro-black-logo-zi-e5fb924a-1.jpg",
+      "images/products/maison-mihara-yasuhiro-black-logo-zi-e5fb924a-2.jpg"
+    ],
+    "detailImage": "images/products/maison-mihara-yasuhiro-black-logo-zi-e5fb924a-1.jpg",
+    "isActive": true,
+    "createdAt": "2026-10-01T12:30:53.217329+00:00"
   }
 ]
