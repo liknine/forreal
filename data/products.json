@@ -4791,5 +4791,27 @@
     "detailImage": "images/products/lanvin-black-monogram-logo-tee-db28be01-1.jpg",
     "isActive": true,
     "createdAt": "2026-09-02T15:15:08.924164+00:00"
+  },
+  {
+    "id": "cav-empt-grey-logo-sweatshirt-e400a988",
+    "brand": "CAV EMPT",
+    "name": "GREY LOGO SWEATSHIRT",
+    "price": 15500,
+    "currency": "RUB",
+    "category": "ХУДИ",
+    "sizes": [
+      "XL"
+    ],
+    "sizeStock": {
+      "XL": 1
+    },
+    "details": "Вещь в отличном состоянии!",
+    "images": [
+      "images/products/cav-empt-grey-logo-sweatshirt-e400a988-1.jpg",
+      "images/products/cav-empt-grey-logo-sweatshirt-e400a988-2.jpg"
+    ],
+    "detailImage": "images/products/cav-empt-grey-logo-sweatshirt-e400a988-1.jpg",
+    "isActive": true,
+    "createdAt": "2026-10-01T11:31:13.605662+00:00"
   }
 ]
