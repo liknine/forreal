@@ -5204,5 +5204,27 @@
     "detailImage": "images/products/project-g-r-black-logo-hoodie-228786f0-1.jpg",
     "isActive": true,
     "createdAt": "2026-10-01T13:01:24.898742+00:00"
+  },
+  {
+    "id": "grailz-black-pink-logo-hoodie-a41cffbe",
+    "brand": "GRAILZ",
+    "name": "BLACK-PINK LOGO HOODIE",
+    "price": 14000,
+    "currency": "RUB",
+    "category": "ХУДИ",
+    "sizes": [
+      "M"
+    ],
+    "sizeStock": {
+      "M": 1
+    },
+    "details": "Вещь в отличном состоянии!",
+    "images": [
+      "images/products/grailz-black-pink-logo-hoodie-a41cffbe-1.jpg",
+      "images/products/grailz-black-pink-logo-hoodie-a41cffbe-2.jpg"
+    ],
+    "detailImage": "images/products/grailz-black-pink-logo-hoodie-a41cffbe-1.jpg",
+    "isActive": true,
+    "createdAt": "2026-10-01T13:44:59.749486+00:00"
   }
 ]
