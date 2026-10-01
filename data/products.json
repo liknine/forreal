@@ -5835,5 +5835,26 @@
     "detailImage": "images/products/cav-empt-black-logo-tee-9be24b2e-1.jpg",
     "isActive": true,
     "createdAt": "2026-10-01T16:27:53.076322+00:00"
+  },
+  {
+    "id": "y-3-black-logo-tee-22c97641",
+    "brand": "Y-3",
+    "name": "BLACK LOGO TEE",
+    "price": 8000,
+    "currency": "RUB",
+    "category": "ФУТБОЛКИ",
+    "sizes": [
+      "XL"
+    ],
+    "sizeStock": {
+      "XL": 1
+    },
+    "details": "Вещь в отличном состоянии!",
+    "images": [
+      "images/products/y-3-black-logo-tee-22c97641-1.jpg"
+    ],
+    "detailImage": "images/products/y-3-black-logo-tee-22c97641-1.jpg",
+    "isActive": true,
+    "createdAt": "2026-10-01T16:28:53.719890+00:00"
   }
 ]
