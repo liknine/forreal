@@ -5072,5 +5072,27 @@
     "detailImage": "images/products/cav-empt-white-logo-longsleeve-47d559c3-1.jpg",
     "isActive": true,
     "createdAt": "2026-10-01T12:37:33.652505+00:00"
+  },
+  {
+    "id": "sacai-black-logo-hoodie-be810c26",
+    "brand": "SACAI",
+    "name": "BLACK LOGO HOODIE",
+    "price": 14000,
+    "currency": "RUB",
+    "category": "ХУДИ",
+    "sizes": [
+      "S"
+    ],
+    "sizeStock": {
+      "S": 1
+    },
+    "details": "Вещь в отличном состоянии!",
+    "images": [
+      "images/products/sacai-black-logo-hoodie-be810c26-1.jpg",
+      "images/products/sacai-black-logo-hoodie-be810c26-2.jpg"
+    ],
+    "detailImage": "images/products/sacai-black-logo-hoodie-be810c26-1.jpg",
+    "isActive": true,
+    "createdAt": "2026-10-01T12:41:24.847876+00:00"
   }
 ]
