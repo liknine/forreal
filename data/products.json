@@ -5379,5 +5379,27 @@
     "detailImage": "images/products/c2h4-black-logo-hoodie-c1874ac4-1.jpg",
     "isActive": true,
     "createdAt": "2026-10-01T14:09:17.787111+00:00"
+  },
+  {
+    "id": "424-x-armes-multicolour-logo-hoodie-b98a5607",
+    "brand": "424 x ARMES",
+    "name": "MULTICOLOUR LOGO HOODIE",
+    "price": 14000,
+    "currency": "RUB",
+    "category": "ХУДИ",
+    "sizes": [
+      "XL"
+    ],
+    "sizeStock": {
+      "XL": 1
+    },
+    "details": "Вещь в отличном состоянии!",
+    "images": [
+      "images/products/424-x-armes-multicolour-logo-hoodie-b98a5607-1.jpg",
+      "images/products/424-x-armes-multicolour-logo-hoodie-b98a5607-2.jpg"
+    ],
+    "detailImage": "images/products/424-x-armes-multicolour-logo-hoodie-b98a5607-1.jpg",
+    "isActive": true,
+    "createdAt": "2026-10-01T14:11:07.390473+00:00"
   }
 ]
