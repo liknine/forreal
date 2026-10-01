@@ -5335,5 +5335,27 @@
     "detailImage": "images/products/undermycar-black-logo-hoodie-c5fea7b2-1.jpg",
     "isActive": true,
     "createdAt": "2026-10-01T14:04:28.644816+00:00"
+  },
+  {
+    "id": "vetements-hardcore-black-logo-hoodie-3d7d4fad",
+    "brand": "VETEMENTS HARDCORE",
+    "name": "BLACK LOGO HOODIE",
+    "price": 55000,
+    "currency": "RUB",
+    "category": "ХУДИ",
+    "sizes": [
+      "XL"
+    ],
+    "sizeStock": {
+      "XL": 1
+    },
+    "details": "Вещь в отличном состоянии!",
+    "images": [
+      "images/products/vetements-hardcore-black-logo-hoodie-3d7d4fad-1.jpg",
+      "images/products/vetements-hardcore-black-logo-hoodie-3d7d4fad-2.jpg"
+    ],
+    "detailImage": "images/products/vetements-hardcore-black-logo-hoodie-3d7d4fad-1.jpg",
+    "isActive": true,
+    "createdAt": "2026-10-01T14:07:22.054692+00:00"
   }
 ]
