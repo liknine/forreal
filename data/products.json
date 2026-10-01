@@ -5488,5 +5488,27 @@
     "detailImage": "images/products/saint-michael-blue-logo-sweatshirt-db65c894-1.jpg",
     "isActive": true,
     "createdAt": "2026-10-01T14:21:53.505514+00:00"
+  },
+  {
+    "id": "poh-blue-logo-zip-hoodie-7556752a",
+    "brand": "POH",
+    "name": "BLUE LOGO ZIP HOODIE",
+    "price": 15500,
+    "currency": "RUB",
+    "category": "ЗИП-ХУДИ",
+    "sizes": [
+      "S"
+    ],
+    "sizeStock": {
+      "S": 1
+    },
+    "details": "Вещь в отличном состоянии!",
+    "images": [
+      "images/products/poh-blue-logo-zip-hoodie-7556752a-1.jpg",
+      "images/products/poh-blue-logo-zip-hoodie-7556752a-2.jpg"
+    ],
+    "detailImage": "images/products/poh-blue-logo-zip-hoodie-7556752a-1.jpg",
+    "isActive": true,
+    "createdAt": "2026-10-01T14:30:07.910405+00:00"
   }
 ]
