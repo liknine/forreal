@@ -5620,5 +5620,26 @@
     "detailImage": "images/products/a-cold-wall-greige-logo-hoodie-8ad4996d-1.jpg",
     "isActive": true,
     "createdAt": "2026-10-01T16:08:02.284356+00:00"
+  },
+  {
+    "id": "undermycar-beige-logo-hoodie-5a1859a6",
+    "brand": "UNDERMYCAR",
+    "name": "BEIGE LOGO HOODIE",
+    "price": 14000,
+    "currency": "RUB",
+    "category": "ХУДИ",
+    "sizes": [
+      "XL"
+    ],
+    "sizeStock": {
+      "XL": 1
+    },
+    "details": "Вещь в отличном состоянии!",
+    "images": [
+      "images/products/undermycar-beige-logo-hoodie-5a1859a6-1.jpg"
+    ],
+    "detailImage": "images/products/undermycar-beige-logo-hoodie-5a1859a6-1.jpg",
+    "isActive": true,
+    "createdAt": "2026-10-01T16:11:15.498570+00:00"
   }
 ]
