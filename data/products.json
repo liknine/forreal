@@ -5226,5 +5226,27 @@
     "detailImage": "images/products/grailz-black-pink-logo-hoodie-a41cffbe-1.jpg",
     "isActive": true,
     "createdAt": "2026-10-01T13:44:59.749486+00:00"
+  },
+  {
+    "id": "thug-club-black-logo-hoodie-dd8272f8",
+    "brand": "THUG CLUB",
+    "name": "BLACK LOGO HOODIE",
+    "price": 20000,
+    "currency": "RUB",
+    "category": "ХУДИ",
+    "sizes": [
+      "XL"
+    ],
+    "sizeStock": {
+      "XL": 1
+    },
+    "details": "Вещь в отличном состоянии!",
+    "images": [
+      "images/products/thug-club-black-logo-hoodie-dd8272f8-1.jpg",
+      "images/products/thug-club-black-logo-hoodie-dd8272f8-2.jpg"
+    ],
+    "detailImage": "images/products/thug-club-black-logo-hoodie-dd8272f8-1.jpg",
+    "isActive": true,
+    "createdAt": "2026-10-01T13:49:59.948554+00:00"
   }
 ]
