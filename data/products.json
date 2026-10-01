@@ -4942,5 +4942,27 @@
     "detailImage": "images/products/c2h4-grey-logo-hoodie-a5100cae-1.jpg",
     "isActive": true,
     "createdAt": "2026-10-01T12:05:35.051703+00:00"
+  },
+  {
+    "id": "kith-black-logo-hoodie-e0abe7fa",
+    "brand": "KITH",
+    "name": "BLACK LOGO HOODIE",
+    "price": 14000,
+    "currency": "RUB",
+    "category": "ХУДИ",
+    "sizes": [
+      "XL"
+    ],
+    "sizeStock": {
+      "XL": 1
+    },
+    "details": "Вещь в отличном состоянии!",
+    "images": [
+      "images/products/kith-black-logo-hoodie-e0abe7fa-1.jpg",
+      "images/products/kith-black-logo-hoodie-e0abe7fa-2.jpg"
+    ],
+    "detailImage": "images/products/kith-black-logo-hoodie-e0abe7fa-1.jpg",
+    "isActive": true,
+    "createdAt": "2026-10-01T12:07:05.288778+00:00"
   }
 ]
