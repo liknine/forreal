@@ -6051,5 +6051,27 @@
     "detailImage": "images/products/dolce-gabbana-dolce-gabbana-prince-o-22b6a7d3-1.jpg",
     "isActive": true,
     "createdAt": "2026-10-03T22:09:02.506574+00:00"
+  },
+  {
+    "id": "supreme-x-chito-supreme-x-chito-bone-48660d5b",
+    "brand": "SUPREME x CHITO",
+    "name": "Supreme x Chito Bones Varsity Jacket — Red, FW18",
+    "price": 45000,
+    "currency": "RUB",
+    "category": "КУРТКИ",
+    "sizes": [
+      "M"
+    ],
+    "sizeStock": {
+      "M": 1
+    },
+    "details": "Вещь находится в Отличном состоянии",
+    "images": [
+      "images/products/supreme-x-chito-supreme-x-chito-bone-48660d5b-1.jpg",
+      "images/products/supreme-x-chito-supreme-x-chito-bone-48660d5b-2.jpg"
+    ],
+    "detailImage": "images/products/supreme-x-chito-supreme-x-chito-bone-48660d5b-1.jpg",
+    "isActive": true,
+    "createdAt": "2026-10-03T22:17:28.190143+00:00"
   }
 ]
