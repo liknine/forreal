@@ -5986,5 +5986,27 @@
     "detailImage": "images/products/cav-empt-grey-washed-logo-sweatshirt-f1eadbef-1.jpg",
     "isActive": true,
     "createdAt": "2026-10-03T21:41:47.549950+00:00"
+  },
+  {
+    "id": "cav-empt-grey-logo-sweatshirt-b9e732ad",
+    "brand": "CAV EMPT",
+    "name": "GREY LOGO SWEATSHIRT",
+    "price": 18500,
+    "currency": "RUB",
+    "category": "ХУДИ",
+    "sizes": [
+      "XL"
+    ],
+    "sizeStock": {
+      "XL": 1
+    },
+    "details": "Вещь находится в Отличном состоянии!",
+    "images": [
+      "images/products/cav-empt-grey-logo-sweatshirt-b9e732ad-1.jpg",
+      "images/products/cav-empt-grey-logo-sweatshirt-b9e732ad-2.jpg"
+    ],
+    "detailImage": "images/products/cav-empt-grey-logo-sweatshirt-b9e732ad-1.jpg",
+    "isActive": true,
+    "createdAt": "2026-10-03T21:48:48.532812+00:00"
   }
 ]
