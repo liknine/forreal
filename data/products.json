@@ -6008,5 +6008,26 @@
     "detailImage": "images/products/cav-empt-grey-logo-sweatshirt-b9e732ad-1.jpg",
     "isActive": true,
     "createdAt": "2026-10-03T21:48:48.532812+00:00"
+  },
+  {
+    "id": "saint-laurent-saint-laurent-teddy-em-4366294d",
+    "brand": "SAINT LAURENT",
+    "name": "Saint Laurent Teddy Embroidered Sleeve Black Bomber Jacket",
+    "price": 100000,
+    "currency": "RUB",
+    "category": "КУРТКИ",
+    "sizes": [
+      "L"
+    ],
+    "sizeStock": {
+      "L": 1
+    },
+    "details": "Вещь находится в Отличном состоянии!",
+    "images": [
+      "images/products/saint-laurent-saint-laurent-teddy-em-4366294d-1.jpg"
+    ],
+    "detailImage": "images/products/saint-laurent-saint-laurent-teddy-em-4366294d-1.jpg",
+    "isActive": true,
+    "createdAt": "2026-10-03T21:52:45.368153+00:00"
   }
 ]
