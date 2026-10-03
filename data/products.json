@@ -6029,5 +6029,27 @@
     "detailImage": "images/products/saint-laurent-saint-laurent-teddy-em-4366294d-1.jpg",
     "isActive": true,
     "createdAt": "2026-10-03T21:52:45.368153+00:00"
+  },
+  {
+    "id": "dolce-gabbana-dolce-gabbana-prince-o-22b6a7d3",
+    "brand": "DOLCE GABBANA",
+    "name": "Dolce & Gabbana \n“Prince of Love” Patchwork Evening Jacket",
+    "price": 80000,
+    "currency": "RUB",
+    "category": "КУРТКИ",
+    "sizes": [
+      "A"
+    ],
+    "sizeStock": {
+      "A": 1
+    },
+    "details": "Вещь находится в Отличном состоянии!",
+    "images": [
+      "images/products/dolce-gabbana-dolce-gabbana-prince-o-22b6a7d3-1.jpg",
+      "images/products/dolce-gabbana-dolce-gabbana-prince-o-22b6a7d3-2.jpg"
+    ],
+    "detailImage": "images/products/dolce-gabbana-dolce-gabbana-prince-o-22b6a7d3-1.jpg",
+    "isActive": true,
+    "createdAt": "2026-10-03T22:09:02.506574+00:00"
   }
 ]
