@@ -1900,7 +1900,7 @@
       "41"
     ],
     "sizeStock": {
-      "41": 1
+      "41": 0
     },
     "details": "В отличном состоянии \n\n41 / 27 см",
     "images": [
@@ -1909,8 +1909,11 @@
       "images/products/mihara-yasuhiro-black-leather-sneake-23b79e5f-3.jpg"
     ],
     "detailImage": "images/products/mihara-yasuhiro-black-leather-sneake-23b79e5f-1.jpg",
-    "isActive": true,
-    "createdAt": "2026-07-18T13:27:43.778548+00:00"
+    "isActive": false,
+    "createdAt": "2026-07-18T13:27:43.778548+00:00",
+    "updatedAt": "2026-10-04T15:05:27.153229+00:00",
+    "autoHiddenNoStock": true,
+    "soldOutAt": "2026-10-04T15:05:27.153247+00:00"
   },
   {
     "id": "mihara-yasuhiro-beige-leather-sneake-9491dcc9",
