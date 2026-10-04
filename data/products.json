@@ -6248,5 +6248,26 @@
     "detailImage": "images/products/dolce-gabbana-dolce-gabbana-hollywoo-c5ac6342-1.jpg",
     "isActive": true,
     "createdAt": "2026-10-04T09:50:25.172575+00:00"
+  },
+  {
+    "id": "dolce-gabbana-dolce-gabbana-boxing-i-d4ea6e14",
+    "brand": "DOLCE GABBANA",
+    "name": "Dolce & Gabbana \n“Boxing Icons” T-Shirt",
+    "price": 14000,
+    "currency": "RUB",
+    "category": "ФУТБОЛКИ",
+    "sizes": [
+      "L"
+    ],
+    "sizeStock": {
+      "L": 1
+    },
+    "details": "Вещь находится в Отличном состоянии!",
+    "images": [
+      "images/products/dolce-gabbana-dolce-gabbana-boxing-i-d4ea6e14-1.jpg"
+    ],
+    "detailImage": "images/products/dolce-gabbana-dolce-gabbana-boxing-i-d4ea6e14-1.jpg",
+    "isActive": true,
+    "createdAt": "2026-10-04T09:54:46.463110+00:00"
   }
 ]
