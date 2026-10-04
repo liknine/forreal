@@ -6312,5 +6312,26 @@
     "detailImage": "images/products/mastermind-mastermind-world-black-lo-bc3d44d3-1.jpg",
     "isActive": true,
     "createdAt": "2026-10-04T10:22:19.143312+00:00"
+  },
+  {
+    "id": "hysteric-glamour-black-baby-hoe-t-sh-ecee03a9",
+    "brand": "HYSTERIC GLAMOUR",
+    "name": "Black «Baby Hoe» T-Shirt",
+    "price": 14500,
+    "currency": "RUB",
+    "category": "ФУТБОЛКИ",
+    "sizes": [
+      "XL"
+    ],
+    "sizeStock": {
+      "XL": 1
+    },
+    "details": "Вещь находится в Отличном состоянии!",
+    "images": [
+      "images/products/hysteric-glamour-black-baby-hoe-t-sh-ecee03a9-1.jpg"
+    ],
+    "detailImage": "images/products/hysteric-glamour-black-baby-hoe-t-sh-ecee03a9-1.jpg",
+    "isActive": true,
+    "createdAt": "2026-10-04T10:28:28.583321+00:00"
   }
 ]
