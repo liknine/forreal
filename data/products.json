@@ -6269,5 +6269,26 @@
     "detailImage": "images/products/dolce-gabbana-dolce-gabbana-boxing-i-d4ea6e14-1.jpg",
     "isActive": true,
     "createdAt": "2026-10-04T09:54:46.463110+00:00"
+  },
+  {
+    "id": "alyx-grey-washed-logo-t-shirt-c1c458cc",
+    "brand": "ALYX",
+    "name": "Grey Washed Logo T-Shirt",
+    "price": 14000,
+    "currency": "RUB",
+    "category": "ФУТБОЛКИ",
+    "sizes": [
+      "L"
+    ],
+    "sizeStock": {
+      "L": 1
+    },
+    "details": "Вещь находится в Отличном состоянии!",
+    "images": [
+      "images/products/alyx-grey-washed-logo-t-shirt-c1c458cc-1.jpg"
+    ],
+    "detailImage": "images/products/alyx-grey-washed-logo-t-shirt-c1c458cc-1.jpg",
+    "isActive": true,
+    "createdAt": "2026-10-04T09:57:10.899022+00:00"
   }
 ]
