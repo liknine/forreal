@@ -6095,5 +6095,27 @@
     "detailImage": "images/products/maison-mihara-yasuhiro-maison-mihara-ae0eaea0-1.jpg",
     "isActive": true,
     "createdAt": "2026-10-04T09:18:01.103558+00:00"
+  },
+  {
+    "id": "cav-empt-c4v3mpt-jacket-spring-summe-030c5965",
+    "brand": "CAV EMPT",
+    "name": "C4V3MPT Jacket.\nSpring/Summer 2016 (16SS)",
+    "price": 25000,
+    "currency": "RUB",
+    "category": "КУРТКИ",
+    "sizes": [
+      "M"
+    ],
+    "sizeStock": {
+      "M": 1
+    },
+    "details": "Вещь находится в Отличном состоянии!",
+    "images": [
+      "images/products/cav-empt-c4v3mpt-jacket-spring-summe-030c5965-1.jpg",
+      "images/products/cav-empt-c4v3mpt-jacket-spring-summe-030c5965-2.jpg"
+    ],
+    "detailImage": "images/products/cav-empt-c4v3mpt-jacket-spring-summe-030c5965-1.jpg",
+    "isActive": true,
+    "createdAt": "2026-10-04T09:25:08.355712+00:00"
   }
 ]
