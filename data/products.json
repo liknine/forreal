@@ -6227,5 +6227,26 @@
     "detailImage": "images/products/alyx-alyx-alpha-industries-naomi-ave-ae0e1f05-1.jpg",
     "isActive": true,
     "createdAt": "2026-10-04T09:43:44.420021+00:00"
+  },
+  {
+    "id": "dolce-gabbana-dolce-gabbana-hollywoo-c5ac6342",
+    "brand": "DOLCE GABBANA",
+    "name": "Dolce & Gabbana “Hollywood Cowboy” T-Shirt",
+    "price": 12000,
+    "currency": "RUB",
+    "category": "ФУТБОЛКИ",
+    "sizes": [
+      "S"
+    ],
+    "sizeStock": {
+      "S": 1
+    },
+    "details": "Вещь находится в Отличном состоянии!",
+    "images": [
+      "images/products/dolce-gabbana-dolce-gabbana-hollywoo-c5ac6342-1.jpg"
+    ],
+    "detailImage": "images/products/dolce-gabbana-dolce-gabbana-hollywoo-c5ac6342-1.jpg",
+    "isActive": true,
+    "createdAt": "2026-10-04T09:50:25.172575+00:00"
   }
 ]
