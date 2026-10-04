@@ -6073,5 +6073,27 @@
     "detailImage": "images/products/supreme-x-chito-supreme-x-chito-bone-48660d5b-1.jpg",
     "isActive": true,
     "createdAt": "2026-10-03T22:17:28.190143+00:00"
+  },
+  {
+    "id": "maison-mihara-yasuhiro-maison-mihara-ae0eaea0",
+    "brand": "MAISON MIHARA YASUHIRO",
+    "name": "Maison MIHARA YASUHIRO Leopard Print Bomber Jacket",
+    "price": 27500,
+    "currency": "RUB",
+    "category": "КУРТКИ",
+    "sizes": [
+      "M"
+    ],
+    "sizeStock": {
+      "M": 1
+    },
+    "details": "Вещь находится в Отличном состоянии!\n\nНа худого парня!",
+    "images": [
+      "images/products/maison-mihara-yasuhiro-maison-mihara-ae0eaea0-1.jpg",
+      "images/products/maison-mihara-yasuhiro-maison-mihara-ae0eaea0-2.jpg"
+    ],
+    "detailImage": "images/products/maison-mihara-yasuhiro-maison-mihara-ae0eaea0-1.jpg",
+    "isActive": true,
+    "createdAt": "2026-10-04T09:18:01.103558+00:00"
   }
 ]
