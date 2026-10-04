@@ -6183,5 +6183,27 @@
     "detailImage": "images/products/alyx-alyx-fw18-rainmaker-pilot-bombe-3c4bfa0d-1.jpg",
     "isActive": true,
     "createdAt": "2026-10-04T09:39:40.750705+00:00"
+  },
+  {
+    "id": "alyx-alyx-alpha-industries-relentles-98a02d21",
+    "brand": "ALYX",
+    "name": "ALYX × Alpha Industries “Relentless” MA-1 Bomber Jacket — Sage Green",
+    "price": 30000,
+    "currency": "RUB",
+    "category": "КУРТКИ",
+    "sizes": [
+      "M"
+    ],
+    "sizeStock": {
+      "M": 1
+    },
+    "details": "Вещь находится в Отличном состоянии!",
+    "images": [
+      "images/products/alyx-alyx-alpha-industries-relentles-98a02d21-1.jpg",
+      "images/products/alyx-alyx-alpha-industries-relentles-98a02d21-2.jpg"
+    ],
+    "detailImage": "images/products/alyx-alyx-alpha-industries-relentles-98a02d21-1.jpg",
+    "isActive": true,
+    "createdAt": "2026-10-04T09:42:19.700904+00:00"
   }
 ]
