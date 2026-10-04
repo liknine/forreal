@@ -1,5 +1,29 @@
 [
   {
+    "id": "1a123232-c8f6-4628-bcaa-37018f329faf",
+    "orderNumber": 1038,
+    "clientOrderId": "forreal-1791126211451-15132c5f276a98",
+    "telegramId": 901750021,
+    "username": "codeinetears2007",
+    "items": [
+      {
+        "productId": "mihara-yasuhiro-black-leather-sneake-23b79e5f",
+        "brand": "MIHARA YASUHIRO",
+        "name": "BLACK LEATHER SNEAKERS",
+        "size": "41",
+        "quantity": 1,
+        "price": 17000,
+        "image": "images/products/mihara-yasuhiro-black-leather-sneake-23b79e5f-1.jpg"
+      }
+    ],
+    "totalPrice": 17000,
+    "currency": "RUB",
+    "deliveryMethod": "cdek",
+    "status": "awaiting_payment",
+    "createdAt": "2026-10-04T15:02:32.936198+00:00",
+    "updatedAt": "2026-10-04T15:02:32.936198+00:00"
+  },
+  {
     "id": "9432bfc9-98fe-4ca2-b74f-a7ff34adde8d",
     "orderNumber": 1037,
     "clientOrderId": "forreal-1790790803608-85980d43463ba",
