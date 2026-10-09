@@ -6453,5 +6453,28 @@
     "detailImage": "images/products/golden-goose-black-washed-classic-sn-b09a4dbc-1.jpg",
     "isActive": true,
     "createdAt": "2026-10-09T10:46:02.187344+00:00"
+  },
+  {
+    "id": "saint-laurent-black-leopard-shoes-df65e0d7",
+    "brand": "SAINT LAURENT",
+    "name": "BLACK LEOPARD SHOES",
+    "price": 30000,
+    "currency": "RUB",
+    "category": "ОБУВЬ",
+    "sizes": [
+      "42.5"
+    ],
+    "sizeStock": {
+      "42.5": 1
+    },
+    "details": "Пара находится в Отличном состоянии!\n\n42.5/43 - ON FIT",
+    "images": [
+      "images/products/saint-laurent-black-leopard-shoes-df65e0d7-1.jpg",
+      "images/products/saint-laurent-black-leopard-shoes-df65e0d7-2.jpg",
+      "images/products/saint-laurent-black-leopard-shoes-df65e0d7-3.jpg"
+    ],
+    "detailImage": "images/products/saint-laurent-black-leopard-shoes-df65e0d7-1.jpg",
+    "isActive": true,
+    "createdAt": "2026-10-09T10:52:30.480618+00:00"
   }
 ]
