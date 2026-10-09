@@ -6522,5 +6522,28 @@
     "detailImage": "images/products/golden-goose-super-star-blue-suede-s-62eba41c-1.jpg",
     "isActive": true,
     "createdAt": "2026-10-09T11:02:17.349974+00:00"
+  },
+  {
+    "id": "balenciaga-3xl-worn-out-washed-grey-e65d5ac5",
+    "brand": "BALENCIAGA",
+    "name": "3XL WORN-OUT WASHED GREY SNEAKERS",
+    "price": 50000,
+    "currency": "RUB",
+    "category": "ОБУВЬ",
+    "sizes": [
+      "41"
+    ],
+    "sizeStock": {
+      "41": 1
+    },
+    "details": "Пара находится в Отличном состоянии!\n\n41-43 ON FIT",
+    "images": [
+      "images/products/balenciaga-3xl-worn-out-washed-grey-e65d5ac5-1.jpg",
+      "images/products/balenciaga-3xl-worn-out-washed-grey-e65d5ac5-2.jpg",
+      "images/products/balenciaga-3xl-worn-out-washed-grey-e65d5ac5-3.jpg"
+    ],
+    "detailImage": "images/products/balenciaga-3xl-worn-out-washed-grey-e65d5ac5-1.jpg",
+    "isActive": true,
+    "createdAt": "2026-10-09T11:04:30.171066+00:00"
   }
 ]
