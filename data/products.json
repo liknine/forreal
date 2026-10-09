@@ -2053,29 +2053,6 @@
     "updatedAt": "2026-08-18T03:48:55.802733+00:00"
   },
   {
-    "id": "givenchy-black-logo-tee-08f29481",
-    "brand": "GIVENCHY",
-    "name": "BLACK LOGO TEE",
-    "price": 10000,
-    "currency": "RUB",
-    "category": "ФУТБОЛКИ",
-    "sizes": [
-      "M"
-    ],
-    "sizeStock": {
-      "M": 1
-    },
-    "details": "в отличном состоянии\nподмышки 46\nспина 68 \nплечи 41",
-    "images": [
-      "images/products/givenchy-black-logo-tee-08f29481-1.jpg",
-      "images/products/givenchy-black-logo-tee-08f29481-2.jpg"
-    ],
-    "detailImage": "images/products/givenchy-black-logo-tee-08f29481-1.jpg",
-    "isActive": true,
-    "createdAt": "2026-07-19T08:04:02.088088+00:00",
-    "updatedAt": "2026-08-18T02:59:12.151290+00:00"
-  },
-  {
     "id": "cav-empt-black-logo-tee-0d7b157a",
     "brand": "CAV EMPT",
     "name": "BLACK LOGO TEE",
