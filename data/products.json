@@ -6382,5 +6382,28 @@
     "detailImage": "images/products/louis-vuitton-lv-trainer-graffiti-bl-70d39475-1.jpg",
     "isActive": true,
     "createdAt": "2026-10-09T10:32:21.361128+00:00"
+  },
+  {
+    "id": "nike-x-peaceminusone-air-force-tripl-1d0be78d",
+    "brand": "NIKE X PEACEMINUSONE",
+    "name": "AIR FORCE TRIPLE COLOR BLACK SNEAKERS",
+    "price": 30000,
+    "currency": "RUB",
+    "category": "ОБУВЬ",
+    "sizes": [
+      "44.5"
+    ],
+    "sizeStock": {
+      "44.5": 1
+    },
+    "details": "Пара находится в Отличном состоянии!",
+    "images": [
+      "images/products/nike-x-peaceminusone-air-force-tripl-1d0be78d-1.jpg",
+      "images/products/nike-x-peaceminusone-air-force-tripl-1d0be78d-2.jpg",
+      "images/products/nike-x-peaceminusone-air-force-tripl-1d0be78d-3.jpg"
+    ],
+    "detailImage": "images/products/nike-x-peaceminusone-air-force-tripl-1d0be78d-1.jpg",
+    "isActive": true,
+    "createdAt": "2026-10-09T10:36:41.899520+00:00"
   }
 ]
