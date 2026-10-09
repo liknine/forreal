@@ -4598,28 +4598,6 @@
     "updatedAt": "2026-09-30T13:57:12.510601+00:00"
   },
   {
-    "id": "givenchy-black-devil-logo-tee-04a6f3e2",
-    "brand": "GIVENCHY",
-    "name": "BLACK DEVIL LOGO TEE",
-    "price": 12000,
-    "currency": "RUB",
-    "category": "ФУТБОЛКИ",
-    "sizes": [
-      "S"
-    ],
-    "sizeStock": {
-      "S": 1
-    },
-    "details": "В Отличном состоянии!",
-    "images": [
-      "images/products/givenchy-black-devil-logo-tee-04a6f3e2-1.jpg",
-      "images/products/givenchy-black-devil-logo-tee-04a6f3e2-2.jpg"
-    ],
-    "detailImage": "images/products/givenchy-black-devil-logo-tee-04a6f3e2-1.jpg",
-    "isActive": true,
-    "createdAt": "2026-09-02T14:45:03.226890+00:00"
-  },
-  {
     "id": "lanvin-black-blue-roses-logo-tee-3618d2d0",
     "brand": "LANVIN",
     "name": "BLACK «BLUE ROSES» LOGO TEE",
