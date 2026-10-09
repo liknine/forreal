@@ -6499,5 +6499,28 @@
     "detailImage": "images/products/gucci-demetra-gg-supreme-canvas-bask-19b03fb3-1.jpg",
     "isActive": true,
     "createdAt": "2026-10-09T10:57:18.177814+00:00"
+  },
+  {
+    "id": "golden-goose-super-star-blue-suede-s-62eba41c",
+    "brand": "GOLDEN GOOSE",
+    "name": "SUPER STAR BLUE SUEDE SNEAKERS",
+    "price": 30000,
+    "currency": "RUB",
+    "category": "ОБУВЬ",
+    "sizes": [
+      "42.5"
+    ],
+    "sizeStock": {
+      "42.5": 1
+    },
+    "details": "Пара находится в Отличном состоянии!\n\n42-43.5 ON FIT",
+    "images": [
+      "images/products/golden-goose-super-star-blue-suede-s-62eba41c-1.jpg",
+      "images/products/golden-goose-super-star-blue-suede-s-62eba41c-2.jpg",
+      "images/products/golden-goose-super-star-blue-suede-s-62eba41c-3.jpg"
+    ],
+    "detailImage": "images/products/golden-goose-super-star-blue-suede-s-62eba41c-1.jpg",
+    "isActive": true,
+    "createdAt": "2026-10-09T11:02:17.349974+00:00"
   }
 ]
