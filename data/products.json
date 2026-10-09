@@ -6476,5 +6476,28 @@
     "detailImage": "images/products/saint-laurent-black-leopard-shoes-df65e0d7-1.jpg",
     "isActive": true,
     "createdAt": "2026-10-09T10:52:30.480618+00:00"
+  },
+  {
+    "id": "gucci-demetra-gg-supreme-canvas-bask-19b03fb3",
+    "brand": "GUCCI",
+    "name": "DEMETRA GG SUPREME CANVAS BASKET SNEAKERS",
+    "price": 35000,
+    "currency": "RUB",
+    "category": "ОБУВЬ",
+    "sizes": [
+      "43"
+    ],
+    "sizeStock": {
+      "43": 1
+    },
+    "details": "Пара находится в Отличном состоянии!",
+    "images": [
+      "images/products/gucci-demetra-gg-supreme-canvas-bask-19b03fb3-1.jpg",
+      "images/products/gucci-demetra-gg-supreme-canvas-bask-19b03fb3-2.jpg",
+      "images/products/gucci-demetra-gg-supreme-canvas-bask-19b03fb3-3.jpg"
+    ],
+    "detailImage": "images/products/gucci-demetra-gg-supreme-canvas-bask-19b03fb3-1.jpg",
+    "isActive": true,
+    "createdAt": "2026-10-09T10:57:18.177814+00:00"
   }
 ]
