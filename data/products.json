@@ -6336,5 +6336,28 @@
     "detailImage": "images/products/hysteric-glamour-black-baby-hoe-t-sh-ecee03a9-1.jpg",
     "isActive": true,
     "createdAt": "2026-10-04T10:28:28.583321+00:00"
+  },
+  {
+    "id": "prada-cloudbust-thunder-military-sne-781aa2a5",
+    "brand": "PRADA",
+    "name": "CLOUDBUST THUNDER MILITARY SNEAKERS",
+    "price": 35000,
+    "currency": "RUB",
+    "category": "ОБУВЬ",
+    "sizes": [
+      "42"
+    ],
+    "sizeStock": {
+      "42": 1
+    },
+    "details": "Папа находится в идеальном состоянии!",
+    "images": [
+      "images/products/prada-cloudbust-thunder-military-sne-781aa2a5-1.jpg",
+      "images/products/prada-cloudbust-thunder-military-sne-781aa2a5-2.jpg",
+      "images/products/prada-cloudbust-thunder-military-sne-781aa2a5-3.jpg"
+    ],
+    "detailImage": "images/products/prada-cloudbust-thunder-military-sne-781aa2a5-1.jpg",
+    "isActive": true,
+    "createdAt": "2026-10-09T10:29:45.799764+00:00"
   }
 ]
