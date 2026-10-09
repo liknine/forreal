@@ -6451,5 +6451,28 @@
     "detailImage": "images/products/saint-laurent-multicolour-stars-snea-71f870bd-1.jpg",
     "isActive": true,
     "createdAt": "2026-10-09T10:40:42.624245+00:00"
+  },
+  {
+    "id": "golden-goose-black-washed-classic-sn-b09a4dbc",
+    "brand": "GOLDEN GOOSE",
+    "name": "BLACK WASHED CLASSIC SNEAKERS",
+    "price": 30000,
+    "currency": "RUB",
+    "category": "ОБУВЬ",
+    "sizes": [
+      "42"
+    ],
+    "sizeStock": {
+      "42": 1
+    },
+    "details": "Пара находится в Отличном состоянии!\n\nON FIT - 41/42",
+    "images": [
+      "images/products/golden-goose-black-washed-classic-sn-b09a4dbc-1.jpg",
+      "images/products/golden-goose-black-washed-classic-sn-b09a4dbc-2.jpg",
+      "images/products/golden-goose-black-washed-classic-sn-b09a4dbc-3.jpg"
+    ],
+    "detailImage": "images/products/golden-goose-black-washed-classic-sn-b09a4dbc-1.jpg",
+    "isActive": true,
+    "createdAt": "2026-10-09T10:46:02.187344+00:00"
   }
 ]
