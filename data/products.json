@@ -6405,5 +6405,28 @@
     "detailImage": "images/products/nike-x-peaceminusone-air-force-tripl-1d0be78d-1.jpg",
     "isActive": true,
     "createdAt": "2026-10-09T10:36:41.899520+00:00"
+  },
+  {
+    "id": "amiri-skeel-top-high-brown-white-sne-268c30fa",
+    "brand": "AMIRI",
+    "name": "SKEEL TOP HIGH \nBROWN/WHITE SNEAKERS",
+    "price": 35000,
+    "currency": "RUB",
+    "category": "ОБУВЬ",
+    "sizes": [
+      "42"
+    ],
+    "sizeStock": {
+      "42": 1
+    },
+    "details": "Папа находится в Отличном состоянии!",
+    "images": [
+      "images/products/amiri-skeel-top-high-brown-white-sne-268c30fa-1.jpg",
+      "images/products/amiri-skeel-top-high-brown-white-sne-268c30fa-2.jpg",
+      "images/products/amiri-skeel-top-high-brown-white-sne-268c30fa-3.jpg"
+    ],
+    "detailImage": "images/products/amiri-skeel-top-high-brown-white-sne-268c30fa-1.jpg",
+    "isActive": true,
+    "createdAt": "2026-10-09T10:38:30.257364+00:00"
   }
 ]
