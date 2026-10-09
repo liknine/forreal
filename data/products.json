@@ -6359,5 +6359,28 @@
     "detailImage": "images/products/prada-cloudbust-thunder-military-sne-781aa2a5-1.jpg",
     "isActive": true,
     "createdAt": "2026-10-09T10:29:45.799764+00:00"
+  },
+  {
+    "id": "louis-vuitton-lv-trainer-graffiti-bl-70d39475",
+    "brand": "LOUIS VUITTON",
+    "name": "LV TRAINER GRAFFITI \nBLACK/YELLOW SNEAKERS",
+    "price": 65000,
+    "currency": "RUB",
+    "category": "ОБУВЬ",
+    "sizes": [
+      "42"
+    ],
+    "sizeStock": {
+      "42": 1
+    },
+    "details": "Пара находится в Отличном состоянии!",
+    "images": [
+      "images/products/louis-vuitton-lv-trainer-graffiti-bl-70d39475-1.jpg",
+      "images/products/louis-vuitton-lv-trainer-graffiti-bl-70d39475-2.jpg",
+      "images/products/louis-vuitton-lv-trainer-graffiti-bl-70d39475-3.jpg"
+    ],
+    "detailImage": "images/products/louis-vuitton-lv-trainer-graffiti-bl-70d39475-1.jpg",
+    "isActive": true,
+    "createdAt": "2026-10-09T10:32:21.361128+00:00"
   }
 ]
