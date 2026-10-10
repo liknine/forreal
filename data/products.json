@@ -6365,5 +6365,27 @@
     "detailImage": "images/products/cav-empt-grey-logo-sweatshirt-fa217af2-1.jpg",
     "isActive": true,
     "createdAt": "2026-10-10T12:10:32.708400+00:00"
+  },
+  {
+    "id": "project-g-r-red-logo-long-sleeve-c629988e",
+    "brand": "PROJECT G/R",
+    "name": "RED LOGO LONG-SLEEVE",
+    "price": 20000,
+    "currency": "RUB",
+    "category": "ХУДИ",
+    "sizes": [
+      "L"
+    ],
+    "sizeStock": {
+      "L": 1
+    },
+    "details": "Вещь в отличном состоянии!",
+    "images": [
+      "images/products/project-g-r-red-logo-long-sleeve-c629988e-1.jpg",
+      "images/products/project-g-r-red-logo-long-sleeve-c629988e-2.jpg"
+    ],
+    "detailImage": "images/products/project-g-r-red-logo-long-sleeve-c629988e-1.jpg",
+    "isActive": true,
+    "createdAt": "2026-10-10T12:39:30.740296+00:00"
   }
 ]
