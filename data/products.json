@@ -3947,29 +3947,6 @@
     "updatedAt": "2026-09-30T11:39:21.435621+00:00"
   },
   {
-    "id": "stone-island-grey-logo-sweater-1d0a02a2",
-    "brand": "STONE ISLAND",
-    "name": "GREY LOGO SWEATER",
-    "price": 35000,
-    "currency": "RUB",
-    "category": "ХУДИ",
-    "sizes": [
-      "M"
-    ],
-    "sizeStock": {
-      "M": 1
-    },
-    "details": "В отличном состоянии \nспина 68\nподмышки 48\nплечи 41",
-    "images": [
-      "images/products/stone-island-grey-logo-sweater-1d0a02a2-1.jpg",
-      "images/products/stone-island-grey-logo-sweater-1d0a02a2-2.jpg"
-    ],
-    "detailImage": "images/products/stone-island-grey-logo-sweater-1d0a02a2-1.jpg",
-    "isActive": true,
-    "createdAt": "2026-08-10T09:10:50.638453+00:00",
-    "updatedAt": "2026-08-13T10:17:22.919374+00:00"
-  },
-  {
     "id": "saint-tears-white-logo-sweatshirt-fd3fe615",
     "brand": "CAV EMPT",
     "name": "BLACK LOGO SWEATSHIRT",
