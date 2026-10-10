@@ -6715,7 +6715,7 @@
   {
     "id": "saint-michael-washed-logo-0ae3d408",
     "brand": "SAINT MICHAEL",
-    "name": "WASHED LOGO",
+    "name": "WASHED LOGO TEE",
     "price": 25000,
     "currency": "RUB",
     "category": "ФУТБОЛКИ",
@@ -6732,6 +6732,7 @@
     ],
     "detailImage": "images/products/saint-michael-washed-logo-0ae3d408-1.jpg",
     "isActive": true,
-    "createdAt": "2026-10-10T16:47:39.474568+00:00"
+    "createdAt": "2026-10-10T16:47:39.474568+00:00",
+    "updatedAt": "2026-10-10T16:48:04.157485+00:00"
   }
 ]
