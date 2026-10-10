@@ -381,7 +381,7 @@
     "id": "1017-alyx-9sm-black-white-logo-longs-ddedbce8",
     "brand": "1017 ALYX 9SM",
     "name": "BLACK WHITE LOGO LONGSLEEVE",
-    "price": 11000,
+    "price": 14000,
     "currency": "RUB",
     "category": "ФУТБОЛКИ",
     "sizes": [
@@ -398,7 +398,8 @@
     ],
     "detailImage": "images/products/1017-alyx-9sm-black-white-logo-longs-ddedbce8-1.jpg",
     "isActive": true,
-    "createdAt": "2026-07-11T19:42:53.763923+00:00"
+    "createdAt": "2026-07-11T19:42:53.763923+00:00",
+    "updatedAt": "2026-10-10T12:31:57.698416+00:00"
   },
   {
     "id": "mihara-yasuhiro-black-logo-sweatshir-3a89f3bb",
