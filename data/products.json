@@ -6690,5 +6690,26 @@
     "detailImage": "images/products/yohji-yamamoto-black-purple-logo-tee-04e62567-1.jpg",
     "isActive": true,
     "createdAt": "2026-10-10T16:36:20.165621+00:00"
+  },
+  {
+    "id": "viviene-westwood-black-logo-tee-d19705eb",
+    "brand": "VIVIENE WESTWOOD",
+    "name": "BLACK LOGO TEE",
+    "price": 12000,
+    "currency": "RUB",
+    "category": "ФУТБОЛКИ",
+    "sizes": [
+      "XL"
+    ],
+    "sizeStock": {
+      "XL": 1
+    },
+    "details": "Вещь в отличном состоянии!",
+    "images": [
+      "images/products/viviene-westwood-black-logo-tee-d19705eb-1.jpg"
+    ],
+    "detailImage": "images/products/viviene-westwood-black-logo-tee-d19705eb-1.jpg",
+    "isActive": true,
+    "createdAt": "2026-10-10T16:42:59.809903+00:00"
   }
 ]
