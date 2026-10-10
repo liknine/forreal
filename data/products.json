@@ -2286,7 +2286,7 @@
     "id": "mihara-yasuhiro-grey-logo-hoodie-79316e2a",
     "brand": "MIHARA YASUHIRO",
     "name": "GREY LOGO HOODIE",
-    "price": 15500,
+    "price": 20000,
     "currency": "RUB",
     "category": "ХУДИ",
     "sizes": [
@@ -2302,7 +2302,8 @@
     ],
     "detailImage": "images/products/mihara-yasuhiro-grey-logo-hoodie-79316e2a-1.jpg",
     "isActive": true,
-    "createdAt": "2026-07-20T07:10:05.179316+00:00"
+    "createdAt": "2026-07-20T07:10:05.179316+00:00",
+    "updatedAt": "2026-10-10T14:28:52.954309+00:00"
   },
   {
     "id": "essentials-black-logo-hoodie-3768bd75",
