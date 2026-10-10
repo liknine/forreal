@@ -6756,5 +6756,26 @@
     "detailImage": "images/products/gallery-dept-brown-logo-tee-d8dfc0f5-1.jpg",
     "isActive": true,
     "createdAt": "2026-10-10T16:52:57.529022+00:00"
+  },
+  {
+    "id": "givenchy-black-logo-sweatshirt-23664dc9",
+    "brand": "GIVENCHY",
+    "name": "BLACK LOGO SWEATSHIRT",
+    "price": 20000,
+    "currency": "RUB",
+    "category": "ХУДИ",
+    "sizes": [
+      "L"
+    ],
+    "sizeStock": {
+      "L": 1
+    },
+    "details": "Вещь в отличном состоянии!",
+    "images": [
+      "images/products/givenchy-black-logo-sweatshirt-23664dc9-1.jpg"
+    ],
+    "detailImage": "images/products/givenchy-black-logo-sweatshirt-23664dc9-1.jpg",
+    "isActive": true,
+    "createdAt": "2026-10-10T17:30:10.453874+00:00"
   }
 ]
