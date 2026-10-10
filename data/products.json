@@ -6345,5 +6345,27 @@
     "detailImage": "images/products/project-g-r-black-logo-hoodie-31667b7a-1.jpg",
     "isActive": true,
     "createdAt": "2026-10-10T11:01:32.574358+00:00"
+  },
+  {
+    "id": "poh-grey-logo-hoodie-d36f4a7f",
+    "brand": "POH",
+    "name": "GREY LOGO HOODIE",
+    "price": 14000,
+    "currency": "RUB",
+    "category": "ХУДИ",
+    "sizes": [
+      "M"
+    ],
+    "sizeStock": {
+      "M": 1
+    },
+    "details": "Вещь в отличном состоянии!",
+    "images": [
+      "images/products/poh-grey-logo-hoodie-d36f4a7f-1.jpg",
+      "images/products/poh-grey-logo-hoodie-d36f4a7f-2.jpg"
+    ],
+    "detailImage": "images/products/poh-grey-logo-hoodie-d36f4a7f-1.jpg",
+    "isActive": true,
+    "createdAt": "2026-10-10T11:20:52.965587+00:00"
   }
 ]
