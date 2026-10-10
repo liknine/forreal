@@ -2945,29 +2945,6 @@
     "createdAt": "2026-07-31T13:31:21.936900+00:00"
   },
   {
-    "id": "project-gr-black-red-logo-pants-swea-8ffa5346",
-    "brand": "PROJECT GR",
-    "name": "BLACK RED LOGO PANTS SWEATSHIRT",
-    "price": 22500,
-    "currency": "RUB",
-    "category": "ШТАНЫ",
-    "sizes": [
-      "L"
-    ],
-    "sizeStock": {
-      "L": 1
-    },
-    "details": "В отличном состоянии",
-    "images": [
-      "images/products/project-gr-black-red-logo-pants-swea-8ffa5346-1.jpg",
-      "images/products/project-gr-black-red-logo-pants-swea-8ffa5346-2.jpg",
-      "images/products/project-gr-black-red-logo-pants-swea-8ffa5346-3.jpg"
-    ],
-    "detailImage": "images/products/project-gr-black-red-logo-pants-swea-8ffa5346-1.jpg",
-    "isActive": true,
-    "createdAt": "2026-07-31T13:33:31.124554+00:00"
-  },
-  {
     "id": "greg-lauren-green-distressed-usa-zip-88b9d47f",
     "brand": "GREG LAUREN",
     "name": "GREEN DISTRESSED USA ZIP HOODIE",
