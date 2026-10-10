@@ -6517,5 +6517,26 @@
     "detailImage": "images/products/gallery-dept-x-lanvin-cream-logo-hoo-d3fc421a-1.jpg",
     "isActive": true,
     "createdAt": "2026-10-10T14:49:38.304790+00:00"
+  },
+  {
+    "id": "yohji-yamamoto-black-logo-tee-2ac523f4",
+    "brand": "YOHJI YAMAMOTO",
+    "name": "BLACK LOGO TEE",
+    "price": 16000,
+    "currency": "RUB",
+    "category": "ФУТБОЛКИ",
+    "sizes": [
+      "XL"
+    ],
+    "sizeStock": {
+      "XL": 1
+    },
+    "details": "Вещь в отличном состоянии!",
+    "images": [
+      "images/products/yohji-yamamoto-black-logo-tee-2ac523f4-1.jpg"
+    ],
+    "detailImage": "images/products/yohji-yamamoto-black-logo-tee-2ac523f4-1.jpg",
+    "isActive": true,
+    "createdAt": "2026-10-10T15:00:06.663620+00:00"
   }
 ]
