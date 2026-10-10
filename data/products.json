@@ -6734,5 +6734,27 @@
     "isActive": true,
     "createdAt": "2026-10-10T16:47:39.474568+00:00",
     "updatedAt": "2026-10-10T16:48:04.157485+00:00"
+  },
+  {
+    "id": "gallery-dept-brown-logo-tee-d8dfc0f5",
+    "brand": "GALLERY DEPT",
+    "name": "BROWN LOGO TEE",
+    "price": 20000,
+    "currency": "RUB",
+    "category": "ФУТБОЛКИ",
+    "sizes": [
+      "XL"
+    ],
+    "sizeStock": {
+      "XL": 1
+    },
+    "details": "Вещь в отличном состоянии!",
+    "images": [
+      "images/products/gallery-dept-brown-logo-tee-d8dfc0f5-1.jpg",
+      "images/products/gallery-dept-brown-logo-tee-d8dfc0f5-2.jpg"
+    ],
+    "detailImage": "images/products/gallery-dept-brown-logo-tee-d8dfc0f5-1.jpg",
+    "isActive": true,
+    "createdAt": "2026-10-10T16:52:57.529022+00:00"
   }
 ]
