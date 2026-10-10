@@ -6560,5 +6560,27 @@
     "detailImage": "images/products/mastermind-x-betty-boop-black-logo-t-fbd97b1b-1.jpg",
     "isActive": true,
     "createdAt": "2026-10-10T15:08:22.595972+00:00"
+  },
+  {
+    "id": "yohji-yamamoto-black-logo-tee-4391bbf7",
+    "brand": "YOHJI YAMAMOTO",
+    "name": "BLACK LOGO TEE",
+    "price": 16000,
+    "currency": "RUB",
+    "category": "ФУТБОЛКИ",
+    "sizes": [
+      "L"
+    ],
+    "sizeStock": {
+      "L": 1
+    },
+    "details": "Вещь в отличном состоянии!",
+    "images": [
+      "images/products/yohji-yamamoto-black-logo-tee-4391bbf7-1.jpg",
+      "images/products/yohji-yamamoto-black-logo-tee-4391bbf7-2.jpg"
+    ],
+    "detailImage": "images/products/yohji-yamamoto-black-logo-tee-4391bbf7-1.jpg",
+    "isActive": true,
+    "createdAt": "2026-10-10T15:36:21.026792+00:00"
   }
 ]
