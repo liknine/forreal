@@ -6348,5 +6348,26 @@
     "detailImage": "images/products/undermycar-purple-logo-zip-hoodie-ad921431-1.jpg",
     "isActive": true,
     "createdAt": "2026-10-10T10:09:40.481617+00:00"
+  },
+  {
+    "id": "misbhv-black-logo-hoodie-7aedf37b",
+    "brand": "MISBHV",
+    "name": "BLACK LOGO HOODIE",
+    "price": 15000,
+    "currency": "RUB",
+    "category": "ХУДИ",
+    "sizes": [
+      "S"
+    ],
+    "sizeStock": {
+      "S": 1
+    },
+    "details": "Вещь в отличном состоянии!",
+    "images": [
+      "images/products/misbhv-black-logo-hoodie-7aedf37b-1.jpg"
+    ],
+    "detailImage": "images/products/misbhv-black-logo-hoodie-7aedf37b-1.jpg",
+    "isActive": true,
+    "createdAt": "2026-10-10T10:21:09.299504+00:00"
   }
 ]
