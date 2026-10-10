@@ -6326,5 +6326,27 @@
     "detailImage": "images/products/balenciaga-3xl-worn-out-washed-grey-e65d5ac5-1.jpg",
     "isActive": true,
     "createdAt": "2026-10-09T11:04:30.171066+00:00"
+  },
+  {
+    "id": "undermycar-purple-logo-zip-hoodie-ad921431",
+    "brand": "UNDERMYCAR",
+    "name": "PURPLE LOGO ZIP HOODIE",
+    "price": 17000,
+    "currency": "RUB",
+    "category": "ЗИП-ХУДИ",
+    "sizes": [
+      "M"
+    ],
+    "sizeStock": {
+      "M": 1
+    },
+    "details": "Вещь в отличном состоянии!",
+    "images": [
+      "images/products/undermycar-purple-logo-zip-hoodie-ad921431-1.jpg",
+      "images/products/undermycar-purple-logo-zip-hoodie-ad921431-2.jpg"
+    ],
+    "detailImage": "images/products/undermycar-purple-logo-zip-hoodie-ad921431-1.jpg",
+    "isActive": true,
+    "createdAt": "2026-10-10T10:09:40.481617+00:00"
   }
 ]
