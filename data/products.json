@@ -5343,7 +5343,7 @@
     "id": "a-cold-wall-greige-logo-hoodie-8ad4996d",
     "brand": "A COLD WALL",
     "name": "GREIGE LOGO HOODIE",
-    "price": 14000,
+    "price": 12000,
     "currency": "RUB",
     "category": "ХУДИ",
     "sizes": [
@@ -5359,7 +5359,8 @@
     ],
     "detailImage": "images/products/a-cold-wall-greige-logo-hoodie-8ad4996d-1.jpg",
     "isActive": true,
-    "createdAt": "2026-10-01T16:08:02.284356+00:00"
+    "createdAt": "2026-10-01T16:08:02.284356+00:00",
+    "updatedAt": "2026-10-10T11:10:46.838736+00:00"
   },
   {
     "id": "undermycar-beige-logo-hoodie-5a1859a6",
