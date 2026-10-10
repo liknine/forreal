@@ -6647,5 +6647,26 @@
     "detailImage": "images/products/yohji-yamamoto-black-logo-tee-d5a910fe-1.jpg",
     "isActive": true,
     "createdAt": "2026-10-10T15:55:24.999557+00:00"
+  },
+  {
+    "id": "cav-empt-black-logo-tee-70db3116",
+    "brand": "CAV EMPT",
+    "name": "BLACK LOGO TEE",
+    "price": 10000,
+    "currency": "RUB",
+    "category": "ФУТБОЛКИ",
+    "sizes": [
+      "L"
+    ],
+    "sizeStock": {
+      "L": 1
+    },
+    "details": "Вещь в отличном состоянии!",
+    "images": [
+      "images/products/cav-empt-black-logo-tee-70db3116-1.jpg"
+    ],
+    "detailImage": "images/products/cav-empt-black-logo-tee-70db3116-1.jpg",
+    "isActive": true,
+    "createdAt": "2026-10-10T16:27:17.827915+00:00"
   }
 ]
