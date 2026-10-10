@@ -4195,29 +4195,6 @@
     "updatedAt": "2026-09-30T12:28:10.212386+00:00"
   },
   {
-    "id": "amiri-blue-logo-patch-jeans-9a37d426",
-    "brand": "AMIRI",
-    "name": "BLUE LOGO PATCH JEANS",
-    "price": 40000,
-    "currency": "RUB",
-    "category": "ШТАНЫ",
-    "sizes": [
-      "M"
-    ],
-    "sizeStock": {
-      "M": 1
-    },
-    "details": "в отличном состоянии \nпояс 38\nдлина 113\nвыход 15",
-    "images": [
-      "images/products/amiri-blue-logo-patch-jeans-9a37d426-1.jpg",
-      "images/products/amiri-blue-logo-patch-jeans-9a37d426-2.jpg"
-    ],
-    "detailImage": "images/products/amiri-blue-logo-patch-jeans-9a37d426-1.jpg",
-    "isActive": true,
-    "createdAt": "2026-08-18T23:42:25.578909+00:00",
-    "updatedAt": "2026-09-30T12:33:17.413817+00:00"
-  },
-  {
     "id": "amiri-blue-logo-jeans-c321501c",
     "brand": "AMIRI",
     "name": "BLUE LOGO JEANS",
