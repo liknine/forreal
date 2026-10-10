@@ -6777,5 +6777,26 @@
     "detailImage": "images/products/givenchy-black-logo-sweatshirt-23664dc9-1.jpg",
     "isActive": true,
     "createdAt": "2026-10-10T17:30:10.453874+00:00"
+  },
+  {
+    "id": "maison-margiela-black-logo-sweatshir-36b085dd",
+    "brand": "MAISON MARGIELA",
+    "name": "BLACK LOGO SWEATSHIRT",
+    "price": 20500,
+    "currency": "RUB",
+    "category": "ХУДИ",
+    "sizes": [
+      "XL"
+    ],
+    "sizeStock": {
+      "XL": 1
+    },
+    "details": "Вещь в отличном состоянии!",
+    "images": [
+      "images/products/maison-margiela-black-logo-sweatshir-36b085dd-1.jpg"
+    ],
+    "detailImage": "images/products/maison-margiela-black-logo-sweatshir-36b085dd-1.jpg",
+    "isActive": true,
+    "createdAt": "2026-10-10T17:34:19.044312+00:00"
   }
 ]
