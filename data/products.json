@@ -2906,7 +2906,7 @@
     "id": "yeezy-cream-sample-zip-hoodie-fddb4e2b",
     "brand": "YEEZY",
     "name": "CREAM SAMPLE ZIP HOODIE",
-    "price": 50000,
+    "price": 110000,
     "currency": "RUB",
     "category": "ЗИП-ХУДИ",
     "sizes": [
@@ -2923,7 +2923,8 @@
     ],
     "detailImage": "images/products/yeezy-cream-sample-zip-hoodie-fddb4e2b-1.jpg",
     "isActive": true,
-    "createdAt": "2026-07-31T13:27:50.202742+00:00"
+    "createdAt": "2026-07-31T13:27:50.202742+00:00",
+    "updatedAt": "2026-10-10T14:53:48.839378+00:00"
   },
   {
     "id": "doublet-blue-silver-zip-0-15-sample-30833504",
