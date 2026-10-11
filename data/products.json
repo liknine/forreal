@@ -1741,28 +1741,6 @@
     "createdAt": "2026-07-18T14:11:31.746860+00:00"
   },
   {
-    "id": "amiri-distress-black-jeans-541d6509",
-    "brand": "AMIRI",
-    "name": "DISTRESS BLACK JEANS",
-    "price": 35000,
-    "currency": "RUB",
-    "category": "ШТАНЫ",
-    "sizes": [
-      "M"
-    ],
-    "sizeStock": {
-      "M": 1
-    },
-    "details": "В отличном состоянии \n\n31 ( фактически M-L )",
-    "images": [
-      "images/products/amiri-distress-black-jeans-541d6509-1.jpg"
-    ],
-    "detailImage": "images/products/amiri-distress-black-jeans-541d6509-1.jpg",
-    "isActive": true,
-    "createdAt": "2026-07-18T16:56:34.801456+00:00",
-    "updatedAt": "2026-09-30T12:38:34.959869+00:00"
-  },
-  {
     "id": "heliot-emil-black-logo-shorts-c03faff2",
     "brand": "HELIOT EMIL",
     "name": "BLACK LOGO SHORTS",
