@@ -6821,5 +6821,28 @@
     "detailImage": "images/products/gucci-black-men-s-loafer-with-horseb-544e31a5-1.jpg",
     "isActive": true,
     "createdAt": "2026-10-11T11:22:50.657665+00:00"
+  },
+  {
+    "id": "lanvin-black-curb-sneakers-6e5b8aa0",
+    "brand": "LANVIN",
+    "name": "BLACK CURB SNEAKERS",
+    "price": 30000,
+    "currency": "RUB",
+    "category": "ОБУВЬ",
+    "sizes": [
+      "42"
+    ],
+    "sizeStock": {
+      "42": 1
+    },
+    "details": "Пара находится в Отличном состоянии!",
+    "images": [
+      "images/products/lanvin-black-curb-sneakers-6e5b8aa0-1.jpg",
+      "images/products/lanvin-black-curb-sneakers-6e5b8aa0-2.jpg",
+      "images/products/lanvin-black-curb-sneakers-6e5b8aa0-3.jpg"
+    ],
+    "detailImage": "images/products/lanvin-black-curb-sneakers-6e5b8aa0-1.jpg",
+    "isActive": true,
+    "createdAt": "2026-10-11T11:26:30.004054+00:00"
   }
 ]
