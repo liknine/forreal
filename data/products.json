@@ -6315,5 +6315,28 @@
     "detailImage": "images/products/valentino-garavani-white-classic-sho-a31d1a98-1.jpg",
     "isActive": true,
     "createdAt": "2026-10-11T18:10:23.037981+00:00"
+  },
+  {
+    "id": "erl-king-vamp-brown-sneakers-0d831cd8",
+    "brand": "ERL",
+    "name": "KING VAMP BROWN SNEAKERS",
+    "price": 40000,
+    "currency": "RUB",
+    "category": "ОБУВЬ",
+    "sizes": [
+      "43"
+    ],
+    "sizeStock": {
+      "43": 1
+    },
+    "details": "Пара находится в Хорошем состоянии!",
+    "images": [
+      "images/products/erl-king-vamp-brown-sneakers-0d831cd8-1.jpg",
+      "images/products/erl-king-vamp-brown-sneakers-0d831cd8-2.jpg",
+      "images/products/erl-king-vamp-brown-sneakers-0d831cd8-3.jpg"
+    ],
+    "detailImage": "images/products/erl-king-vamp-brown-sneakers-0d831cd8-1.jpg",
+    "isActive": true,
+    "createdAt": "2026-10-11T18:28:30.433251+00:00"
   }
 ]
