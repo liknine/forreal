@@ -1557,28 +1557,6 @@
     "updatedAt": "2026-09-30T12:10:05.006229+00:00"
   },
   {
-    "id": "amiri-dragon-logo-jeans-11093724",
-    "brand": "AMIRI",
-    "name": "DRAGON LOGO JEANS",
-    "price": 45000,
-    "currency": "RUB",
-    "category": "ШТАНЫ",
-    "sizes": [
-      "L"
-    ],
-    "sizeStock": {
-      "L": 1
-    },
-    "details": "В очень хорошем состоянии \n\n31 ( фактически L )",
-    "images": [
-      "images/products/amiri-dragon-logo-jeans-11093724-1.jpg",
-      "images/products/amiri-dragon-logo-jeans-11093724-2.jpg"
-    ],
-    "detailImage": "images/products/amiri-dragon-logo-jeans-11093724-1.jpg",
-    "isActive": true,
-    "createdAt": "2026-07-15T20:04:50.940137+00:00"
-  },
-  {
     "id": "undercover-mint-logo-tee-2b4733ac",
     "brand": "UNDERCOVER",
     "name": "MINT LOGO TEE",
