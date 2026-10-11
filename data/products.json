@@ -1600,28 +1600,6 @@
     "createdAt": "2026-07-18T11:14:40.999851+00:00"
   },
   {
-    "id": "amiri-distress-palm-logo-shorts-1692c6ed",
-    "brand": "AMIRI",
-    "name": "DISTRESS PALM LOGO SHORTS",
-    "price": 20500,
-    "currency": "RUB",
-    "category": "ШОРТЫ",
-    "sizes": [
-      "M"
-    ],
-    "sizeStock": {
-      "M": 1
-    },
-    "details": "В отличном состоянии \n\n31 ( фактически M )",
-    "images": [
-      "images/products/amiri-distress-palm-logo-shorts-1692c6ed-1.jpg",
-      "images/products/amiri-distress-palm-logo-shorts-1692c6ed-2.jpg"
-    ],
-    "detailImage": "images/products/amiri-distress-palm-logo-shorts-1692c6ed-1.jpg",
-    "isActive": true,
-    "createdAt": "2026-07-18T12:16:26.014786+00:00"
-  },
-  {
     "id": "mihara-yasuhiro-black-leather-sneake-23b79e5f",
     "brand": "MIHARA YASUHIRO",
     "name": "BLACK LEATHER SNEAKERS",
