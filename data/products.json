@@ -6261,5 +6261,28 @@
     "detailImage": "images/products/raf-simons-raf-simons-ultrasceptre-d-b278ad2c-1.jpg",
     "isActive": true,
     "createdAt": "2026-10-11T13:27:22.989609+00:00"
+  },
+  {
+    "id": "converse-x-isabel-marant-chuck-70-hi-69db6c0e",
+    "brand": "CONVERSE x ISABEL MARANT",
+    "name": "CHUCK 70 HIGH\nRAVEN / EGRET / RED",
+    "price": 16000,
+    "currency": "RUB",
+    "category": "ОБУВЬ",
+    "sizes": [
+      "42"
+    ],
+    "sizeStock": {
+      "42": 1
+    },
+    "details": "Пара находится в Отличном состоянии!",
+    "images": [
+      "images/products/converse-x-isabel-marant-chuck-70-hi-69db6c0e-1.jpg",
+      "images/products/converse-x-isabel-marant-chuck-70-hi-69db6c0e-2.jpg",
+      "images/products/converse-x-isabel-marant-chuck-70-hi-69db6c0e-3.jpg"
+    ],
+    "detailImage": "images/products/converse-x-isabel-marant-chuck-70-hi-69db6c0e-1.jpg",
+    "isActive": true,
+    "createdAt": "2026-10-11T13:55:01.019637+00:00"
   }
 ]
