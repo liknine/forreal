@@ -1,30 +1,5 @@
 [
   {
-    "id": "amiri-black-logo-tee-94121e34",
-    "brand": "AMIRI",
-    "name": "BLACK LOGO TEE",
-    "price": 15500,
-    "currency": "RUB",
-    "category": "ФУТБОЛКИ",
-    "sizes": [
-      "M"
-    ],
-    "sizeStock": {
-      "M": 1
-    },
-    "details": "В отличном состоянии",
-    "images": [
-      "images/products/amiri-black-logo-tee-94121e34-1.jpg",
-      "images/products/amiri-black-logo-tee-94121e34-2.jpg",
-      "images/products/amiri-black-logo-tee-94121e34-3.jpg",
-      "images/products/amiri-black-logo-tee-94121e34-4.jpg",
-      "images/products/amiri-black-logo-tee-94121e34-5.jpg"
-    ],
-    "detailImage": "images/products/amiri-black-logo-tee-94121e34-1.jpg",
-    "isActive": true,
-    "createdAt": "2026-07-07T06:21:30.357929+00:00"
-  },
-  {
     "id": "gallery-dept-paint-logo-tee-50ac7766",
     "brand": "GALLERY DEPT",
     "name": "PAINT LOGO TEE",
