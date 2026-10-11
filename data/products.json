@@ -2054,29 +2054,6 @@
     "updatedAt": "2026-08-18T03:26:48.475621+00:00"
   },
   {
-    "id": "amiri-black-logo-tee-5e1d1aee",
-    "brand": "AMIRI",
-    "name": "BLACK LOGO TEE",
-    "price": 18000,
-    "currency": "RUB",
-    "category": "ФУТБОЛКИ",
-    "sizes": [
-      "L"
-    ],
-    "sizeStock": {
-      "L": 1
-    },
-    "details": "в отличном состоянии \nспина 73\nподмышки 56\nплечи 49.5",
-    "images": [
-      "images/products/amiri-black-logo-tee-5e1d1aee-1.jpg",
-      "images/products/amiri-black-logo-tee-5e1d1aee-2.jpg"
-    ],
-    "detailImage": "images/products/amiri-black-logo-tee-5e1d1aee-1.jpg",
-    "isActive": true,
-    "createdAt": "2026-07-19T08:15:56.499186+00:00",
-    "updatedAt": "2026-09-30T13:54:21.207991+00:00"
-  },
-  {
     "id": "valentino-green-patch-logo-wallet-3a70449f",
     "brand": "VALENTINO",
     "name": "GREEN PATCH LOGO WALLET",
