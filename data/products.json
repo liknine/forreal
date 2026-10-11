@@ -6062,5 +6062,28 @@
     "detailImage": "images/products/adidas-x-rick-owens-mastodon-pro-mod-12a0a2a9-1.jpg",
     "isActive": true,
     "createdAt": "2026-10-11T15:42:45.314221+00:00"
+  },
+  {
+    "id": "gucci-gucci-leather-high-top-sneaker-b012e209",
+    "brand": "GUCCI",
+    "name": "Gucci Leather High-Top Sneakers with Tiger Embroidery — Black",
+    "price": 20000,
+    "currency": "RUB",
+    "category": "ОБУВЬ",
+    "sizes": [
+      "40.5"
+    ],
+    "sizeStock": {
+      "40.5": 1
+    },
+    "details": "Пара находится в Отличном состоянии!\n\n40-41 ON FIT!",
+    "images": [
+      "images/products/gucci-gucci-leather-high-top-sneaker-b012e209-1.jpg",
+      "images/products/gucci-gucci-leather-high-top-sneaker-b012e209-2.jpg",
+      "images/products/gucci-gucci-leather-high-top-sneaker-b012e209-3.jpg"
+    ],
+    "detailImage": "images/products/gucci-gucci-leather-high-top-sneaker-b012e209-1.jpg",
+    "isActive": true,
+    "createdAt": "2026-10-11T15:54:57.205183+00:00"
   }
 ]
