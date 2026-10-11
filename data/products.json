@@ -6200,5 +6200,28 @@
     "detailImage": "images/products/maison-mihara-yasuhiro-faded-white-o-12af4efc-1.jpg",
     "isActive": true,
     "createdAt": "2026-10-11T17:53:22.210601+00:00"
+  },
+  {
+    "id": "valentino-classic-black-sneakers-60111364",
+    "brand": "VALENTINO",
+    "name": "CLASSIC BLACK SNEAKERS",
+    "price": 20000,
+    "currency": "RUB",
+    "category": "ОБУВЬ",
+    "sizes": [
+      "44.5"
+    ],
+    "sizeStock": {
+      "44.5": 1
+    },
+    "details": "Пара находится в Отличном состоянии! \n\n44-45.1/2 ON FIT",
+    "images": [
+      "images/products/valentino-classic-black-sneakers-60111364-1.jpg",
+      "images/products/valentino-classic-black-sneakers-60111364-2.jpg",
+      "images/products/valentino-classic-black-sneakers-60111364-3.jpg"
+    ],
+    "detailImage": "images/products/valentino-classic-black-sneakers-60111364-1.jpg",
+    "isActive": true,
+    "createdAt": "2026-10-11T17:55:43.251462+00:00"
   }
 ]
