@@ -6177,5 +6177,28 @@
     "detailImage": "images/products/valentino-valentino-big-head-top-gre-445d64d9-1.jpg",
     "isActive": true,
     "createdAt": "2026-10-11T17:40:34.858281+00:00"
+  },
+  {
+    "id": "maison-mihara-yasuhiro-faded-white-o-12af4efc",
+    "brand": "MAISON MIHARA YASUHIRO",
+    "name": "FADED WHITE OG SOLE SNEAKERS",
+    "price": 23000,
+    "currency": "RUB",
+    "category": "ОБУВЬ",
+    "sizes": [
+      "41.5"
+    ],
+    "sizeStock": {
+      "41.5": 1
+    },
+    "details": "Пара находится в Отличном состоянии!\n\n41-42.5 ON FIT",
+    "images": [
+      "images/products/maison-mihara-yasuhiro-faded-white-o-12af4efc-1.jpg",
+      "images/products/maison-mihara-yasuhiro-faded-white-o-12af4efc-2.jpg",
+      "images/products/maison-mihara-yasuhiro-faded-white-o-12af4efc-3.jpg"
+    ],
+    "detailImage": "images/products/maison-mihara-yasuhiro-faded-white-o-12af4efc-1.jpg",
+    "isActive": true,
+    "createdAt": "2026-10-11T17:53:22.210601+00:00"
   }
 ]
