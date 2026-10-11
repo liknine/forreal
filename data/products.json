@@ -6487,5 +6487,28 @@
     "detailImage": "images/products/balenciaga-balenciaga-paris-low-top-7cdcf7ee-1.jpg",
     "isActive": true,
     "createdAt": "2026-10-11T13:22:47.340966+00:00"
+  },
+  {
+    "id": "raf-simons-raf-simons-ultrasceptre-d-b278ad2c",
+    "brand": "RAF SIMONS",
+    "name": "RAF SIMONS ULTRASCEPTRE\nDARK BLUE / PINK / MINT",
+    "price": 33000,
+    "currency": "RUB",
+    "category": "ОБУВЬ",
+    "sizes": [
+      "41"
+    ],
+    "sizeStock": {
+      "41": 1
+    },
+    "details": "Пара находится в Отличном состоянии!",
+    "images": [
+      "images/products/raf-simons-raf-simons-ultrasceptre-d-b278ad2c-1.jpg",
+      "images/products/raf-simons-raf-simons-ultrasceptre-d-b278ad2c-2.jpg",
+      "images/products/raf-simons-raf-simons-ultrasceptre-d-b278ad2c-3.jpg"
+    ],
+    "detailImage": "images/products/raf-simons-raf-simons-ultrasceptre-d-b278ad2c-1.jpg",
+    "isActive": true,
+    "createdAt": "2026-10-11T13:27:22.989609+00:00"
   }
 ]
