@@ -6246,5 +6246,28 @@
     "detailImage": "images/products/valentino-classic-court-sneakers-94316d69-1.jpg",
     "isActive": true,
     "createdAt": "2026-10-11T17:58:42.758762+00:00"
+  },
+  {
+    "id": "salomon-x-maison-margiela-mm6-maison-d3b4f855",
+    "brand": "SALOMON x MAISON MARGIELA",
+    "name": "MM6 Maison Margiela × Salomon ACS Pro 2",
+    "price": 20000,
+    "currency": "RUB",
+    "category": "ОБУВЬ",
+    "sizes": [
+      "44"
+    ],
+    "sizeStock": {
+      "44": 1
+    },
+    "details": "Пара находится в Отличном состоянии!",
+    "images": [
+      "images/products/salomon-x-maison-margiela-mm6-maison-d3b4f855-1.jpg",
+      "images/products/salomon-x-maison-margiela-mm6-maison-d3b4f855-2.jpg",
+      "images/products/salomon-x-maison-margiela-mm6-maison-d3b4f855-3.jpg"
+    ],
+    "detailImage": "images/products/salomon-x-maison-margiela-mm6-maison-d3b4f855-1.jpg",
+    "isActive": true,
+    "createdAt": "2026-10-11T18:02:28.428175+00:00"
   }
 ]
