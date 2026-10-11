@@ -2539,29 +2539,6 @@
     "updatedAt": "2026-09-30T12:08:19.993703+00:00"
   },
   {
-    "id": "hysteric-glamour-black-logo-tee-927c9eb5",
-    "brand": "HYSTERIC GLAMOUR",
-    "name": "BLACK LOGO TEE",
-    "price": 9000,
-    "currency": "RUB",
-    "category": "ФУТБОЛКИ",
-    "sizes": [
-      "L"
-    ],
-    "sizeStock": {
-      "L": 1
-    },
-    "details": "в отличном состоянии \nспина 70\nподмышки 48\nплечи 42",
-    "images": [
-      "images/products/hysteric-glamour-black-logo-tee-927c9eb5-1.jpg",
-      "images/products/hysteric-glamour-black-logo-tee-927c9eb5-2.jpg"
-    ],
-    "detailImage": "images/products/hysteric-glamour-black-logo-tee-927c9eb5-1.jpg",
-    "isActive": true,
-    "createdAt": "2026-07-20T08:48:44.559793+00:00",
-    "updatedAt": "2026-08-18T03:09:22.935688+00:00"
-  },
-  {
     "id": "raga-black-white-logo-tee-17fda0dd",
     "brand": "RAGA",
     "name": "BLACK WHITE LOGO TEE",
