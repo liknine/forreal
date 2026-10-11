@@ -3407,27 +3407,6 @@
     "updatedAt": "2026-09-30T12:28:10.212386+00:00"
   },
   {
-    "id": "amiri-blue-logo-jeans-c321501c",
-    "brand": "AMIRI",
-    "name": "BLUE LOGO JEANS",
-    "price": 18500,
-    "currency": "RUB",
-    "category": "ШТАНЫ",
-    "sizes": [
-      "M"
-    ],
-    "sizeStock": {
-      "M": 1
-    },
-    "details": "в отличном состоянии\nпояс 38\nдлина 110\nвыход 15",
-    "images": [
-      "images/products/amiri-blue-logo-jeans-c321501c-1.jpg"
-    ],
-    "detailImage": "images/products/amiri-blue-logo-jeans-c321501c-1.jpg",
-    "isActive": true,
-    "createdAt": "2026-08-18T23:44:08.794963+00:00"
-  },
-  {
     "id": "black-logo-sport-pants-black-logo-sp-2ae91e02",
     "brand": "A COLD WALL",
     "name": "BLACK SPORTS LOGO PANTS",
