@@ -947,28 +947,6 @@
     "createdAt": "2026-07-14T09:01:14.340829+00:00"
   },
   {
-    "id": "doublet-ai-brown-logo-tee-8357cc82",
-    "brand": "DOUBLET",
-    "name": "AI BROWN LOGO TEE",
-    "price": 12000,
-    "currency": "RUB",
-    "category": "ФУТБОЛКИ",
-    "sizes": [
-      "L"
-    ],
-    "sizeStock": {
-      "L": 1
-    },
-    "details": "в отличном состоянии \nспина 75\nподмышки 55\nплечи 46",
-    "images": [
-      "images/products/doublet-ai-brown-logo-tee-8357cc82-1.jpg"
-    ],
-    "detailImage": "images/products/doublet-ai-brown-logo-tee-8357cc82-1.jpg",
-    "isActive": true,
-    "createdAt": "2026-07-14T09:05:37.058852+00:00",
-    "updatedAt": "2026-08-18T03:04:34.220129+00:00"
-  },
-  {
     "id": "saint-laurent-black-logo-hoodie-f0829e88",
     "brand": "SAINT LAURENT",
     "name": "BLACK LOGO HOODIE",
