@@ -2077,27 +2077,6 @@
     "updatedAt": "2026-09-30T13:54:21.207991+00:00"
   },
   {
-    "id": "saint-laurent-black-logo-tee-82b096f5",
-    "brand": "SAINT LAURENT",
-    "name": "BLACK LOGO TEE",
-    "price": 9000,
-    "currency": "RUB",
-    "category": "ФУТБОЛКИ",
-    "sizes": [
-      "M"
-    ],
-    "sizeStock": {
-      "M": 1
-    },
-    "details": "В очень хорошем состоянии \n\nXS ( фактически M )",
-    "images": [
-      "images/products/saint-laurent-black-logo-tee-82b096f5-1.jpg"
-    ],
-    "detailImage": "images/products/saint-laurent-black-logo-tee-82b096f5-1.jpg",
-    "isActive": true,
-    "createdAt": "2026-07-19T08:25:32.844359+00:00"
-  },
-  {
     "id": "valentino-green-patch-logo-wallet-3a70449f",
     "brand": "VALENTINO",
     "name": "GREEN PATCH LOGO WALLET",
