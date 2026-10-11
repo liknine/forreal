@@ -6798,5 +6798,28 @@
     "detailImage": "images/products/maison-margiela-black-logo-sweatshir-36b085dd-1.jpg",
     "isActive": true,
     "createdAt": "2026-10-10T17:34:19.044312+00:00"
+  },
+  {
+    "id": "gucci-black-men-s-loafer-with-horseb-544e31a5",
+    "brand": "GUCCI",
+    "name": "BLACK MEN’S LOAFER WITH HORSEBIT",
+    "price": 30000,
+    "currency": "RUB",
+    "category": "ОБУВЬ",
+    "sizes": [
+      "44"
+    ],
+    "sizeStock": {
+      "44": 1
+    },
+    "details": "Пара находится в Отличном состоянии!",
+    "images": [
+      "images/products/gucci-black-men-s-loafer-with-horseb-544e31a5-1.jpg",
+      "images/products/gucci-black-men-s-loafer-with-horseb-544e31a5-2.jpg",
+      "images/products/gucci-black-men-s-loafer-with-horseb-544e31a5-3.jpg"
+    ],
+    "detailImage": "images/products/gucci-black-men-s-loafer-with-horseb-544e31a5-1.jpg",
+    "isActive": true,
+    "createdAt": "2026-10-11T11:22:50.657665+00:00"
   }
 ]
