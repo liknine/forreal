@@ -2010,28 +2010,6 @@
     "updatedAt": "2026-09-30T12:18:11.783292+00:00"
   },
   {
-    "id": "amiri-motley-crue-black-logo-tee-e7201f8a",
-    "brand": "AMIRI",
-    "name": "MOTLEY CRUE BLACK LOGO TEE",
-    "price": 15500,
-    "currency": "RUB",
-    "category": "ФУТБОЛКИ",
-    "sizes": [
-      "L"
-    ],
-    "sizeStock": {
-      "L": 1
-    },
-    "details": "в отличном состоянии \nспина 72\nподмышки 53.5\nплечи 48",
-    "images": [
-      "images/products/amiri-motley-crue-black-logo-tee-e7201f8a-1.jpg"
-    ],
-    "detailImage": "images/products/amiri-motley-crue-black-logo-tee-e7201f8a-1.jpg",
-    "isActive": true,
-    "createdAt": "2026-07-19T07:57:01.536901+00:00",
-    "updatedAt": "2026-08-18T03:48:55.802733+00:00"
-  },
-  {
     "id": "cav-empt-black-logo-tee-0d7b157a",
     "brand": "CAV EMPT",
     "name": "BLACK LOGO TEE",
