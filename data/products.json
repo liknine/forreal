@@ -6039,5 +6039,28 @@
     "detailImage": "images/products/gucci-gucci-leather-high-top-sneaker-b012e209-1.jpg",
     "isActive": true,
     "createdAt": "2026-10-11T15:54:57.205183+00:00"
+  },
+  {
+    "id": "balenciaga-3xl-black-white-sneakers-58445311",
+    "brand": "BALENCIAGA",
+    "name": "3XL BLACK/WHITE SNEAKERS",
+    "price": 50000,
+    "currency": "RUB",
+    "category": "ОБУВЬ",
+    "sizes": [
+      "41"
+    ],
+    "sizeStock": {
+      "41": 1
+    },
+    "details": "Пара находится в Отличном состоянии!",
+    "images": [
+      "images/products/balenciaga-3xl-black-white-sneakers-58445311-1.jpg",
+      "images/products/balenciaga-3xl-black-white-sneakers-58445311-2.jpg",
+      "images/products/balenciaga-3xl-black-white-sneakers-58445311-3.jpg"
+    ],
+    "detailImage": "images/products/balenciaga-3xl-black-white-sneakers-58445311-1.jpg",
+    "isActive": true,
+    "createdAt": "2026-10-11T16:41:25.510753+00:00"
   }
 ]
