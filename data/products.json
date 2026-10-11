@@ -6292,5 +6292,28 @@
     "detailImage": "images/products/salomon-x-maison-margiela-mm6-maison-6b7af63d-1.jpg",
     "isActive": true,
     "createdAt": "2026-10-11T18:05:00.256873+00:00"
+  },
+  {
+    "id": "valentino-black-garavani-classic-sho-536a0ece",
+    "brand": "VALENTINO",
+    "name": "BLACK GARAVANI CLASSIC SHOES",
+    "price": 20000,
+    "currency": "RUB",
+    "category": "ОБУВЬ",
+    "sizes": [
+      "44.5"
+    ],
+    "sizeStock": {
+      "44.5": 1
+    },
+    "details": "Пара находится в Отличном состоянии!",
+    "images": [
+      "images/products/valentino-black-garavani-classic-sho-536a0ece-1.jpg",
+      "images/products/valentino-black-garavani-classic-sho-536a0ece-2.jpg",
+      "images/products/valentino-black-garavani-classic-sho-536a0ece-3.jpg"
+    ],
+    "detailImage": "images/products/valentino-black-garavani-classic-sho-536a0ece-1.jpg",
+    "isActive": true,
+    "createdAt": "2026-10-11T18:08:26.081685+00:00"
   }
 ]
