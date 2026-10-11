@@ -6509,5 +6509,28 @@
     "detailImage": "images/products/balenciaga-track-brown-sneakers-83dd3ca5-1.jpg",
     "isActive": true,
     "createdAt": "2026-10-11T13:14:11.553425+00:00"
+  },
+  {
+    "id": "maison-margiela-x-converse-tabi-spli-891807ed",
+    "brand": "MAISON MARGIELA x CONVERSE",
+    "name": "TABI SPLIT-TOE PAINTED CANVAS SNEAKERS\nWHITE / BLUE",
+    "price": 20500,
+    "currency": "RUB",
+    "category": "ОБУВЬ",
+    "sizes": [
+      "40.5"
+    ],
+    "sizeStock": {
+      "40.5": 1
+    },
+    "details": "Пара находится в Отличном состоянии!",
+    "images": [
+      "images/products/maison-margiela-x-converse-tabi-spli-891807ed-1.jpg",
+      "images/products/maison-margiela-x-converse-tabi-spli-891807ed-2.jpg",
+      "images/products/maison-margiela-x-converse-tabi-spli-891807ed-3.jpg"
+    ],
+    "detailImage": "images/products/maison-margiela-x-converse-tabi-spli-891807ed-1.jpg",
+    "isActive": true,
+    "createdAt": "2026-10-11T13:19:02.413914+00:00"
   }
 ]
