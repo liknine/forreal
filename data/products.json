@@ -6131,5 +6131,28 @@
     "detailImage": "images/products/balenciaga-runner-white-orange-sneak-4c160d0b-1.jpg",
     "isActive": true,
     "createdAt": "2026-10-11T17:25:48.672969+00:00"
+  },
+  {
+    "id": "lanvin-white-tennis-classic-sneakers-2f34681a",
+    "brand": "LANVIN",
+    "name": "WHITE TENNIS CLASSIC SNEAKERS",
+    "price": 20000,
+    "currency": "RUB",
+    "category": "ОБУВЬ",
+    "sizes": [
+      "43"
+    ],
+    "sizeStock": {
+      "43": 1
+    },
+    "details": "Пара находится в Отличном состоянии!",
+    "images": [
+      "images/products/lanvin-white-tennis-classic-sneakers-2f34681a-1.jpg",
+      "images/products/lanvin-white-tennis-classic-sneakers-2f34681a-2.jpg",
+      "images/products/lanvin-white-tennis-classic-sneakers-2f34681a-3.jpg"
+    ],
+    "detailImage": "images/products/lanvin-white-tennis-classic-sneakers-2f34681a-1.jpg",
+    "isActive": true,
+    "createdAt": "2026-10-11T17:37:04.465812+00:00"
   }
 ]
