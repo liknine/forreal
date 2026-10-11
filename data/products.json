@@ -6510,5 +6510,28 @@
     "detailImage": "images/products/maison-margiela-x-converse-tabi-spli-891807ed-1.jpg",
     "isActive": true,
     "createdAt": "2026-10-11T13:19:02.413914+00:00"
+  },
+  {
+    "id": "balenciaga-balenciaga-paris-low-top-7cdcf7ee",
+    "brand": "BALENCIAGA",
+    "name": "BALENCIAGA PARIS LOW TOP SNEAKERS\n“GRAFFITI” BLACK / WHITE",
+    "price": 30000,
+    "currency": "RUB",
+    "category": "ОБУВЬ",
+    "sizes": [
+      "43"
+    ],
+    "sizeStock": {
+      "43": 1
+    },
+    "details": "Пара находится в Отличном состоянии!",
+    "images": [
+      "images/products/balenciaga-balenciaga-paris-low-top-7cdcf7ee-1.jpg",
+      "images/products/balenciaga-balenciaga-paris-low-top-7cdcf7ee-2.jpg",
+      "images/products/balenciaga-balenciaga-paris-low-top-7cdcf7ee-3.jpg"
+    ],
+    "detailImage": "images/products/balenciaga-balenciaga-paris-low-top-7cdcf7ee-1.jpg",
+    "isActive": true,
+    "createdAt": "2026-10-11T13:22:47.340966+00:00"
   }
 ]
