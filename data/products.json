@@ -6844,5 +6844,28 @@
     "detailImage": "images/products/lanvin-black-curb-sneakers-6e5b8aa0-1.jpg",
     "isActive": true,
     "createdAt": "2026-10-11T11:26:30.004054+00:00"
+  },
+  {
+    "id": "adidas-x-neighbourhood-superstar-80s-82a7420f",
+    "brand": "ADIDAS x NEIGHBOURHOOD",
+    "name": "SUPERSTAR 80s “OLIVE”",
+    "price": 16000,
+    "currency": "RUB",
+    "category": "ОБУВЬ",
+    "sizes": [
+      "43"
+    ],
+    "sizeStock": {
+      "43": 1
+    },
+    "details": "Пара находится в Отличном состоянии!",
+    "images": [
+      "images/products/adidas-x-neighbourhood-superstar-80s-82a7420f-1.jpg",
+      "images/products/adidas-x-neighbourhood-superstar-80s-82a7420f-2.jpg",
+      "images/products/adidas-x-neighbourhood-superstar-80s-82a7420f-3.jpg"
+    ],
+    "detailImage": "images/products/adidas-x-neighbourhood-superstar-80s-82a7420f-1.jpg",
+    "isActive": true,
+    "createdAt": "2026-10-11T11:53:36.033682+00:00"
   }
 ]
