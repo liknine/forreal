@@ -6108,5 +6108,28 @@
     "detailImage": "images/products/balenciaga-track-faded-grey-cream-sn-aba03622-1.jpg",
     "isActive": true,
     "createdAt": "2026-10-11T17:23:04.429961+00:00"
+  },
+  {
+    "id": "balenciaga-runner-white-orange-sneak-4c160d0b",
+    "brand": "BALENCIAGA",
+    "name": "RUNNER WHITE-ORANGE SNEAKERS",
+    "price": 42000,
+    "currency": "RUB",
+    "category": "ОБУВЬ",
+    "sizes": [
+      "44"
+    ],
+    "sizeStock": {
+      "44": 1
+    },
+    "details": "Пара находится в Отличном состоянии!",
+    "images": [
+      "images/products/balenciaga-runner-white-orange-sneak-4c160d0b-1.jpg",
+      "images/products/balenciaga-runner-white-orange-sneak-4c160d0b-2.jpg",
+      "images/products/balenciaga-runner-white-orange-sneak-4c160d0b-3.jpg"
+    ],
+    "detailImage": "images/products/balenciaga-runner-white-orange-sneak-4c160d0b-1.jpg",
+    "isActive": true,
+    "createdAt": "2026-10-11T17:25:48.672969+00:00"
   }
 ]
