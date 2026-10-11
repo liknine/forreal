@@ -2516,29 +2516,6 @@
     "soldOutAt": "2026-08-28T14:36:49.746896+00:00"
   },
   {
-    "id": "mihara-yasuhiro-black-logo-tee-afb787ca",
-    "brand": "MIHARA YASUHIRO",
-    "name": "BLACK LOGO TEE",
-    "price": 12500,
-    "currency": "RUB",
-    "category": "ФУТБОЛКИ",
-    "sizes": [
-      "XL"
-    ],
-    "sizeStock": {
-      "XL": 1
-    },
-    "details": "в отличном состоянии \nспина 74\nподмышки 60 \nплечи 60",
-    "images": [
-      "images/products/mihara-yasuhiro-black-logo-tee-afb787ca-1.jpg",
-      "images/products/mihara-yasuhiro-black-logo-tee-afb787ca-2.jpg"
-    ],
-    "detailImage": "images/products/mihara-yasuhiro-black-logo-tee-afb787ca-1.jpg",
-    "isActive": true,
-    "createdAt": "2026-07-20T08:33:51.672173+00:00",
-    "updatedAt": "2026-08-18T03:19:42.892613+00:00"
-  },
-  {
     "id": "cav-empt-black-logo-tee-ede9247b",
     "brand": "CAV EMPT",
     "name": "BLACK LOGO TEE",
