@@ -6085,5 +6085,28 @@
     "detailImage": "images/products/amiri-cream-brown-skeleton-low-sneak-044020e7-1.jpg",
     "isActive": true,
     "createdAt": "2026-10-11T17:21:06.100025+00:00"
+  },
+  {
+    "id": "balenciaga-track-faded-grey-cream-sn-aba03622",
+    "brand": "BALENCIAGA",
+    "name": "TRACK FADED GREY-CREAM SNEAKERS",
+    "price": 30000,
+    "currency": "RUB",
+    "category": "ОБУВЬ",
+    "sizes": [
+      "42"
+    ],
+    "sizeStock": {
+      "42": 1
+    },
+    "details": "Пара находится в Отличном состоянии!",
+    "images": [
+      "images/products/balenciaga-track-faded-grey-cream-sn-aba03622-1.jpg",
+      "images/products/balenciaga-track-faded-grey-cream-sn-aba03622-2.jpg",
+      "images/products/balenciaga-track-faded-grey-cream-sn-aba03622-3.jpg"
+    ],
+    "detailImage": "images/products/balenciaga-track-faded-grey-cream-sn-aba03622-1.jpg",
+    "isActive": true,
+    "createdAt": "2026-10-11T17:23:04.429961+00:00"
   }
 ]
