@@ -6223,5 +6223,28 @@
     "detailImage": "images/products/valentino-classic-black-sneakers-60111364-1.jpg",
     "isActive": true,
     "createdAt": "2026-10-11T17:55:43.251462+00:00"
+  },
+  {
+    "id": "valentino-classic-court-sneakers-94316d69",
+    "brand": "VALENTINO",
+    "name": "CLASSIC COURT SNEAKERS",
+    "price": 12000,
+    "currency": "RUB",
+    "category": "ОБУВЬ",
+    "sizes": [
+      "41"
+    ],
+    "sizeStock": {
+      "41": 1
+    },
+    "details": "Пара находится в Отличном состоянии!",
+    "images": [
+      "images/products/valentino-classic-court-sneakers-94316d69-1.jpg",
+      "images/products/valentino-classic-court-sneakers-94316d69-2.jpg",
+      "images/products/valentino-classic-court-sneakers-94316d69-3.jpg"
+    ],
+    "detailImage": "images/products/valentino-classic-court-sneakers-94316d69-1.jpg",
+    "isActive": true,
+    "createdAt": "2026-10-11T17:58:42.758762+00:00"
   }
 ]
