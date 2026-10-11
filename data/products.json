@@ -1486,28 +1486,6 @@
     "createdAt": "2026-07-15T19:44:14.327407+00:00"
   },
   {
-    "id": "amiri-black-multicolor-shorts-a9f76cff",
-    "brand": "AMIRI",
-    "name": "BLACK MULTICOLOR SHORTS",
-    "price": 20000,
-    "currency": "RUB",
-    "category": "ШОРТЫ",
-    "sizes": [
-      "M"
-    ],
-    "sizeStock": {
-      "M": 1
-    },
-    "details": "",
-    "images": [
-      "images/products/amiri-black-multicolor-shorts-a9f76cff-1.jpg",
-      "images/products/amiri-black-multicolor-shorts-a9f76cff-2.jpg"
-    ],
-    "detailImage": "images/products/amiri-black-multicolor-shorts-a9f76cff-1.jpg",
-    "isActive": true,
-    "createdAt": "2026-07-15T19:47:27.715998+00:00"
-  },
-  {
     "id": "rick-owens-black-cargo-shorts-66335a72",
     "brand": "RICK OWENS",
     "name": "BLACK CARGO SHORTS",
