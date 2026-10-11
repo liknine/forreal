@@ -1941,28 +1941,6 @@
     "updatedAt": "2026-09-30T12:18:11.783292+00:00"
   },
   {
-    "id": "cav-empt-black-logo-tee-0d7b157a",
-    "brand": "CAV EMPT",
-    "name": "BLACK LOGO TEE",
-    "price": 10000,
-    "currency": "RUB",
-    "category": "ФУТБОЛКИ",
-    "sizes": [
-      "L"
-    ],
-    "sizeStock": {
-      "L": 1
-    },
-    "details": "в отличном состоянии \nспина 71 \nподмышки 52.5\nплечи 45",
-    "images": [
-      "images/products/cav-empt-black-logo-tee-0d7b157a-1.jpg"
-    ],
-    "detailImage": "images/products/cav-empt-black-logo-tee-0d7b157a-1.jpg",
-    "isActive": true,
-    "createdAt": "2026-07-19T08:08:49.235746+00:00",
-    "updatedAt": "2026-08-18T03:26:48.475621+00:00"
-  },
-  {
     "id": "valentino-green-patch-logo-wallet-3a70449f",
     "brand": "VALENTINO",
     "name": "GREEN PATCH LOGO WALLET",
