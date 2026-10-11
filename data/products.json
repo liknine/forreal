@@ -6062,5 +6062,28 @@
     "detailImage": "images/products/balenciaga-3xl-black-white-sneakers-58445311-1.jpg",
     "isActive": true,
     "createdAt": "2026-10-11T16:41:25.510753+00:00"
+  },
+  {
+    "id": "amiri-cream-brown-skeleton-low-sneak-044020e7",
+    "brand": "AMIRI",
+    "name": "CREAM BROWN SKELETON LOW SNEAKERS",
+    "price": 30000,
+    "currency": "RUB",
+    "category": "ОБУВЬ",
+    "sizes": [
+      "44"
+    ],
+    "sizeStock": {
+      "44": 1
+    },
+    "details": "Пара находится в хорошем состоянии!",
+    "images": [
+      "images/products/amiri-cream-brown-skeleton-low-sneak-044020e7-1.jpg",
+      "images/products/amiri-cream-brown-skeleton-low-sneak-044020e7-2.jpg",
+      "images/products/amiri-cream-brown-skeleton-low-sneak-044020e7-3.jpg"
+    ],
+    "detailImage": "images/products/amiri-cream-brown-skeleton-low-sneak-044020e7-1.jpg",
+    "isActive": true,
+    "createdAt": "2026-10-11T17:21:06.100025+00:00"
   }
 ]
