@@ -6553,5 +6553,28 @@
     "detailImage": "images/products/salvatore-ferragamo-gancini-low-top-567cf844-1.jpg",
     "isActive": true,
     "createdAt": "2026-10-11T13:05:14.350355+00:00"
+  },
+  {
+    "id": "balenciaga-track-brown-sneakers-83dd3ca5",
+    "brand": "BALENCIAGA",
+    "name": "TRACK BROWN SNEAKERS",
+    "price": 30000,
+    "currency": "RUB",
+    "category": "ОБУВЬ",
+    "sizes": [
+      "43"
+    ],
+    "sizeStock": {
+      "43": 1
+    },
+    "details": "Пара находится в Отличном состоянии!",
+    "images": [
+      "images/products/balenciaga-track-brown-sneakers-83dd3ca5-1.jpg",
+      "images/products/balenciaga-track-brown-sneakers-83dd3ca5-2.jpg",
+      "images/products/balenciaga-track-brown-sneakers-83dd3ca5-3.jpg"
+    ],
+    "detailImage": "images/products/balenciaga-track-brown-sneakers-83dd3ca5-1.jpg",
+    "isActive": true,
+    "createdAt": "2026-10-11T13:14:11.553425+00:00"
   }
 ]
