@@ -6733,5 +6733,28 @@
     "detailImage": "images/products/vans-x-neighbourhood-white-old-skool-e6b9e4cc-1.jpg",
     "isActive": true,
     "createdAt": "2026-10-11T12:53:02.449003+00:00"
+  },
+  {
+    "id": "adidas-x-neighbourhood-human-made-x-4bc4843c",
+    "brand": "ADIDAS x NEIGHBOURHOOD",
+    "name": "HUMAN MADE x ADIDAS ADIMATIC GREY/BLUE SNEAKERS",
+    "price": 14000,
+    "currency": "RUB",
+    "category": "ОБУВЬ",
+    "sizes": [
+      "42"
+    ],
+    "sizeStock": {
+      "42": 1
+    },
+    "details": "Пара находится в Отличном состоянии!",
+    "images": [
+      "images/products/adidas-x-neighbourhood-human-made-x-4bc4843c-1.jpg",
+      "images/products/adidas-x-neighbourhood-human-made-x-4bc4843c-2.jpg",
+      "images/products/adidas-x-neighbourhood-human-made-x-4bc4843c-3.jpg"
+    ],
+    "detailImage": "images/products/adidas-x-neighbourhood-human-made-x-4bc4843c-1.jpg",
+    "isActive": true,
+    "createdAt": "2026-10-11T12:57:29.141814+00:00"
   }
 ]
