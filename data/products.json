@@ -1630,29 +1630,6 @@
     "createdAt": "2026-07-18T14:09:17.173823+00:00"
   },
   {
-    "id": "salvatore-ferragamo-white-logo-sneak-af14e90b",
-    "brand": "SALVATORE FERRAGAMO",
-    "name": "WHITE LOGO SNEAKERS",
-    "price": 12500,
-    "currency": "RUB",
-    "category": "ОБУВЬ",
-    "sizes": [
-      "42"
-    ],
-    "sizeStock": {
-      "42": 1
-    },
-    "details": "В отличном состоянии \n\n42 / 27 см",
-    "images": [
-      "images/products/salvatore-ferragamo-white-logo-sneak-af14e90b-1.jpg",
-      "images/products/salvatore-ferragamo-white-logo-sneak-af14e90b-2.jpg",
-      "images/products/salvatore-ferragamo-white-logo-sneak-af14e90b-3.jpg"
-    ],
-    "detailImage": "images/products/salvatore-ferragamo-white-logo-sneak-af14e90b-1.jpg",
-    "isActive": true,
-    "createdAt": "2026-07-18T14:11:31.746860+00:00"
-  },
-  {
     "id": "heliot-emil-black-logo-shorts-c03faff2",
     "brand": "HELIOT EMIL",
     "name": "BLACK LOGO SHORTS",
