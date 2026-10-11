@@ -6622,5 +6622,28 @@
     "detailImage": "images/products/adidas-x-neighbourhood-human-made-x-4bc4843c-1.jpg",
     "isActive": true,
     "createdAt": "2026-10-11T12:57:29.141814+00:00"
+  },
+  {
+    "id": "salvatore-ferragamo-gancini-low-top-567cf844",
+    "brand": "SALVATORE FERRAGAMO",
+    "name": "GANCINI LOW-TOP WHITE SNEAKERS",
+    "price": 16000,
+    "currency": "RUB",
+    "category": "ОБУВЬ",
+    "sizes": [
+      "41.5"
+    ],
+    "sizeStock": {
+      "41.5": 1
+    },
+    "details": "Пара находится в Отличном состоянии!",
+    "images": [
+      "images/products/salvatore-ferragamo-gancini-low-top-567cf844-1.jpg",
+      "images/products/salvatore-ferragamo-gancini-low-top-567cf844-2.jpg",
+      "images/products/salvatore-ferragamo-gancini-low-top-567cf844-3.jpg"
+    ],
+    "detailImage": "images/products/salvatore-ferragamo-gancini-low-top-567cf844-1.jpg",
+    "isActive": true,
+    "createdAt": "2026-10-11T13:05:14.350355+00:00"
   }
 ]
