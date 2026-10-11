@@ -1514,28 +1514,6 @@
     "updatedAt": "2026-09-30T12:10:05.006229+00:00"
   },
   {
-    "id": "undercover-mint-logo-tee-2b4733ac",
-    "brand": "UNDERCOVER",
-    "name": "MINT LOGO TEE",
-    "price": 10500,
-    "currency": "RUB",
-    "category": "ФУТБОЛКИ",
-    "sizes": [
-      "L"
-    ],
-    "sizeStock": {
-      "L": 1
-    },
-    "details": "в отличном состоянии \nспина 68\nподмышки 51.5\nплечи 49",
-    "images": [
-      "images/products/undercover-mint-logo-tee-2b4733ac-1.jpg"
-    ],
-    "detailImage": "images/products/undercover-mint-logo-tee-2b4733ac-1.jpg",
-    "isActive": true,
-    "createdAt": "2026-07-18T11:04:18.878251+00:00",
-    "updatedAt": "2026-08-18T03:01:17.903589+00:00"
-  },
-  {
     "id": "undercover-black-logo-tee-e15fdcd3",
     "brand": "UNDERCOVER",
     "name": "BLACK LOGO TEE",
