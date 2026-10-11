@@ -1355,29 +1355,6 @@
     "updatedAt": "2026-08-18T10:09:11.973419+00:00"
   },
   {
-    "id": "hysteric-glamour-white-graffiti-logo-a37ea7a0",
-    "brand": "HYSTERIC GLAMOUR",
-    "name": "WHITE GRAFFITI LOGO HOODIE",
-    "price": 14000,
-    "currency": "RUB",
-    "category": "ХУДИ",
-    "sizes": [
-      "L"
-    ],
-    "sizeStock": {
-      "L": 1
-    },
-    "details": "в отличном состоянии \nспина72\nподмышки 51\nплечи54",
-    "images": [
-      "images/products/hysteric-glamour-white-graffiti-logo-a37ea7a0-1.jpg",
-      "images/products/hysteric-glamour-white-graffiti-logo-a37ea7a0-2.jpg"
-    ],
-    "detailImage": "images/products/hysteric-glamour-white-graffiti-logo-a37ea7a0-1.jpg",
-    "isActive": true,
-    "createdAt": "2026-07-14T14:54:55.887833+00:00",
-    "updatedAt": "2026-09-30T11:36:12.505094+00:00"
-  },
-  {
     "id": "saint-michael-grey-vintage-logo-hood-f02f5146",
     "brand": "SAINT MICHAEL",
     "name": "GREY VINTAGE LOGO HOODIE",
