@@ -6040,5 +6040,27 @@
     "detailImage": "images/products/converse-x-isabel-marant-chuck-70-hi-69db6c0e-1.jpg",
     "isActive": true,
     "createdAt": "2026-10-11T13:55:01.019637+00:00"
+  },
+  {
+    "id": "adidas-x-rick-owens-mastodon-pro-mod-12a0a2a9",
+    "brand": "ADIDAS x RICK OWENS",
+    "name": "MASTODON PRO MODEL\nBROWN / PEARL\nFW16",
+    "price": 25500,
+    "currency": "RUB",
+    "category": "ОБУВЬ",
+    "sizes": [
+      "43"
+    ],
+    "sizeStock": {
+      "43": 1
+    },
+    "details": "Пара находится в Отличном состоянии!",
+    "images": [
+      "images/products/adidas-x-rick-owens-mastodon-pro-mod-12a0a2a9-1.jpg",
+      "images/products/adidas-x-rick-owens-mastodon-pro-mod-12a0a2a9-2.jpg"
+    ],
+    "detailImage": "images/products/adidas-x-rick-owens-mastodon-pro-mod-12a0a2a9-1.jpg",
+    "isActive": true,
+    "createdAt": "2026-10-11T15:42:45.314221+00:00"
   }
 ]
