@@ -6800,5 +6800,28 @@
     "detailImage": "images/products/adidas-x-neighbourhood-superstar-80s-82a7420f-1.jpg",
     "isActive": true,
     "createdAt": "2026-10-11T11:53:36.033682+00:00"
+  },
+  {
+    "id": "vans-x-neighbourhood-white-old-skool-e6b9e4cc",
+    "brand": "VANS x NEIGHBOURHOOD",
+    "name": "WHITE \nOLD SKOOL 36 “BIRCH”",
+    "price": 12000,
+    "currency": "RUB",
+    "category": "ОБУВЬ",
+    "sizes": [
+      "45"
+    ],
+    "sizeStock": {
+      "45": 1
+    },
+    "details": "Пара находится в Отличном состоянии!",
+    "images": [
+      "images/products/vans-x-neighbourhood-white-old-skool-e6b9e4cc-1.jpg",
+      "images/products/vans-x-neighbourhood-white-old-skool-e6b9e4cc-2.jpg",
+      "images/products/vans-x-neighbourhood-white-old-skool-e6b9e4cc-3.jpg"
+    ],
+    "detailImage": "images/products/vans-x-neighbourhood-white-old-skool-e6b9e4cc-1.jpg",
+    "isActive": true,
+    "createdAt": "2026-10-11T12:53:02.449003+00:00"
   }
 ]
