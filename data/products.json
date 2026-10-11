@@ -3563,28 +3563,6 @@
     "createdAt": "2026-08-09T00:00:25.682414+00:00"
   },
   {
-    "id": "comme-des-gar-on-white-logo-tee-4e4cab9a",
-    "brand": "COMME DES GARÇON",
-    "name": "WHITE LOGO TEE",
-    "price": 5500,
-    "currency": "RUB",
-    "category": "ФУТБОЛКИ",
-    "sizes": [
-      "L"
-    ],
-    "sizeStock": {
-      "L": 1
-    },
-    "details": "в отличном состоянии \nспина 60\nподмышки 42\nплечи 37",
-    "images": [
-      "images/products/comme-des-gar-on-white-logo-tee-4e4cab9a-1.jpg"
-    ],
-    "detailImage": "images/products/comme-des-gar-on-white-logo-tee-4e4cab9a-1.jpg",
-    "isActive": true,
-    "createdAt": "2026-08-09T00:03:25.925128+00:00",
-    "updatedAt": "2026-08-09T00:03:46.560519+00:00"
-  },
-  {
     "id": "project-j-r-yellow-logo-tee-cbabff77",
     "brand": "PROJECT G/R",
     "name": "YELLOW LOGO TEE",
