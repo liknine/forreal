@@ -6315,5 +6315,28 @@
     "detailImage": "images/products/valentino-black-garavani-classic-sho-536a0ece-1.jpg",
     "isActive": true,
     "createdAt": "2026-10-11T18:08:26.081685+00:00"
+  },
+  {
+    "id": "valentino-garavani-white-classic-sho-a31d1a98",
+    "brand": "VALENTINO",
+    "name": "GARAVANI WHITE CLASSIC SHOES",
+    "price": 20000,
+    "currency": "RUB",
+    "category": "ОБУВЬ",
+    "sizes": [
+      "42"
+    ],
+    "sizeStock": {
+      "42": 1
+    },
+    "details": "Пара находится в Отличном состоянии!",
+    "images": [
+      "images/products/valentino-garavani-white-classic-sho-a31d1a98-1.jpg",
+      "images/products/valentino-garavani-white-classic-sho-a31d1a98-2.jpg",
+      "images/products/valentino-garavani-white-classic-sho-a31d1a98-3.jpg"
+    ],
+    "detailImage": "images/products/valentino-garavani-white-classic-sho-a31d1a98-1.jpg",
+    "isActive": true,
+    "createdAt": "2026-10-11T18:10:23.037981+00:00"
   }
 ]
