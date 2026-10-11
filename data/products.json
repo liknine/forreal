@@ -6154,5 +6154,28 @@
     "detailImage": "images/products/lanvin-white-tennis-classic-sneakers-2f34681a-1.jpg",
     "isActive": true,
     "createdAt": "2026-10-11T17:37:04.465812+00:00"
+  },
+  {
+    "id": "valentino-valentino-big-head-top-gre-445d64d9",
+    "brand": "VALENTINO",
+    "name": "VALENTINO BIG HEAD TOP GREY SNEAKERS",
+    "price": 22000,
+    "currency": "RUB",
+    "category": "ОБУВЬ",
+    "sizes": [
+      "42"
+    ],
+    "sizeStock": {
+      "42": 1
+    },
+    "details": "Пара находится в Отличном состоянии",
+    "images": [
+      "images/products/valentino-valentino-big-head-top-gre-445d64d9-1.jpg",
+      "images/products/valentino-valentino-big-head-top-gre-445d64d9-2.jpg",
+      "images/products/valentino-valentino-big-head-top-gre-445d64d9-3.jpg"
+    ],
+    "detailImage": "images/products/valentino-valentino-big-head-top-gre-445d64d9-1.jpg",
+    "isActive": true,
+    "createdAt": "2026-10-11T17:40:34.858281+00:00"
   }
 ]
