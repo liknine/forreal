@@ -2954,28 +2954,6 @@
     "createdAt": "2026-08-09T00:26:04.528612+00:00"
   },
   {
-    "id": "1017-alyx-9sm-black-logo-longsleeve-19422b8a",
-    "brand": "1017 ALYX 9SM",
-    "name": "BLACK LOGO LONGSLEEVE",
-    "price": 8000,
-    "currency": "RUB",
-    "category": "ФУТБОЛКИ",
-    "sizes": [
-      "L"
-    ],
-    "sizeStock": {
-      "L": 1
-    },
-    "details": "в отличном состоянии \nспина 76\nподмышки 54\nплечи63",
-    "images": [
-      "images/products/1017-alyx-9sm-black-logo-longsleeve-19422b8a-1.jpg",
-      "images/products/1017-alyx-9sm-black-logo-longsleeve-19422b8a-2.jpg"
-    ],
-    "detailImage": "images/products/1017-alyx-9sm-black-logo-longsleeve-19422b8a-1.jpg",
-    "isActive": true,
-    "createdAt": "2026-08-09T00:32:04.024739+00:00"
-  },
-  {
     "id": "project-g-r-black-logo-tee-9e0ded6a",
     "brand": "PROJECT G/R",
     "name": "BLACK LOGO LONGSLEEVE",
