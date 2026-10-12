@@ -1082,29 +1082,6 @@
     "createdAt": "2026-07-14T10:46:45.387312+00:00"
   },
   {
-    "id": "gucci-tiger-black-logo-hoodie-1c08e4a0",
-    "brand": "GUCCI",
-    "name": "TIGER BLACK LOGO HOODIE",
-    "price": 30500,
-    "currency": "RUB",
-    "category": "ХУДИ",
-    "sizes": [
-      "L"
-    ],
-    "sizeStock": {
-      "L": 1
-    },
-    "details": "в отличном состоянии \nспина 71\nподмышки 59\nплечи 56",
-    "images": [
-      "images/products/gucci-tiger-black-logo-hoodie-1c08e4a0-1.jpg",
-      "images/products/gucci-tiger-black-logo-hoodie-1c08e4a0-2.jpg"
-    ],
-    "detailImage": "images/products/gucci-tiger-black-logo-hoodie-1c08e4a0-1.jpg",
-    "isActive": true,
-    "createdAt": "2026-07-14T10:51:01.641351+00:00",
-    "updatedAt": "2026-08-18T03:35:36.221937+00:00"
-  },
-  {
     "id": "mm6-black-snake-logo-hoodie-c4aacace",
     "brand": "MM6",
     "name": "BLACK SNAKE LOGO HOODIE",
