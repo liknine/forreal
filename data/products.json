@@ -1172,28 +1172,6 @@
     "updatedAt": "2026-09-30T10:01:11.340213+00:00"
   },
   {
-    "id": "maison-margiela-black-logo-hoodie-8ea73f2e",
-    "brand": "MAISON MARGIELA",
-    "name": "BLACK LOGO HOODIE",
-    "price": 24500,
-    "currency": "RUB",
-    "category": "ХУДИ",
-    "sizes": [
-      "XL"
-    ],
-    "sizeStock": {
-      "XL": 1
-    },
-    "details": "В отличном состоянии \n\n48 ( фактически XL)",
-    "images": [
-      "images/products/maison-margiela-black-logo-hoodie-8ea73f2e-1.jpg",
-      "images/products/maison-margiela-black-logo-hoodie-8ea73f2e-2.jpg"
-    ],
-    "detailImage": "images/products/maison-margiela-black-logo-hoodie-8ea73f2e-1.jpg",
-    "isActive": true,
-    "createdAt": "2026-07-14T11:04:25.186773+00:00"
-  },
-  {
     "id": "c2h4-black-logo-hoodie-fbb40094",
     "brand": "C2H4",
     "name": "BLACK LOGO HOODIE",
