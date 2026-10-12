@@ -1105,27 +1105,6 @@
     "updatedAt": "2026-08-18T03:35:36.221937+00:00"
   },
   {
-    "id": "saint-laurent-black-logo-hoodie-7f8e06e7",
-    "brand": "SAINT LAURENT",
-    "name": "BLACK LOGO HOODIE",
-    "price": 27500,
-    "currency": "RUB",
-    "category": "ХУДИ",
-    "sizes": [
-      "M"
-    ],
-    "sizeStock": {
-      "M": 1
-    },
-    "details": "В отличном состоянии \n\nS ( фактически M )",
-    "images": [
-      "images/products/saint-laurent-black-logo-hoodie-7f8e06e7-1.jpg"
-    ],
-    "detailImage": "images/products/saint-laurent-black-logo-hoodie-7f8e06e7-1.jpg",
-    "isActive": true,
-    "createdAt": "2026-07-14T10:52:22.889737+00:00"
-  },
-  {
     "id": "mm6-black-snake-logo-hoodie-c4aacace",
     "brand": "MM6",
     "name": "BLACK SNAKE LOGO HOODIE",
