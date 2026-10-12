@@ -539,28 +539,6 @@
     "updatedAt": "2026-09-30T10:18:13.760642+00:00"
   },
   {
-    "id": "mastermind-betty-boop-black-logo-hoo-a20fe10d",
-    "brand": "MASTERMIND",
-    "name": "BETTY BOOP BLACK LOGO HOODIE",
-    "price": 22500,
-    "currency": "RUB",
-    "category": "ХУДИ",
-    "sizes": [
-      "L"
-    ],
-    "sizeStock": {
-      "L": 1
-    },
-    "details": "Полностью новый\n\nM ( фактически L )",
-    "images": [
-      "images/products/mastermind-betty-boop-black-logo-hoo-a20fe10d-1.jpg",
-      "images/products/mastermind-betty-boop-black-logo-hoo-a20fe10d-2.jpg"
-    ],
-    "detailImage": "images/products/mastermind-betty-boop-black-logo-hoo-a20fe10d-1.jpg",
-    "isActive": true,
-    "createdAt": "2026-07-12T12:13:26.703547+00:00"
-  },
-  {
     "id": "yohji-yamamoto-syte-black-logo-hoodi-2faa2fe9",
     "brand": "YOHJI YAMAMOTO",
     "name": "SYTE BLACK LOGO HOODIE",
