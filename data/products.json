@@ -2409,31 +2409,6 @@
     "updatedAt": "2026-08-18T03:30:21.585805+00:00"
   },
   {
-    "id": "a-cold-wall-white-painted-logo-hoodi-c222c0de",
-    "brand": "A COLD WALL",
-    "name": "WHITE PAINTED LOGO HOODIE",
-    "price": 11000,
-    "currency": "RUB",
-    "category": "ХУДИ",
-    "sizes": [
-      "L",
-      "M"
-    ],
-    "sizeStock": {
-      "L": 1,
-      "M": 2
-    },
-    "details": "в отличном состоянии \nL SIZE \nспина 75\nподмышки 57\nплечи 64",
-    "images": [
-      "images/products/a-cold-wall-white-painted-logo-hoodi-c222c0de-1.jpg",
-      "images/products/a-cold-wall-white-painted-logo-hoodi-c222c0de-2.jpg"
-    ],
-    "detailImage": "images/products/a-cold-wall-white-painted-logo-hoodi-c222c0de-1.jpg",
-    "isActive": true,
-    "createdAt": "2026-07-31T13:52:14.131504+00:00",
-    "updatedAt": "2026-08-18T03:29:37.128008+00:00"
-  },
-  {
     "id": "bape-black-sneakers-logo-zip-hoodie-abd0664b",
     "brand": "BAPE",
     "name": "BLACK SNEAKERS LOGO ZIP HOODIE",
