@@ -5856,5 +5856,27 @@
     "detailImage": "images/products/dsquared2-patch-blue-logo-jeans-13c39e5d-1.jpg",
     "isActive": true,
     "createdAt": "2026-10-12T10:17:12.119016+00:00"
+  },
+  {
+    "id": "dsquared2-blue-logo-jeans-4b969a29",
+    "brand": "DSQUARED2",
+    "name": "BLUE LOGO JEANS",
+    "price": 16000,
+    "currency": "RUB",
+    "category": "ШТАНЫ",
+    "sizes": [
+      "S"
+    ],
+    "sizeStock": {
+      "S": 1
+    },
+    "details": "Вещь в отличном состоянии!",
+    "images": [
+      "images/products/dsquared2-blue-logo-jeans-4b969a29-1.jpg",
+      "images/products/dsquared2-blue-logo-jeans-4b969a29-2.jpg"
+    ],
+    "detailImage": "images/products/dsquared2-blue-logo-jeans-4b969a29-1.jpg",
+    "isActive": true,
+    "createdAt": "2026-10-12T10:21:05.555803+00:00"
   }
 ]
