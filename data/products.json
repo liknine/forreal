@@ -2505,28 +2505,6 @@
     "updatedAt": "2026-09-30T09:57:10.658644+00:00"
   },
   {
-    "id": "maison-margiela-black-logo-hoodie-9e976ace",
-    "brand": "MAISON MARGIELA",
-    "name": "BLACK LOGO HOODIE",
-    "price": 24500,
-    "currency": "RUB",
-    "category": "ХУДИ",
-    "sizes": [
-      "L"
-    ],
-    "sizeStock": {
-      "L": 1
-    },
-    "details": "в отличном состоянии \nспина 74\nподмышки 68\nплечи 60",
-    "images": [
-      "images/products/maison-margiela-black-logo-hoodie-9e976ace-1.jpg",
-      "images/products/maison-margiela-black-logo-hoodie-9e976ace-2.jpg"
-    ],
-    "detailImage": "images/products/maison-margiela-black-logo-hoodie-9e976ace-1.jpg",
-    "isActive": true,
-    "createdAt": "2026-08-08T13:35:47.992180+00:00"
-  },
-  {
     "id": "cav-empt-black-logo-hoodie-e2cee751",
     "brand": "CAV EMPT",
     "name": "BLACK LOGO HOODIE",
