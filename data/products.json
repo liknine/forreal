@@ -725,28 +725,6 @@
     "createdAt": "2026-07-13T13:39:13.795006+00:00"
   },
   {
-    "id": "supreme-hysteric-glamour-2c2fc3eb",
-    "brand": "SUPREME",
-    "name": "HYSTERIC GLAMOUR",
-    "price": 10500,
-    "currency": "RUB",
-    "category": "ХУДИ",
-    "sizes": [
-      "L"
-    ],
-    "sizeStock": {
-      "L": 1
-    },
-    "details": "Полностью новый\n\nM ( фактически L )",
-    "images": [
-      "images/products/supreme-hysteric-glamour-2c2fc3eb-1.jpg",
-      "images/products/supreme-hysteric-glamour-2c2fc3eb-2.jpg"
-    ],
-    "detailImage": "images/products/supreme-hysteric-glamour-2c2fc3eb-1.jpg",
-    "isActive": true,
-    "createdAt": "2026-07-13T13:40:25.404553+00:00"
-  },
-  {
     "id": "1017-alyx-9sm-black-logo-hoodie-42a25e39",
     "brand": "1017 ALYX 9SM",
     "name": "BLACK LOGO HOODIE",
