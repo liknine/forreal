@@ -5821,10 +5821,10 @@
     "currency": "RUB",
     "category": "ШТАНЫ",
     "sizes": [
-      "S"
+      "XL"
     ],
     "sizeStock": {
-      "S": 1
+      "XL": 1
     },
     "details": "Вещь в отличном состоянии)",
     "images": [
@@ -5833,7 +5833,8 @@
     ],
     "detailImage": "images/products/amiri-bandana-patch-blue-logo-jeans-4ef7d17f-1.jpg",
     "isActive": true,
-    "createdAt": "2026-10-12T10:14:28.798093+00:00"
+    "createdAt": "2026-10-12T10:14:28.798093+00:00",
+    "updatedAt": "2026-10-12T10:38:02.439430+00:00"
   },
   {
     "id": "dsquared2-patch-blue-logo-jeans-13c39e5d",
