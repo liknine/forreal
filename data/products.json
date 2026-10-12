@@ -5967,5 +5967,27 @@
     "detailImage": "images/products/hood-by-air-blue-logo-jeans-30baff0c-1.jpg",
     "isActive": true,
     "createdAt": "2026-10-12T10:33:49.956452+00:00"
+  },
+  {
+    "id": "hood-by-air-distressed-black-red-log-3dec49b7",
+    "brand": "HOOD BY AIR DISTRESSED",
+    "name": "BLACK-RED LOGO JEANS",
+    "price": 65000,
+    "currency": "RUB",
+    "category": "ШТАНЫ",
+    "sizes": [
+      "XL"
+    ],
+    "sizeStock": {
+      "XL": 1
+    },
+    "details": "Вещь в отличном состоянии!",
+    "images": [
+      "images/products/hood-by-air-distressed-black-red-log-3dec49b7-1.jpg",
+      "images/products/hood-by-air-distressed-black-red-log-3dec49b7-2.jpg"
+    ],
+    "detailImage": "images/products/hood-by-air-distressed-black-red-log-3dec49b7-1.jpg",
+    "isActive": true,
+    "createdAt": "2026-10-12T10:39:55.025690+00:00"
   }
 ]
