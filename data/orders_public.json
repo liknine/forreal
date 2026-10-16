@@ -1,5 +1,29 @@
 [
   {
+    "id": "32174ee5-a3df-430c-a3ab-fc12bd79447e",
+    "orderNumber": 1040,
+    "clientOrderId": "forreal-1792189131615-11727740796a6",
+    "telegramId": 734176199,
+    "username": "Grob06",
+    "items": [
+      {
+        "productId": "valentino-classic-court-sneakers-94316d69",
+        "brand": "VALENTINO",
+        "name": "CLASSIC COURT SNEAKERS",
+        "size": "41",
+        "quantity": 1,
+        "price": 12000,
+        "image": "images/products/valentino-classic-court-sneakers-94316d69-1.jpg"
+      }
+    ],
+    "totalPrice": 12000,
+    "currency": "RUB",
+    "deliveryMethod": "cdek",
+    "status": "awaiting_payment",
+    "createdAt": "2026-10-16T22:18:52.081915+00:00",
+    "updatedAt": "2026-10-16T22:18:52.081915+00:00"
+  },
+  {
     "id": "c5403d03-65d3-494f-bb84-049791d8eb21",
     "orderNumber": 1039,
     "clientOrderId": "forreal-1792181001796-bb51e619531ac",
