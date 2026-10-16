@@ -1,5 +1,29 @@
 [
   {
+    "id": "c5403d03-65d3-494f-bb84-049791d8eb21",
+    "orderNumber": 1039,
+    "clientOrderId": "forreal-1792181001796-bb51e619531ac",
+    "telegramId": 597215845,
+    "username": "aldmlo",
+    "items": [
+      {
+        "productId": "hood-by-air-blue-logo-jeans-30baff0c",
+        "brand": "HOOD BY AIR",
+        "name": "BLUE LOGO JEANS",
+        "size": "S",
+        "quantity": 1,
+        "price": 30000,
+        "image": "images/products/hood-by-air-blue-logo-jeans-30baff0c-1.jpg"
+      }
+    ],
+    "totalPrice": 30000,
+    "currency": "RUB",
+    "deliveryMethod": "yandex",
+    "status": "awaiting_payment",
+    "createdAt": "2026-10-16T20:03:22.121595+00:00",
+    "updatedAt": "2026-10-16T20:03:22.121595+00:00"
+  },
+  {
     "id": "1a123232-c8f6-4628-bcaa-37018f329faf",
     "orderNumber": 1038,
     "clientOrderId": "forreal-1791126211451-15132c5f276a98",
