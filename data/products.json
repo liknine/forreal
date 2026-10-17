@@ -5996,5 +5996,27 @@
     "detailImage": "images/products/saint-michael-red-godspeed-raglan-cr-ae3a2126-1.jpg",
     "isActive": true,
     "createdAt": "2026-10-17T21:24:00.366450+00:00"
+  },
+  {
+    "id": "undercover-angel-noise-hoodie-fw23-837ff7c4",
+    "brand": "UNDERCOVER",
+    "name": "«ANGEL NOISE» HOODIE — FW23",
+    "price": 20000,
+    "currency": "RUB",
+    "category": "ХУДИ",
+    "sizes": [
+      "XL"
+    ],
+    "sizeStock": {
+      "XL": 1
+    },
+    "details": "Вещь находится в Отличном состоянии!\n\nСидит на теле как XL/XXL",
+    "images": [
+      "images/products/undercover-angel-noise-hoodie-fw23-837ff7c4-1.jpg",
+      "images/products/undercover-angel-noise-hoodie-fw23-837ff7c4-2.jpg"
+    ],
+    "detailImage": "images/products/undercover-angel-noise-hoodie-fw23-837ff7c4-1.jpg",
+    "isActive": true,
+    "createdAt": "2026-10-17T21:28:42.389326+00:00"
   }
 ]
