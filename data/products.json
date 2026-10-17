@@ -5776,5 +5776,27 @@
     "detailImage": "images/products/alexander-mcqueen-poison-youth-hoodi-e8d53030-1.jpg",
     "isActive": true,
     "createdAt": "2026-10-17T20:41:32.943139+00:00"
+  },
+  {
+    "id": "alexander-mcqueen-black-red-zip-up-h-24c3894e",
+    "brand": "ALEXANDER MCQUEEN",
+    "name": "BLACK/RED ZIP-UP HOODIE",
+    "price": 20500,
+    "currency": "RUB",
+    "category": "ЗИП-ХУДИ",
+    "sizes": [
+      "S"
+    ],
+    "sizeStock": {
+      "S": 1
+    },
+    "details": "Вещь находится в Отличном состоянии!\n\nСидит на теле как S/M",
+    "images": [
+      "images/products/alexander-mcqueen-black-red-zip-up-h-24c3894e-1.jpg",
+      "images/products/alexander-mcqueen-black-red-zip-up-h-24c3894e-2.jpg"
+    ],
+    "detailImage": "images/products/alexander-mcqueen-black-red-zip-up-h-24c3894e-1.jpg",
+    "isActive": true,
+    "createdAt": "2026-10-17T20:43:22.563500+00:00"
   }
 ]
