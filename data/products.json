@@ -5864,5 +5864,27 @@
     "detailImage": "images/products/saint-laurent-love-1983-teddy-satin-35c5f321-1.jpg",
     "isActive": true,
     "createdAt": "2026-10-17T21:04:18.365661+00:00"
+  },
+  {
+    "id": "dolce-gabbana-tartan-wool-denim-patc-245db6ca",
+    "brand": "DOLCE GABBANA",
+    "name": "TARTAN WOOL & DENIM PATCHWORK SHIRT",
+    "price": 16000,
+    "currency": "RUB",
+    "category": "КУРТКИ",
+    "sizes": [
+      "XS"
+    ],
+    "sizeStock": {
+      "XS": 1
+    },
+    "details": "Вещь находится в Отличном состоянии!\n\nСидит на теле как XS",
+    "images": [
+      "images/products/dolce-gabbana-tartan-wool-denim-patc-245db6ca-1.jpg",
+      "images/products/dolce-gabbana-tartan-wool-denim-patc-245db6ca-2.jpg"
+    ],
+    "detailImage": "images/products/dolce-gabbana-tartan-wool-denim-patc-245db6ca-1.jpg",
+    "isActive": true,
+    "createdAt": "2026-10-17T21:08:07.090661+00:00"
   }
 ]
