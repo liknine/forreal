@@ -5974,5 +5974,27 @@
     "detailImage": "images/products/dolce-gabbana-destroyed-repaired-den-8c98022f-1.jpg",
     "isActive": true,
     "createdAt": "2026-10-17T21:21:26.336002+00:00"
+  },
+  {
+    "id": "saint-michael-red-godspeed-raglan-cr-ae3a2126",
+    "brand": "SAINT MICHAEL",
+    "name": "RED GODSPEED» RAGLAN CREWNECK SWEATSHIRT — AW21",
+    "price": 30000,
+    "currency": "RUB",
+    "category": "ХУДИ",
+    "sizes": [
+      "XL"
+    ],
+    "sizeStock": {
+      "XL": 1
+    },
+    "details": "Вещь находится в Отличном состоянии!\n\nСидит на теле как M/L",
+    "images": [
+      "images/products/saint-michael-red-godspeed-raglan-cr-ae3a2126-1.jpg",
+      "images/products/saint-michael-red-godspeed-raglan-cr-ae3a2126-2.jpg"
+    ],
+    "detailImage": "images/products/saint-michael-red-godspeed-raglan-cr-ae3a2126-1.jpg",
+    "isActive": true,
+    "createdAt": "2026-10-17T21:24:00.366450+00:00"
   }
 ]
