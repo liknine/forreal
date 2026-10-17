@@ -5710,5 +5710,27 @@
     "detailImage": "images/products/hood-by-air-distressed-black-red-log-3dec49b7-1.jpg",
     "isActive": true,
     "createdAt": "2026-10-12T10:39:55.025690+00:00"
+  },
+  {
+    "id": "amiri-tokyo-exclusive-bones-tee-2nd-358056d1",
+    "brand": "AMIRI",
+    "name": "TOKYO EXCLUSIVE «BONES»\nTEE — 2ND EDITION",
+    "price": 16000,
+    "currency": "RUB",
+    "category": "ФУТБОЛКИ",
+    "sizes": [
+      "XL"
+    ],
+    "sizeStock": {
+      "XL": 1
+    },
+    "details": "Вещь находится в Отличном состоянии!\n\nСидит на теле как L/XL",
+    "images": [
+      "images/products/amiri-tokyo-exclusive-bones-tee-2nd-358056d1-1.jpg",
+      "images/products/amiri-tokyo-exclusive-bones-tee-2nd-358056d1-2.jpg"
+    ],
+    "detailImage": "images/products/amiri-tokyo-exclusive-bones-tee-2nd-358056d1-1.jpg",
+    "isActive": true,
+    "createdAt": "2026-10-17T20:36:02.952636+00:00"
   }
 ]
