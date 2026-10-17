@@ -6018,5 +6018,27 @@
     "detailImage": "images/products/undercover-angel-noise-hoodie-fw23-837ff7c4-1.jpg",
     "isActive": true,
     "createdAt": "2026-10-17T21:28:42.389326+00:00"
+  },
+  {
+    "id": "giuseppe-zanotti-coby-leather-patent-575c78ae",
+    "brand": "GIUSEPPE ZANOTTI",
+    "name": "COBY LEATHER & PATENT \nHIGH-TOP SNEAKERS",
+    "price": 20000,
+    "currency": "RUB",
+    "category": "ОБУВЬ",
+    "sizes": [
+      "42"
+    ],
+    "sizeStock": {
+      "42": 1
+    },
+    "details": "Пара находится в Отличном состоянии!\n\nРазмер на бирке 42^1/2",
+    "images": [
+      "images/products/giuseppe-zanotti-coby-leather-patent-575c78ae-1.jpg",
+      "images/products/giuseppe-zanotti-coby-leather-patent-575c78ae-2.jpg"
+    ],
+    "detailImage": "images/products/giuseppe-zanotti-coby-leather-patent-575c78ae-1.jpg",
+    "isActive": true,
+    "createdAt": "2026-10-17T21:30:43.983660+00:00"
   }
 ]
