@@ -5886,5 +5886,27 @@
     "detailImage": "images/products/dolce-gabbana-tartan-wool-denim-patc-245db6ca-1.jpg",
     "isActive": true,
     "createdAt": "2026-10-17T21:08:07.090661+00:00"
+  },
+  {
+    "id": "saint-laurent-black-d01-low-waist-sl-06ae2e23",
+    "brand": "SAINT LAURENT",
+    "name": "BLACK D01 LOW-WAIST SLIM DENIM — 2015 / HEDI SLIMANE",
+    "price": 25500,
+    "currency": "RUB",
+    "category": "ШТАНЫ",
+    "sizes": [
+      "33"
+    ],
+    "sizeStock": {
+      "33": 1
+    },
+    "details": "Вещь находится в Отличном состоянии!\n\nСидит по факту размера, немного тянуться.",
+    "images": [
+      "images/products/saint-laurent-black-d01-low-waist-sl-06ae2e23-1.jpg",
+      "images/products/saint-laurent-black-d01-low-waist-sl-06ae2e23-2.jpg"
+    ],
+    "detailImage": "images/products/saint-laurent-black-d01-low-waist-sl-06ae2e23-1.jpg",
+    "isActive": true,
+    "createdAt": "2026-10-17T21:10:08.818520+00:00"
   }
 ]
