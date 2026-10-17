@@ -5820,5 +5820,27 @@
     "detailImage": "images/products/alexander-mcqueen-skull-in-roses-bla-e171bfc5-1.jpg",
     "isActive": true,
     "createdAt": "2026-10-17T20:46:07.917392+00:00"
+  },
+  {
+    "id": "mastermind-x-playboy-black-rabbit-sk-a12325f2",
+    "brand": "MASTERMIND x PLAYBOY",
+    "name": "BLACK «RABBIT SKULL» HOODIE",
+    "price": 28500,
+    "currency": "RUB",
+    "category": "ХУДИ",
+    "sizes": [
+      "M"
+    ],
+    "sizeStock": {
+      "M": 1
+    },
+    "details": "Вещь находится в Отличном состоянии!\n\nСидит на теле как M/L",
+    "images": [
+      "images/products/mastermind-x-playboy-black-rabbit-sk-a12325f2-1.jpg",
+      "images/products/mastermind-x-playboy-black-rabbit-sk-a12325f2-2.jpg"
+    ],
+    "detailImage": "images/products/mastermind-x-playboy-black-rabbit-sk-a12325f2-1.jpg",
+    "isActive": true,
+    "createdAt": "2026-10-17T20:53:25.365751+00:00"
   }
 ]
