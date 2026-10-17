@@ -5930,5 +5930,27 @@
     "detailImage": "images/products/maison-mihara-yasuhiro-archive-bleac-e1ddbf3b-1.jpg",
     "isActive": true,
     "createdAt": "2026-10-17T21:12:15.372180+00:00"
+  },
+  {
+    "id": "dolce-gabbana-printed-wash-straight-1e05f8ff",
+    "brand": "DOLCE GABBANA",
+    "name": "PRINTED WASH STRAIGHT DENIM JEANS — 2000s",
+    "price": 18000,
+    "currency": "RUB",
+    "category": "ШТАНЫ",
+    "sizes": [
+      "30"
+    ],
+    "sizeStock": {
+      "30": 1
+    },
+    "details": "Вещь находится в Отличном состоянии!\n\nСидит по факту размера, немного тянуться и подойдут на размер S/M",
+    "images": [
+      "images/products/dolce-gabbana-printed-wash-straight-1e05f8ff-1.jpg",
+      "images/products/dolce-gabbana-printed-wash-straight-1e05f8ff-2.jpg"
+    ],
+    "detailImage": "images/products/dolce-gabbana-printed-wash-straight-1e05f8ff-1.jpg",
+    "isActive": true,
+    "createdAt": "2026-10-17T21:16:21.432108+00:00"
   }
 ]
