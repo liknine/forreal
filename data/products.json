@@ -5908,5 +5908,27 @@
     "detailImage": "images/products/saint-laurent-black-d01-low-waist-sl-06ae2e23-1.jpg",
     "isActive": true,
     "createdAt": "2026-10-17T21:10:08.818520+00:00"
+  },
+  {
+    "id": "maison-mihara-yasuhiro-archive-bleac-e1ddbf3b",
+    "brand": "MAISON MIHARA YASUHIRO",
+    "name": "ARCHIVE BLEACH / PAINT SPLATTER REPAIRED JEANS",
+    "price": 18000,
+    "currency": "RUB",
+    "category": "ШТАНЫ",
+    "sizes": [
+      "48"
+    ],
+    "sizeStock": {
+      "48": 1
+    },
+    "details": "Вещь находится в Отличном состоянии!\n\nСидит по факту размера, немного тянуться.",
+    "images": [
+      "images/products/maison-mihara-yasuhiro-archive-bleac-e1ddbf3b-1.jpg",
+      "images/products/maison-mihara-yasuhiro-archive-bleac-e1ddbf3b-2.jpg"
+    ],
+    "detailImage": "images/products/maison-mihara-yasuhiro-archive-bleac-e1ddbf3b-1.jpg",
+    "isActive": true,
+    "createdAt": "2026-10-17T21:12:15.372180+00:00"
   }
 ]
