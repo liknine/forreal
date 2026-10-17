@@ -1,5 +1,29 @@
 [
   {
+    "id": "d528ef8e-b050-4ae5-a6e7-0384c2f198fe",
+    "orderNumber": 1041,
+    "clientOrderId": "forreal-1792228990410-0b5f00869db6b",
+    "telegramId": 8995451380,
+    "username": "johnplayerhustler",
+    "items": [
+      {
+        "productId": "comme-des-garcons-black-logo-hoodie-646dd632",
+        "brand": "Comme des Garcons",
+        "name": "BLACK LOGO HOODIE",
+        "size": "L",
+        "quantity": 1,
+        "price": 15000,
+        "image": "images/products/comme-des-garcons-black-logo-hoodie-646dd632-1.jpg"
+      }
+    ],
+    "totalPrice": 15000,
+    "currency": "RUB",
+    "deliveryMethod": "yandex",
+    "status": "awaiting_payment",
+    "createdAt": "2026-10-17T09:23:10.585296+00:00",
+    "updatedAt": "2026-10-17T09:23:10.585296+00:00"
+  },
+  {
     "id": "32174ee5-a3df-430c-a3ab-fc12bd79447e",
     "orderNumber": 1040,
     "clientOrderId": "forreal-1792189131615-11727740796a6",
