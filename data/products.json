@@ -5952,5 +5952,27 @@
     "detailImage": "images/products/dolce-gabbana-printed-wash-straight-1e05f8ff-1.jpg",
     "isActive": true,
     "createdAt": "2026-10-17T21:16:21.432108+00:00"
+  },
+  {
+    "id": "dolce-gabbana-destroyed-repaired-den-8c98022f",
+    "brand": "DOLCE GABBANA",
+    "name": "DESTROYED & REPAIRED\nDENIM JEANS — 2000s",
+    "price": 18000,
+    "currency": "RUB",
+    "category": "ШТАНЫ",
+    "sizes": [
+      "46"
+    ],
+    "sizeStock": {
+      "46": 1
+    },
+    "details": "Вещь находится в Отличном состоянии!\n\nСидит по факту размера, немного тянуться и подойдут на размер S/M",
+    "images": [
+      "images/products/dolce-gabbana-destroyed-repaired-den-8c98022f-1.jpg",
+      "images/products/dolce-gabbana-destroyed-repaired-den-8c98022f-2.jpg"
+    ],
+    "detailImage": "images/products/dolce-gabbana-destroyed-repaired-den-8c98022f-1.jpg",
+    "isActive": true,
+    "createdAt": "2026-10-17T21:21:26.336002+00:00"
   }
 ]
