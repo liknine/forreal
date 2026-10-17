@@ -5798,5 +5798,27 @@
     "detailImage": "images/products/alexander-mcqueen-black-red-zip-up-h-24c3894e-1.jpg",
     "isActive": true,
     "createdAt": "2026-10-17T20:43:22.563500+00:00"
+  },
+  {
+    "id": "alexander-mcqueen-skull-in-roses-bla-e171bfc5",
+    "brand": "ALEXANDER MCQUEEN",
+    "name": "SKULL IN ROSES BLACK HOODIE",
+    "price": 22500,
+    "currency": "RUB",
+    "category": "ХУДИ",
+    "sizes": [
+      "S"
+    ],
+    "sizeStock": {
+      "S": 1
+    },
+    "details": "Вещь находится в Отличном состоянии!\n\nСидит на теле как S/M",
+    "images": [
+      "images/products/alexander-mcqueen-skull-in-roses-bla-e171bfc5-1.jpg",
+      "images/products/alexander-mcqueen-skull-in-roses-bla-e171bfc5-2.jpg"
+    ],
+    "detailImage": "images/products/alexander-mcqueen-skull-in-roses-bla-e171bfc5-1.jpg",
+    "isActive": true,
+    "createdAt": "2026-10-17T20:46:07.917392+00:00"
   }
 ]
