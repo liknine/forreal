@@ -5754,5 +5754,27 @@
     "detailImage": "images/products/amiri-ma-chinese-new-year-tee-ps22-d4a8cd16-1.jpg",
     "isActive": true,
     "createdAt": "2026-10-17T20:38:10.032365+00:00"
+  },
+  {
+    "id": "alexander-mcqueen-poison-youth-hoodi-e8d53030",
+    "brand": "ALEXANDER MCQUEEN",
+    "name": "POISON YOUTH HOODIE",
+    "price": 15500,
+    "currency": "RUB",
+    "category": "ХУДИ",
+    "sizes": [
+      "XS"
+    ],
+    "sizeStock": {
+      "XS": 1
+    },
+    "details": "Вещь находится в Отличном состоянии!\n\nСидит на теле как S/M",
+    "images": [
+      "images/products/alexander-mcqueen-poison-youth-hoodi-e8d53030-1.jpg",
+      "images/products/alexander-mcqueen-poison-youth-hoodi-e8d53030-2.jpg"
+    ],
+    "detailImage": "images/products/alexander-mcqueen-poison-youth-hoodi-e8d53030-1.jpg",
+    "isActive": true,
+    "createdAt": "2026-10-17T20:41:32.943139+00:00"
   }
 ]
