@@ -5842,5 +5842,27 @@
     "detailImage": "images/products/mastermind-x-playboy-black-rabbit-sk-a12325f2-1.jpg",
     "isActive": true,
     "createdAt": "2026-10-17T20:53:25.365751+00:00"
+  },
+  {
+    "id": "saint-laurent-love-1983-teddy-satin-35c5f321",
+    "brand": "SAINT LAURENT",
+    "name": "LOVE 1983»\nTEDDY SATIN JACKET",
+    "price": 45000,
+    "currency": "RUB",
+    "category": "КУРТКИ",
+    "sizes": [
+      "L"
+    ],
+    "sizeStock": {
+      "L": 1
+    },
+    "details": "Вещь находится в Отличном состоянии!\n\nСидит на теле как M/L",
+    "images": [
+      "images/products/saint-laurent-love-1983-teddy-satin-35c5f321-1.jpg",
+      "images/products/saint-laurent-love-1983-teddy-satin-35c5f321-2.jpg"
+    ],
+    "detailImage": "images/products/saint-laurent-love-1983-teddy-satin-35c5f321-1.jpg",
+    "isActive": true,
+    "createdAt": "2026-10-17T21:04:18.365661+00:00"
   }
 ]
