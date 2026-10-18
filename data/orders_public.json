@@ -1,5 +1,38 @@
 [
   {
+    "id": "64232e37-3872-4725-a20d-12241449fbbc",
+    "orderNumber": 1042,
+    "clientOrderId": "forreal-1792341262751-1a93756da63158",
+    "telegramId": 8724400115,
+    "username": "pamfbs",
+    "items": [
+      {
+        "productId": "saint-laurent-black-d01-low-waist-sl-06ae2e23",
+        "brand": "SAINT LAURENT",
+        "name": "BLACK D01 LOW-WAIST SLIM DENIM — 2015 / HEDI SLIMANE",
+        "size": "33",
+        "quantity": 1,
+        "price": 25500,
+        "image": "images/products/saint-laurent-black-d01-low-waist-sl-06ae2e23-1.jpg"
+      },
+      {
+        "productId": "undercover-angel-noise-hoodie-fw23-837ff7c4",
+        "brand": "UNDERCOVER",
+        "name": "«ANGEL NOISE» HOODIE — FW23",
+        "size": "XL",
+        "quantity": 1,
+        "price": 20000,
+        "image": "images/products/undercover-angel-noise-hoodie-fw23-837ff7c4-1.jpg"
+      }
+    ],
+    "totalPrice": 45500,
+    "currency": "RUB",
+    "deliveryMethod": "cdek",
+    "status": "awaiting_payment",
+    "createdAt": "2026-10-18T16:34:22.972026+00:00",
+    "updatedAt": "2026-10-18T16:34:22.972026+00:00"
+  },
+  {
     "id": "d528ef8e-b050-4ae5-a6e7-0384c2f198fe",
     "orderNumber": 1041,
     "clientOrderId": "forreal-1792228990410-0b5f00869db6b",
