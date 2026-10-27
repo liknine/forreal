@@ -1,5 +1,29 @@
 [
   {
+    "id": "56c265f1-9e16-4924-83ae-17609104cbba",
+    "orderNumber": 1043,
+    "clientOrderId": "forreal-1793105492411-bb7176b4d2d5e8",
+    "telegramId": 1894746924,
+    "username": "xirosa",
+    "items": [
+      {
+        "productId": "adidas-x-rick-owens-mastodon-pro-mod-12a0a2a9",
+        "brand": "ADIDAS x RICK OWENS",
+        "name": "MASTODON PRO MODEL\nBROWN / PEARL\nFW16",
+        "size": "43",
+        "quantity": 1,
+        "price": 25500,
+        "image": "images/products/adidas-x-rick-owens-mastodon-pro-mod-12a0a2a9-1.jpg"
+      }
+    ],
+    "totalPrice": 25500,
+    "currency": "RUB",
+    "deliveryMethod": "cdek",
+    "status": "awaiting_payment",
+    "createdAt": "2026-10-27T12:51:32.836794+00:00",
+    "updatedAt": "2026-10-27T12:51:32.836794+00:00"
+  },
+  {
     "id": "64232e37-3872-4725-a20d-12241449fbbc",
     "orderNumber": 1042,
     "clientOrderId": "forreal-1792341262751-1a93756da63158",
